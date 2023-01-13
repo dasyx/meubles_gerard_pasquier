@@ -1,2 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .bg-custom {
   background-color: #656261; }
