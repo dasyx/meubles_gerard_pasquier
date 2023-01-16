@@ -1,11 +1,13 @@
+@import "./variables.scss";
+
+
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
 
-$custom-color: #656261;
 
-.bg-custom {
-    background-color: $custom-color;
+.bg-custom1 {
+    background-color: $custom-color1;
 }
