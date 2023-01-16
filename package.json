@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel index.html",
     "watch": "parcel index.html",
+    "build": "parcel build index.html",
     "watch:css": "node-sass src/css/styles.scss src/css/styles.css"
   },
   "author": "David Levast",
@@ -14,7 +15,7 @@
     "postcss": "^8.4.21"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.8",
+    "autoprefixer": "^10.4.13",
     "parcel": "^2.8.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
