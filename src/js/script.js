@@ -1,4 +1,9 @@
 import '@fortawesome/fontawesome-free/css/all.css'
 import '../css/styles.scss'
+import '../js/tailwind.generated.js'
+import 'flowbite';
 
-console.log('hello world')
+import createButton from '../components/button';
+
+const myButton = document.getElementById('fb-btn');
+myButton.appendChild(createButton());
