@@ -1,0 +1,1 @@
+{"mappings":"AAGAA,QAAQC,IAAI","sources":["src/js/script.js"],"sourcesContent":["import '@fortawesome/fontawesome-free/css/all.css'\nimport '../css/styles.scss'\n\nconsole.log('hello world')"],"names":["console","log"],"version":3,"file":"index.b5f0224f.js.map"}
