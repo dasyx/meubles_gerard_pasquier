@@ -21,18 +21,31 @@
     <header class="bg-custom1">
       <nav class="flex justify-between flex-wrap p-3">
         <div class="text-white mr-6">
-          <a href="#" class="text-xl font-medium"
-            >Fabricant de meubles en Normandie</a
-          >
+          <h1 class="text-xl font-medium">Fabricant de meubles en Normandie</h1>
         </div>
-
-        <div class="ml-4">
+    
+        <div class="ml-4 lg:block ml-auto display_contact">
           <a href="#" class="text-white hover:text-gray-300 mr-3">Accueil</a>
           <a href="#" class="text-white hover:text-gray-300">Contactez-nous</a>
           <span id="fb-btn"></span>
         </div>
+    
+        <div class="ml-4 display_dropdown">
+          <button class="text-white hover:text-gray-300 focus:outline-none">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z" />
+            </svg>
+          </button>
+          <div class="hidden absolute text-white bg-custom1 rounded-md py-2 mt-2">
+            <a href="#" class="block px-3 py-2">Accueil</a>
+            <a href="#" class="block px-3 py-2">Contactez-nous</a>
+            <a href="#" class="block px-3 py-2"><i class="fa-brands fa-facebook"></i>Suivez-nous</a>
+          </div>
+        </div>
       </nav>
     </header>
+    
+    
 
     <script type="module" src="./src/js/script.js"></script>
   </body>
