@@ -29631,16 +29631,6 @@ img, video {
   }
 }
 
-@media (min-width: 769px) {
-  .display_dropdown {
-    display: none;
-  }
-
-  .display_contact {
-    display: block;
-  }
-}
-
 @media (max-width: 768px) {
   .relative {
     position: relative;
@@ -29648,6 +29638,10 @@ img, video {
 
   .display_dropdown {
     display: block;
+  }
+
+  .display_dropdown a i {
+    margin-right: 5px;
   }
 
   .display_contact {
@@ -29660,6 +29654,20 @@ img, video {
 
   .absolute {
     right: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .display_dropdown {
+    display: none;
+  }
+
+  .display_contact {
+    display: block;
+  }
+
+  .display_contact a i {
+    margin-right: 5px;
   }
 }
 
