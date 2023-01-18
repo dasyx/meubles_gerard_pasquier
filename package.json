@@ -4,7 +4,7 @@
   "description": "site internet de Gérard Pasquier Meubles",
   "scripts": {
     "start": "concurrently \"parcel index.html\"",
-    "build": "concurrently \"parcel build index.html\""
+    "build": "parcel build index.html"
   },
   "author": "David Levast",
   "license": "ISC",
