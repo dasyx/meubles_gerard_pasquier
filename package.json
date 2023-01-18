@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "site internet de Gérard Pasquier Meubles",
   "scripts": {
-    "start": "concurrently \"parcel index.html\"",
-    "build": "npm build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "David Levast",
   "license": "ISC",
