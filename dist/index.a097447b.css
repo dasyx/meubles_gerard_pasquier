@@ -29616,6 +29616,19 @@ img, video {
   content: none;
 }
 
+h1 {
+  font-family: Playfair Display, serif;
+}
+
+.display_contact a, .display_dropdown a {
+  font-family: Rokkitt, serif;
+}
+
+.nav_logo__nav {
+  font-family: Sacramento, cursive;
+  font-size: 1.7em;
+}
+
 .bg-custom1 {
   background-color: #656261;
 }
@@ -29628,6 +29641,10 @@ img, video {
 
   .display_dropdown {
     margin: 0 auto;
+  }
+
+  .nav_logo__nav {
+    flex-direction: column;
   }
 }
 
@@ -29655,6 +29672,10 @@ img, video {
   .absolute {
     right: 0;
   }
+
+  .bg-white section {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 769px) {
@@ -29669,6 +29690,22 @@ img, video {
   .display_contact a i {
     margin-right: 5px;
   }
+
+  .bg-white section {
+    justify-content: space-around;
+  }
+
+  .bg-white section .nav_logo__nav {
+    margin-right: 100px;
+  }
+
+  .bg-white section .nav_logo__nav a {
+    margin: 0 20px;
+  }
+}
+
+body, .bg-custom5 {
+  background-color: #fff6e6;
 }
 
 @media (min-width: 640px) {

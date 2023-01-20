@@ -6,9 +6,31 @@
 
 @tailwind utilities;
 
+
+
+//    GENERAL     //
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+.display_contact a, .display_dropdown a {
+  font-family: 'Rokkitt', serif;
+}
+.nav_logo__nav {
+  font-family: 'Sacramento', cursive;
+  font-size: 1.7em;
+}
+
+
+
+
+//    HEADER    //
+
+
 .bg-custom1 {
   background-color: $custom-color1;
 }
+/* Résolution inférieure à 425px */
 @media (max-width: 425px) {
   h1 {
     text-align: center;
@@ -16,6 +38,9 @@
   }
   .display_dropdown {
     margin: 0 auto;
+  }
+  .nav_logo__nav {
+    flex-direction: column;
   }
 }
 /* Résolution inférieure à 768px */
@@ -39,6 +64,9 @@
   .absolute {
     right: 0;
   }
+  .bg-white section {
+    flex-direction: column;
+  }
 }
 /* Résolution supérieure à 768px */
 @media (min-width: 769px) {
@@ -51,4 +79,24 @@
       margin-right: 5px;
     }
   }
+  .bg-white section {
+    justify-content: space-around;
+    /* & .nav_logo__logo img {
+      width: 300px;
+      height: 250px;
+    } */
+    & .nav_logo__nav {
+      margin-right: 100px;
+      & a {
+        margin: 0px 20px;
+      }
+    }
+  } 
+}
+
+
+//    MAIN    //
+
+body, .bg-custom5 {
+  background-color: lighten($custom-color5, 45%);
 }
