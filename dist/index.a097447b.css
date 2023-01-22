@@ -29620,17 +29620,30 @@ h1 {
   font-family: Playfair Display, serif;
 }
 
-.display_contact a, .display_dropdown a {
+.display_contact a, .display_dropdown a, .dropdown-menu a {
   font-family: Rokkitt, serif;
+  font-size: 1.2em;
 }
 
-.nav_logo__nav {
+.nav_logo__nav span {
   font-family: Sacramento, cursive;
-  font-size: 1.7em;
+  font-size: 1.9em;
 }
 
 .bg-custom1 {
   background-color: #656261;
+}
+
+body, .bg-custom5 {
+  background-color: #fff6e6;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  top: 180px;
 }
 
 @media (max-width: 425px) {
@@ -29669,12 +29682,16 @@ h1 {
     display: flex;
   }
 
-  .absolute {
+  .navbar-fb {
     right: 0;
   }
 
   .bg-white section {
     flex-direction: column;
+  }
+
+  .dropdown-menu {
+    top: 400px;
   }
 }
 
@@ -29702,10 +29719,10 @@ h1 {
   .bg-white section .nav_logo__nav a {
     margin: 0 20px;
   }
-}
 
-body, .bg-custom5 {
-  background-color: #fff6e6;
+  .nav_logo__nav span {
+    font-size: 2.1em;
+  }
 }
 
 @media (min-width: 640px) {

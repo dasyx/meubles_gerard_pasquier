@@ -13,12 +13,13 @@
 h1 {
   font-family: 'Playfair Display', serif;
 }
-.display_contact a, .display_dropdown a {
+.display_contact a, .display_dropdown a, .dropdown-menu a {
   font-family: 'Rokkitt', serif;
+  font-size: 1.2em;
 }
-.nav_logo__nav {
+.nav_logo__nav span {
   font-family: 'Sacramento', cursive;
-  font-size: 1.7em;
+  font-size: 1.9em;
 }
 
 
@@ -30,6 +31,23 @@ h1 {
 .bg-custom1 {
   background-color: $custom-color1;
 }
+
+//    MAIN    //
+
+body, .bg-custom5 {
+  background-color: lighten($custom-color5, 45%);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  top: 180px;
+}
+
+
+//    MEDIA QUERIES     //
+
 /* Résolution inférieure à 425px */
 @media (max-width: 425px) {
   h1 {
@@ -61,12 +79,15 @@ h1 {
   button:focus + .hidden {
     display: flex;
   }
-  .absolute {
+  .navbar-fb {
     right: 0;
   }
   .bg-white section {
     flex-direction: column;
   }
+  .dropdown-menu {
+    top: 400px;
+  } 
 }
 /* Résolution supérieure à 768px */
 @media (min-width: 769px) {
@@ -91,12 +112,8 @@ h1 {
         margin: 0px 20px;
       }
     }
-  } 
-}
-
-
-//    MAIN    //
-
-body, .bg-custom5 {
-  background-color: lighten($custom-color5, 45%);
+  }
+  .nav_logo__nav span {
+    font-size: 2.1em;
+  }
 }
