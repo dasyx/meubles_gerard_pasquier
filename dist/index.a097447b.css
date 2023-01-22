@@ -29674,7 +29674,7 @@ footer {
 .footer-rubriques {
   width: 100%;
   justify-content: center;
-  margin: 80px 0;
+  margin: 80px 10px;
 }
 
 .footer-rubriques__title {
@@ -29690,7 +29690,7 @@ footer {
 }
 
 .copyright {
-  margin: 30px 0;
+  margin: 30px 10px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
