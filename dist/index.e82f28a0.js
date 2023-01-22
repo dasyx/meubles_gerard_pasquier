@@ -541,6 +541,11 @@ var _button = require("../components/button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
 const myButton = document.getElementById("fb-btn");
 myButton.appendChild((0, _buttonDefault.default)());
+const hdBtn = document.getElementById("header_btn");
+function displayContact() {
+    document.getElementById("myP1").style.visibility = "visible";
+}
+hdBtn.addEventListener("mouseover, displayContact");
 
 },{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 

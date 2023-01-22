@@ -44,21 +44,8 @@ body,
   background-color: $custom-color1;
 }
 
-.display_dropdown {
-  display: block;
-
-  & a i {
-    margin-right: 5px;
-  }
-}
-
 .display_contact {
   display: none;
-}
-
-button:hover+.hidden,
-button:focus+.hidden {
-  display: flex;
 }
 
 .navbar-fb {
@@ -106,6 +93,24 @@ button:focus+.hidden {
   .dropdown-menu {
     top: 580px;
   }
+
+  .display_dropdown {
+
+    & a i {
+      margin-right: 5px;
+    }
+  }
+
+  /* .navbar-fb {
+    visibility: hidden;
+    display: flex;
+  } */
+  #header_btn {
+    opacity: 0;
+  }
+  #header_btn:hover {
+    opacity: 1;
+  }
 }
 
 // Affichage tablettes
@@ -121,6 +126,15 @@ button:focus+.hidden {
 
   .nav_logo__nav span {
     font-size: 1.4em;
+  }
+
+  .display_dropdown:hover,
+  .display_dropdown {
+    display: block;
+
+    & a i {
+      margin-right: 5px;
+    }
   }
 }
 

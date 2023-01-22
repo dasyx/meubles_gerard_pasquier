@@ -1,185 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Basés en Normandie, Les meubles Gérard Pasquier se distinguent
-    par leur qualité et leur orginalité. Notre entreprise vous accueille et écoute vos besoins depuis 1931, fort d'un savoir-faire familial depuis 1931."
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="src/css/styles.scss" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Rokkitt&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <title>Accueil - Meubles Gérard Pasquier</title>
-  </head>
-  <body>
-    <header>
-      <!--DEBUT NAVIGATION TITRE + LIENS RESEAUX-->
-      <nav class="bg-custom1 flex justify-between flex-wrap p-3">
-        <section class="text-white mr-6">
-          <h1 class="text-xl font-medium">Meubles Gérard Pasquier</h1>
-        </section>
 
-        <section class="ml-4 lg:block ml-auto display_contact">
-          <a href="#" class="text-white hover:text-gray-300 mr-3">Accueil</a>
-          <a href="#" class="text-white hover:text-gray-300 mr-3"
-            >Contactez-nous</a
-          >
-          <a
-            href="https://fr-fr.facebook.com/MeublesPASQUIER/"
-            class="text-white hover:text-gray-300"
-            ><span id="fb-btn"></span>Suivez-nous</a
-          >
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Basés en Normandie, Les meubles Gérard Pasquier se distinguent
+    par leur qualité et leur orginalité. Notre entreprise vous accueille et écoute vos besoins depuis 1931, fort d'un savoir-faire familial depuis 1931." />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="src/css/styles.scss" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Rokkitt&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+  <title>Accueil - Meubles Gérard Pasquier</title>
+</head>
 
-        <section class="ml-4 display_dropdown">
-          <button class="text-white hover:text-gray-300 focus:outline-none">
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path
-                fill-rule="evenodd"
-                d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </button>
-          <div
-            class="navbar-fb hidden absolute text-white bg-custom1 rounded-md py-2 mt-2"
-          >
-            <a href="#" class="block px-3 py-2">Accueil</a>
-            <a href="#" class="block px-3 py-2">Contactez-nous</a>
-            <a
-              href="https://fr-fr.facebook.com/MeublesPASQUIER/"
-              class="block px-3 py-2"
-              ><i class="fa-brands fa-facebook"></i>Suivez-nous</a
-            >
-          </div>
-        </section>
-      </nav>
-      <!--FIN NAVIGATION TITRE + LIENS RESEAUX-->
+<body>
+  <header>
+    <!--DEBUT NAVIGATION TITRE + LIENS RESEAUX-->
+    <nav class="bg-custom1 flex justify-between flex-wrap p-3">
+      <section class="text-white mr-6">
+        <h1 class="text-xl font-medium">Meubles Gérard Pasquier</h1>
+      </section>
 
-      <!--DEBUT NAVIGATION LOGO + HISTORIQUE-->
-      <nav class="bg-white">
-        <section class="flex justify-around items-center">
-          <div class="nav_logo__logo">
-            <img
-              src="./src/img/meubles_gerard_pasquier_nb-opacity.png"
-              width="350"
-              height="auto"
-            />
-          </div>
-          <div class="nav_logo__nav flex md: mb-10">
-            <div class="dropdown flex">
-              <a href="#" class="relative px-4 py-2">
-                <span>Notre histoire</span>
-                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                  <li class="">
-                    <a
-                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >A définir</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >A définir</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >A définir</a
-                    >
-                  </li>
-                </ul>
-              </a>
-            </div>
-            <div class="dropdown flex">
-              <a href="#" class="px-4 py-2">
-                <span>Nos produits</span>
-                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                  <li class="">
-                    <a
-                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Aussi à définir</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Aussi à définir</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Aussi à définir</a
-                    >
-                  </li>
-                </ul>
-              </a>
-            </div>
-            <div class="dropdown flex">
-              <a href="#" class="px-4 py-2"> 
-                <span>Nos univers</span>
-                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                  <li class="">
-                    <a
-                      class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Egalement à définir</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Egalement à définir</a
-                    >
-                  </li>
-                  <li class="">
-                    <a
-                      class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                      href="#"
-                      >Egalement à définir</a
-                    >
-                  </li>
-                </ul> 
-              </a>
-            </div>
-          </div>
-        </section>
-      </nav>
-      <!--FIN NAVIGATION LOGO + HISTORIQUE-->
+      <section class="ml-4 lg:block ml-auto display_contact">
+        <a href="#" class="text-white hover:text-gray-300 mr-3">Accueil</a>
+        <a href="https://davidlevast.fr" class="text-white hover:text-gray-300 mr-3">Contactez-nous</a>
+        <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-gray-300"><span
+            id="fb-btn"></span>Suivez-nous</a>
+      </section>
 
-      <!--DEBUT CONTENU PRINCIPAL-->
-      <main class="bg-custom5 flex">
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet. Rem neque ipsam est ducimus modi aut
-            aliquid corrupti et ratione fugit est quas quisquam et nulla harum.
-            Quo quia laudantium et unde tempora non enim totam vel debitis odit?
-            Aut consectetur quasi aut atque obcaecati ut obcaecati voluptas. In
-            voluptates illum eum reprehenderit tempore ut aspernatur atque aut
-            voluptas commodi qui ipsa doloribus vel quibusdam suscipit estsdsqdf
-            magni sunt. Ab distinctio earum vel sequi tempora non quia modi sed
-            accusantium expedita in galisum asperiores ut facere explicabo et
-            doloremque commodi.
-          </p>
+      <section class="ml-4 display_dropdown relative">
+        <button class="text-white hover:text-gray-300 focus:outline-none" id="header_btn" onmouseover="displayContact()">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2">
+          <a href="#" class="block px-3 py-2">Accueil</a>
+          <a href="https://davidlevast.fr" class="block px-3 py-2">Contactez-nous</a>
+          <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2"><i
+              class="fa-brands fa-facebook"></i>Suivez-nous</a>
         </div>
-      </main>
-      <!--FIN CONTENU PRINCIPAL-->
-    </header>
+      </section>
+    </nav>
+    <!--FIN NAVIGATION TITRE + LIENS RESEAUX-->
 
-    <script type="module" src="./src/js/script.js"></script>
-  </body>
+    <!--DEBUT NAVIGATION LOGO + HISTORIQUE-->
+    <nav class="bg-white">
+      <section class="flex justify-around items-center">
+        <div class="nav_logo__logo">
+          <img src="./src/img/meubles_gerard_pasquier_nb-opacity.png" width="350" height="auto" />
+        </div>
+        <div class="nav_logo__nav flex md: mb-10">
+          <div class="dropdown flex">
+            <a href="#" class="relative px-4 py-2">
+              <span>Notre histoire</span>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="">
+                  <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">A
+                    définir</a>
+                </li>
+                <li class="">
+                  <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">A définir</a>
+                </li>
+                <li class="">
+                  <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">A
+                    définir</a>
+                </li>
+              </ul>
+            </a>
+          </div>
+          <div class="dropdown flex">
+            <a href="#" class="px-4 py-2">
+              <span>Nos produits</span>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="">
+                  <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Aussi à
+                    définir</a>
+                </li>
+                <li class="">
+                  <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Aussi à
+                    définir</a>
+                </li>
+                <li class="">
+                  <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Aussi à
+                    définir</a>
+                </li>
+              </ul>
+            </a>
+          </div>
+          <div class="dropdown flex">
+            <a href="#" class="px-4 py-2">
+              <span>Nos univers</span>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="">
+                  <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#">Egalement à définir</a>
+                </li>
+                <li class="">
+                  <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Egalement à
+                    définir</a>
+                </li>
+                <li class="">
+                  <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                    href="#">Egalement à définir</a>
+                </li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <!--FIN NAVIGATION LOGO + HISTORIQUE-->
+
+    <!--DEBUT CONTENU PRINCIPAL-->
+    <main class="bg-custom5 flex">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet. Rem neque ipsam est ducimus modi aut
+          aliquid corrupti et ratione fugit est quas quisquam et nulla harum.
+          Quo quia laudantium et unde tempora non enim totam vel debitis odit?
+          Aut consectetur quasi aut atque obcaecati ut obcaecati voluptas. In
+          voluptates illum eum reprehenderit tempore ut aspernatur atque aut
+          voluptas commodi qui ipsa doloribus vel quibusdam suscipit estsdsqdf
+          magni sunt. Ab distinctio earum vel sequi tempora non quia modi sed
+          accusantium expedita in galisum asperiores ut facere explicabo et
+          doloremque commodi.
+        </p>
+      </div>
+    </main>
+    <!--FIN CONTENU PRINCIPAL-->
+  </header>
+
+  <script type="module" src="./src/js/script.js"></script>
+</body>
+
 </html>

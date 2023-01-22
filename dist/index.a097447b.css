@@ -29642,20 +29642,8 @@ body, .bg-custom5 {
   background-color: #656261;
 }
 
-.display_dropdown {
-  display: block;
-}
-
-.display_dropdown a i {
-  margin-right: 5px;
-}
-
 .display_contact {
   display: none;
-}
-
-button:hover + .hidden, button:focus + .hidden {
-  display: flex;
 }
 
 .navbar-fb {
@@ -29691,6 +29679,18 @@ button:hover + .hidden, button:focus + .hidden {
   .dropdown-menu {
     top: 580px;
   }
+
+  .display_dropdown a i {
+    margin-right: 5px;
+  }
+
+  #header_btn {
+    opacity: 0;
+  }
+
+  #header_btn:hover {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -29704,6 +29704,14 @@ button:hover + .hidden, button:focus + .hidden {
 
   .nav_logo__nav span {
     font-size: 1.4em;
+  }
+
+  .display_dropdown:hover, .display_dropdown {
+    display: block;
+  }
+
+  .display_dropdown:hover a i, .display_dropdown a i {
+    margin-right: 5px;
   }
 }
 
