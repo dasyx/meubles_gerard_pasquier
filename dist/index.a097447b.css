@@ -29634,20 +29634,12 @@ h1 {
   position: relative;
 }
 
-.bg-custom1 {
-  background-color: #656261;
-}
-
 body, .bg-custom5 {
   background-color: #fff6e6;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
-  top: 180px;
+.bg-custom1 {
+  background-color: #656261;
 }
 
 .display_dropdown {
@@ -29668,6 +29660,14 @@ button:hover + .hidden, button:focus + .hidden {
 
 .navbar-fb {
   right: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  top: 180px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -29727,6 +29727,7 @@ button:hover + .hidden, button:focus + .hidden {
   }
 
   .nav_logo__nav span {
+    margin-right: 50px;
     font-size: 2.2em;
   }
 }

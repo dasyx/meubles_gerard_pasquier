@@ -30,6 +30,10 @@ h1 {
   position: relative;
 }
 
+body,
+.bg-custom5 {
+  background-color: lighten($custom-color5, 45%);
+}
 
 
 
@@ -38,21 +42,6 @@ h1 {
 
 .bg-custom1 {
   background-color: $custom-color1;
-}
-
-//    MAIN    //
-
-body,
-.bg-custom5 {
-  background-color: lighten($custom-color5, 45%);
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
-  top: 180px;
 }
 
 .display_dropdown {
@@ -77,9 +66,24 @@ button:focus+.hidden {
 }
 
 
+
+//    MAIN    //
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  top: 180px;
+}
+
+
+
+
 //    MEDIA QUERIES     //
 
-
+// Affichage mobiles
 @media (min-width: 320px) and (max-width: 480px) {
 
   h1 {
@@ -104,7 +108,7 @@ button:focus+.hidden {
   }
 }
 
-
+// Affichage tablettes
 @media (min-width: 481px) and (max-width: 768px) {
 
   .bg-white section {
@@ -120,7 +124,7 @@ button:focus+.hidden {
   }
 }
 
-
+// Affichage écrans moyens
 @media (min-width: 769px) and (max-width: 1080px) {
 
   .bg-white section {
@@ -129,6 +133,7 @@ button:focus+.hidden {
 }
 
 
+// Affichage grands écrans
 @media (min-width: 1081px) {
 
   .display_dropdown {
@@ -145,5 +150,6 @@ button:focus+.hidden {
 
   .nav_logo__nav span {
     font-size: 2.2em;
+    margin-right: 50px;
   }
 }
