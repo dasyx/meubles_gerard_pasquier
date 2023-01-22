@@ -62,10 +62,19 @@ body,
     margin-right: 5px;
   }
 }
+
 .display_contact {
   display: none;
 }
 
+button:hover+.hidden,
+button:focus+.hidden {
+  display: flex;
+}
+
+.navbar-fb {
+  right: 0;
+}
 
 
 //    MEDIA QUERIES     //
@@ -85,9 +94,11 @@ body,
   .nav_logo__nav {
     margin-bottom: 30px;
   }
+
   .flex {
     flex-direction: column;
   }
+
   .dropdown-menu {
     top: 580px;
   }
@@ -95,16 +106,6 @@ body,
 
 
 @media (min-width: 481px) and (max-width: 768px) {
-
-
-  button:hover+.hidden,
-  button:focus+.hidden {
-    display: flex;
-  }
-
-  .navbar-fb {
-    right: 0;
-  }
 
   .bg-white section {
     flex-direction: column;
