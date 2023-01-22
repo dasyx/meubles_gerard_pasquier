@@ -29658,6 +29658,7 @@ body, .bg-custom5 {
 
   .nav_logo__nav {
     flex-direction: column;
+    margin-bottom: 30px;
   }
 }
 
@@ -29693,9 +29694,13 @@ body, .bg-custom5 {
   .dropdown-menu {
     top: 400px;
   }
+
+  .nav_logo__nav span {
+    font-size: 1.4em;
+  }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1080px) {
   .display_dropdown {
     display: none;
   }
@@ -29709,19 +29714,13 @@ body, .bg-custom5 {
   }
 
   .bg-white section {
-    justify-content: space-around;
+    flex-direction: column;
   }
+}
 
-  .bg-white section .nav_logo__nav {
-    margin-right: 100px;
-  }
-
-  .bg-white section .nav_logo__nav a {
-    margin: 0 20px;
-  }
-
+@media (min-width: 1081px) {
   .nav_logo__nav span {
-    font-size: 2.1em;
+    font-size: 2.2em;
   }
 }
 
