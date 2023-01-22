@@ -541,11 +541,24 @@ var _button = require("../components/button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
 const myButton = document.getElementById("fb-btn");
 myButton.appendChild((0, _buttonDefault.default)());
-const hdBtn = document.getElementById("header_btn");
-function displayContact() {
-    document.getElementById("myP1").style.visibility = "visible";
+// Affichage conditionnel du header menu dropdown
+if (window.innerWidth < 480) {
+    hdBtn = document.getElementById("header_btn");
+    hdBtn.addEventListener("mouseover", function() {
+        document.getElementById("test").style.visibility = "visible";
+    });
+    hdBtn.addEventListener("click", function() {
+        document.getElementById("test").style.visibility = "hidden";
+    });
+} else document.getElementById("test").style.visibility = "hidden";
+// Affichage conditionnel du header texte en low res
+if (window.innerWidth < 377) {
+    document.getElementById("contact").innerHTML = "Contact";
+    document.getElementById("follow").innerHTML = "Suivre";
+} else {
+    document.getElementById("contact").innerHTML = "Contactez-nous";
+    document.getElementById("follow").innerHTML = "Suivez-nous";
 }
-hdBtn.addEventListener("mouseover, displayContact");
 
 },{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 
