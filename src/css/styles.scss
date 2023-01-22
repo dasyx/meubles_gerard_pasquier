@@ -13,13 +13,21 @@
 h1 {
   font-family: 'Playfair Display', serif;
 }
-.display_contact a, .display_dropdown a, .dropdown-menu a {
+
+.display_contact a,
+.display_dropdown a,
+.dropdown-menu a {
   font-family: 'Rokkitt', serif;
   font-size: 1.2em;
 }
+
 .nav_logo__nav span {
   font-family: 'Sacramento', cursive;
   font-size: 1.9em;
+}
+
+.relative {
+  position: relative;
 }
 
 
@@ -34,83 +42,106 @@ h1 {
 
 //    MAIN    //
 
-body, .bg-custom5 {
+body,
+.bg-custom5 {
   background-color: lighten($custom-color5, 45%);
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 .dropdown-menu {
   top: 180px;
+}
+
+.display_dropdown {
+  display: block;
+
+  & a i {
+    margin-right: 5px;
+  }
+}
+.display_contact {
+  display: none;
 }
 
 
 
 //    MEDIA QUERIES     //
 
-/* Résolution inférieure à 425px */
-@media (max-width: 425px) {
+
+@media (min-width: 320px) and (max-width: 480px) {
+
   h1 {
     text-align: center;
     margin-bottom: 20px;
   }
+
   .display_dropdown {
     margin: 0 auto;
   }
+
   .nav_logo__nav {
-    flex-direction: column;
     margin-bottom: 30px;
   }
-}
-/* Résolution inférieure à 768px */
-@media (max-width: 768px) {
-  .relative {
-    position: relative;
-  }
-  .display_dropdown {
-    display: block;
-    & a i {
-      margin-right: 5px;
-    }
-  }
-  .display_contact {
-    display: none;
-  }
-  button:hover + .hidden,
-  button:focus + .hidden {
-    display: flex;
-  }
-  .navbar-fb {
-    right: 0;
-  }
-  .bg-white section {
+  .flex {
     flex-direction: column;
   }
   .dropdown-menu {
-    top: 400px;
-  } 
+    top: 580px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+
+  button:hover+.hidden,
+  button:focus+.hidden {
+    display: flex;
+  }
+
+  .navbar-fb {
+    right: 0;
+  }
+
+  .bg-white section {
+    flex-direction: column;
+  }
+
+  .dropdown-menu {
+    top: 200px;
+  }
+
   .nav_logo__nav span {
     font-size: 1.4em;
   }
 }
-/* Résolution supérieure à 768px */
+
+
 @media (min-width: 769px) and (max-width: 1080px) {
-  .display_dropdown {
-    display: none;
-  }
-  .display_contact {
-    display: block;
-    & a i {
-      margin-right: 5px;
-    }
-  }
+
   .bg-white section {
     flex-direction: column;
   }
 }
-/* Résolution supérieure à 768px */
+
+
 @media (min-width: 1081px) {
+
+  .display_dropdown {
+    display: none;
+  }
+
+  .display_contact {
+    display: block;
+
+    & a i {
+      margin-right: 5px;
+    }
+  }
+
   .nav_logo__nav span {
     font-size: 2.2em;
   }
