@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"fyTPu":[function(require,module,exports) {
+})({"icFDR":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "207a8fdfe82f28a0";
+module.bundle.HMR_BUNDLE_ID = "a4f96759c072103e";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -567,15 +567,20 @@ var _buttonDefault = parcelHelpers.interopDefault(_button);
 const myButton = document.getElementById("fb-btn");
 myButton.appendChild((0, _buttonDefault.default)());
 // Affichage conditionnel du header menu dropdown
+var hdBtn = document.getElementById("header_btn");
+var testElement = document.getElementById("test");
 if (window.innerWidth || document.body.clientWidth < 768) {
-    hdBtn = document.getElementById("header_btn");
+    var isVisible = false;
     hdBtn.addEventListener("click", function() {
-        document.getElementById("test").style.visibility = "visible";
+        if (isVisible) {
+            testElement.style.visibility = "hidden";
+            isVisible = false;
+        } else {
+            testElement.style.visibility = "visible";
+            isVisible = true;
+        }
     });
-    hdBtn.addEventListener("mouseout", function() {
-        document.getElementById("test").style.visibility = "hidden";
-    });
-} else document.getElementById("test").style.visibility = "hidden";
+} else testElement.style.visibility = "hidden";
 // Affichage conditionnel du header texte en low res
 if (window.innerWidth || document.body.clientWidth < 768) {
     document.getElementById("contact").innerHTML = "Contact";
@@ -584,6 +589,10 @@ if (window.innerWidth || document.body.clientWidth < 768) {
     document.getElementById("contact").innerHTML = "Contactez-nous";
     document.getElementById("follow").innerHTML = "Suivez-nous";
 }
+// Script affichant la date actuelle
+let date = document.getElementById("getDate");
+let actualDate = new Date().getFullYear();
+date.innerHTML = actualDate;
 
 },{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 
@@ -4786,6 +4795,6 @@ const createButton = ()=>{
 };
 exports.default = createButton;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["fyTPu","dV6cC"], "dV6cC", "parcelRequire66bd")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["icFDR","dV6cC"], "dV6cC", "parcelRequire66bd")
 
-//# sourceMappingURL=index.e82f28a0.js.map
+//# sourceMappingURL=index.c072103e.js.map

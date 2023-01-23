@@ -1,33 +1,42 @@
-import '@fortawesome/fontawesome-free/css/all.css'
-import '../css/styles.scss'
-import '../js/tailwind.generated.js'
-import 'flowbite';
+import "@fortawesome/fontawesome-free/css/all.css";
+import "../css/styles.scss";
+import "../js/tailwind.generated.js";
+import "flowbite";
 
-import createButton from '../components/button';
+import createButton from "../components/button";
 
-const myButton = document.getElementById('fb-btn');
+const myButton = document.getElementById("fb-btn");
 myButton.appendChild(createButton());
 
-
 // Affichage conditionnel du header menu dropdown
-if (window.innerWidth < 480) {
-    hdBtn = document.getElementById('header_btn');
-    hdBtn.addEventListener("mouseover", function () {
-        document.getElementById("test").style.visibility = "visible";
-    });
-    hdBtn.addEventListener("click", function () {
-        document.getElementById("test").style.visibility = "hidden";
-    });
+var hdBtn = document.getElementById("header_btn");
+var testElement = document.getElementById("test");
+if (window.innerWidth || document.body.clientWidth < 768) {
+  var isVisible = false;
+  hdBtn.addEventListener("click", function () {
+    if (isVisible) {
+      testElement.style.visibility = "hidden";
+      isVisible = false;
+    } else {
+      testElement.style.visibility = "visible";
+      isVisible = true;
+    }
+  });
 } else {
-    document.getElementById("test").style.visibility = "hidden";
+  testElement.style.visibility = "hidden";
 }
-
 
 // Affichage conditionnel du header texte en low res
-if (window.innerWidth < 377) {
-    document.getElementById("contact").innerHTML = "Contact";
-    document.getElementById("follow").innerHTML = "Suivre";
+if (window.innerWidth || document.body.clientWidth < 768) {
+  document.getElementById("contact").innerHTML = "Contact";
+  document.getElementById("follow").innerHTML = "Suivre";
 } else {
-    document.getElementById("contact").innerHTML = "Contactez-nous";
-    document.getElementById("follow").innerHTML = "Suivez-nous";
+  document.getElementById("contact").innerHTML = "Contactez-nous";
+  document.getElementById("follow").innerHTML = "Suivez-nous";
 }
+
+
+// Script affichant la date actuelle
+let date = document.getElementById("getDate");
+let actualDate = new Date().getFullYear();
+date.innerHTML = actualDate;

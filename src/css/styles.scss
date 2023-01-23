@@ -6,23 +6,21 @@
 
 @tailwind utilities;
 
-
-
 //    GENERAL     //
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .display_contact a,
 .display_dropdown a,
 .dropdown-menu a {
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   font-size: 1.2em;
 }
 
 .nav_logo__nav span {
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: 1.9em;
 }
 
@@ -35,10 +33,7 @@ body,
   background-color: lighten($custom-color5, 45%);
 }
 
-
-
 //    HEADER    //
-
 
 .bg-custom1 {
   background-color: $custom-color1;
@@ -51,8 +46,6 @@ body,
 .navbar-fb {
   right: 0;
 }
-
-
 
 //    MAIN    //
 
@@ -68,10 +61,7 @@ main {
   top: 180px;
 }
 
-
-
 //    FOOTER    //
-
 
 footer {
   bottom: 0;
@@ -80,17 +70,18 @@ footer {
 
 .footer_logo {
   flex-direction: column;
+  text-align: center;
+}
+.footer_logo img {
+  margin: auto;
 }
 
 .footer-rubriques {
   width: 100%;
-  margin: 80px 10px;
-  justify-content: center;
-
+  text-align: center;
+  margin: 30px 0;
   &__title {
-    display: flex;
-    flex-direction: column;
-    margin-right: 150px;
+    margin: 20px 0;
   }
 }
 
@@ -101,16 +92,13 @@ footer {
 }
 
 .copyright {
-  margin: 30px 10px;
+  height: 60px;
 }
-
-
 
 //    MEDIA QUERIES     //
 
 // Affichage mobiles
 @media (min-width: 320px) and (max-width: 480px) {
-
   h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -133,7 +121,6 @@ footer {
   }
 
   .display_dropdown {
-
     & a i {
       margin-right: 5px;
     }
@@ -147,7 +134,6 @@ footer {
 
 // Affichage tablettes
 @media (min-width: 481px) and (max-width: 768px) {
-
   .bg-white section {
     flex-direction: column;
   }
@@ -168,20 +154,23 @@ footer {
       margin-right: 5px;
     }
   }
-}
-
-// Affichage écrans moyens
-@media (min-width: 769px) and (max-width: 1080px) {
-
-  .bg-white section {
+  .footer-rubriques {
     flex-direction: column;
   }
 }
 
+// Affichage écrans moyens
+@media (min-width: 769px) and (max-width: 1080px) {
+  .bg-white section {
+    flex-direction: column;
+  }
+  .footer-rubriques {
+    margin: 40 0 20 0;
+  }
+}
 
 // Affichage grands écrans
 @media (min-width: 1081px) {
-
   .display_dropdown {
     display: none;
   }
@@ -197,5 +186,8 @@ footer {
   .nav_logo__nav span {
     font-size: 2.2em;
     margin-right: 50px;
+  }
+  .footer-rubriques {
+    margin: 40 0 20 0;
   }
 }
