@@ -29667,6 +29667,10 @@ footer {
   bottom: 0;
 }
 
+footer nav, footer p {
+  color: #fff;
+}
+
 .footer_logo {
   text-align: center;
   flex-direction: column;
@@ -29690,6 +29694,10 @@ footer {
   flex-direction: row;
   justify-content: center;
   margin: 30px 0;
+}
+
+.footer_social a {
+  color: #fff;
 }
 
 .copyright {
