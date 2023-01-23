@@ -29694,6 +29694,8 @@ footer {
 
 .copyright {
   height: 60px;
+  align-items: center;
+  display: flex;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -29725,6 +29727,18 @@ footer {
   #test {
     visibility: hidden;
     display: flex;
+  }
+
+  .footer_logo {
+    align-items: center;
+  }
+
+  .footer_social a {
+    padding: 10px 0;
+  }
+
+  .copyright {
+    font-size: .8em;
   }
 }
 

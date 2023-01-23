@@ -580,7 +580,7 @@ if (window.innerWidth || document.body.clientWidth < 768) {
             isVisible = true;
         }
     });
-} else testElement.style.visibility = "hidden";
+} else testElement.style.visibility = "visible";
 // Affichage conditionnel du header texte en low res
 if (window.innerWidth || document.body.clientWidth < 768) {
     document.getElementById("contact").innerHTML = "Contact";

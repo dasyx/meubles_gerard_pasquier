@@ -23,7 +23,7 @@ if (window.innerWidth || document.body.clientWidth < 768) {
     }
   });
 } else {
-  testElement.style.visibility = "hidden";
+  testElement.style.visibility = "visible";
 }
 
 // Affichage conditionnel du header texte en low res

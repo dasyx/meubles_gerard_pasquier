@@ -72,6 +72,7 @@ footer {
   flex-direction: column;
   text-align: center;
 }
+
 .footer_logo img {
   margin: auto;
 }
@@ -92,6 +93,8 @@ footer {
 }
 
 .copyright {
+  display: flex;
+  align-items: center;
   height: 60px;
 }
 
@@ -129,6 +132,15 @@ footer {
   #test {
     visibility: hidden;
     display: flex;
+  }
+  .footer_logo {
+    align-items: center;
+  }
+  .footer_social a {
+    padding: 10px 0;
+  }
+  .copyright {
+    font-size: .8em;
   }
 }
 
