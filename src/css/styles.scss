@@ -20,8 +20,7 @@ h1 {
 }
 
 .nav_logo__nav span {
-  font-family: "Sacramento", cursive;
-  font-size: 1.9em;
+  font-family: "Rokkitt", sans-serif;
 }
 
 .relative {
@@ -31,6 +30,11 @@ h1 {
 body,
 .bg-custom5 {
   background-color: lighten($custom-color5, 45%);
+}
+
+hr {
+  margin-top: 5px;
+  width: 50px;
 }
 
 //    HEADER    //
@@ -47,6 +51,10 @@ body,
   right: 0;
 }
 
+.dropdown ul li {
+  font-size: .85em;
+}
+
 //    MAIN    //
 
 main {
@@ -57,9 +65,9 @@ main {
   display: block;
 }
 
-.dropdown-menu {
-  top: 180px;
-}
+/* .dropdown-menu {
+  background: $custom-color1;
+} */
 
 //    FOOTER    //
 
@@ -78,18 +86,26 @@ footer p {
   text-align: center;
 }
 
+.footer_logo p {
+  margin-bottom: 20px;
+}
+
 .footer_logo img {
   margin: auto;
 }
 
 .footer-rubriques {
   width: 100%;
-  text-align: center;
-  margin: 30px 0;
+  text-align: left;
+  margin: 30px 0 20px 20px;
 
   &__title {
     margin: 20px 0;
   }
+}
+
+.ambiances_suite {
+  visibility: hidden;
 }
 
 .footer_social {
@@ -100,11 +116,13 @@ footer p {
 
 .footer_social a {
   color: white;
+  padding-right: 20px;
 }
 
 .copyright {
   display: flex;
   align-items: center;
+  text-align: center;
   height: 60px;
 }
 
@@ -120,24 +138,20 @@ footer p {
 
   .display_dropdown {
     margin: 0 auto;
+    & a i {
+      margin-right: 5px;
+    }
   }
 
   .nav_logo__nav {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
   }
 
   .flex {
     flex-direction: column;
-  }
-
-  .dropdown-menu {
-    top: 580px;
-  }
-
-  .display_dropdown {
-    & a i {
-      margin-right: 5px;
-    }
   }
 
   #test {
@@ -164,12 +178,15 @@ footer p {
     flex-direction: column;
   }
 
-  .dropdown-menu {
-    top: 200px;
+  .nav_logo__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
   }
 
   .nav_logo__nav span {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .display_dropdown:hover,
@@ -190,6 +207,13 @@ footer p {
 @media (min-width: 769px) and (max-width: 1080px) {
   .bg-white section {
     flex-direction: column;
+  }
+  .nav_logo__nav {
+    margin-bottom: 50px;
+  }
+  .nav_logo__nav span {
+    font-size: 1.2em;
+    margin-right: 10px;
   }
 
   .footer-rubriques {
@@ -212,8 +236,8 @@ footer p {
   }
 
   .nav_logo__nav span {
-    font-size: 2.2em;
-    margin-right: 50px;
+    font-size: 1.3em;
+    margin-right: 5px;
   }
 
   .footer-rubriques {

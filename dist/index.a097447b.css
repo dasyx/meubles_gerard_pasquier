@@ -29626,8 +29626,7 @@ h1 {
 }
 
 .nav_logo__nav span {
-  font-family: Sacramento, cursive;
-  font-size: 1.9em;
+  font-family: Rokkitt, sans-serif;
 }
 
 .relative {
@@ -29636,6 +29635,11 @@ h1 {
 
 body, .bg-custom5 {
   background-color: #fff6e6;
+}
+
+hr {
+  width: 50px;
+  margin-top: 5px;
 }
 
 .bg-custom1 {
@@ -29650,16 +29654,16 @@ body, .bg-custom5 {
   right: 0;
 }
 
+.dropdown ul li {
+  font-size: .85em;
+}
+
 main {
   margin-bottom: 100px;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
-}
-
-.dropdown-menu {
-  top: 180px;
 }
 
 footer {
@@ -29676,18 +29680,26 @@ footer nav, footer p {
   flex-direction: column;
 }
 
+.footer_logo p {
+  margin-bottom: 20px;
+}
+
 .footer_logo img {
   margin: auto;
 }
 
 .footer-rubriques {
   width: 100%;
-  text-align: center;
-  margin: 30px 0;
+  text-align: left;
+  margin: 30px 0 20px 20px;
 }
 
 .footer-rubriques__title {
   margin: 20px 0;
+}
+
+.ambiances_suite {
+  visibility: hidden;
 }
 
 .footer_social {
@@ -29698,9 +29710,11 @@ footer nav, footer p {
 
 .footer_social a {
   color: #fff;
+  padding-right: 20px;
 }
 
 .copyright {
+  text-align: center;
   height: 60px;
   align-items: center;
   display: flex;
@@ -29716,20 +29730,19 @@ footer nav, footer p {
     margin: 0 auto;
   }
 
+  .display_dropdown a i {
+    margin-right: 5px;
+  }
+
   .nav_logo__nav {
-    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    display: flex;
   }
 
   .flex {
     flex-direction: column;
-  }
-
-  .dropdown-menu {
-    top: 580px;
-  }
-
-  .display_dropdown a i {
-    margin-right: 5px;
   }
 
   #test {
@@ -29755,12 +29768,15 @@ footer nav, footer p {
     flex-direction: column;
   }
 
-  .dropdown-menu {
-    top: 200px;
+  .nav_logo__nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    display: flex;
   }
 
   .nav_logo__nav span {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .display_dropdown:hover, .display_dropdown {
@@ -29779,6 +29795,15 @@ footer nav, footer p {
 @media (min-width: 769px) and (max-width: 1080px) {
   .bg-white section {
     flex-direction: column;
+  }
+
+  .nav_logo__nav {
+    margin-bottom: 50px;
+  }
+
+  .nav_logo__nav span {
+    margin-right: 10px;
+    font-size: 1.2em;
   }
 
   .footer-rubriques {
@@ -29800,8 +29825,8 @@ footer nav, footer p {
   }
 
   .nav_logo__nav span {
-    margin-right: 50px;
-    font-size: 2.2em;
+    margin-right: 5px;
+    font-size: 1.3em;
   }
 
   .footer-rubriques {
