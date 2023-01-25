@@ -27,11 +27,6 @@ h1 {
   position: relative;
 }
 
-body,
-.bg-custom5 {
-  background-color: lighten($custom-color5, 45%);
-}
-
 hr {
   margin-top: 5px;
   width: 50px;
@@ -58,6 +53,7 @@ hr {
 //    MAIN    //
 
 main {
+  background-color: $custom-color6;
   margin-bottom: 100px;
 }
 
@@ -65,9 +61,22 @@ main {
   display: block;
 }
 
-/* .dropdown-menu {
-  background: $custom-color1;
-} */
+
+//    INSPIRATIONS    //
+
+main h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Playfair Display", serif;
+}
+
+.classique h3 {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  text-align: center;
+}
 
 //    FOOTER    //
 
