@@ -70,9 +70,6 @@ main h2 {
   font-family: "Playfair Display", serif;
 }
 
-/* .classique .bg {
-  background: url("/src/img/wood_bg.jpg");
-} */
 .classique h3 {
   padding: 10px;
   margin-bottom: 15px;
@@ -149,10 +146,13 @@ footer p {
   }
 
   .display_dropdown {
-    margin: 0 auto;
     & a i {
       margin-right: 5px;
     }
+  }
+
+  .dropdown {
+    padding-bottom: 30px;
   }
 
   .nav_logo__nav {
