@@ -29674,7 +29674,7 @@ main h2 {
   display: flex;
 }
 
-.classique h3 {
+.classique h3, .indus h3 {
   text-align: center;
   background-color: #f0f8ff;
   border-radius: 5px;
@@ -29685,6 +29685,10 @@ main h2 {
 .classique {
   width: 100%;
   height: 100%;
+}
+
+.indus {
+  width: 100%;
 }
 
 footer {

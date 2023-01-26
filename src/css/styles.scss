@@ -75,7 +75,7 @@ main h2 {
   flex-wrap: wrap;
 }
 
-.classique h3 {
+.classique h3, .indus h3 {
   padding: 10px;
   margin-bottom: 15px;
   background-color: aliceblue;
@@ -88,6 +88,9 @@ main h2 {
   height: 100%;
 }
 
+.indus {
+  width: 100%;
+}
 
 //    FOOTER    //
 
