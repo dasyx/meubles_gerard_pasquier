@@ -29669,12 +29669,22 @@ main h2 {
   font-size: 2.5em;
 }
 
+.sections-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
 .classique h3 {
   text-align: center;
   background-color: #f0f8ff;
   border-radius: 5px;
   margin-bottom: 15px;
   padding: 10px;
+}
+
+.classique {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -29777,10 +29787,6 @@ footer nav, footer p {
     font-size: .8em;
   }
 
-  .classique {
-    width: 100%;
-  }
-
   #classique_style {
     flex-direction: row !important;
   }
@@ -29810,8 +29816,9 @@ footer nav, footer p {
     margin-right: 5px;
   }
 
-  .classique {
-    width: 50%;
+  .sections-align {
+    align-items: center;
+    margin: 0 auto;
   }
 }
 
@@ -29827,10 +29834,6 @@ footer nav, footer p {
   .nav_logo__nav span {
     margin-right: 10px;
     font-size: 1.2em;
-  }
-
-  .classique {
-    width: 50%;
   }
 }
 
@@ -29856,14 +29859,14 @@ footer nav, footer p {
     margin: 40px 0 20px;
   }
 
-  .classique {
-    width: 33%;
+  .sections-container {
+    flex-wrap: nowrap;
   }
 }
 
 @media (min-width: 2161px) {
-  .classique {
-    width: 20%;
+  .sections-container {
+    flex-wrap: nowrap;
   }
 }
 
