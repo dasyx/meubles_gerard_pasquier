@@ -70,6 +70,9 @@ main h2 {
   font-family: "Playfair Display", serif;
 }
 
+/* .classique .bg {
+  background: url("/src/img/wood_bg.jpg");
+} */
 .classique h3 {
   padding: 10px;
   margin-bottom: 15px;
@@ -109,7 +112,7 @@ footer p {
   margin: 30px 0 20px 20px;
 
   &__title {
-    margin: 20px 0;
+    margin: 30px 0 0 20px;
   }
 }
 
@@ -159,10 +162,6 @@ footer p {
     margin-bottom: 40px;
   }
 
-  .flex {
-    flex-direction: column;
-  }
-
   #test {
     visibility: hidden;
     display: flex;
@@ -176,8 +175,21 @@ footer p {
     padding: 10px 0;
   }
 
+  .footer-rubriques {
+    flex-direction: column;
+  }
+  #propos {
+    padding-bottom: 30px;
+  }
+
   .copyright {
     font-size: .8em;
+  }
+  .classique {
+    width: 100%;
+  }
+  #classique_style {
+    flex-direction: row !important;
   }
 }
 
@@ -207,8 +219,8 @@ footer p {
     }
   }
 
-  .footer-rubriques {
-    flex-direction: column;
+  .classique {
+    width: 50%;
   }
 }
 
@@ -225,13 +237,13 @@ footer p {
     margin-right: 10px;
   }
 
-  .footer-rubriques {
-    margin: 40 0 20 0;
+  .classique {
+    width: 50%;
   }
 }
 
 // Affichage grands écrans
-@media (min-width: 1081px) {
+@media (min-width: 1081px) and (max-width: 2160px) {
   .display_dropdown {
     display: none;
   }
@@ -252,4 +264,18 @@ footer p {
   .footer-rubriques {
     margin: 40 0 20 0;
   }
+
+  .classique {
+    width: 33%;
+  }
+
+}
+
+// Affichage très grands écrans
+@media (min-width: 2161px) {
+
+  .classique {
+    width: 20%;
+  }
+
 }
