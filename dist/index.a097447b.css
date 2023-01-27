@@ -29839,6 +29839,10 @@ footer nav, footer p {
     margin-right: 10px;
     font-size: 1.2em;
   }
+
+  .indus, .classique {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1081px) and (max-width: 2160px) {
