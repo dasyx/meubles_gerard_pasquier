@@ -29686,9 +29686,11 @@ main h2 {
   border-radius: 5px;
   margin-bottom: 15px;
   padding: 10px;
+  display: flex;
 }
 
 .image-flex {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -29792,11 +29794,6 @@ footer nav, footer p {
     font-size: .8em;
   }
 
-  .image-flex {
-    width: 320px;
-    height: 320px;
-  }
-
   .sections-container {
     flex-direction: column;
   }
@@ -29827,8 +29824,8 @@ footer nav, footer p {
   }
 
   .image-flex {
-    width: 380px;
-    height: 380px;
+    width: 450px;
+    height: 450px;
   }
 }
 
@@ -29873,7 +29870,44 @@ footer nav, footer p {
   .footer-rubriques {
     margin: 40px 0 20px;
   }
+}
 
+@media (min-width: 1081px) and (max-width: 1116px) {
+  .image-flex {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1117px) and (max-width: 1216px) {
+  .image-flex {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1217px) and (max-width: 1440px) {
+  .image-flex {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1516px) {
+  .image-flex {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 1517px) and (max-width: 1716px) {
+  .image-flex {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 1717px) and (max-width: 2260px) {
   .image-flex {
     width: 300px;
     height: 300px;

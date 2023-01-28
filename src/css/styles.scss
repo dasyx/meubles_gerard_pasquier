@@ -76,7 +76,11 @@ main h2 {
   justify-content: space-evenly;
 }
 
-.classique, .contemporain, .rustique, .industriel, .opera {
+.classique,
+.contemporain,
+.rustique,
+.industriel,
+.opera {
   width: auto;
   flex-direction: row;
 }
@@ -86,6 +90,7 @@ main h2 {
 .contemporain h3,
 .rustique h3,
 .opera h3 {
+  display: flex;
   padding: 10px;
   margin-bottom: 15px;
   background-color: aliceblue;
@@ -94,6 +99,7 @@ main h2 {
 }
 
 .image-flex {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -206,14 +212,6 @@ footer p {
     font-size: .8em;
   }
 
-  /* #classique_style {
-    flex-direction: row !important;
-  } */
-
-  .image-flex {
-    width: 320px;
-    height: 320px;
-  }
   .sections-container {
     flex-direction: column;
   }
@@ -246,8 +244,8 @@ footer p {
   }
 
   .image-flex {
-    width: 380px;
-    height: 380px;
+    width: 450px;
+    height: 450px;
   }
 
 }
@@ -296,11 +294,48 @@ footer p {
     margin: 40 0 20 0;
   }
 
+}
+
+@media (min-width: 1081px) and (max-width: 1116px) {
+  .image-flex {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1117px) and (max-width: 1216px) {
+  .image-flex {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1217px) and (max-width: 1440px) {
+  .image-flex {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1516px) {
+  .image-flex {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 1517px) and (max-width: 1716px) {
+  .image-flex {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 1717px) and (max-width: 2260px) {
   .image-flex {
     width: 300px;
     height: 300px;
   }
-
 }
 
 // Affichage très grands écrans
