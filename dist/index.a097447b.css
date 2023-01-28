@@ -29671,10 +29671,16 @@ main h2 {
 
 .sections-container {
   flex-wrap: wrap;
+  justify-content: space-evenly;
   display: flex;
 }
 
-.classique h3, .indus h3 {
+.classique, .contemporain, .rustique, .industriel, .opera {
+  width: auto;
+  flex-direction: row;
+}
+
+.classique h3, .industriel h3, .contemporain h3, .rustique h3, .opera h3 {
   text-align: center;
   background-color: #f0f8ff;
   border-radius: 5px;
@@ -29682,8 +29688,8 @@ main h2 {
   padding: 10px;
 }
 
-.classique, .indus {
-  width: 100%;
+.image-flex {
+  margin: 0 auto;
 }
 
 footer {
@@ -29786,8 +29792,13 @@ footer nav, footer p {
     font-size: .8em;
   }
 
-  #classique_style {
-    flex-direction: row !important;
+  .image-flex {
+    width: 320px;
+    height: 320px;
+  }
+
+  .sections-container {
+    flex-direction: column;
   }
 }
 
@@ -29815,9 +29826,9 @@ footer nav, footer p {
     margin-right: 5px;
   }
 
-  .sections-align {
-    align-items: center;
-    margin: 0 auto;
+  .image-flex {
+    width: 380px;
+    height: 380px;
   }
 }
 
@@ -29835,12 +29846,13 @@ footer nav, footer p {
     font-size: 1.2em;
   }
 
-  .indus, .classique {
-    width: 50%;
+  .image-flex {
+    width: 300px;
+    height: 300px;
   }
 }
 
-@media (min-width: 1081px) and (max-width: 2160px) {
+@media (min-width: 1081px) and (max-width: 2260px) {
   .display_dropdown {
     display: none;
   }
@@ -29862,14 +29874,16 @@ footer nav, footer p {
     margin: 40px 0 20px;
   }
 
-  .sections-container {
-    flex-wrap: nowrap;
+  .image-flex {
+    width: 300px;
+    height: 300px;
   }
 }
 
-@media (min-width: 2161px) {
-  .sections-container {
-    flex-wrap: nowrap;
+@media (min-width: 2261px) {
+  .image-flex {
+    width: 410px;
+    height: 410px;
   }
 }
 

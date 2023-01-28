@@ -73,9 +73,19 @@ main h2 {
 .sections-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.classique h3, .indus h3 {
+.classique, .contemporain, .rustique, .industriel, .opera {
+  width: auto;
+  flex-direction: row;
+}
+
+.classique h3,
+.industriel h3,
+.contemporain h3,
+.rustique h3,
+.opera h3 {
   padding: 10px;
   margin-bottom: 15px;
   background-color: aliceblue;
@@ -83,10 +93,9 @@ main h2 {
   text-align: center;
 }
 
-.classique, .indus {
-  width: 100%;
+.image-flex {
+  margin: 0 auto;
 }
-
 
 //    FOOTER    //
 
@@ -188,6 +197,7 @@ footer p {
   .footer-rubriques {
     flex-direction: column;
   }
+
   #propos {
     padding-bottom: 30px;
   }
@@ -196,8 +206,16 @@ footer p {
     font-size: .8em;
   }
 
-  #classique_style {
+  /* #classique_style {
     flex-direction: row !important;
+  } */
+
+  .image-flex {
+    width: 320px;
+    height: 320px;
+  }
+  .sections-container {
+    flex-direction: column;
   }
 }
 
@@ -227,10 +245,11 @@ footer p {
     }
   }
 
-  .sections-align {
-    align-items: center;
-    margin: 0 auto;
+  .image-flex {
+    width: 380px;
+    height: 380px;
   }
+
 }
 
 // Affichage écrans moyens
@@ -238,21 +257,24 @@ footer p {
   .bg-white section {
     flex-direction: column;
   }
+
   .nav_logo__nav {
     margin-bottom: 50px;
   }
+
   .nav_logo__nav span {
     font-size: 1.2em;
     margin-right: 10px;
   }
-  .indus, .classique {
-    width: 50%;
-  }
 
+  .image-flex {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 // Affichage grands écrans
-@media (min-width: 1081px) and (max-width: 2160px) {
+@media (min-width: 1081px) and (max-width: 2260px) {
   .display_dropdown {
     display: none;
   }
@@ -274,17 +296,19 @@ footer p {
     margin: 40 0 20 0;
   }
 
-  .sections-container {
-    flex-wrap: nowrap;
+  .image-flex {
+    width: 300px;
+    height: 300px;
   }
 
 }
 
 // Affichage très grands écrans
-@media (min-width: 2161px) {
+@media (min-width: 2261px) {
 
-  .sections-container {
-    flex-wrap: nowrap;
+  .image-flex {
+    width: 410px;
+    height: 410px;
   }
 
 }
