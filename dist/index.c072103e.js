@@ -608,6 +608,37 @@ if (window.innerWidth <= displayWidth) {
 let date = document.getElementById("getDate");
 let actualDate = new Date().getFullYear();
 date.innerHTML = actualDate;
+var ourStory = document.getElementById("our-story");
+var dropdownMenu = document.getElementById("dropdown-menu");
+ourStory.addEventListener("click", function() {
+    if (dropdownMenu.classList.contains("hidden")) {
+        dropdownMenu.classList.remove("hidden");
+        var listItem1 = document.createElement("li");
+        var listItem2 = document.createElement("li");
+        var listItem3 = document.createElement("li");
+        var link1 = document.createElement("a");
+        var link2 = document.createElement("a");
+        var link3 = document.createElement("a");
+        link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+        link1.setAttribute("href", "#");
+        link1.textContent = "A d\xe9finir";
+        link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+        link2.setAttribute("href", "#");
+        link2.textContent = "A d\xe9finir";
+        link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+        link3.setAttribute("href", "#");
+        link3.textContent = "A d\xe9finir";
+        listItem1.appendChild(link1);
+        listItem2.appendChild(link2);
+        listItem3.appendChild(link3);
+        dropdownMenu.appendChild(listItem1);
+        dropdownMenu.appendChild(listItem2);
+        dropdownMenu.appendChild(listItem3);
+    } else {
+        dropdownMenu.classList.add("hidden");
+        while(dropdownMenu.firstChild)dropdownMenu.removeChild(dropdownMenu.firstChild);
+    }
+});
 
 },{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 

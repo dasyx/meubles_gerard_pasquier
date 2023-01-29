@@ -29668,6 +29668,10 @@ main {
   display: block;
 }
 
+.nav_logo__nav-lowres {
+  align-items: flex-start;
+}
+
 main h2 {
   text-align: center;
   font-family: Playfair Display, serif;
