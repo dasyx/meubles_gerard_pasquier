@@ -29626,7 +29626,12 @@ h1 {
 }
 
 .nav_logo__nav span {
+  padding: 0 5px;
   font-family: Rokkitt, sans-serif;
+}
+
+.nav_logo__nav-lowres {
+  display: none;
 }
 
 .relative {
@@ -29684,9 +29689,8 @@ main h2 {
   text-align: center;
   background-color: #f0f8ff;
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 10px;
-  display: flex;
 }
 
 .image-flex {
@@ -29918,6 +29922,10 @@ footer nav, footer p {
   .image-flex {
     width: 410px;
     height: 410px;
+  }
+
+  .nav_logo__nav {
+    font-size: 1.4em;
   }
 }
 

@@ -54,7 +54,15 @@
         <div class="nav_logo__logo">
           <img src="./src/img/meubles_gerard_pasquier_lowres_nb_opacity.webp" width="250" height="auto" />
         </div>
-        <div class="nav_logo__nav">
+        <!--BOUTON MENU LOGO-->
+        <button class="$custom-color1 focus:outline-none relative" id="nav_logo-btn">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+        <!--FIN BOUTON MENU LOGO-->
+        <div class="nav_logo__nav" id="nav_logo">
           <div class="dropdown inline-block relative">
 
             <span>Notre histoire</span>
@@ -135,6 +143,89 @@
             <span>Articles</span>
           </div>
         </div>
+        <!--AFFICHAGE MENU < 768PX-->
+        <div class="nav_logo__nav-lowres" id="nav_logo-lowres">
+          <div class="dropdown inline-block relative">
+
+            <span>Notre histoire</span>
+            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+              <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="#">A définir</a></li>
+              <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A
+                  définir</a>
+              </li>
+              <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="#">A définir</a></li>
+            </ul>
+
+          </div>
+          <div class="dropdown inline-block relative">
+
+            <span>Produits</span>
+            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+              <li>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Aussi à
+                  définir</a>
+              </li>
+              <li>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Aussi à
+                  définir</a>
+              </li>
+              <li>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Aussi à
+                  définir</a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="dropdown inline-block relative">
+
+            <span>Inspirations</span>
+            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
+                  à définir</a>
+              </li>
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
+                  à
+                  définir</a>
+              </li>
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
+                  à définir</a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="dropdown inline-block relative">
+
+            <span>Sur-mesure</span>
+            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
+                  à définir</a>
+              </li>
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
+                  à
+                  définir</a>
+              </li>
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
+                  à définir</a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="dropdown inline-block">
+            <span>Promotions</span>
+          </div>
+          <div class="dropdown inline-block">
+            <span>Articles</span>
+          </div>
+        </div>
+        <!--FIN AFFICHAGE MENU < 768PX-->
       </section>
     </nav>
   </header>

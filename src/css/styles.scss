@@ -21,6 +21,11 @@ h1 {
 
 .nav_logo__nav span {
   font-family: "Rokkitt", sans-serif;
+  padding: 0 5px;
+}
+
+.nav_logo__nav-lowres {
+  display: none;
 }
 
 .relative {
@@ -31,6 +36,7 @@ hr {
   margin-top: 5px;
   width: 50px;
 }
+
 
 //    HEADER    //
 
@@ -50,6 +56,7 @@ hr {
   font-size: .85em;
 }
 
+
 //    MAIN    //
 
 main {
@@ -60,6 +67,7 @@ main {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 
 
 //    INSPIRATIONS    //
@@ -90,9 +98,8 @@ main h2 {
 .contemporain h3,
 .rustique h3,
 .opera h3 {
-  display: flex;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   background-color: aliceblue;
   border-radius: 5px;
   text-align: center;
@@ -344,6 +351,9 @@ footer p {
   .image-flex {
     width: 410px;
     height: 410px;
+  }
+  .nav_logo__nav {
+    font-size: 1.4em;
   }
 
 }
