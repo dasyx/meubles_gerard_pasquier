@@ -29672,6 +29672,14 @@ main {
   align-items: flex-start;
 }
 
+.nav_logo__nav-lowres span {
+  margin-left: 15px;
+}
+
+.nav_logo__nav-lowres #dropdown-menu {
+  padding-top: 10px;
+}
+
 main h2 {
   text-align: center;
   font-family: Playfair Display, serif;

@@ -608,6 +608,7 @@ if (window.innerWidth <= displayWidth) {
 let date = document.getElementById("getDate");
 let actualDate = new Date().getFullYear();
 date.innerHTML = actualDate;
+// Script qui modifie le DOM pour ajouter les liens du header logo lowres
 var ourStory = document.getElementById("our-story");
 var dropdownMenu = document.getElementById("dropdown-menu");
 ourStory.addEventListener("click", function() {

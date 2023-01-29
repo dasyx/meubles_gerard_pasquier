@@ -71,9 +71,15 @@ main {
 .nav_logo__nav-lowres {
   align-items: flex-start;
 }
-.dropdown-lowres {
-  
+
+.nav_logo__nav-lowres span {
+  margin-left: 15px;
 }
+
+.nav_logo__nav-lowres #dropdown-menu {
+  padding-top: 10px;
+}
+
 
 
 //    INSPIRATIONS    //
