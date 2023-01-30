@@ -1,18 +1,10 @@
-/* .rotate {
-    transform: rotate(45deg);
-}
-
-.transition-all {
-    transition: all 0.3s ease-in-out;
-} */
-
-/* span.block {
+.nav_logo__nav-lowres span.block {
     position: relative;
-    display: inline-block;
+    //display: inline-block;
     padding-bottom: 4px;
 }
 
-span.block:after {
+.nav_logo__nav-lowres span.block:after {
     content: "";
     display: block;
     position: absolute;
@@ -25,6 +17,6 @@ span.block:after {
     transition: width 0.3s ease-in-out;
 }
 
-span.block:hover:after {
-    width: 100%;
-} */
+.nav_logo__nav-lowres span.block:hover:after {
+    width: 20%;
+}

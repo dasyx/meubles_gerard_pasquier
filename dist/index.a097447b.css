@@ -1,3 +1,25 @@
+.nav_logo__nav-lowres span.block {
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.nav_logo__nav-lowres span.block:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #656261;
+  transition: width .3s ease-in-out;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav_logo__nav-lowres span.block:hover:after {
+  width: 20%;
+}
+
 *, :before, :after {
   box-sizing: border-box;
 }
