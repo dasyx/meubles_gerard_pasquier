@@ -55,33 +55,43 @@ const displayWidth = 768;
 window.addEventListener("resize", function () {
   // Vérifier la largeur de la fenêtre
   if ((window.innerWidth || document.body.clientWidth) <= displayWidth) {
-    // Afficher le bouton
+    
+    navLogoBtnLowres.style.display = "block";
+    navLogoMenuHiRes.style.display = "none";
+    hdBtnLowres.style.display = "block";
+    //hdDropdown.style.display = "block"
+
+  } else {
+    
+    navLogoBtnLowres.style.display = "none";
+    navLogoMenuHiRes.style.display = "flex";
+    hdBtnLowres.style.display = "none";
+    //hdDropdown.style.display = "none";
+  }
+});
+
+// Ajouter un écouteur d'événements au chargement de la fenêtre
+window.addEventListener("load", function () {
+  // Vérifier la largeur de la fenêtre
+  if ((window.innerWidth || document.body.clientWidth) <= displayWidth) {
+    
     navLogoBtnLowres.style.display = "block";
     navLogoMenuHiRes.style.display = "none";
     hdBtnLowres.style.display = "block";
     hdDropdown.style.display = "block"
+    document.getElementById("contact").innerHTML = "Contact";
+    document.getElementById("follow").innerHTML = "Suivre";
 
   } else {
-    // Cacher le bouton
+    
     navLogoBtnLowres.style.display = "none";
     navLogoMenuHiRes.style.display = "flex";
     hdBtnLowres.style.display = "none";
     hdDropdown.style.display = "none";
+    document.getElementById("contact").innerHTML = "Contactez-nous";
+  document.getElementById("follow").innerHTML = "Suivez-nous";
   }
 });
-
-
-// Affichage conditionnel du header texte en low res
-if (window.innerWidth || document.body.clientWidth <= 768) {
-  document.getElementById("contact").innerHTML = "Contact";
-  document.getElementById("follow").innerHTML = "Suivre";
-  //document.getElementById("nav_logo-btn").classList.add("menu-burger");
-} else {
-  document.getElementById("contact").innerHTML = "Contactez-nous";
-  document.getElementById("follow").innerHTML = "Suivez-nous";
-  //document.getElementById("nav_logo-btn").classList.remove("menu-burger");
-}
-
 
 
 // Script affichant la date actuelle
