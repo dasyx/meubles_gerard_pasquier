@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./animations.scss";
 
 @tailwind base;
 
@@ -60,7 +61,7 @@ hr {
 //    MAIN    //
 
 main {
-  background-color: $custom-color6;
+  background: $gradient1;
   margin-bottom: 100px;
 }
 
@@ -73,13 +74,16 @@ main {
 }
 
 .nav_logo__nav-lowres span {
-  margin-left: 15px;
+  margin: 20px 0px 20px 20px;
 }
 
 .nav_logo__nav-lowres #dropdown-menu {
   padding-top: 10px;
 }
 
+#histoire i {
+  padding-left: 50px;
+}
 
 
 //    INSPIRATIONS    //

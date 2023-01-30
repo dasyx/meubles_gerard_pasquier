@@ -33,12 +33,23 @@
 
       <section class="ml-4 display_dropdown">
         <!--BOUTON ACCUEIL HEADER-->
-        <button class="text-white hover:text-white-300 focus:outline-none relative" id="header_btn-lowres">
-          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            <path fill-rule="evenodd"
-              d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z" />
-          </svg>
-        </button>
+        <nav x-data="{ open: false }">
+          <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres"
+            @click="open = !open">
+            <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <span aria-hidden="true"
+                class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+              <span aria-hidden="true"
+                class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
+                :class="{'opacity-0': open } "></span>
+              <span aria-hidden="true"
+                class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+            </div>
+          </button>
+        </nav>
+
         <!--FIN BOUTON ACCUEIL-->
         <!--MENU DEROULANT HEADER LOW RES-->
         <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
@@ -144,21 +155,31 @@
           <div class="dropdown inline-block">
             <span>Promotions</span>
           </div>
-          <div class="dropdown inline-block">
-            <span>Articles</span>
-          </div>
         </div>
         <!--FIN MENU LOGO LOWRES-->
         <!--AFFICHAGE MENU DROPDOWN < 768PX-->
         <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
           <div class="dropdown block relative">
 
-            <span class="" id="our-story">Notre histoire</span>
-            <ul id="dropdown-menu" class="dropdown-lowres hidden text-gray-700 pt-1">
+            <span class="block" id="histoire">Notre histoire<i class="fas fa-caret-down absolute"></i></span>
+            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
             </ul>
-
+            <span class="block" id="produits">Les produits</span>
+            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
+            </ul>
+            <span class="block" id="inspirations">Inspirations</span>
+            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
+            </ul>
+            <span class="block" id="surmesure">Sur-mesure</span>
+            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
+            </ul>
+            <a href="#"><span class="block" id="promotions">Promotions</span>
+              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
+              </ul>
+            </a>
           </div>
-        <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
+          <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
+        </div>
       </section>
     </nav>
   </header>
@@ -562,6 +583,7 @@
   </div>
 
   <script type="module" src="./src/js/script.js" async></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 
 </html>

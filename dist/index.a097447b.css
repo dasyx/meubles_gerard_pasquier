@@ -29660,7 +29660,7 @@ hr {
 }
 
 main {
-  background-color: #ced7e5;
+  background: linear-gradient(#cdccdb 0%, #ced7e5 35%, #d3e3e7 100%);
   margin-bottom: 100px;
 }
 
@@ -29673,11 +29673,15 @@ main {
 }
 
 .nav_logo__nav-lowres span {
-  margin-left: 15px;
+  margin: 20px 0 20px 20px;
 }
 
 .nav_logo__nav-lowres #dropdown-menu {
   padding-top: 10px;
+}
+
+#histoire i {
+  padding-left: 50px;
 }
 
 main h2 {
