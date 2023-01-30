@@ -29724,17 +29724,54 @@ main h2 {
   flex-direction: row;
 }
 
+.classique h3 {
+  color: #fff;
+  background-color: #976e5b;
+  font-family: Manrope, sans-serif;
+  font-size: 1.6em;
+}
+
+.contemporain h3 {
+  color: #fff;
+  background-color: #418541;
+  font-family: Lato, sans-serif;
+  font-size: 1.6em;
+}
+
+.rustique h3 {
+  color: #fff;
+  background-color: #ffa600;
+  font-family: Amaranth, sans-serif;
+  font-size: 1.6em;
+}
+
+.industriel h3 {
+  color: #fff;
+  background-color: #a44150;
+  font-family: Oswald, sans-serif;
+  font-size: 1.6em;
+}
+
+.opera h3 {
+  color: #fff;
+  background-color: #e38f38;
+  font-family: Raleway, sans-serif;
+  font-size: 1.6em;
+}
+
 .classique h3, .industriel h3, .contemporain h3, .rustique h3, .opera h3 {
   text-align: center;
-  background-color: #f0f8ff;
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 10px;
+  box-shadow: -10px 0 13px -7px #656261, 10px 0 13px -7px #656261, 5px 5px 15px 5px #0000;
 }
 
 .image-flex {
   width: 100%;
+  border-radius: 5px;
   margin: 0 auto;
+  box-shadow: 5px 5px 15px 5px #0009;
 }
 
 footer {

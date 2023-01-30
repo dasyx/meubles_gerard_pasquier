@@ -38,7 +38,6 @@ hr {
   width: 50px;
 }
 
-
 //    HEADER    //
 
 .bg-custom1 {
@@ -54,9 +53,8 @@ hr {
 }
 
 .dropdown ul li {
-  font-size: .85em;
+  font-size: 0.85em;
 }
-
 
 //    MAIN    //
 
@@ -83,7 +81,7 @@ main {
 
 .nav_logo__nav-lowres i {
   display: inline-flex;
- align-items: right;
+  align-items: right;
 }
 
 //    INSPIRATIONS    //
@@ -108,7 +106,36 @@ main h2 {
   width: auto;
   flex-direction: row;
 }
-
+.classique h3 {
+  font-size: 1.6em;
+  font-family: 'Manrope', sans-serif;
+  background-color: $custom-color2;
+  color: #fff;
+}
+.contemporain h3 {
+  font-size: 1.6em;
+  font-family: 'Lato', sans-serif;
+  background-color: #418541;
+  color: #fff;
+}
+.rustique h3 {
+  font-size: 1.6em;
+  font-family: 'Amaranth', sans-serif;
+  background-color: $custom-color5;
+  color: #fff;
+}
+.industriel h3 {
+  font-size: 1.6em;
+  font-family: 'Oswald', sans-serif;
+  background-color: #a44150;
+  color: #fff;
+}
+.opera h3 {
+  font-size: 1.6em;
+  font-family: 'Raleway', sans-serif;
+  background-color: $custom-color4;
+  color: #fff;
+}
 .classique h3,
 .industriel h3,
 .contemporain h3,
@@ -116,14 +143,21 @@ main h2 {
 .opera h3 {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: aliceblue;
+  //background-color: #f0f8ff;
   border-radius: 5px;
   text-align: center;
+  -webkit-box-shadow: -10px 0px 13px -7px $custom-color1, 10px 0px 13px -7px $custom-color1,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px $custom-color1, 10px 0px 13px -7px $custom-color1,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .image-flex {
   width: 100%;
   margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
 }
 
 //    FOOTER    //
@@ -183,7 +217,6 @@ footer p {
   height: 60px;
 }
 
-
 //    MEDIA QUERIES     //
 
 // Affichage mobiles
@@ -232,7 +265,7 @@ footer p {
   }
 
   .copyright {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .sections-container {
@@ -270,7 +303,6 @@ footer p {
     width: 450px;
     height: 450px;
   }
-
 }
 
 // Affichage écrans moyens
@@ -316,7 +348,6 @@ footer p {
   .footer-rubriques {
     margin: 40 0 20 0;
   }
-
 }
 
 @media (min-width: 1081px) and (max-width: 1116px) {
@@ -363,7 +394,6 @@ footer p {
 
 // Affichage très grands écrans
 @media (min-width: 2261px) {
-
   .image-flex {
     width: 410px;
     height: 410px;
@@ -371,5 +401,4 @@ footer p {
   .nav_logo__nav {
     font-size: 1.4em;
   }
-
 }
