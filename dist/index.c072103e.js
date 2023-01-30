@@ -587,6 +587,7 @@ window.addEventListener("resize", function() {
         navLogoBtnLowres.style.display = "none";
         navLogoMenuHiRes.style.display = "flex";
         hdBtnLowres.style.display = "none";
+        navLogoDropdownMenuLowRes.style.display = "none";
     //hdDropdown.style.display = "none";
     }
 });

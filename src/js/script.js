@@ -55,17 +55,18 @@ const displayWidth = 768;
 window.addEventListener("resize", function () {
   // Vérifier la largeur de la fenêtre
   if ((window.innerWidth || document.body.clientWidth) <= displayWidth) {
-    
+
     navLogoBtnLowres.style.display = "block";
     navLogoMenuHiRes.style.display = "none";
     hdBtnLowres.style.display = "block";
     //hdDropdown.style.display = "block"
 
   } else {
-    
+
     navLogoBtnLowres.style.display = "none";
     navLogoMenuHiRes.style.display = "flex";
     hdBtnLowres.style.display = "none";
+    navLogoDropdownMenuLowRes.style.display = "none";
     //hdDropdown.style.display = "none";
   }
 });
@@ -74,7 +75,7 @@ window.addEventListener("resize", function () {
 window.addEventListener("load", function () {
   // Vérifier la largeur de la fenêtre
   if ((window.innerWidth || document.body.clientWidth) <= displayWidth) {
-    
+
     navLogoBtnLowres.style.display = "block";
     navLogoMenuHiRes.style.display = "none";
     hdBtnLowres.style.display = "block";
@@ -83,13 +84,13 @@ window.addEventListener("load", function () {
     document.getElementById("follow").innerHTML = "Suivre";
 
   } else {
-    
+
     navLogoBtnLowres.style.display = "none";
     navLogoMenuHiRes.style.display = "flex";
     hdBtnLowres.style.display = "none";
     hdDropdown.style.display = "none";
     document.getElementById("contact").innerHTML = "Contactez-nous";
-  document.getElementById("follow").innerHTML = "Suivez-nous";
+    document.getElementById("follow").innerHTML = "Suivez-nous";
   }
 });
 
