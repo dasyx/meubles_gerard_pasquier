@@ -583,26 +583,28 @@ window.addEventListener("resize", function() {
         navLogoBtnLowres.style.display = "block";
         navLogoMenuHiRes.style.display = "none";
         hdBtnLowres.style.display = "block";
+        hdDropdown.style.display = "block";
     } else {
         // Cacher le bouton
         navLogoBtnLowres.style.display = "none";
         navLogoMenuHiRes.style.display = "flex";
         hdBtnLowres.style.display = "none";
+        hdDropdown.style.display = "none";
     }
 });
 // Vérifier la largeur de la fenêtre au chargement de la page
-if (window.innerWidth <= displayWidth) {
-    navLogoBtnLowres.style.display = "flex";
-    navLogoMenuHiRes.style.display = "none";
-    hdBtnLowres.style.display = "block";
-    hdDropdown.style.display = "block";
+/* if (window.innerWidth <= displayWidth) {
+  navLogoBtnLowres.style.display = "flex";
+  navLogoMenuHiRes.style.display = "none";
+  hdBtnLowres.style.display = "block";
+  hdDropdown.style.display = "block"
+
 } else {
-    navLogoBtnLowres.style.display = "none";
-    navLogoMenuHiRes.style.display = "flex";
-    hdBtnLowres.style.display = "none";
-    hdDropdown.style.display = "none";
-}
-// Affichage conditionnel du header texte en low res
+  navLogoBtnLowres.style.display = "none";
+  navLogoMenuHiRes.style.display = "flex";
+  hdBtnLowres.style.display = "none";
+  hdDropdown.style.display = "none";
+} */ // Affichage conditionnel du header texte en low res
 if (window.innerWidth || document.body.clientWidth <= 768) {
     document.getElementById("contact").innerHTML = "Contact";
     document.getElementById("follow").innerHTML = "Suivre";
