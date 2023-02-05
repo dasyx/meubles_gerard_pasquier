@@ -102,7 +102,7 @@ main h2 {
 .contemporain,
 .rustique,
 .industriel,
-.opera {
+.nordique {
   width: auto;
   flex-direction: row;
 }
@@ -130,7 +130,7 @@ main h2 {
   background-color: #a44150;
   color: #fff;
 }
-.opera h3 {
+.nordique h3 {
   font-size: 1.6em;
   font-family: 'Raleway', sans-serif;
   background-color: $custom-color4;
@@ -140,7 +140,7 @@ main h2 {
 .industriel h3,
 .contemporain h3,
 .rustique h3,
-.opera h3 {
+.nordique h3 {
   padding: 10px;
   margin-bottom: 10px;
   //background-color: #f0f8ff;

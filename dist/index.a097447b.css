@@ -29719,7 +29719,7 @@ main h2 {
   display: flex;
 }
 
-.classique, .contemporain, .rustique, .industriel, .opera {
+.classique, .contemporain, .rustique, .industriel, .nordique {
   width: auto;
   flex-direction: row;
 }
@@ -29752,14 +29752,14 @@ main h2 {
   font-size: 1.6em;
 }
 
-.opera h3 {
+.nordique h3 {
   color: #fff;
   background-color: #e38f38;
   font-family: Raleway, sans-serif;
   font-size: 1.6em;
 }
 
-.classique h3, .industriel h3, .contemporain h3, .rustique h3, .opera h3 {
+.classique h3, .industriel h3, .contemporain h3, .rustique h3, .nordique h3 {
   text-align: center;
   border-radius: 5px;
   margin-bottom: 10px;

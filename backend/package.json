@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Meubles Gérard Pasquier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasyx/meubles_gerard_pasquier.git"
+  },
+  "author": "David Levast",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dasyx/meubles_gerard_pasquier/issues"
+  },
+  "homepage": "https://github.com/dasyx/meubles_gerard_pasquier#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.20"
+  }
+}
