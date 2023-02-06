@@ -26,7 +26,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.json({ limit: "20mb" }));
 app.use(express.urlencoded({ extended: false, limit: "20mb" }));
-app.use(require("serve-static")(__dirname + "images"));
+
 app.use(require("cookie-parser")());
 app.use(require("body-parser").urlencoded({ extended: true }));
 app.use(
