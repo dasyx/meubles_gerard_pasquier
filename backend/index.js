@@ -1,27 +1,53 @@
-require('dotenv').config();
-const cors = require('cors');
-const express = require('express');
-const mongoose = require('mongoose');
-const mongoString = process.env.DATABASE_URL;
+require("dotenv").config();
+const passport = require("passport");
+const cors = require("cors");
+const express = require("express");
+const mongoose = require("mongoose");
 
-mongoose.connect(mongoString);
-const database = mongoose.connection;
+//configure mongoose
+mongoose.connect(
+  process.env.DATABASE_URL || "mongodb+srv://admin:Jfp0TvFr62RSqcYk@cluster0.ap1uo.mongodb.net/?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Connected to MongoDB");
+    }
+  }
+);
 
-database.on('error', (error) => {
-    console.log(error)
-})
-
-database.once('connected', () => {
-    console.log('Database Connected');
-})
 const app = express();
-app.use(cors())
+
+app.use(cors());
 app.use(express.json());
+app.use(express.json({ limit: "20mb" }));
+app.use(express.urlencoded({ extended: false, limit: "20mb" }));
+app.use(require("serve-static")(__dirname + "/../../public"));
+app.use(require("cookie-parser")());
+app.use(require("body-parser").urlencoded({ extended: true }));
+app.use(
+  require("express-session")({
+    secret: "keyboard cat",
+    resave: true,
+    saveUninitialized: true,
+  })
+);
 
-const routes = require('./routes/routes');
+// Passport Config
+require("./config/passport")(passport);
 
-app.use('/api', routes)
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+const routes = require("./routes/routes");
+
+app.use("/api", routes);
 
 app.listen(3000, () => {
-    console.log(`Server Started at ${3000}`)
-})
+  console.log(`Server Started at ${3000}`);
+});

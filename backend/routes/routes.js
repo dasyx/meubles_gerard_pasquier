@@ -1,10 +1,21 @@
 const express = require('express');
-//const Model = require('../models/model');
+const classiqueMeuble = require('../models/classiqueMeuble');
 const router = express.Router();
 
 //Post Method
-router.post('/post', (req, res) => {
-    res.send('Post API')
+router.post('/post', async (req, res) => {
+    const data = new classiqueMeuble({
+        name: req.body.name,
+        description: req.body.description,
+        imgUrl: req.body.imgUrl
+    })
+    try {
+        await data.save();
+        res.status(200).json(data)
+    }
+    catch (error) {
+        res.status(400).json({message: error.message})
+    }
 })
 
 //Get all Method
