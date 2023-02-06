@@ -1,9 +1,34 @@
 const express = require('express');
 const Meuble = require('../models/Meuble');
 const router = express.Router();
+const multer = require('multer');
+
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './backend/images');
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + file.originalname);
+  }
+});
+
+const fileFilter = (req, file, cb) => {
+  if (file.mimetype === 'image/webp' || file.mimetype === 'image/png' || file.mimetype === 'image/jpg') {
+    cb(null, true);
+  } else {
+    cb(null, false);
+  }
+};
+
+
+const upload = multer({ storage: storage, fileFilter: fileFilter });
 
 //Post Meubles Method
-router.post('/postMeuble', async (req, res) => {
+router.post('/postMeuble', upload.single('image'), async (req, res) => {
+    if (!req.body.imgUrl) {
+        return res.status(400).json({ message: 'No image was uploaded.' });
+    }
     const data = new Meuble({
         name: req.body.name,
         type: req.body.type,

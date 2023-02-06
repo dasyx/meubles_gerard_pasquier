@@ -18,7 +18,7 @@ const MeubleSchema = new mongoose.Schema({
     type: String,
   },
   imgUrl: {
-    required: true,
+    //required: true,
     type: String,
   },
 });
