@@ -1,24 +1,11 @@
 const express = require('express');
 const Meuble = require('../models/Meuble');
 const router = express.Router();
-const multer = require('multer');
-
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, "../images/")
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + "-" + file.originalname)
-    },
-})
-
-const upload = multer({ storage: storage })
+//const multer = require('multer');
 
 
 //Post Meubles Method
-router.post('/postMeuble', upload.single('image'), async (req, res) => {
-
+router.post('/postMeuble', async (req, res) => {
     const data = new Meuble({
         name: req.body.name,
         type: req.body.type,
@@ -28,8 +15,8 @@ router.post('/postMeuble', upload.single('image'), async (req, res) => {
         //...req.body (tous les éléments de la requête seront copiés)
     })
     try {
-        await data.save();
-        res.status(200).json(data)
+        const dataToSave = await data.save();
+        res.status(200).json(dataToSave)
     }
     catch (error) {
         res.status(400).json({ message: error.message })
