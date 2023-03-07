@@ -9,7 +9,7 @@
     content="Basés en Normandie, Les meubles Gérard Pasquier se distinguent
     par leur qualité et leur orginalité. Notre entreprise vous accueille et écoute vos besoins depuis 1931, fort d'un savoir-faire familial depuis 1931." />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="src/css/styles.scss" />
+  <link rel="stylesheet" href="../css/styles.scss" />
   <link
     href="https://fonts.googleapis.com/css2?family=RobotoSlab&family=Lato&family=Amaranth&family=Merriweather&family=Raleway&family=Oswald&family=Rokkitt&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
     rel="stylesheet" />
@@ -67,7 +67,7 @@
     <nav class="bg-white">
       <section class="flex flex-col lg:flex-row justify-around">
         <div class="nav_logo__logo mx-auto items-center">
-          <img src="./src/img/meubles_gerard_pasquier_lowres_nb_opacity.webp" width="250" height="auto" />
+          <img src="../img/meubles_gerard_pasquier_lowres_nb_opacity.webp" width="250" height="auto" />
         </div>
         <!--BOUTON MENU LOGO-->
         <button class="$custom-color1 focus:outline-none relative mx-auto" id="nav_logo_btn-lowres">
@@ -187,213 +187,21 @@
 
   <!--DEBUT CONTENU PRINCIPAL-->
   <main>
-    <h2 class="my-8 sm: py-14 sm: text-2xl">Nos inspirations</h2>
-    <div class="sections-container">
-
-      <!--DEBUT SECTION MEUBLES CLASSIQUES-->
-      <section class="classique overflow-hidden text-gray-700 w-1/5 pb-14">
-        <a href="./src/pages/classique.html">
-          <div class="container px-5 py-2 mx-auto">
-            <h3>CLASSIQUE CHIC</h3>
-            <div class="image-flex flex flex-wrap">
-              <div class="flex flex-wrap w-1/2">
-                <div class="w-1/3 h-auto p-1 ">
-                  <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                    src="./src/img/classique-style/enfilade-saumur-p73-merisier-2.webp">
-                </div>
-                <div class="w-1/3 h-auto p-1 ">
-                  <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                    src="./src/img/classique-style/bonnetiere-merisier-plaisance-6-p137-2390.webp">
-                </div>
-                <div class="w-1/3 h-auto p-1 ">
-                  <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                    src="./src/img/classique-style/meuble-tv-saumur-plaisance-5-p11205.webp">
-                </div>
-                <div class="w-full p-1 ">
-                  <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                    src="./src/img/classique-style/table-bristol-chene-plaisance-7-p181.webp">
-                </div>
-              </div>
-              <div class="flex flex-wrap w-1/2">
-                <div class="w-full p-1 ">
-                  <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                    src="./src/img/classique-style/bureau-palace-merisier-plaisance-8-p191.webp">
-                </div>
-                <div class="w-1/3 h-auto p-1 ">
-                  <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                    src="./src/img/classique-style/chaise-grand-cru-plaisance-7-p8921.webp">
-                </div>
-                <div class="w-1/3 h-auto p-1 ">
-                  <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                    src="./src/img/classique-style/chaise-sofia-plaisance-7-p8805.webp">
-                </div>
-                <div class="w-1/3 h-auto p-1 ">
-                  <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                    src="./src/img/classique-style/meuble-dentrer-p4210.webp">
-                </div>
-              </div>
-            </div>
-          </div>
+    <section id="classique_chic-banner" class="bg-brown-light">
+      <div class="relative overflow-hidden">
+        <a href="#fullscreen" class="clickable">
+          <img class="h-full" src="../img/classique-style/classique_chic-banner-640480.webp" alt="Salon classique chic romantique">
+          <p class="absolute top-0 left-0 text-white text-2xl md:text-4xl font-bold uppercase tracking-wider">CLASSIQUE CHIC</p>
         </a>
-      </section>
-      <!--FIN SECTION MEUBLES CLASSIQUES-->
-
-      <!--DEBUT SECTION MEUBLES CONTEMPORAINS-->
-      <section class="contemporain overflow-hidden text-gray-700 w-1/5 pb-14">
-        <div class="container px-5 py-2 mx-auto">
-          <h3>CONTEMPORAIN</h3>
-          <div class="image-flex flex flex-wrap">
-            <div class="flex flex-wrap w-1/2">
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/contemporain/195160-pied-central-girardeau-ibiza.webp">
-              </div>
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/contemporain/enfilade-animovel-p02.webp">
-              </div>
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/contemporain/table-ronde-aninovel.webp">
-              </div>
-              <div class="w-full p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/contemporain/meuble-tv-animovel-p29-iris.webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="w-full p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/contemporain/table-ovale-girardeau-avec-chaise.webp">
-              </div>
-              <div class="w-full h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/contemporain/enfilade-animovel-wind.webp">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--FIN SECTION MEUBLES CONTEMPORAINS-->
-
-
-      <!--DEBUT SECTION MEUBLES RUSTIQUES-->
-      <section class="rustique overflow-hidden text-gray-700 w-1/5 pb-14">
-        <div class="container px-5 py-2 mx-auto">
-          <h3>RUSTIQUE</h3>
-          <div class="image-flex flex flex-wrap">
-            <div class="flex flex-wrap w-1/2">
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/rustique/ADL 6 meuble tv.webp">
-              </div>
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/rustique/ADL armoirette Romance.webp">
-              </div>
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/rustique/ADL salle à manger collection whitney.webp">
-              </div>
-              <div class="w-full p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/rustique/ADL secretaire hudson ADLHU930.webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="w-full p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/rustique/meuble tv belem .webp">
-              </div>
-              <div class="w-full h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/rustique/table betre collection BELLEM.webp">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--FIN SECTION MEUBLES RUSTIQUES-->
-
-
-      <!--DEBUT SECTION MEUBLES INDUSTRIELS-->
-      <section class="industriel overflow-hidden text-gray-700 w-1/5 pb-14">
-        <div class="container px-5 py-2 mx-auto">
-          <h3>INDUSTRIEL</h3>
-          <div class="sections-align image-flex flex flex-wrap">
-            <div class="flex flex-wrap w-1/2">
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/industriel_artcopi/8.webp">
-              </div>
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/industriel_artcopi/bibliotheque-plaisance-7.webp">
-              </div>
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/industriel_artcopi/chevalet_TV_plaisance_9.webp">
-              </div>
-              <div class="w-full h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/industriel_artcopi/colonne-haute-patchwork.webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="w-full p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/industriel_artcopi/Console_1_tiroir_indus_plaisance_5.webp">
-              </div>
-              <div class="w-full h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/industriel_artcopi/enfilade.webp">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--FIN SECTION MEUBLES INDUSTRIELS-->
-
-
-      <!--DEBUT SECTION MEUBLES nordique-->
-      <section class="nordique overflow-hidden text-gray-700 w-1/5 pb-14">
-        <div class="container px-5 py-2 mx-auto">
-          <h3>NORDIQUE</h3>
-          <div class="sections-align image-flex flex flex-wrap">
-            <div class="flex flex-wrap w-1/2">
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/nordique/Amorel_Grand_meuble_TV_Ref_MH26.webp">
-              </div>
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/nordique/ferrand-bibliotheque-double-ref-204st.webp">
-              </div>
-              <div class="w-1/3 h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/nordique/ferrand-bureau-chateaubriand-ref-143-blanc.webp">
-              </div>
-              <div class="w-full p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/nordique/Ferrand-Table-Club-Ref-T539.webp">
-              </div>
-            </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="w-full p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/nordique/Ferrand-Table-de-Jeanne-Ref-563-8.webp">
-              </div>
-              <div class="w-full h-auto p-1 ">
-                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                  src="./src/img/nordique/nd-buffet-vend195180me-ref-1262-noir.webp">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--FIN SECTION MEUBLES nordique-->
-    </div>
+      </div>
+      <div id="fullscreen">
+        <img src="../img/classique-style/classique_chic-banner.webp" alt="Salon classique chic romantique">
+      </div>
+    </section>
+    
+    
+    
+    
   </main>
   <!--FIN CONTENU PRINCIPAL-->
 
@@ -546,7 +354,7 @@
 
         <!-- LOGO -->
         <div class="flex footer_logo">
-          <img src="./src/img/meubles_gerard_pasquier_lowres_opacity.webp" width="250" height="auto" />
+          <img src="../img/meubles_gerard_pasquier_lowres_opacity.webp" width="250" height="auto" />
           <p class="max-w-xs mt-4 text-white-500 dark:text-white-400">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
             cupiditate quae nam molestias.
@@ -584,7 +392,7 @@
     </p>
   </div>
 
-  <script type="module" src="./src/js/script.js" async></script>
+  <script type="module" src="../js/script.js" async></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 

@@ -263,3 +263,19 @@ surmesure.addEventListener("click", function () {
     }
   }
 });
+
+
+
+// Affichage des images plein écran
+const img = document.querySelector('.clickable');
+
+img.addEventListener('click', function() {
+  const fullscreen = document.createElement('div');
+  fullscreen.className = 'fullscreen';
+  fullscreen.style.backgroundImage = `url(${this.getAttribute('data-fullscreen-src')})`;
+  document.body.appendChild(fullscreen);
+  
+  fullscreen.addEventListener('click', function() {
+    document.body.removeChild(this);
+  });
+});

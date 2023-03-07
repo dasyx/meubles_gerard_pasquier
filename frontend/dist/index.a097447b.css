@@ -29727,7 +29727,7 @@ main h2 {
 .classique h3 {
   color: #fff;
   background-color: #976e5b;
-  font-family: Manrope, sans-serif;
+  font-family: Merriweather, sans-serif;
   font-size: 1.6em;
 }
 
@@ -29772,6 +29772,62 @@ main h2 {
   border-radius: 5px;
   margin: 0 auto;
   box-shadow: 5px 5px 15px 5px #0009;
+}
+
+#classique_chic-banner {
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+#classique_chic-banner p {
+  background-color: #663c2890;
+  padding: 30px;
+  font-family: Merriweather, sans-serif;
+}
+
+.bg-brown-light {
+  background-color: #d5c6b5;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tracking-wider {
+  letter-spacing: .1em;
+}
+
+#fullscreen {
+  width: 100%;
+  height: 100%;
+  background-color: #000000e6;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#fullscreen:target {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#fullscreen img {
+  max-height: 90vh;
+  max-width: 90vw;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin: auto;
 }
 
 footer {

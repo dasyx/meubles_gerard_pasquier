@@ -108,7 +108,7 @@ main h2 {
 }
 .classique h3 {
   font-size: 1.6em;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   background-color: $custom-color2;
   color: #fff;
 }
@@ -158,6 +158,64 @@ main h2 {
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
+}
+
+//    CLASSIQUE   //
+
+#classique_chic-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  //height: 350px;
+}
+
+#classique_chic-banner p {
+  background-color: #663c2890;
+  font-family: 'Merriweather', sans-serif;
+  padding: 30px;
+}
+
+.bg-brown-light {
+  background-color: #d5c6b5;
+}
+
+.text-white {
+  color: white;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tracking-wider {
+  letter-spacing: 0.1em;
+}
+
+#fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  display: none;
+}
+
+#fullscreen:target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fullscreen img {
+  max-height: 90vh;
+  max-width: 90vw;
+  object-fit: contain;
+  margin: auto;
 }
 
 //    FOOTER    //

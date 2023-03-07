@@ -768,6 +768,17 @@ surmesure.addEventListener("click", function() {
         while(dropdownMenu4.firstChild)dropdownMenu4.removeChild(dropdownMenu4.firstChild);
     }
 });
+// Affichage des images plein écran
+const img = document.querySelector(".clickable");
+img.addEventListener("click", function() {
+    const fullscreen = document.createElement("div");
+    fullscreen.className = "fullscreen";
+    fullscreen.style.backgroundImage = `url(${this.getAttribute("data-fullscreen-src")})`;
+    document.body.appendChild(fullscreen);
+    fullscreen.addEventListener("click", function() {
+        document.body.removeChild(this);
+    });
+});
 
 },{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 
