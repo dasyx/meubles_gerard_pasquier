@@ -597,7 +597,6 @@ if (window.innerWidth || document.body.clientWidth <= 768) {
     hdDropdown.style.visibility = "visible";
     navLogoDropdownMenuLowRes.style.display = "block";
 }
-// Récupérer le bouton
 // Définir la résolution d'affichage à laquelle le bouton logo menu doit apparaître/disparaître
 const displayWidth = 768;
 // Ajouter un écouteur d'événements pour le redimensionnement de la fenêtre

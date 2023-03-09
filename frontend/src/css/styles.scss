@@ -115,7 +115,7 @@ main h2 {
 .contemporain h3 {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
-  background-color: #418541;
+  background-color: #2c302c;
   color: #fff;
 }
 .rustique h3 {
@@ -216,6 +216,44 @@ main h2 {
   max-width: 90vw;
   object-fit: contain;
   margin: auto;
+}
+
+//    INDUSTRIEL    //
+
+#industriel-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  //height: 350px;
+}
+
+#industriel-banner p {
+  background-color: #a4415090;
+  font-family: 'Merriweather', sans-serif;
+  padding: 30px;
+}
+
+.bg-industriel {
+  background-color: #e0c1c6;
+}
+
+//    CONTEMPORAIN    //
+
+#contemporain-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+#contemporain-banner p {
+  background-color: #2c302c90;
+  font-family: 'Merriweather', sans-serif;
+  padding: 30px;
+}
+
+.bg-contemporain {
+  background-color: #e7ede790;
 }
 
 //    FOOTER    //

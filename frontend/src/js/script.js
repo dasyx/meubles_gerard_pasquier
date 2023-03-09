@@ -17,7 +17,6 @@ let myButton = document.getElementById("fb-btn");
 myButton.appendChild(createButton());
 
 
-
 // Affichage conditionnel du menu dropdown header (menu fb logo) et dy menu dropdown logo pasquier
 if (window.innerWidth || document.body.clientWidth <= 768) {
   let isVisible = false;
@@ -43,9 +42,6 @@ if (window.innerWidth || document.body.clientWidth <= 768) {
   hdDropdown.style.visibility = "visible";
   navLogoDropdownMenuLowRes.style.display = "block";
 }
-
-
-// Récupérer le bouton
 
 
 // Définir la résolution d'affichage à laquelle le bouton logo menu doit apparaître/disparaître
