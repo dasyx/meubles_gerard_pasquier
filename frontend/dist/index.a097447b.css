@@ -29875,22 +29875,6 @@ main h2 {
   color: #663c28;
 }
 
-#industriel-banner {
-  justify-content: center;
-  display: flex;
-  position: relative;
-}
-
-#industriel-banner p {
-  background-color: #a4415090;
-  padding: 30px;
-  font-family: Merriweather, sans-serif;
-}
-
-.bg-industriel {
-  background-color: #e0c1c6;
-}
-
 #contemporain-banner {
   justify-content: center;
   margin-top: 80px;
@@ -29906,6 +29890,22 @@ main h2 {
 
 .bg-contemporain {
   background-color: #e7ede790;
+}
+
+#industriel-banner {
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+#industriel-banner p {
+  background-color: #a4415090;
+  padding: 30px;
+  font-family: Merriweather, sans-serif;
+}
+
+.bg-industriel {
+  background-color: #e0c1c6;
 }
 
 #rustique-banner {

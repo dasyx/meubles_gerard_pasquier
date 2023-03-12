@@ -265,25 +265,6 @@ main h2 {
   color: #663c28;
 }
 
-//    INDUSTRIEL    //
-
-#industriel-banner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  //height: 350px;
-}
-
-#industriel-banner p {
-  background-color: #a4415090;
-  font-family: 'Merriweather', sans-serif;
-  padding: 30px;
-}
-
-.bg-industriel {
-  background-color: #e0c1c6;
-}
-
 //    CONTEMPORAIN    //
 
 #contemporain-banner {
@@ -301,6 +282,25 @@ main h2 {
 
 .bg-contemporain {
   background-color: #e7ede790;
+}
+
+//    INDUSTRIEL    //
+
+#industriel-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  //height: 350px;
+}
+
+#industriel-banner p {
+  background-color: #a4415090;
+  font-family: 'Merriweather', sans-serif;
+  padding: 30px;
+}
+
+.bg-industriel {
+  background-color: #e0c1c6;
 }
 
 //    RUSTIQUE    //
