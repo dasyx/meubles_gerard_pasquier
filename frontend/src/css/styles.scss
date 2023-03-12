@@ -20,6 +20,10 @@ h1 {
   font-size: 1.2em;
 }
 
+.bg-white section {
+  margin-bottom: 40px;
+}
+
 .nav_logo__nav span {
   font-family: "Rokkitt", sans-serif;
   padding: 0 5px;
@@ -256,6 +260,44 @@ main h2 {
   background-color: #e7ede790;
 }
 
+//    RUSTIQUE    //
+
+#rustique-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+#rustique-banner p {
+  background-color: #cf890790;
+  font-family: 'Merriweather', sans-serif;
+  padding: 30px;
+}
+
+.bg-rustique {
+  background-color: #e4cca1;
+}
+
+//    NORDIQUE   //
+
+#nordique-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+#nordique-banner p {
+  background-color: #2a2e5290;
+  font-family: 'Merriweather', sans-serif;
+  padding: 30px;
+}
+
+.bg-nordique {
+  background-color: #b0b2c4;
+}
+
 //    FOOTER    //
 
 footer {
@@ -373,6 +415,7 @@ footer p {
 @media (min-width: 481px) and (max-width: 768px) {
   .bg-white section {
     flex-direction: column;
+    margin-bottom: 80px;
   }
 
   .nav_logo__nav {
@@ -405,6 +448,7 @@ footer p {
 @media (min-width: 769px) and (max-width: 1080px) {
   .bg-white section {
     flex-direction: column;
+    margin-bottom: 80px;
   }
 
   .nav_logo__nav {

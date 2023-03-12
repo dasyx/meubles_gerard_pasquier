@@ -29647,6 +29647,10 @@ h1 {
   font-size: 1.2em;
 }
 
+.bg-white section {
+  margin-bottom: 40px;
+}
+
 .nav_logo__nav span {
   padding: 0 5px;
   font-family: Rokkitt, sans-serif;
@@ -29740,7 +29744,7 @@ main h2 {
 
 .rustique h3 {
   color: #fff;
-  background-color: #ffa600;
+  background-color: #cf8907;
   font-family: Amaranth, sans-serif;
   font-size: 1.6em;
 }
@@ -29754,7 +29758,7 @@ main h2 {
 
 .nordique h3 {
   color: #fff;
-  background-color: #e38f38;
+  background-color: #2a2e52;
   font-family: Raleway, sans-serif;
   font-size: 1.6em;
 }
@@ -29861,6 +29865,40 @@ main h2 {
 
 .bg-contemporain {
   background-color: #e7ede790;
+}
+
+#rustique-banner {
+  justify-content: center;
+  margin-top: 80px;
+  display: flex;
+  position: relative;
+}
+
+#rustique-banner p {
+  background-color: #cf890790;
+  padding: 30px;
+  font-family: Merriweather, sans-serif;
+}
+
+.bg-rustique {
+  background-color: #e4cca1;
+}
+
+#nordique-banner {
+  justify-content: center;
+  margin-top: 80px;
+  display: flex;
+  position: relative;
+}
+
+#nordique-banner p {
+  background-color: #2a2e5290;
+  padding: 30px;
+  font-family: Merriweather, sans-serif;
+}
+
+.bg-nordique {
+  background-color: #b0b2c4;
 }
 
 footer {
@@ -29971,6 +30009,7 @@ footer nav, footer p {
 @media (min-width: 481px) and (max-width: 768px) {
   .bg-white section {
     flex-direction: column;
+    margin-bottom: 80px;
   }
 
   .nav_logo__nav {
@@ -30001,6 +30040,7 @@ footer nav, footer p {
 @media (min-width: 769px) and (max-width: 1080px) {
   .bg-white section {
     flex-direction: column;
+    margin-bottom: 80px;
   }
 
   .nav_logo__nav {
