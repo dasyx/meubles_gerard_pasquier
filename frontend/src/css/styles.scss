@@ -164,24 +164,8 @@ main h2 {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
 }
 
-//    CLASSIQUE   //
 
-#classique_chic-banner {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  //height: 350px;
-}
-
-#classique_chic-banner p {
-  background-color: #663c2890;
-  font-family: 'Merriweather', sans-serif;
-  padding: 30px;
-}
-
-.bg-brown-light {
-  background-color: #d5c6b5;
-}
+//    SECTION MEUBLES INSPIRATIONS   //
 
 .text-white {
   color: white;
@@ -220,6 +204,65 @@ main h2 {
   max-width: 90vw;
   object-fit: contain;
   margin: auto;
+}
+
+.section-meubles_inspirations h1{
+  margin-bottom: 30px;
+  font-size: 2.2em;
+}
+
+.section-meubles_inspirations h2{
+  margin: 30px 0;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.meubles_textes_part1 p, 
+.meubles_textes_part2 p {
+  margin: 30px;
+}
+.meubles_textes_part1 p::first-letter, 
+.meubles_textes_part2 p::first-letter {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.meubles_img-container img {
+  width: 300px;
+  height: 300px;
+}
+.leading-loose a {
+  font-weight: bold;
+}
+
+//    CLASSIQUE   //
+
+.main_classique-bg {
+  background: linear-gradient(to bottom, #d5c6b5, #fff);
+}
+
+#classique_chic-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  //height: 350px;
+}
+
+#classique_chic-banner p {
+  background-color: #663c2890;
+  font-family: 'Merriweather', sans-serif;
+  padding: 30px;
+}
+
+.bg-brown-light {
+  background-color: #d5c6b5;
+}
+
+.section-meubles_inspirations-classique {
+  background-color: #ebeef3;
+}
+
+.section-meubles_inspirations-classique p::first-letter {
+  color: #663c28;
 }
 
 //    INDUSTRIEL    //
@@ -297,6 +340,8 @@ main h2 {
 .bg-nordique {
   background-color: #b0b2c4;
 }
+
+
 
 //    FOOTER    //
 
