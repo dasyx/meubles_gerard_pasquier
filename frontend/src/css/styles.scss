@@ -92,7 +92,6 @@ main {
 
 main h2 {
   text-align: center;
-  font-size: 2.5em;
   font-family: "Playfair Display", serif;
 }
 
@@ -379,6 +378,15 @@ main h2 {
 .nordique p::first-letter, 
 .nordique p::first-letter {
   color: #2a2e52;
+}
+
+//    SECTION MEUBLES CHOIX   //
+
+.notre_choix {
+  margin-top: 200px;
+}
+.notre_choix h2 {
+  margin-bottom: 100px;
 }
 
 //    FOOTER    //

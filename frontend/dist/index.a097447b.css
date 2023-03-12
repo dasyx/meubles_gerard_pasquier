@@ -29714,7 +29714,6 @@ main {
 main h2 {
   text-align: center;
   font-family: Playfair Display, serif;
-  font-size: 2.5em;
 }
 
 .sections-container {
@@ -29976,6 +29975,14 @@ main h2 {
 
 .nordique p:first-letter, .nordique p:first-letter {
   color: #2a2e52;
+}
+
+.notre_choix {
+  margin-top: 200px;
+}
+
+.notre_choix h2 {
+  margin-bottom: 100px;
 }
 
 footer {
