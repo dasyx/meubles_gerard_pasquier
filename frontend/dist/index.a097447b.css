@@ -29647,10 +29647,6 @@ h1 {
   font-size: 1.2em;
 }
 
-.bg-white section {
-  margin-bottom: 40px;
-}
-
 .nav_logo__nav span {
   padding: 0 5px;
   font-family: Rokkitt, sans-serif;
@@ -29709,6 +29705,10 @@ main {
 .nav_logo__nav-lowres i {
   align-items: right;
   display: inline-flex;
+}
+
+.bg-white {
+  margin-bottom: 50px;
 }
 
 main h2 {
@@ -29818,6 +29818,10 @@ main h2 {
   margin: auto;
 }
 
+#fullscreen a {
+  color: #fff;
+}
+
 .section-meubles_inspirations h1 {
   margin-bottom: 30px;
   font-size: 2.2em;
@@ -29839,8 +29843,8 @@ main h2 {
 }
 
 .meubles_img-container img {
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
 }
 
 .leading-loose a {
@@ -29889,7 +29893,15 @@ main h2 {
 }
 
 .bg-contemporain {
-  background-color: #e7ede790;
+  background-color: #e7ede7;
+}
+
+.main_contemporain-bg {
+  background: linear-gradient(#d8e5d8, #fff);
+}
+
+.contemporain p:first-letter, .contemporain p:first-letter {
+  color: #2c302c;
 }
 
 #industriel-banner {
@@ -29906,6 +29918,18 @@ main h2 {
 
 .bg-industriel {
   background-color: #e0c1c6;
+}
+
+.main_industriel-bg {
+  background: linear-gradient(#e0c1c6, #fff);
+}
+
+.industriel p:first-letter, .industriel p:first-letter {
+  color: #a44150;
+}
+
+.main_rustique-bg {
+  background: linear-gradient(#d5c6b5, #fff);
 }
 
 #rustique-banner {
@@ -29925,6 +29949,10 @@ main h2 {
   background-color: #e4cca1;
 }
 
+.rustique p:first-letter, .rustique p:first-letter {
+  color: #cf8907;
+}
+
 #nordique-banner {
   justify-content: center;
   margin-top: 80px;
@@ -29940,6 +29968,14 @@ main h2 {
 
 .bg-nordique {
   background-color: #b0b2c4;
+}
+
+.main_nordique-bg {
+  background: linear-gradient(#b0b2c4, #fff);
+}
+
+.nordique p:first-letter, .nordique p:first-letter {
+  color: #2a2e52;
 }
 
 footer {

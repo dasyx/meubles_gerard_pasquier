@@ -20,10 +20,6 @@ h1 {
   font-size: 1.2em;
 }
 
-.bg-white section {
-  margin-bottom: 40px;
-}
-
 .nav_logo__nav span {
   font-family: "Rokkitt", sans-serif;
   padding: 0 5px;
@@ -86,6 +82,10 @@ main {
 .nav_logo__nav-lowres i {
   display: inline-flex;
   align-items: right;
+}
+
+.bg-white {
+  margin-bottom: 50px;
 }
 
 //    INSPIRATIONS    //
@@ -206,6 +206,10 @@ main h2 {
   margin: auto;
 }
 
+#fullscreen a {
+  color: #fff;
+}
+
 .section-meubles_inspirations h1{
   margin-bottom: 30px;
   font-size: 2.2em;
@@ -227,8 +231,8 @@ main h2 {
   font-size: 1.4em;
 }
 .meubles_img-container img {
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
 }
 .leading-loose a {
   font-weight: bold;
@@ -281,7 +285,16 @@ main h2 {
 }
 
 .bg-contemporain {
-  background-color: #e7ede790;
+  background-color: #e7ede7;
+}
+
+.main_contemporain-bg {
+  background: linear-gradient(to bottom, #d8e5d8, #fff);
+}
+
+.contemporain p::first-letter, 
+.contemporain p::first-letter {
+  color: #2c302c;
 }
 
 //    INDUSTRIEL    //
@@ -303,7 +316,20 @@ main h2 {
   background-color: #e0c1c6;
 }
 
+.main_industriel-bg {
+  background: linear-gradient(to bottom, #e0c1c6, #ffffff);
+}
+
+.industriel p::first-letter, 
+.industriel p::first-letter {
+  color: #a44150;
+}
+
 //    RUSTIQUE    //
+
+.main_rustique-bg {
+  background: linear-gradient(to bottom, #d5c6b5, #fff);
+}
 
 #rustique-banner {
   position: relative;
@@ -320,6 +346,11 @@ main h2 {
 
 .bg-rustique {
   background-color: #e4cca1;
+}
+
+.rustique p::first-letter, 
+.rustique p::first-letter {
+  color: #cf8907;
 }
 
 //    NORDIQUE   //
@@ -341,7 +372,14 @@ main h2 {
   background-color: #b0b2c4;
 }
 
+.main_nordique-bg {
+  background: linear-gradient(to bottom, #b0b2c4, #fff);
+}
 
+.nordique p::first-letter, 
+.nordique p::first-letter {
+  color: #2a2e52;
+}
 
 //    FOOTER    //
 
