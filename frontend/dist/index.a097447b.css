@@ -30003,6 +30003,11 @@ main h2 {
   }
 }
 
+.notre_choix hr {
+  width: 100%;
+  color: #fff;
+}
+
 footer {
   width: 100%;
   bottom: 0;
