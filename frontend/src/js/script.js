@@ -299,3 +299,8 @@ lien.addEventListener('click', function(e) {
   e.preventDefault(); 
   descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
 });
+
+
+
+// Gestion du caroussel de la page principale 
+

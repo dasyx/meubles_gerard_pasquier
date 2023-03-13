@@ -13,6 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=RobotoSlab&family=Lato&family=Amaranth&family=Merriweather&family=Raleway&family=Oswald&family=Rokkitt&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Accueil - Meubles Gérard Pasquier</title>
 </head>
 
@@ -187,6 +188,61 @@
 
   <!--DEBUT CONTENU PRINCIPAL-->
   <main>
+    <!--DEBUT CAROUSEL HONNEUR-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative">
+          <img class="object-cover w-full h-96" src="./src/img/contemporain/195160-pied-central-girardeau-ibiza.webp" alt="slide 1" />
+          <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2">
+            <h3 class="text-lg font-medium">Slide 1</h3>
+            <p class="text-sm">Description de la slide 1</p>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <img class="object-cover w-full h-96" src="./src/img/contemporain/enfilade-animovel-p02.webp" alt="slide 2" />
+          <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2">
+            <h3 class="text-lg font-medium">Slide 2</h3>
+            <p class="text-sm">Description de la slide 2</p>
+          </div>
+        </div>
+        <div class="swiper-slide relative">
+          <img class="object-cover w-full h-96" src="./src/img/rustique/salle à manger seraphine.webp" alt="slide 3" />
+          <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2">
+            <h3 class="text-lg font-medium">Slide 3</h3>
+            <p class="text-sm">Description de la slide 3</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="carousel_legend">
+      <h2>Nos coups de coeur du moment : le meilleur est encore à l'intérieur !</h2>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+    <!--FIN CAROUSEL HONNEUR-->
     <h2 class="my-8 sm: py-14 sm: text-3xl">Nos inspirations</h2>
     <div class="sections-container">
 
@@ -412,50 +468,60 @@
       </div>
       <!-- séjours -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="sejours">
+        <div class="sejours relative">
           <a href="#">
             <img class="h-full object-cover object-center rounded-lg" src="./src/img/rustique/meuble tv hudson.webp"
               alt="séjours / salon">
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">séjours |
+              salons</div>
           </a>
         </div>
       </div>
       <!-- fin séjours -->
       <!-- meubles salon -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="meubles_salon">
+        <div class="meubles_salon relative">
           <a href="#">
             <img class="h-full object-cover object-center rounded-lg"
               src="./src/img/contemporain/table-ronde-aninovel.webp" alt="meubles de salon">
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">tables
+            </div>
           </a>
         </div>
       </div>
       <!-- fin meubles salon -->
       <!-- canapés -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="canapes">
+        <div class="canapes relative">
           <a href="#">
             <img class="h-full object-cover object-center rounded-lg"
               src="./src/img/contemporain/choix_canape_640480.webp" alt="canapés stylés">
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">canapés
+            </div>
           </a>
         </div>
       </div>
       <!-- fin canapés -->
       <!-- fauteuils + chaises -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="fauteuils_chaises">
+        <div class="fauteuils_chaises relative">
           <a href="#">
             <img class="h-full object-cover object-center rounded-lg"
               src="./src/img/classique-style/choix_chaises1.webp" alt="Fauteuils et chaises">
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">chaises |
+              fauteuils</div>
           </a>
         </div>
       </div>
       <!-- fin fauteuils + chaises-->
       <!-- décorations + luminaires-->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="decoration_tapis_accessoires_luminaires">
+        <div class="decoration_tapis_accessoires_luminaires relative">
           <a href="#">
             <img class="h-full flex object-cover object-center rounded-lg"
               src="./src/img/decorations/choix_decorations.webp" alt="Décorations, tapis et accessoires">
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">
+              décorations | accessoires</div>
           </a>
         </div>
       </div>
