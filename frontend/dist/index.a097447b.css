@@ -29711,6 +29711,12 @@ main {
   margin-bottom: 50px;
 }
 
+.separate {
+  width: 30%;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
 .carousel_legend {
   background-color: #fff;
   padding: 10px;
@@ -29725,6 +29731,7 @@ main h2 {
 .sections-container {
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 50px;
   display: flex;
 }
 
@@ -29988,7 +29995,7 @@ main h2 {
 }
 
 .notre_choix h2 {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .notre_choix img {
@@ -30003,7 +30010,7 @@ main h2 {
   }
 }
 
-.notre_choix hr {
+.absolute hr {
   width: 100%;
   color: #fff;
 }

@@ -88,6 +88,12 @@ main {
   margin-bottom: 50px;
 }
 
+.separate {
+  width: 30%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
 //    CAROUSSEL   //
 
 .carousel_legend {
@@ -107,6 +113,7 @@ main h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .classique,
@@ -394,7 +401,7 @@ main h2 {
   margin-top: 150px;
 }
 .notre_choix h2 {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 .notre_choix img {
   width: 450px;
@@ -404,7 +411,7 @@ main h2 {
     height: 320px;
   }
 }
-.notre_choix hr {
+.absolute hr {
   width: 100%;
   color: #fff;
 }
