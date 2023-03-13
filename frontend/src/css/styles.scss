@@ -383,10 +383,18 @@ main h2 {
 //    SECTION MEUBLES CHOIX   //
 
 .notre_choix {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .notre_choix h2 {
   margin-bottom: 100px;
+}
+.notre_choix img {
+  width: 450px;
+  height: 450px;
+  @media screen and (max-width: 1024px) {
+    width: 320px;
+    height: 320px;
+  }
 }
 
 //    FOOTER    //
