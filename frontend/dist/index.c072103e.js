@@ -573,14 +573,14 @@ let navLogoDropdownMenuLowRes = document.getElementById("nav_logo_dropdown-lowre
 let myButton = document.getElementById("fb-btn");
 myButton.appendChild((0, _buttonDefault.default)());
 // Affichage conditionnel du menu dropdown header (menu fb logo) et dy menu dropdown logo pasquier
-if (window.innerWidth || document.body.clientWidth <= 768) {
+if (window.innerWidth || document.body.clientWidth <= displayWidth) {
     let isVisible = false;
     hdBtnLowres.addEventListener("click", function() {
         if (isVisible) {
-            hdDropdown.style.visibility = "hidden";
+            hdDropdown.style.display = "block";
             isVisible = false;
         } else {
-            hdDropdown.style.visibility = "visible";
+            hdDropdown.style.display = "none";
             isVisible = true;
         }
     });
@@ -594,8 +594,8 @@ if (window.innerWidth || document.body.clientWidth <= 768) {
         }
     });
 } else {
-    hdDropdown.style.visibility = "visible";
-    navLogoDropdownMenuLowRes.style.display = "block";
+    hdDropdown.style.display = "none";
+    navLogoDropdownMenuLowRes.style.display = "none";
 }
 // Définir la résolution d'affichage à laquelle le bouton logo menu doit apparaître/disparaître
 const displayWidth = 768;
@@ -622,14 +622,14 @@ window.addEventListener("load", function() {
         navLogoBtnLowres.style.display = "block";
         navLogoMenuHiRes.style.display = "none";
         hdBtnLowres.style.display = "block";
-        hdDropdown.style.display = "block";
+        hdDropdown.style.display = "none";
         document.getElementById("contact").innerHTML = "Contact";
         document.getElementById("follow").innerHTML = "Suivre";
     } else {
         navLogoBtnLowres.style.display = "none";
         navLogoMenuHiRes.style.display = "flex";
         hdBtnLowres.style.display = "none";
-        hdDropdown.style.display = "none";
+        hdDropdown.style.display = "block";
         document.getElementById("contact").innerHTML = "Contactez-nous";
         document.getElementById("follow").innerHTML = "Suivez-nous";
     }
@@ -794,7 +794,7 @@ function descendreEnDoucheur(destination) {
 lien.addEventListener("click", function(e) {
     e.preventDefault();
     descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
-}); // Gestion du caroussel de la page principale 
+});
 
 },{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 

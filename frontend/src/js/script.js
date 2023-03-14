@@ -18,14 +18,14 @@ myButton.appendChild(createButton());
 
 
 // Affichage conditionnel du menu dropdown header (menu fb logo) et dy menu dropdown logo pasquier
-if (window.innerWidth || document.body.clientWidth <= 768) {
+if (window.innerWidth || document.body.clientWidth <= displayWidth) {
   let isVisible = false;
   hdBtnLowres.addEventListener("click", function () {
     if (isVisible) {
-      hdDropdown.style.visibility = "hidden";
+      hdDropdown.style.display = "block";
       isVisible = false;
     } else {
-      hdDropdown.style.visibility = "visible";
+      hdDropdown.style.display = "none";
       isVisible = true;
     }
   });
@@ -39,8 +39,8 @@ if (window.innerWidth || document.body.clientWidth <= 768) {
     }
   });
 } else {
-  hdDropdown.style.visibility = "visible";
-  navLogoDropdownMenuLowRes.style.display = "block";
+  hdDropdown.style.display = "none";
+  navLogoDropdownMenuLowRes.style.display = "none";
 }
 
 
@@ -75,7 +75,7 @@ window.addEventListener("load", function () {
     navLogoBtnLowres.style.display = "block";
     navLogoMenuHiRes.style.display = "none";
     hdBtnLowres.style.display = "block";
-    hdDropdown.style.display = "block"
+    hdDropdown.style.display = "none"
     document.getElementById("contact").innerHTML = "Contact";
     document.getElementById("follow").innerHTML = "Suivre";
 
@@ -84,7 +84,7 @@ window.addEventListener("load", function () {
     navLogoBtnLowres.style.display = "none";
     navLogoMenuHiRes.style.display = "flex";
     hdBtnLowres.style.display = "none";
-    hdDropdown.style.display = "none";
+    hdDropdown.style.display = "block";
     document.getElementById("contact").innerHTML = "Contactez-nous";
     document.getElementById("follow").innerHTML = "Suivez-nous";
   }
@@ -299,8 +299,3 @@ lien.addEventListener('click', function(e) {
   e.preventDefault(); 
   descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
 });
-
-
-
-// Gestion du caroussel de la page principale 
-
