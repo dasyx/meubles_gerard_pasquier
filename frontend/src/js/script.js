@@ -18,7 +18,7 @@ myButton.appendChild(createButton());
 
 
 // Affichage conditionnel du menu dropdown header (menu fb logo) et dy menu dropdown logo pasquier
-if (window.innerWidth || document.body.clientWidth <= 768) {
+if ((window.innerWidth || document.body.clientWidth) <= 768) {
   let isVisible = false;
   hdBtnLowres.addEventListener("click", function () {
     if (isVisible) {
@@ -43,16 +43,6 @@ if (window.innerWidth || document.body.clientWidth <= 768) {
   navLogoDropdownMenuLowRes.style.display = "none";
 }
 
-hdBtnLowres.addEventListener("click", function () {
-  if (window.innerWidth < 768) {
-    if (hdDropdown.style.visibility === "visible") {
-      hdDropdown.style.visibility = "hidden";
-    } else {
-      hdDropdown.style.visibility = "visible";
-    }
-  }
-});
-
 // Cacher le menu dropdown par défaut en haute résolution
 if (window.innerWidth >= 768) {
   hdDropdown.style.visibility = "hidden";
@@ -68,11 +58,12 @@ window.addEventListener("resize", function () {
     navLogoBtnLowres.style.display = "block";
     navLogoMenuHiRes.style.display = "none";
     hdBtnLowres.style.display = "block";
+    hdDropdown.style.display = "none";
   } else {
     navLogoBtnLowres.style.display = "none";
     navLogoMenuHiRes.style.display = "flex";
     hdBtnLowres.style.display = "none";
-    hdDropdown.style.visibility = "hidden";
+    hdDropdown.style.display = "none";
   }
 });
 
@@ -83,14 +74,14 @@ window.addEventListener("load", function () {
     navLogoBtnLowres.style.display = "block";
     navLogoMenuHiRes.style.display = "none";
     hdBtnLowres.style.display = "block";
-    hdDropdown.style.display = "block"
+    hdDropdown.style.display = "none"
     document.getElementById("contact").innerHTML = "Contact";
     document.getElementById("follow").innerHTML = "Suivre";
   } else {
     navLogoBtnLowres.style.display = "none";
     navLogoMenuHiRes.style.display = "flex";
     hdBtnLowres.style.display = "none";
-    hdDropdown.style.display = "block";
+    hdDropdown.style.display = "none";
     document.getElementById("contact").innerHTML = "Contactez-nous";
     document.getElementById("follow").innerHTML = "Suivez-nous";
   }
