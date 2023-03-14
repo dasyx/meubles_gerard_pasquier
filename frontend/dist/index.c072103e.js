@@ -564,49 +564,82 @@ var _tailwindGeneratedJs = require("../js/tailwind.generated.js");
 var _flowbite = require("flowbite");
 var _button = require("../components/button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
-// Récupération des éléments HTML
-const hdBtnLowres = document.getElementById("header_btn-lowres");
-const hdDropdown = document.getElementById("header_dropdown-lowres");
-const navLogoBtnLowres = document.getElementById("nav_logo_btn-lowres");
-const navLogoMenuHiRes = document.getElementById("nav_logo_menu-hires");
-const navLogoDropdownMenuLowRes = document.getElementById("nav_logo_dropdown-lowres");
-const myButton = document.getElementById("fb-btn");
-// Fonction pour afficher ou masquer un élément
-function toggleElementVisibility(element) {
-    element.classList.toggle("hidden");
-}
-// Fonction pour afficher ou masquer le menu dropdown au clic
-function toggleDropdownMenu() {
-    toggleElementVisibility(hdDropdown);
-}
-// Fonction pour afficher ou masquer le menu dropdown du logo Pasquier au clic
-function toggleLogoDropdownMenu() {
-    toggleElementVisibility(navLogoDropdownMenuLowRes);
-}
-// Fonction pour gérer l'affichage des éléments en fonction de la taille de la fenêtre
-function handleWindowSize() {
-    const isSmallWindow = window.innerWidth <= 768;
-    navLogoBtnLowres.classList.toggle("hidden", !isSmallWindow);
-    navLogoMenuHiRes.classList.toggle("hidden", isSmallWindow);
-    hdBtnLowres.classList.toggle("hidden", !isSmallWindow);
-    navLogoDropdownMenuLowRes.classList.toggle("hidden", !isSmallWindow);
-    const contactElement = document.getElementById("contact");
-    const followElement = document.getElementById("follow");
-    if (isSmallWindow) {
-        contactElement.textContent = "Contact";
-        followElement.textContent = "Suivre";
-    } else {
-        contactElement.textContent = "Contactez-nous";
-        followElement.textContent = "Suivez-nous";
-    }
-}
-// Gestion des événements
+// Affichage conditionnel du menu dropdown logo lowres
+let hdBtnLowres = document.getElementById("header_btn-lowres");
+let hdDropdown = document.getElementById("header_dropdown-lowres");
+let navLogoBtnLowres = document.getElementById("nav_logo_btn-lowres");
+let navLogoMenuHiRes = document.getElementById("nav_logo_menu-hires");
+let navLogoDropdownMenuLowRes = document.getElementById("nav_logo_dropdown-lowres");
+let myButton = document.getElementById("fb-btn");
 myButton.appendChild((0, _buttonDefault.default)());
-hdBtnLowres.addEventListener("click", toggleDropdownMenu);
-navLogoBtnLowres.addEventListener("click", toggleLogoDropdownMenu);
-hdDropdown.classList.add("hidden");
-window.addEventListener("resize", handleWindowSize);
-window.addEventListener("load", handleWindowSize);
+// Affichage conditionnel du menu dropdown header (menu fb logo) et du menu dropdown logo pasquier
+if ((window.innerWidth || document.body.clientWidth) <= 768) {
+    let isVisible = false;
+    hdBtnLowres.addEventListener("click", function() {
+        if (isVisible) {
+            hdDropdown.style.visibility = "hidden";
+            isVisible = false;
+        } else {
+            hdDropdown.style.visibility = "visible";
+            isVisible = true;
+        }
+    });
+    navLogoBtnLowres.addEventListener("click", function() {
+        if (isVisible) {
+            navLogoDropdownMenuLowRes.style.display = "none";
+            isVisible = false;
+        } else {
+            navLogoDropdownMenuLowRes.style.display = "block";
+            isVisible = true;
+        }
+    });
+} else {
+    hdDropdown.style.visibility = "visible";
+    navLogoDropdownMenuLowRes.style.display = "block";
+}
+hdBtnLowres.addEventListener("click", function() {
+    if (window.innerWidth < 768) {
+        if (hdDropdown.style.visibility === "visible") hdDropdown.style.visibility = "hidden";
+        else hdDropdown.style.visibility = "visible";
+    }
+});
+// Cacher le menu dropdown par défaut en haute résolution
+if (window.innerWidth >= 768) hdDropdown.style.visibility = "hidden";
+// Définir la résolution d'affichage à laquelle le bouton logo menu doit apparaître/disparaître
+const displayWidth = 768;
+// Ajouter un écouteur d'événements pour le redimensionnement de la fenêtre
+window.addEventListener("resize", function() {
+    // Vérifier la largeur de la fenêtre
+    if (window.innerWidth < displayWidth) {
+        navLogoBtnLowres.style.display = "block";
+        navLogoMenuHiRes.style.display = "none";
+        hdBtnLowres.style.display = "block";
+    } else {
+        navLogoBtnLowres.style.display = "none";
+        navLogoMenuHiRes.style.display = "flex";
+        hdBtnLowres.style.display = "none";
+        hdDropdown.style.visibility = "hidden";
+    }
+});
+// Ajouter un écouteur d'événements au chargement de la fenêtre
+window.addEventListener("load", function() {
+    // Vérifier la largeur de la fenêtre
+    if (window.innerWidth <= displayWidth) {
+        navLogoBtnLowres.style.display = "block";
+        navLogoMenuHiRes.style.display = "none";
+        hdBtnLowres.style.display = "block";
+        hdDropdown.style.display = "block";
+        document.getElementById("contact").innerHTML = "Contact";
+        document.getElementById("follow").innerHTML = "Suivre";
+    } else {
+        navLogoBtnLowres.style.display = "none";
+        navLogoMenuHiRes.style.display = "flex";
+        hdBtnLowres.style.display = "none";
+        hdDropdown.style.display = "none";
+        document.getElementById("contact").innerHTML = "Contactez-nous";
+        document.getElementById("follow").innerHTML = "Suivez-nous";
+    }
+});
 // Script affichant la date actuelle
 let date = document.getElementById("getDate");
 let actualDate = new Date().getFullYear();
@@ -767,7 +800,7 @@ function descendreEnDoucheur(destination) {
 lien.addEventListener("click", function(e) {
     e.preventDefault();
     descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
-}); // Gestion du caroussel de la page principale 
+});
 
 },{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 

@@ -6,54 +6,95 @@ import "flowbite";
 import createButton from "../components/button";
 
 
-// Récupération des éléments HTML
-const hdBtnLowres = document.getElementById("header_btn-lowres");
-const hdDropdown = document.getElementById("header_dropdown-lowres");
-const navLogoBtnLowres = document.getElementById("nav_logo_btn-lowres");
-const navLogoMenuHiRes = document.getElementById("nav_logo_menu-hires");
-const navLogoDropdownMenuLowRes = document.getElementById("nav_logo_dropdown-lowres");
-const myButton = document.getElementById("fb-btn");
+// Affichage conditionnel du menu dropdown logo lowres
+let hdBtnLowres = document.getElementById("header_btn-lowres");
+let hdDropdown = document.getElementById("header_dropdown-lowres");
+let navLogoBtnLowres = document.getElementById("nav_logo_btn-lowres");
+let navLogoMenuHiRes = document.getElementById("nav_logo_menu-hires");
+let navLogoDropdownMenuLowRes = document.getElementById("nav_logo_dropdown-lowres");
+let myButton = document.getElementById("fb-btn");
 
-// Fonction pour afficher ou masquer un élément
-function toggleElementVisibility(element) {
-element.classList.toggle("hidden");
-}
-
-// Fonction pour afficher ou masquer le menu dropdown au clic
-function toggleDropdownMenu() {
-toggleElementVisibility(hdDropdown);
-}
-
-// Fonction pour afficher ou masquer le menu dropdown du logo Pasquier au clic
-function toggleLogoDropdownMenu() {
-toggleElementVisibility(navLogoDropdownMenuLowRes);
-}
-
-// Fonction pour gérer l'affichage des éléments en fonction de la taille de la fenêtre
-function handleWindowSize() {
-const isSmallWindow = window.innerWidth <= 768;
-navLogoBtnLowres.classList.toggle("hidden", !isSmallWindow);
-navLogoMenuHiRes.classList.toggle("hidden", isSmallWindow);
-hdBtnLowres.classList.toggle("hidden", !isSmallWindow);
-navLogoDropdownMenuLowRes.classList.toggle("hidden", !isSmallWindow);
-const contactElement = document.getElementById("contact");
-const followElement = document.getElementById("follow");
-if (isSmallWindow) {
-contactElement.textContent = "Contact";
-followElement.textContent = "Suivre";
-} else {
-contactElement.textContent = "Contactez-nous";
-followElement.textContent = "Suivez-nous";
-}
-}
-
-// Gestion des événements
 myButton.appendChild(createButton());
-hdBtnLowres.addEventListener("click", toggleDropdownMenu);
-navLogoBtnLowres.addEventListener("click", toggleLogoDropdownMenu);
-hdDropdown.classList.add("hidden");
-window.addEventListener("resize", handleWindowSize);
-window.addEventListener("load", handleWindowSize);
+
+
+// Affichage conditionnel du menu dropdown header (menu fb logo) et du menu dropdown logo pasquier
+if ((window.innerWidth || document.body.clientWidth) <= 768) {
+  let isVisible = false;
+  hdBtnLowres.addEventListener("click", function () {
+    if (isVisible) {
+      hdDropdown.style.visibility = "hidden";
+      isVisible = false;
+    } else {
+      hdDropdown.style.visibility = "visible";
+      isVisible = true;
+    }
+  });
+  navLogoBtnLowres.addEventListener("click", function () {
+    if (isVisible) {
+      navLogoDropdownMenuLowRes.style.display = "none";
+      isVisible = false;
+    } else {
+      navLogoDropdownMenuLowRes.style.display = "block";
+      isVisible = true;
+    }
+  });
+} else {
+  hdDropdown.style.visibility = "visible";
+  navLogoDropdownMenuLowRes.style.display = "block";
+}
+
+hdBtnLowres.addEventListener("click", function () {
+  if (window.innerWidth < 768) {
+    if (hdDropdown.style.visibility === "visible") {
+      hdDropdown.style.visibility = "hidden";
+    } else {
+      hdDropdown.style.visibility = "visible";
+    }
+  }
+});
+
+// Cacher le menu dropdown par défaut en haute résolution
+if (window.innerWidth >= 768) {
+  hdDropdown.style.visibility = "hidden";
+}
+
+// Définir la résolution d'affichage à laquelle le bouton logo menu doit apparaître/disparaître
+const displayWidth = 768;
+
+// Ajouter un écouteur d'événements pour le redimensionnement de la fenêtre
+window.addEventListener("resize", function () {
+  // Vérifier la largeur de la fenêtre
+  if (window.innerWidth < displayWidth) {
+    navLogoBtnLowres.style.display = "block";
+    navLogoMenuHiRes.style.display = "none";
+    hdBtnLowres.style.display = "block";
+  } else {
+    navLogoBtnLowres.style.display = "none";
+    navLogoMenuHiRes.style.display = "flex";
+    hdBtnLowres.style.display = "none";
+    hdDropdown.style.visibility = "hidden";
+  }
+});
+
+// Ajouter un écouteur d'événements au chargement de la fenêtre
+window.addEventListener("load", function () {
+  // Vérifier la largeur de la fenêtre
+  if (window.innerWidth <= displayWidth) {
+    navLogoBtnLowres.style.display = "block";
+    navLogoMenuHiRes.style.display = "none";
+    hdBtnLowres.style.display = "block";
+    hdDropdown.style.display = "block";
+    document.getElementById("contact").innerHTML = "Contact";
+    document.getElementById("follow").innerHTML = "Suivre";
+  } else {
+    navLogoBtnLowres.style.display = "none";
+    navLogoMenuHiRes.style.display = "flex";
+    hdBtnLowres.style.display = "none";
+    hdDropdown.style.display = "none";
+    document.getElementById("contact").innerHTML = "Contactez-nous";
+    document.getElementById("follow").innerHTML = "Suivez-nous";
+  }
+});
 
 // Script affichant la date actuelle
 let date = document.getElementById("getDate");
@@ -229,13 +270,13 @@ surmesure.addEventListener("click", function () {
 // Affichage des images plein écran
 const img = document.querySelector('.clickable');
 
-img.addEventListener('click', function () {
+img.addEventListener('click', function() {
   const fullscreen = document.createElement('div');
   fullscreen.className = 'fullscreen';
   fullscreen.style.backgroundImage = `url(${this.getAttribute('data-fullscreen-src')})`;
   document.body.appendChild(fullscreen);
-
-  fullscreen.addEventListener('click', function () {
+  
+  fullscreen.addEventListener('click', function() {
     document.body.removeChild(this);
   });
 });
@@ -259,12 +300,7 @@ function descendreEnDoucheur(destination) {
 }
 
 // Ajout d'un événement sur le clic du lien
-lien.addEventListener('click', function (e) {
-  e.preventDefault();
+lien.addEventListener('click', function(e) {
+  e.preventDefault(); 
   descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
 });
-
-
-
-// Gestion du caroussel de la page principale 
-
