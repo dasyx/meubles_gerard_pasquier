@@ -573,7 +573,7 @@ let navLogoDropdownMenuLowRes = document.getElementById("nav_logo_dropdown-lowre
 let myButton = document.getElementById("fb-btn");
 myButton.appendChild((0, _buttonDefault.default)());
 // Affichage conditionnel du menu dropdown header (menu fb logo) et dy menu dropdown logo pasquier
-if (window.innerWidth || document.body.clientWidth <= displayWidth) {
+if (window.innerWidth || document.body.clientWidth <= 768) {
     let isVisible = false;
     hdBtnLowres.addEventListener("click", function() {
         if (isVisible) {
@@ -597,32 +597,38 @@ if (window.innerWidth || document.body.clientWidth <= displayWidth) {
     hdDropdown.style.display = "none";
     navLogoDropdownMenuLowRes.style.display = "none";
 }
+hdBtnLowres.addEventListener("click", function() {
+    if (window.innerWidth < 768) {
+        if (hdDropdown.style.visibility === "visible") hdDropdown.style.visibility = "hidden";
+        else hdDropdown.style.visibility = "visible";
+    }
+});
+// Cacher le menu dropdown par défaut en haute résolution
+if (window.innerWidth >= 768) hdDropdown.style.visibility = "hidden";
 // Définir la résolution d'affichage à laquelle le bouton logo menu doit apparaître/disparaître
 const displayWidth = 768;
 // Ajouter un écouteur d'événements pour le redimensionnement de la fenêtre
 window.addEventListener("resize", function() {
     // Vérifier la largeur de la fenêtre
-    if ((window.innerWidth || document.body.clientWidth) <= displayWidth) {
+    if (window.innerWidth < displayWidth) {
         navLogoBtnLowres.style.display = "block";
         navLogoMenuHiRes.style.display = "none";
         hdBtnLowres.style.display = "block";
-    //hdDropdown.style.display = "block"
     } else {
         navLogoBtnLowres.style.display = "none";
         navLogoMenuHiRes.style.display = "flex";
         hdBtnLowres.style.display = "none";
-        navLogoDropdownMenuLowRes.style.display = "none";
-    //hdDropdown.style.display = "none";
+        hdDropdown.style.visibility = "hidden";
     }
 });
 // Ajouter un écouteur d'événements au chargement de la fenêtre
 window.addEventListener("load", function() {
     // Vérifier la largeur de la fenêtre
-    if ((window.innerWidth || document.body.clientWidth) <= displayWidth) {
+    if (window.innerWidth <= displayWidth) {
         navLogoBtnLowres.style.display = "block";
         navLogoMenuHiRes.style.display = "none";
         hdBtnLowres.style.display = "block";
-        hdDropdown.style.display = "none";
+        hdDropdown.style.display = "block";
         document.getElementById("contact").innerHTML = "Contact";
         document.getElementById("follow").innerHTML = "Suivre";
     } else {

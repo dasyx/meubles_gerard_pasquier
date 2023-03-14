@@ -29860,7 +29860,12 @@ main h2 {
 }
 
 .leading-loose a {
+  opacity: .6;
   font-weight: bold;
+}
+
+.leading-loose strong {
+  opacity: .75;
 }
 
 .main_classique-bg {
