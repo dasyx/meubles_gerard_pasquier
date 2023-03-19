@@ -795,7 +795,7 @@ function descendreEnDoucheur(destination) {
 lien.addEventListener("click", function(e) {
     e.preventDefault();
     descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
-});
+}); // Tableaux de données meubles 
 
 },{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 

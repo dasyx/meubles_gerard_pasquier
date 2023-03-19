@@ -30167,6 +30167,57 @@ footer nav, footer p {
   border-left: 4px solid #2a2e52;
 }
 
+#furniture-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.furniture-item {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  flex: 0 0 calc(33.333% - 1rem);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.furniture-item img {
+  margin: 0 auto;
+}
+
+.meubles_choix {
+  padding-top: 100px;
+}
+
+.meubles_choix h2, .meubles_choix h3 {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+  font-family: Playfair Display, serif;
+  font-size: 1.3em;
+}
+
+.meubles_choix h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .furniture-item {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .furniture-item {
+    flex: 0 0 100%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   h1 {
     text-align: center;
