@@ -10,15 +10,19 @@
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="/index.a097447b.css">
   <link href="https://fonts.googleapis.com/css2?family=RobotoSlab&family=Lato&family=Amaranth&family=Merriweather&family=Raleway&family=Oswald&family=Rokkitt&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>Accueil - Meubles Gérard Pasquier</title>
+
 </head>
 
-<body>
+<body class="meubles">
   <header>
     <!--DEBUT NAVIGATION TITRE + LIENS RESEAUX-->
     <nav class="bg-custom1 flex justify-between flex-wrap p-3">
       <section class="text-white mr-6">
-        <h1 class="text-xl font-medium" id="goToTop">Meubles Gérard Pasquier</h1>
+        <h1 class="text-xl font-medium" id="goToTop">
+          Meubles Gérard Pasquier
+        </h1>
       </section>
 
       <section class="ml-4 lg:block ml-auto display_contact">
@@ -33,8 +37,8 @@
           <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" @click="open = !open">
             <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+              <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+              <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
             </div>
           </button>
         </nav>
@@ -69,19 +73,22 @@
         <!--MENU LOGO LOW RES-->
         <div class="nav_logo__nav flex mx-auto items-center" id="nav_logo_menu-hires">
           <div class="dropdown inline-block relative">
-
             <span>Notre histoire</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-              <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A définir</a></li>
-              <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A
+              <li class="">
+                <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A
                   définir</a>
               </li>
-              <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A définir</a></li>
+              <li class="">
+                <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A définir</a>
+              </li>
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A
+                  définir</a>
+              </li>
             </ul>
-
           </div>
           <div class="dropdown inline-block relative">
-
             <span>Produits</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li>
@@ -97,10 +104,8 @@
                   définir</a>
               </li>
             </ul>
-
           </div>
           <div class="dropdown inline-block relative">
-
             <span>Inspirations</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li class="">
@@ -109,18 +114,15 @@
               </li>
               <li class="">
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à
-                  définir</a>
+                  à définir</a>
               </li>
               <li class="">
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
                   à définir</a>
               </li>
             </ul>
-
           </div>
           <div class="dropdown inline-block relative">
-
             <span>Sur-mesure</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li class="">
@@ -129,15 +131,13 @@
               </li>
               <li class="">
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à
-                  définir</a>
+                  à définir</a>
               </li>
               <li class="">
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
                   à définir</a>
               </li>
             </ul>
-
           </div>
           <div class="dropdown inline-block">
             <span>Promotions</span>
@@ -147,22 +147,16 @@
         <!--AFFICHAGE MENU DROPDOWN < 768PX-->
         <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
           <div class="dropdown block relative">
-
             <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
-            </ul>
+            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
             <span class="block" id="produits">Les produits<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
-            </ul>
+            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
             <span class="block" id="inspirations">Inspirations<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
-            </ul>
+            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
             <span class="block" id="surmesure">Sur-mesure<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
-            </ul>
+            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
             <a href="#"><span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
-              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
-              </ul>
+              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
             </a>
           </div>
           <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
@@ -173,88 +167,61 @@
   <!--FIN NAVIGATION LOGO + HISTORIQUE-->
 
   <!--DEBUT CONTENU PRINCIPAL-->
-  <main class="main_industriel-bg">
-    <!-- DEBUT BANNIERE -->
-    <section id="industriel-banner" class="bg-industriel">
-      <div class="relative overflow-hidden">
-        <a href="#fullscreen" class="clickable">
-          <img class="h-full" src="/industriel-banner-640480.4592441e.webp" alt="Salon industriel">
-          <p class="absolute top-0 left-0 text-white text-2xl md:text-4xl font-bold uppercase tracking-wider">INDUSTRIEL</p>
-        </a>
+  <main class="main_industriel-bg meubles_industriel meubles">
+    <h2>Meubles inspiration industrielle</h2>
+    <section class="grid">
+      <div class="grid-item">
+        <img src="/8.28b4c66b.webp" alt="Bonheur du jour">
       </div>
-      <div id="fullscreen">
-        <a href="#goToTop">
-          <p><i class="fa-solid fa-arrow-left"></i> retour</p>
-        </a>
-        <img src="/industriel-banner.ed0c3ad4.webp" alt="Salon classique chic romantique">
+      <div class="grid-item">
+        <img src="/bibliotheque-plaisance-7.d9583ba0.webp" alt="Bonnetière">
       </div>
-    </section>
-    <!-- FIN BANNIERE -->
-
-    <!-- DESCRIPTION INSPIRATION -->
-    <section class="section-meubles_inspirations-classique flex flex-col items-center px-4 lg:px-8 max-w-6xl mx-auto my-8">
-      <div class="meubles_titres text-center my-8">
-        <h1 class="text-3xl font-bold">Style Industriel, de l'élégance au traditionnel</h1>
-        <h2 class="text-lg font-medium">Inspiration industrielle : un design moderne et minimaliste</h2>
+      <div class="grid-item">
+        <img src="/chevalet_TV_plaisance_9.303b5bc7.webp" alt="Bureau Malam">
       </div>
-      <div class="industriel meubles_textes_part1 text-left my-6">
-        <p class="leading-loose">
-          Si vous êtes à la recherche d'un style de décoration qui allie le charme du vintage à l'aspect brut et industriel, le style loft pourrait être exactement ce que vous cherchez. Inspiré par les anciens ateliers et les espaces industriels réaménagés, le style loft met en avant des éléments tels que des charpentes métalliques apparentes, des grandes fenêtres horizontales et des volumes ouverts. Les meubles sont souvent récupérés et revisités, comme des casiers vestiaires Strafor, des classeurs à clapets recyclés ou des établis transformés....<a href="#savoir_plus">en savoir plus</a>
-        </p>
+      <div class="grid-item">
+        <img src="/colonne-haute-patchwork.617fc149.webp" alt="Bureau Palace">
       </div>
-    </section>
-    <section class="flex flex-wrap md:justify-center justify-evenly meubles_img-container my-12">
-      <div class="p-4">
-        <a href="/src/pages/meubles_industriel.html">
-          <img src="/salle_a_manger_plaisance_4.da014d72.webp" alt="salle à manger plaisance 4" class="w-full h-auto md:h-1/3">
-          <h3 class="text-center text-xl mt-2">Séjours inspiration industrielle</h3>
-        </a>
+      <div class="grid-item">
+        <img src="/Console_1_tiroir_indus_plaisance_5.9d866b36.webp" alt="Bureau Rognon">
       </div>
-      <div class="p-4">
-        <a href="/src/pages/meubles_industriel.html">
-          <img src="/enfilade.c674bce9.webp" alt="enfilade" class="w-full h-auto md:h-1/3">
-          <h3 class="text-center text-xl mt-2">Meubles inspiration industrielle</h3>
-        </a>
+      <div class="grid-item">
+        <img src="/enfilade.c674bce9.webp" alt="Chaise Grand Cru">
       </div>
-      <div class="p-4">
-        <a href="/src/pages/meubles_industriel.html">
-          <img src="/table_carrée_4.d23c48d9.webp" alt="table carrée 4" class="w-full h-auto md:h-1/3">
-          <h3 class="text-center text-xl mt-2">Salons inspiration industrielle</h3>
-        </a>
+      <div class="grid-item">
+        <img src="/meuble_bas_artcopi.6e83b668.webp" alt="Chaise Sofia">
+      </div>
+      <div class="grid-item">
+        <img src="/meuble_Tv_plaisance_6.9d240590.webp" alt="Choix de chaises">
+      </div>
+      <div class="grid-item">
+        <img src="/passerelle.e72b193e.webp" alt="Enfilade Saumur">
+      </div>
+      <div class="grid-item">
+        <img src="/salle_a_manger_plaisance_4.da014d72.webp" alt="Enfilade Saumur">
+      </div>
+      <div class="grid-item">
+        <img src="/table_basse_carrée_artcopi.0b2f829c.webp" alt="Enfilade Saumur">
+      </div>
+      <div class="grid-item">
+        <img src="/table_carrée_4.d23c48d9.webp" alt="Enfilade Saumur">
+      </div>
+      <div class="grid-item">
+        <img src="/Table_Eden_plaisance_15.fb522482.webp" alt="Enfilade Saumur">
       </div>
     </section>
-    
-    <section class="section-meubles_inspirations-classique flex flex-col items-center px-4 lg:px-8 max-w-6xl mx-auto">
-      <div class="industriel meubles_textes_part2 my-6 text-left" id="savoir_plus">
-        <p class="leading-loose">
-          Les <strong>finitions brutes</strong>, usées, brossées, sablées, défibrées, salies, rouillées et oxydées sont également très populaires dans le style loft. On retrouve souvent des matériaux comme le bois défibré brut de sciage, le métal rouillé, noirci, oxydé ou galvanisé, la fonte, le cuir usé, la brique, la pierre, les parpaings, le béton ciré, le grés cérame ou encore les carreaux ciment.
-        </p>
-    
-        <p class="leading-loose">
-          Les <strong>textiles naturels et rustiques</strong> tels que le coton, le lin, le chanvre, la laine épaisse ou encore la bâche et les voiles recyclées sont également très appréciés. Les couleurs de base du style industriel sont le gris béton, le gris zinc, l'anthracite, le noir, le cuivre, l'alu poli et la brique. Mais pour apporter de la profondeur et de la chaleur à la pièce, il est possible d'agrémenter ces teintes avec des couleurs telles que le brun châtaigne, le bleu pétrole, le bleu marine, le gris bitume, le vert noir ou le vert bouteille.
 
-        </p>
-    
-        <p class="leading-loose">
-          La <strong>décoration industrielle</strong> comprend souvent des éléments tels que les radiateurs en fonte, les vieux ventilateurs, les objets en tôle perforée, soudée, rivetée, en fonte, en étain, les engrenages, les pièces mécaniques ou encore les moules industriels. On retrouve également des plaques publicitaires émaillées, des affiches de dessin technique, des tabourets Tolix, des chaises industrielles, des suspensions « gamelle », des projecteurs de cinéma sur pieds, des lampes articulées, des horloges de gare ou encore des coffres-forts transformés en bar.
-        </p>
-    
-        <p class="leading-loose">
-          Si vous êtes passionné par <strong>l'histoire industrielle</strong> et que vous souhaitez visiter des lieux emblématiques tels que les anciennes usines de briques réhabilitées de New York, Londres ou Berlin, le style loft est fait pour vous. Vous pourriez également apprécier de traverser le pont Maria Pia qui enjambe le Douro à Porto ou de passer une nuit dans un bed & breakfast perché sur une grue du port de Harlingen ou au Crane hôtel Faralda à Amsterdam.
-
-        </p>
-    
-        <p class="leading-loose">En optant pour un intérieur total look avec une architecture d'atelier à grands volumes, vous pouvez créer une ambiance conviviale et décontractée tout en préservant un lien avec l'histoire. Si vous cherchez un style de décoration qui vous permette de vous immerger dans <strong>l'atmosphère industrielle</strong>, le style loft est fait pour vous.</p>
-
+    <!--FIN CONTENU PRINCIPAL-->
+    <!--AFFICHAGE IMAGE AU CLIC-->
+    <section class="container-img">
+      <div class="image-viewer">
+        <h3>Meuble choisi :</h3>
+        <img id="current-image" src="/8.28b4c66b.webp" alt="image">
       </div>
     </section>
-    <!-- FIN DESCRIPTION INSPIRATION -->
-    
-    
-    
-    
+    <!--FIN AFFICHAGE IMAGE AU CLIC-->
   </main>
-  <!--FIN CONTENU PRINCIPAL-->
+
 
   <!--DEBUT DU FOOTER-->
   <footer aria-label="Site Footer" class="bg-custom1 flex justify-center align-items-center bg-white">
@@ -263,9 +230,7 @@
         <!-- RUBRIQUES -->
         <div class="flex justify-evenly footer-rubriques">
           <div class="footer-rubriques__title" id="propos">
-            <p class="font-medium text-white-900">
-              A PROPOS
-            </p>
+            <p class="font-medium text-white-900">A PROPOS</p>
             <hr>
             <nav aria-label="Footer Navigation - Services" class="mt-6">
               <ul class="space-y-4 text-sm">
@@ -369,9 +334,7 @@
           </div>
 
           <div class="footer-rubriques__title">
-            <p class="font-medium text-white-900 dark:text-white">
-              LIENS
-            </p>
+            <p class="font-medium text-white-900 dark:text-white">LIENS</p>
             <hr>
 
             <nav aria-label="Footer Navigation - Company" class="mt-6">
@@ -407,7 +370,8 @@
         <div class="flex footer_logo">
           <img src="/meubles_gerard_pasquier_lowres_opacity.2e2b6a0c.webp" width="250" height="auto">
           <p class="max-w-xs mt-4 text-white-500 dark:text-white-400">
-            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits, restez pour notre passion.
+            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits,
+            restez pour notre passion.
           </p>
           <!-- SOCIAL -->
           <div class="flex footer_social">
@@ -435,12 +399,41 @@
   </footer>
   <div class="copy-container bg-custom1">
     <p class="copyright text-white ml-3">
-      &copy; <span id="getDate"></span>. Meubles Gérard Pasquier. Tous droits réservés.
+      &copy; <span id="getDate"></span>. Meubles Gérard Pasquier. Tous droits
+      réservés.
     </p>
   </div>
-
   <script src="/index.c072103e.js" async="" defer=""></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer=""></script>
 </body>
 
 </html>
+
+<script>var grid = document.querySelector(".grid");
+new Masonry(grid, {
+    itemSelector: ".grid-item",
+    columnWidth: 200,
+    fitWidth: true
+});
+const gridItems = document.querySelectorAll(".grid-item");
+const currentImage = document.getElementById("current-image");
+gridItems.forEach(function(gridItem) {
+    gridItem.addEventListener("click", function(event) {
+        const img = event.target;
+        currentImage.src = img.src;
+        currentImage.alt = img.alt;
+        // Vérifie si la largeur de la fenêtre est inférieure à 768px.
+        if (window.innerWidth < 768) {
+            // Calcule la position de l'image affichée et ajoute un décalage personnalisé.
+            const imagePosition = currentImage.getBoundingClientRect().top + window.pageYOffset - 100;
+            // Fait défiler la page jusqu'à la position calculée.
+            window.scrollTo({
+                top: imagePosition,
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
+</script>

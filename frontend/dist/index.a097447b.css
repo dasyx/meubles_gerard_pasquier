@@ -20,6 +20,29 @@
   width: 20%;
 }
 
+.container-img {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.image-viewer {
+  width: 100%;
+  max-width: 500px;
+  border: 3px solid #0000003a;
+  border-radius: 10px;
+  justify-content: center;
+  margin-top: 150px;
+  display: flex;
+  box-shadow: 8px 8px 10px #0000003a;
+}
+
+#current-image {
+  width: 100%;
+  height: auto;
+}
+
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -30074,7 +30097,13 @@ footer nav, footer p {
   display: flex;
 }
 
+.grid {
+  margin: 0 auto;
+  position: relative;
+}
+
 .grid-item {
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -30082,9 +30111,60 @@ footer nav, footer p {
   transform: scale(1.1);
 }
 
-img {
+.grid img {
   width: 200px;
   transition: transform .3s ease-out;
+}
+
+.meubles {
+  padding-top: 80px;
+  position: relative;
+}
+
+.meubles h2 {
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.image-viewer {
+  position: relative;
+}
+
+.image-viewer h3 {
+  z-index: 2;
+  background-color: #fff;
+  border: 3px solid #0000003a;
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  position: absolute;
+  top: -100px;
+}
+
+.meubles_classique h2, .meubles_classique h3 {
+  border-left: 4px solid #663c28;
+}
+
+.meubles_contemporain h2, .meubles_contemporain h3 {
+  border-left: 4px solid #2c302c;
+}
+
+.meubles_rustique h2, .meubles_rustique h3 {
+  border-left: 4px solid #cf8907;
+}
+
+.meubles_industriel h2, .meubles_industriel h3 {
+  border-left: 4px solid #a44150;
+}
+
+.meubles_nordique h2, .meubles_nordique h3 {
+  border-left: 4px solid #2a2e52;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

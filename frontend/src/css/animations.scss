@@ -22,5 +22,28 @@
     width: 20%;
 }
 
-// GESTION DU CAROUSSEL DU HAUT DE PAGE PRINCIPALE
 
+
+// GESTION DE L'AFFICHAGE GRAND ECRAN DE L'IMAGE MEUBLE
+.container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-viewer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 150px;
+    border: 3px solid #0000003a;
+    box-shadow: 8px 8px 10px #0000003a;
+    border-radius: 10px;
+}
+
+#current-image {
+    width: 100%;
+    height: auto;
+}

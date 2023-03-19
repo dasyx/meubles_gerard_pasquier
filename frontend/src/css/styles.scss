@@ -485,19 +485,97 @@ footer p {
 }
 
 
-//    MEUBLES_CLASSIQUES    //
+//    MEUBLES_STYLES    //
 
+.grid {
+  margin: 0 auto;
+  position: relative;
+}
 
 .grid-item {
+  box-sizing: border-box;
   overflow: hidden;
   &:hover img {
     transform: scale(1.1);
   }
 }
-img {
+.grid img {
   width: 200px;
   transition: transform 0.3s ease-out;
 }
+
+.meubles {
+  position: relative;
+  padding-top: 80px;
+}
+
+.meubles h2 {
+  position: absolute;
+  margin: 10px 0;
+  padding: 5px;
+  z-index: 2;
+  top: 10px;
+  left: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.image-viewer {
+  position: relative;
+}
+
+.image-viewer h3 {
+  position: absolute;
+  margin: 10px 0;
+  padding: 5px;
+  z-index: 2;
+  top: -100px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 3px solid #0000003a;
+}
+
+
+
+//    MEUBLES_CLASSQIQUE    //
+
+.meubles_classique h2,
+.meubles_classique h3 {
+  border-left: 4px solid #663c28;
+}
+
+
+//    MEUBLES_CONTEMPORAIN    //
+
+.meubles_contemporain h2,
+.meubles_contemporain h3 {
+  border-left: 4px solid #2c302c;
+}
+
+
+//    MEUBLES_RUSTIQUE    //
+
+.meubles_rustique h2,
+.meubles_rustique h3 {
+  border-left: 4px solid #cf8907;
+}
+
+
+//    MEUBLES_INDUSTRIEL    //
+
+.meubles_industriel h2,
+.meubles_industriel h3 {
+  border-left: 4px solid #a44150;
+}
+
+
+//    MEUBLES_NORDIQUE   //
+
+.meubles_nordique h2,
+.meubles_nordique h3 {
+  border-left: 4px solid #2a2e52;
+}
+
 
 
 //    MEDIA QUERIES     //
