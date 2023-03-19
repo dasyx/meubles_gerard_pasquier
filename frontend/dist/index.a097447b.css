@@ -30099,6 +30099,7 @@ footer nav, footer p {
 
 .grid {
   margin: 0 auto;
+  padding-top: 150px;
   position: relative;
 }
 
@@ -30117,7 +30118,6 @@ footer nav, footer p {
 }
 
 .meubles {
-  padding-top: 80px;
   position: relative;
 }
 
