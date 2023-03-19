@@ -484,6 +484,22 @@ footer p {
   height: 60px;
 }
 
+
+//    MEUBLES_CLASSIQUES    //
+
+
+.grid-item {
+  overflow: hidden;
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+img {
+  width: 200px;
+  transition: transform 0.3s ease-out;
+}
+
+
 //    MEDIA QUERIES     //
 
 // Affichage mobiles

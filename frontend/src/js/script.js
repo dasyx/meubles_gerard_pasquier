@@ -5,17 +5,17 @@ import "flowbite";
 
 import createButton from "../components/button";
 
-
 // Affichage conditionnel du menu dropdown logo lowres
 let hdBtnLowres = document.getElementById("header_btn-lowres");
 let hdDropdown = document.getElementById("header_dropdown-lowres");
 let navLogoBtnLowres = document.getElementById("nav_logo_btn-lowres");
 let navLogoMenuHiRes = document.getElementById("nav_logo_menu-hires");
-let navLogoDropdownMenuLowRes = document.getElementById("nav_logo_dropdown-lowres");
+let navLogoDropdownMenuLowRes = document.getElementById(
+  "nav_logo_dropdown-lowres"
+);
 let myButton = document.getElementById("fb-btn");
 
 myButton.appendChild(createButton());
-
 
 // Affichage conditionnel du menu dropdown header (menu fb logo) et dy menu dropdown logo pasquier
 if ((window.innerWidth || document.body.clientWidth) <= 768) {
@@ -74,7 +74,7 @@ window.addEventListener("load", function () {
     navLogoBtnLowres.style.display = "block";
     navLogoMenuHiRes.style.display = "none";
     hdBtnLowres.style.display = "block";
-    hdDropdown.style.display = "none"
+    hdDropdown.style.display = "none";
     document.getElementById("contact").innerHTML = "Contact";
     document.getElementById("follow").innerHTML = "Suivre";
   } else {
@@ -91,8 +91,6 @@ window.addEventListener("load", function () {
 let date = document.getElementById("getDate");
 let actualDate = new Date().getFullYear();
 date.innerHTML = actualDate;
-
-
 
 // Script qui modifie le DOM pour ajouter les liens du header logo lowres
 let ourStory = document.getElementById("histoire");
@@ -115,15 +113,38 @@ ourStory.addEventListener("click", function () {
     var link2 = document.createElement("a");
     var link3 = document.createElement("a");
 
-    link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link1.classList.add(
+      "rounded-t",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link1.setAttribute("href", "#");
     link1.textContent = "A définir";
 
-    link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link2.classList.add(
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link2.setAttribute("href", "#");
     link2.textContent = "A définir";
 
-    link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link3.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link3.setAttribute("href", "#");
     link3.textContent = "A définir";
 
@@ -153,15 +174,38 @@ products.addEventListener("click", function () {
     var link2 = document.createElement("a");
     var link3 = document.createElement("a");
 
-    link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link1.classList.add(
+      "rounded-t",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link1.setAttribute("href", "#");
     link1.textContent = "A définir";
 
-    link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link2.classList.add(
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link2.setAttribute("href", "#");
     link2.textContent = "A définir";
 
-    link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link3.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link3.setAttribute("href", "#");
     link3.textContent = "A définir";
 
@@ -191,15 +235,38 @@ inspirations.addEventListener("click", function () {
     var link2 = document.createElement("a");
     var link3 = document.createElement("a");
 
-    link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link1.classList.add(
+      "rounded-t",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link1.setAttribute("href", "#");
     link1.textContent = "A définir";
 
-    link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link2.classList.add(
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link2.setAttribute("href", "#");
     link2.textContent = "A définir";
 
-    link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link3.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link3.setAttribute("href", "#");
     link3.textContent = "A définir";
 
@@ -229,15 +296,38 @@ surmesure.addEventListener("click", function () {
     var link2 = document.createElement("a");
     var link3 = document.createElement("a");
 
-    link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link1.classList.add(
+      "rounded-t",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link1.setAttribute("href", "#");
     link1.textContent = "A définir";
 
-    link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link2.classList.add(
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link2.setAttribute("href", "#");
     link2.textContent = "A définir";
 
-    link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+    link3.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
     link3.setAttribute("href", "#");
     link3.textContent = "A définir";
 
@@ -256,28 +346,25 @@ surmesure.addEventListener("click", function () {
   }
 });
 
-
-
 // Affichage des images plein écran
-const img = document.querySelector('.clickable');
+const img = document.querySelector(".clickable");
 
-img.addEventListener('click', function() {
-  const fullscreen = document.createElement('div');
-  fullscreen.className = 'fullscreen';
-  fullscreen.style.backgroundImage = `url(${this.getAttribute('data-fullscreen-src')})`;
+img.addEventListener("click", function () {
+  const fullscreen = document.createElement("div");
+  fullscreen.className = "fullscreen";
+  fullscreen.style.backgroundImage = `url(${this.getAttribute(
+    "data-fullscreen-src"
+  )})`;
   document.body.appendChild(fullscreen);
-  
-  fullscreen.addEventListener('click', function() {
+
+  fullscreen.addEventListener("click", function () {
     document.body.removeChild(this);
   });
 });
 
-
-
 // Gestion de la vitesse du scroll lors du clic sur "en savoir plus"
 var lien = document.querySelector('a[href="#savoir_plus"]');
-var destination = document.querySelector('#savoir_plus');
-
+var destination = document.querySelector("#savoir_plus");
 
 function descendreEnDoucheur(destination) {
   // Calcul de la position de l'élément de destination
@@ -286,12 +373,14 @@ function descendreEnDoucheur(destination) {
   // Animation de la descente en douceur
   window.scrollTo({
     top: position,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 }
 
 // Ajout d'un événement sur le clic du lien
-lien.addEventListener('click', function(e) {
-  e.preventDefault(); 
+lien.addEventListener("click", function (e) {
+  e.preventDefault();
   descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
 });
+
+

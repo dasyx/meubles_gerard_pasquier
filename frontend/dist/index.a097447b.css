@@ -30074,6 +30074,19 @@ footer nav, footer p {
   display: flex;
 }
 
+.grid-item {
+  overflow: hidden;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+img {
+  width: 200px;
+  transition: transform .3s ease-out;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   h1 {
     text-align: center;
