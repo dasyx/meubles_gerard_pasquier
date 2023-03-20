@@ -350,7 +350,8 @@
         <div class="flex footer_logo">
           <img src="/meubles_gerard_pasquier_lowres_opacity.2e2b6a0c.webp" width="250" height="auto">
           <p class="max-w-xs mt-4 text-white-500 dark:text-white-400">
-            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits, restez pour notre passion.
+            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits,
+            restez pour notre passion.
           </p>
           <!-- SOCIAL -->
           <div class="flex footer_social">
@@ -402,16 +403,13 @@ gridItems.forEach(function(gridItem) {
         const img = event.target;
         currentImage.src = img.src;
         currentImage.alt = img.alt;
-        // Vérifie si la largeur de la fenêtre est inférieure à 768px.
-        if (window.innerWidth < 768) {
-            // Calcule la position de l'image affichée et ajoute un décalage personnalisé.
-            const imagePosition = currentImage.getBoundingClientRect().top + window.pageYOffset - 100;
-            // Fait défiler la page jusqu'à la position calculée.
-            window.scrollTo({
-                top: imagePosition,
-                behavior: "smooth"
-            });
-        }
+        // Calcule la position de l'image affichée et ajoute un décalage personnalisé.
+        const imagePosition = currentImage.getBoundingClientRect().top + window.pageYOffset - 100;
+        // Fait défiler la page jusqu'à la position calculée.
+        window.scrollTo({
+            top: imagePosition,
+            behavior: "smooth"
+        });
     });
 });
 

@@ -382,6 +382,3 @@ lien.addEventListener("click", function (e) {
   e.preventDefault();
   descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
 });
-
-
-// Tableaux de données meubles 

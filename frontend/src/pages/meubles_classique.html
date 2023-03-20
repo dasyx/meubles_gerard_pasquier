@@ -230,7 +230,8 @@
     <section class="container-img">
       <div class="image-viewer">
         <h3>Meuble choisi :</h3>
-        <img id="current-image" src="../img/classique-style/bonheur_du-jour_Malam_plaisance4_P162_merisier.webp" alt="image" />
+        <img id="current-image" src="../img/classique-style/bonheur_du-jour_Malam_plaisance4_P162_merisier.webp"
+          alt="image" />
       </div>
     </section>
     <!--FIN AFFICHAGE IMAGE AU CLIC-->
@@ -421,6 +422,7 @@
       réservés.
     </p>
   </div>
+  <button id="scroll-to-top-button">Remonter</button>
   <script type="module" src="../js/script.js" async></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -441,20 +443,17 @@
   const gridItems = document.querySelectorAll('.grid-item');
   const currentImage = document.getElementById('current-image');
 
-  gridItems.forEach(function(gridItem) {
-    gridItem.addEventListener('click', function(event) {
+  gridItems.forEach(function (gridItem) {
+    gridItem.addEventListener('click', function (event) {
       const img = event.target;
       currentImage.src = img.src;
       currentImage.alt = img.alt;
 
-      // Vérifie si la largeur de la fenêtre est inférieure à 768px.
-      if (window.innerWidth < 768) {
-        // Calcule la position de l'image affichée et ajoute un décalage personnalisé.
-        const imagePosition = currentImage.getBoundingClientRect().top + window.pageYOffset - 100;
+      // Calcule la position de l'image affichée et ajoute un décalage personnalisé.
+      const imagePosition = currentImage.getBoundingClientRect().top + window.pageYOffset - 100;
 
-        // Fait défiler la page jusqu'à la position calculée.
-        window.scrollTo({ top: imagePosition, behavior: 'smooth' });
-      }
+      // Fait défiler la page jusqu'à la position calculée.
+      window.scrollTo({ top: imagePosition, behavior: 'smooth' });
     });
   });
 

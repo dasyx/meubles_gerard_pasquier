@@ -439,16 +439,13 @@ gridItems.forEach(function(gridItem) {
         const img = event.target;
         currentImage.src = img.src;
         currentImage.alt = img.alt;
-        // Vérifie si la largeur de la fenêtre est inférieure à 768px.
-        if (window.innerWidth < 768) {
-            // Calcule la position de l'image affichée et ajoute un décalage personnalisé.
-            const imagePosition = currentImage.getBoundingClientRect().top + window.pageYOffset - 100;
-            // Fait défiler la page jusqu'à la position calculée.
-            window.scrollTo({
-                top: imagePosition,
-                behavior: "smooth"
-            });
-        }
+        // Calcule la position de l'image affichée et ajoute un décalage personnalisé.
+        const imagePosition = currentImage.getBoundingClientRect().top + window.pageYOffset - 100;
+        // Fait défiler la page jusqu'à la position calculée.
+        window.scrollTo({
+            top: imagePosition,
+            behavior: "smooth"
+        });
     });
 });
 
