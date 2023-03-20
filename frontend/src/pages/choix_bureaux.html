@@ -182,7 +182,7 @@
   <!--DEBUT CONTENU PRINCIPAL-->
   <main>
     <div class="meubles_choix">
-        <h2>Nos meubles de séjour / salon</h2>
+        <h2>Nos bureaux, nos tables</h2>
         <h3>Patience, d'autres seront ajoutés...</h3>
     </div>
     <div id="furniture-container">
@@ -383,53 +383,51 @@
 <script type="module">
 
 
-// Meubles séjour / salon
-import sejour1 from "../img/classique-style/classique_chic-banner.webp";
-import sejour2 from "../img/classique-style/plaisance_2_biblioteque-saumur-p73-merisier.webp";
-import sejour3 from "../img/contemporain/195160-pied-central-girardeau-ibiza.webp";
-import sejour4 from "../img/industriel_artcopi/8.webp";
-import sejour5 from "../img/industriel_artcopi/industriel-banner.webp";
-import sejour6 from "../img/industriel_artcopi/salle_a_manger_plaisance_4.webp";
-
-// Meubles bureaux / tables / buffets
-import sejour1 from "../img/classique-style/classique_chic-banner.webp";
-import sejour2 from "../img/classique-style/plaisance_2_biblioteque-saumur-p73-merisier.webp";
-import sejour3 from "../img/contemporain/195160-pied-central-girardeau-ibiza.webp";
-import sejour4 from "../img/industriel_artcopi/8.webp";
-import sejour5 from "../img/industriel_artcopi/industriel-banner.webp";
-import sejour6 from "../img/industriel_artcopi/salle_a_manger_plaisance_4.webp";
+// Meubles bureaux / tables
+import bureau1 from "../img/classique-style/bureau-palace-merisier-plaisance-8-p191.webp";
+import bureau2 from "../img/classique-style/bureau-malam-plaisance-4-p162.webp";
+import bureau3 from "../img/classique-style/bureau-rognon-plaisance-4-p162.webp";
+import table1 from "../img/classique-style/table_basse_concorde_Plaisance_9_p7454.webp";
+import table2 from "../img/classique-style/table-bristol-chene-plaisance-7-p181.webp";
+import table3 from "../img/contemporain/table-ovale-girardeau-avec-chaise.webp";
+import table4 from "../img/contemporain/table-ronde-aninovel.webp";
 
 
-const meublesSejour = [
+const meublesBureaux = [
   {
     reference: 'ref-001',
-    famille: 'Séjour classique',
-    imageUrl: sejour1
+    famille: 'Bureau Palace Merisier Plaisance 8',
+    imageUrl: bureau1
   },
   {
     reference: 'ref-002',
-    famille: 'Bibiliothèque Saumur Merisier',
-    imageUrl: sejour2
+    famille: 'Bureau Malam Plaisance 4',
+    imageUrl: bureau2
   },
   {
     reference: 'ref-003',
-    famille: 'Salon Contemporain Girardeau Ibiza',
-    imageUrl: sejour3
+    famille: 'Bureau Rognon Plaisance 4',
+    imageUrl: bureau3
   },
   {
-    reference: 'ref-001',
-    famille: 'Bibliothèque Contemporaine',
-    imageUrl: sejour4
+    reference: 'ref-004',
+    famille: 'Table basse Concorde Plaisance 9',
+    imageUrl: table1
   },
   {
-    reference: 'ref-002',
-    famille: 'Meuble TV industriel',
-    imageUrl: sejour5
+    reference: 'ref-005',
+    famille: 'Table Bristol chêne Plaisance 7',
+    imageUrl: table2
   },
   {
-    reference: 'ref-003',
-    famille: 'Salle à manger Plaisance 4',
-    imageUrl: sejour6
+    reference: 'ref-006',
+    famille: 'Table ovale Girardeau',
+    imageUrl: table3
+  },
+  {
+    reference: 'ref-006',
+    famille: 'Table ronde Aninovel',
+    imageUrl: table4
   },
   // Ajoutez d'autres objets de meubles ici...
 ];
@@ -438,7 +436,7 @@ const meublesSejour = [
 function displayFurnitureData() {
   const furnitureContainer = document.getElementById('furniture-container');
 
-  meublesSejour.forEach(furniture => {
+  meublesBureaux.forEach(furniture => {
     const furnitureElement = document.createElement('div');
     furnitureElement.classList.add('furniture-item');
 

@@ -169,7 +169,7 @@
   <!--DEBUT CONTENU PRINCIPAL-->
   <main>
     <div class="meubles_choix">
-        <h2>Nos meubles de séjour / salon</h2>
+        <h2>Nos bureaux, nos tables</h2>
         <h3>Patience, d'autres seront ajoutés...</h3>
     </div>
     <div id="furniture-container">
@@ -923,55 +923,62 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"eMae8":[function(require,module,exports) {
-// Meubles séjour / salon
+// Meubles bureaux / tables
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _classiqueChicBannerWebp = require("../img/classique-style/classique_chic-banner.webp");
-var _classiqueChicBannerWebpDefault = parcelHelpers.interopDefault(_classiqueChicBannerWebp);
-var _plaisance2BibliotequeSaumurP73MerisierWebp = require("../img/classique-style/plaisance_2_biblioteque-saumur-p73-merisier.webp");
-var _plaisance2BibliotequeSaumurP73MerisierWebpDefault = parcelHelpers.interopDefault(_plaisance2BibliotequeSaumurP73MerisierWebp);
-var _195160PiedCentralGirardeauIbizaWebp = require("../img/contemporain/195160-pied-central-girardeau-ibiza.webp");
-var _195160PiedCentralGirardeauIbizaWebpDefault = parcelHelpers.interopDefault(_195160PiedCentralGirardeauIbizaWebp);
-var _8Webp = require("../img/industriel_artcopi/8.webp");
-var _8WebpDefault = parcelHelpers.interopDefault(_8Webp);
-var _industrielBannerWebp = require("../img/industriel_artcopi/industriel-banner.webp");
-var _industrielBannerWebpDefault = parcelHelpers.interopDefault(_industrielBannerWebp);
-var _salleAMangerPlaisance4Webp = require("../img/industriel_artcopi/salle_a_manger_plaisance_4.webp");
-var _salleAMangerPlaisance4WebpDefault = parcelHelpers.interopDefault(_salleAMangerPlaisance4Webp);
-const meublesSejour = [
+var _bureauPalaceMerisierPlaisance8P191Webp = require("../img/classique-style/bureau-palace-merisier-plaisance-8-p191.webp");
+var _bureauPalaceMerisierPlaisance8P191WebpDefault = parcelHelpers.interopDefault(_bureauPalaceMerisierPlaisance8P191Webp);
+var _bureauMalamPlaisance4P162Webp = require("../img/classique-style/bureau-malam-plaisance-4-p162.webp");
+var _bureauMalamPlaisance4P162WebpDefault = parcelHelpers.interopDefault(_bureauMalamPlaisance4P162Webp);
+var _bureauRognonPlaisance4P162Webp = require("../img/classique-style/bureau-rognon-plaisance-4-p162.webp");
+var _bureauRognonPlaisance4P162WebpDefault = parcelHelpers.interopDefault(_bureauRognonPlaisance4P162Webp);
+var _tableBasseConcordePlaisance9P7454Webp = require("../img/classique-style/table_basse_concorde_Plaisance_9_p7454.webp");
+var _tableBasseConcordePlaisance9P7454WebpDefault = parcelHelpers.interopDefault(_tableBasseConcordePlaisance9P7454Webp);
+var _tableBristolChenePlaisance7P181Webp = require("../img/classique-style/table-bristol-chene-plaisance-7-p181.webp");
+var _tableBristolChenePlaisance7P181WebpDefault = parcelHelpers.interopDefault(_tableBristolChenePlaisance7P181Webp);
+var _tableOvaleGirardeauAvecChaiseWebp = require("../img/contemporain/table-ovale-girardeau-avec-chaise.webp");
+var _tableOvaleGirardeauAvecChaiseWebpDefault = parcelHelpers.interopDefault(_tableOvaleGirardeauAvecChaiseWebp);
+var _tableRondeAninovelWebp = require("../img/contemporain/table-ronde-aninovel.webp");
+var _tableRondeAninovelWebpDefault = parcelHelpers.interopDefault(_tableRondeAninovelWebp);
+const meublesBureaux = [
     {
         reference: "ref-001",
-        famille: "S\xe9jour classique",
-        imageUrl: (0, _classiqueChicBannerWebpDefault.default)
+        famille: "Bureau Palace Merisier Plaisance 8",
+        imageUrl: (0, _bureauPalaceMerisierPlaisance8P191WebpDefault.default)
     },
     {
         reference: "ref-002",
-        famille: "Bibilioth\xe8que Saumur Merisier",
-        imageUrl: (0, _plaisance2BibliotequeSaumurP73MerisierWebpDefault.default)
+        famille: "Bureau Malam Plaisance 4",
+        imageUrl: (0, _bureauMalamPlaisance4P162WebpDefault.default)
     },
     {
         reference: "ref-003",
-        famille: "Salon Contemporain Girardeau Ibiza",
-        imageUrl: (0, _195160PiedCentralGirardeauIbizaWebpDefault.default)
+        famille: "Bureau Rognon Plaisance 4",
+        imageUrl: (0, _bureauRognonPlaisance4P162WebpDefault.default)
     },
     {
-        reference: "ref-001",
-        famille: "Biblioth\xe8que Contemporaine",
-        imageUrl: (0, _8WebpDefault.default)
+        reference: "ref-004",
+        famille: "Table basse Concorde Plaisance 9",
+        imageUrl: (0, _tableBasseConcordePlaisance9P7454WebpDefault.default)
     },
     {
-        reference: "ref-002",
-        famille: "Meuble TV industriel",
-        imageUrl: (0, _industrielBannerWebpDefault.default)
+        reference: "ref-005",
+        famille: "Table Bristol ch\xeane Plaisance 7",
+        imageUrl: (0, _tableBristolChenePlaisance7P181WebpDefault.default)
     },
     {
-        reference: "ref-003",
-        famille: "Salle \xe0 manger Plaisance 4",
-        imageUrl: (0, _salleAMangerPlaisance4WebpDefault.default)
+        reference: "ref-006",
+        famille: "Table ovale Girardeau",
+        imageUrl: (0, _tableOvaleGirardeauAvecChaiseWebpDefault.default)
+    },
+    {
+        reference: "ref-006",
+        famille: "Table ronde Aninovel",
+        imageUrl: (0, _tableRondeAninovelWebpDefault.default)
     }
 ];
 function displayFurnitureData() {
     const furnitureContainer = document.getElementById("furniture-container");
-    meublesSejour.forEach((furniture)=>{
+    meublesBureaux.forEach((furniture)=>{
         const furnitureElement = document.createElement("div");
         furnitureElement.classList.add("furniture-item");
         const furnitureImage = document.createElement("img");
@@ -988,10 +995,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/classique-style/classique_chic-banner.webp":"czRwx","../img/classique-style/plaisance_2_biblioteque-saumur-p73-merisier.webp":"asHwe","../img/contemporain/195160-pied-central-girardeau-ibiza.webp":"jH4Nt","../img/industriel_artcopi/8.webp":"f39ry","../img/industriel_artcopi/industriel-banner.webp":"8wAXU","../img/industriel_artcopi/salle_a_manger_plaisance_4.webp":"7iWM1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"czRwx":[function(require,module,exports) {
-module.exports = require("3522b953ffbb0343").getBundleURL("1dMM8") + "../../classique_chic-banner.0599795c.webp" + "?" + Date.now();
+},{"../img/classique-style/bureau-palace-merisier-plaisance-8-p191.webp":"g09mR","../img/classique-style/bureau-malam-plaisance-4-p162.webp":"iVb9O","../img/classique-style/bureau-rognon-plaisance-4-p162.webp":"jkFpw","../img/classique-style/table_basse_concorde_Plaisance_9_p7454.webp":"cEWNe","../img/classique-style/table-bristol-chene-plaisance-7-p181.webp":"537Ej","../img/contemporain/table-ovale-girardeau-avec-chaise.webp":"b1dXh","../img/contemporain/table-ronde-aninovel.webp":"87F3E","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g09mR":[function(require,module,exports) {
+module.exports = require("672458b39835d6f5").getBundleURL("1dMM8") + "../../bureau-palace-merisier-plaisance-8-p191.121562fe.webp" + "?" + Date.now();
 
-},{"3522b953ffbb0343":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"672458b39835d6f5":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -1025,22 +1032,25 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"asHwe":[function(require,module,exports) {
-module.exports = require("3fd34ac8d7b94219").getBundleURL("1dMM8") + "../../plaisance_2_biblioteque-saumur-p73-merisier.c4f38207.webp" + "?" + Date.now();
+},{}],"iVb9O":[function(require,module,exports) {
+module.exports = require("bdb087f675d2e623").getBundleURL("1dMM8") + "../../bureau-malam-plaisance-4-p162.4fa13723.webp" + "?" + Date.now();
 
-},{"3fd34ac8d7b94219":"lgJ39"}],"jH4Nt":[function(require,module,exports) {
-module.exports = require("9160636aa7f6dde2").getBundleURL("1dMM8") + "../../195160-pied-central-girardeau-ibiza.76926a53.webp" + "?" + Date.now();
+},{"bdb087f675d2e623":"lgJ39"}],"jkFpw":[function(require,module,exports) {
+module.exports = require("39323b8da45220e7").getBundleURL("1dMM8") + "../../bureau-rognon-plaisance-4-p162.f83b3499.webp" + "?" + Date.now();
 
-},{"9160636aa7f6dde2":"lgJ39"}],"f39ry":[function(require,module,exports) {
-module.exports = require("d0805cffbb995444").getBundleURL("1dMM8") + "../../8.28b4c66b.webp" + "?" + Date.now();
+},{"39323b8da45220e7":"lgJ39"}],"cEWNe":[function(require,module,exports) {
+module.exports = require("54a003b8d15f4f04").getBundleURL("1dMM8") + "../../table_basse_concorde_Plaisance_9_p7454.d2f33652.webp" + "?" + Date.now();
 
-},{"d0805cffbb995444":"lgJ39"}],"8wAXU":[function(require,module,exports) {
-module.exports = require("60786af1e5f55712").getBundleURL("1dMM8") + "../../industriel-banner.ed0c3ad4.webp" + "?" + Date.now();
+},{"54a003b8d15f4f04":"lgJ39"}],"537Ej":[function(require,module,exports) {
+module.exports = require("ad7b24fc37fa2db0").getBundleURL("1dMM8") + "../../table-bristol-chene-plaisance-7-p181.5ce45929.webp" + "?" + Date.now();
 
-},{"60786af1e5f55712":"lgJ39"}],"7iWM1":[function(require,module,exports) {
-module.exports = require("8554b66022a23c80").getBundleURL("1dMM8") + "../../salle_a_manger_plaisance_4.da014d72.webp" + "?" + Date.now();
+},{"ad7b24fc37fa2db0":"lgJ39"}],"b1dXh":[function(require,module,exports) {
+module.exports = require("9e3fc9480fa92e78").getBundleURL("1dMM8") + "../../table-ovale-girardeau-avec-chaise.a357a7be.webp" + "?" + Date.now();
 
-},{"8554b66022a23c80":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"9e3fc9480fa92e78":"lgJ39"}],"87F3E":[function(require,module,exports) {
+module.exports = require("8d9ca6ec84fd2c07").getBundleURL("1dMM8") + "../../table-ronde-aninovel.314de762.webp" + "?" + Date.now();
+
+},{"8d9ca6ec84fd2c07":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a

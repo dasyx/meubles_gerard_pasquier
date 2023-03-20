@@ -182,7 +182,7 @@
   <!--DEBUT CONTENU PRINCIPAL-->
   <main>
     <div class="meubles_choix">
-        <h2>Nos meubles de séjour / salon</h2>
+        <h2>Nos armoires, nos buffets</h2>
         <h3>Patience, d'autres seront ajoutés...</h3>
     </div>
     <div id="furniture-container">
@@ -383,59 +383,48 @@
 <script type="module">
 
 
-// Meubles séjour / salon
-import sejour1 from "../img/classique-style/classique_chic-banner.webp";
-import sejour2 from "../img/contemporain/enfilade-animovel-p02.webp";
-import sejour3 from "../img/contemporain/meuble-tv-animovel-p29-iris.webp";
-import sejour4 from "../img/nordique/Plaisance-La-salle-a-manger-Ref-p95-Argenteuil.webp";
-import sejour5 from "../img/rustique/ADL planche salle Belem.webp";
-import sejour6 from "../img/industriel_artcopi/salle_a_manger_plaisance_4.webp";
-import sejour7 from "../img/rustique/meuble tv hudson.webp";
-import sejour8 from "../img/rustique/salle à manger seraphine.webp";
+// Meubles armoires / buffets
+import armoire1 from "../img/classique-style/bonnetiere-merisier-plaisance-6-p137-2390.webp";
+import armoire2 from "../img/classique-style/enfilade-saumur-p73-merisier-2.webp";
+import armoire3 from "../img/classique-style/meuble-dentrer-p4210.webp";
+import armoire4 from "../img/contemporain/contemporain-banner.webp";
+import armoire5 from "../img/contemporain/enfilade-animovel-wind.webp";
+import armoire6 from "../img/industriel_artcopi/8.webp";
+import armoire7 from "../img/industriel_artcopi/passerelle.webp";
 
 
-
-const meublesSejour = [
+const meublesArmoires = [
   {
     reference: 'ref-001',
-    famille: 'Séjour classique',
-    imageUrl: sejour1
+    famille: 'Bonnetiere merisier Plaisance 6 p137-2390',
+    imageUrl: armoire1
   },
   {
     reference: 'ref-002',
-    famille: 'Enfilade animovel p02',
-    imageUrl: sejour2
+    famille: 'Bureau Malam Plaisance 4',
+    imageUrl: armoire2
   },
   {
     reference: 'ref-003',
-    famille: 'Salon Contemporain Animovel p29 iris',
-    imageUrl: sejour3
+    famille: 'Bureau Rognon Plaisance 4',
+    imageUrl: armoire3
   },
   {
     reference: 'ref-004',
-    famille: 'Salle à manger Plaisance p95 Argenteuil',
-    imageUrl: sejour4
+    famille: 'Enfilade animovel wind',
+    imageUrl: armoire5
   },
   {
     reference: 'ref-005',
-    famille: 'Salle Belem ADL planche',
-    imageUrl: sejour5
+    famille: 'Armoire Industrielle',
+    imageUrl: armoire6
   },
   {
     reference: 'ref-006',
-    famille: 'Salle à manger Plaisance 4',
-    imageUrl: sejour6
+    famille: 'Passerelle Industrielle',
+    imageUrl: armoire7
   },
-  {
-    reference: 'ref-007',
-    famille: 'Meuble TV Hudson',
-    imageUrl: sejour7
-  },
-  {
-    reference: 'ref-008',
-    famille: 'Salle à manger Seraphine',
-    imageUrl: sejour8
-  },
+ 
   // Ajoutez d'autres objets de meubles ici...
 ];
 
@@ -443,7 +432,7 @@ const meublesSejour = [
 function displayFurnitureData() {
   const furnitureContainer = document.getElementById('furniture-container');
 
-  meublesSejour.forEach(furniture => {
+  meublesArmoires.forEach(furniture => {
     const furnitureElement = document.createElement('div');
     furnitureElement.classList.add('furniture-item');
 
