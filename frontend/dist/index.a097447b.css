@@ -29741,9 +29741,9 @@ main {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1155px) {
   .highResHeight {
-    height: 42rem;
+    height: 52rem;
   }
 }
 
