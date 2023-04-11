@@ -688,15 +688,30 @@ products.addEventListener("click", function() {
         var link1 = document.createElement("a");
         var link2 = document.createElement("a");
         var link3 = document.createElement("a");
-        link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link1.setAttribute("href", "#");
-        link1.textContent = "A d\xe9finir";
-        link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link2.setAttribute("href", "#");
-        link2.textContent = "A d\xe9finir";
-        link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link3.setAttribute("href", "#");
-        link3.textContent = "A d\xe9finir";
+        /* link1.classList.add(
+      "rounded-t",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link1.setAttribute("href", "#");
+    link1.textContent = "A définir";
+
+    link2.classList.add(
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link2.setAttribute("href", "#");
+    link2.textContent = "A définir"; */ link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+        link3.setAttribute("href", "#nosproduits");
+        link3.textContent = "D\xe9couvrez nos produits";
         listItem1.appendChild(link1);
         listItem2.appendChild(link2);
         listItem3.appendChild(link3);
@@ -718,15 +733,30 @@ inspirations.addEventListener("click", function() {
         var link1 = document.createElement("a");
         var link2 = document.createElement("a");
         var link3 = document.createElement("a");
-        link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link1.setAttribute("href", "#");
-        link1.textContent = "A d\xe9finir";
-        link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link2.setAttribute("href", "#");
-        link2.textContent = "A d\xe9finir";
-        link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link3.setAttribute("href", "#");
-        link3.textContent = "A d\xe9finir";
+        /* link1.classList.add(
+      "rounded-t",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link1.setAttribute("href", "#");
+    link1.textContent = "A définir";
+
+    link2.classList.add(
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link2.setAttribute("href", "#");
+    link2.textContent = "A définir"; */ link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
+        link3.setAttribute("href", "#nosinspirations");
+        link3.textContent = "Venez d\xe9couvrir nos inspirations";
         listItem1.appendChild(link1);
         listItem2.appendChild(link2);
         listItem3.appendChild(link3);
