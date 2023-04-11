@@ -29741,6 +29741,12 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .highResHeight {
+    height: 42rem;
+  }
+}
+
 .carousel_legend {
   background-color: #fff;
   padding: 10px;

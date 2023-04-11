@@ -96,6 +96,12 @@ main {
 
 //    CAROUSSEL   //
 
+.highResHeight {
+  @media screen and (min-width: 768px) { 
+    height: 42rem;
+  }
+}
+
 .carousel_legend {
   padding: 10px;
   background-color: #fff;
