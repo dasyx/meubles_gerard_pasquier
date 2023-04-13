@@ -771,17 +771,3 @@
 </body>
 
 </html>
-
-<script>
-  // Récupérer toutes les images dans la section mySwiper
-  const images = document.querySelectorAll('.mySwiper img');
-
-  // Pour chaque image, calculer la hauteur proportionnelle en fonction de la largeur de l'image
-  images.forEach(image => {
-    const width = image.width;
-    const aspectRatio = 0.3; // Remplacez cette valeur par le rapport hauteur/largeur de vos images
-    const height = width * aspectRatio;
-    image.style.height = height + "px";
-  });
-
-</script>

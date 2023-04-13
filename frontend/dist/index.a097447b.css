@@ -44,18 +44,6 @@
   height: auto;
 }
 
-.img-fullsize {
-  width: 800px;
-  height: 600px;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-
-.img-not-fullsize {
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 *, :before, :after {
   box-sizing: border-box;
 }
