@@ -86,7 +86,8 @@
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
                   href="#">A définir...</a></li>
-              <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez bientôt...</a>
+              <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez
+                  bientôt...</a>
               </li>
               <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
                   href="#">Très bientôt</a></li>
@@ -98,9 +99,10 @@
             <span>Produits</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li>
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#nosproduits" data-offset="-50" >Découvrez nos produits</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#nosproduits"
+                  data-offset="-50">Découvrez nos produits</a>
               </li>
-             <!--  <li>
+              <!--  <li>
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez bientôt...</a>
               </li>
               <li>
@@ -114,7 +116,8 @@
             <span>Inspirations</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#nosinspirations" data-offset="50">Venez découvrir nos inspirations</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="#nosinspirations" data-offset="50">Venez découvrir nos inspirations</a>
               </li>
               <!-- <li class="">
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez bientôt...</a>
@@ -134,10 +137,12 @@
                   à définir</a>
               </li>
               <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez bientôt...</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez
+                  bientôt...</a>
               </li>
               <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Très bientôt</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Très
+                  bientôt</a>
               </li>
             </ul>
 
@@ -180,13 +185,18 @@
     <!--DEBUT CAROUSEL HONNEUR-->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide relative">
-          <img class="object-cover w-full h-96 highResHeight" src="./src/img/carousel/wa0000.webp" alt="slide 1" />
+          <a class="fullscreen-link" href="#">
+            <img class="object-cover w-full h-96 highResHeight" src="./src/img/carousel/wa0000.webp" alt="slide 1"
+              onclick="openFullScreen(this)" />
+          </a>
           <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2">
             <h3 class="text-lg font-medium">Slide 1</h3>
             <p class="text-sm">Séjour 1</p>
           </div>
         </div>
+
         <div class="swiper-slide relative">
           <img class="object-cover w-full h-96 highResHeight" src="./src/img/carousel/wa0001.webp" alt="slide 2" />
           <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2">
@@ -274,7 +284,7 @@
         centeredSlides: true,
         autoplay: {
           delay: 5000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         },
         pagination: {
           el: '.swiper-pagination',
@@ -520,7 +530,9 @@
             <img class="h-full object-cover object-center rounded-lg" src="./src/img/rustique/meuble tv hudson.webp"
               alt="séjours / salon">
             <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">séjours |
-              salons<hr></div>
+              salons
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -531,8 +543,10 @@
           <a href="./src/pages/choix_bureaux.html">
             <img class="h-full object-cover object-center rounded-lg"
               src="./src/img/contemporain/table-ronde-aninovel.webp" alt="meubles de salon">
-            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">bureaux | tables
-            <hr></div>
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">bureaux |
+              tables
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -541,10 +555,12 @@
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
         <div class="canapes relative">
           <a href="./src/pages/choix_armoires_buffets.html">
-            <img class="h-full object-cover object-center rounded-lg"
-              src="./src/img/nordique/nordique-banner3.webp" alt="canapés stylés">
-            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">armoires | enfilades | buffets
-            <hr></div>
+            <img class="h-full object-cover object-center rounded-lg" src="./src/img/nordique/nordique-banner3.webp"
+              alt="canapés stylés">
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">armoires
+              | enfilades | buffets
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -553,10 +569,12 @@
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
         <div class="fauteuils_chaises relative">
           <a href="./src/pages/choix_chaises_fauteuils.html">
-            <img class="h-full object-cover object-center rounded-lg"
-              src="./src/img/classique-style/choix_chaises.webp" alt="Fauteuils et chaises">
+            <img class="h-full object-cover object-center rounded-lg" src="./src/img/classique-style/choix_chaises.webp"
+              alt="Fauteuils et chaises">
             <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">chaises |
-              fauteuils | canapés<hr></div>
+              fauteuils | canapés
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -568,7 +586,9 @@
             <img class="h-full flex object-cover object-center rounded-lg"
               src="./src/img/decorations/choix_decorations.webp" alt="Décorations, tapis et accessoires">
             <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">
-              décorations | accessoires<hr></div>
+              décorations | accessoires
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -710,7 +730,8 @@
         <div class="flex footer_logo">
           <img src="./src/img/meubles_gerard_pasquier_lowres_opacity.webp" width="250" height="auto" />
           <p class="max-w-xs mt-4 text-white-500 dark:text-white-400">
-            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits, restez pour notre passion.
+            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits,
+            restez pour notre passion.
           </p>
           <!-- SOCIAL -->
           <div class="flex footer_social">
@@ -750,3 +771,17 @@
 </body>
 
 </html>
+
+<script>
+  // Récupérer toutes les images dans la section mySwiper
+  const images = document.querySelectorAll('.mySwiper img');
+
+  // Pour chaque image, calculer la hauteur proportionnelle en fonction de la largeur de l'image
+  images.forEach(image => {
+    const width = image.width;
+    const aspectRatio = 0.3; // Remplacez cette valeur par le rapport hauteur/largeur de vos images
+    const height = width * aspectRatio;
+    image.style.height = height + "px";
+  });
+
+</script>

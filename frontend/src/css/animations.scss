@@ -48,3 +48,17 @@
     width: 100%;
     height: auto;
 }
+
+
+
+// GESTION DE L'AFFICHE PLEIN ECRAN DES IMAGES DU CAROUSEL
+
+.img-fullsize {
+    width: 800px;
+    height: 600px;
+    object-fit: contain;
+}
+
+.img-not-fullsize {
+    object-fit: cover;
+}

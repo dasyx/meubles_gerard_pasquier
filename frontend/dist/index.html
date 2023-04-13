@@ -72,7 +72,8 @@
             <span>Notre histoire</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A définir...</a></li>
-              <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez bientôt...</a>
+              <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez
+                  bientôt...</a>
               </li>
               <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Très bientôt</a></li>
             </ul>
@@ -85,7 +86,7 @@
               <li>
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#nosproduits" data-offset="-50">Découvrez nos produits</a>
               </li>
-             <!--  <li>
+              <!--  <li>
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez bientôt...</a>
               </li>
               <li>
@@ -119,10 +120,12 @@
                   à définir</a>
               </li>
               <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez bientôt...</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Revenez
+                  bientôt...</a>
               </li>
               <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Très bientôt</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Très
+                  bientôt</a>
               </li>
             </ul>
 
@@ -165,13 +168,17 @@
     <!--DEBUT CAROUSEL HONNEUR-->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide relative">
-          <img class="object-cover w-full h-96 highResHeight" src="/wa0000.2a03e8d4.webp" alt="slide 1">
+          <a class="fullscreen-link" href="#">
+            <img class="object-cover w-full h-96 highResHeight" src="/wa0000.2a03e8d4.webp" alt="slide 1" onclick="openFullScreen(this)">
+          </a>
           <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2">
             <h3 class="text-lg font-medium">Slide 1</h3>
             <p class="text-sm">Séjour 1</p>
           </div>
         </div>
+
         <div class="swiper-slide relative">
           <img class="object-cover w-full h-96 highResHeight" src="/wa0001.952e7455.webp" alt="slide 2">
           <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2">
@@ -258,7 +265,7 @@
     centeredSlides: true,
     autoplay: {
         delay: 5000,
-        disableOnInteraction: false
+        disableOnInteraction: true
     },
     pagination: {
         el: ".swiper-pagination",
@@ -472,7 +479,9 @@
           <a href="/src/pages/choix_salons.html">
             <img class="h-full object-cover object-center rounded-lg" src="/meuble%20tv%20hudson.eff2442d.webp" alt="séjours / salon">
             <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">séjours |
-              salons<hr></div>
+              salons
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -482,8 +491,10 @@
         <div class="meubles_salon relative">
           <a href="/src/pages/choix_bureaux.html">
             <img class="h-full object-cover object-center rounded-lg" src="/table-ronde-aninovel.314de762.webp" alt="meubles de salon">
-            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">bureaux | tables
-            <hr></div>
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">bureaux |
+              tables
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -493,8 +504,10 @@
         <div class="canapes relative">
           <a href="/src/pages/choix_armoires_buffets.html">
             <img class="h-full object-cover object-center rounded-lg" src="/nordique-banner3.27bf9478.webp" alt="canapés stylés">
-            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">armoires | enfilades | buffets
-            <hr></div>
+            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">armoires
+              | enfilades | buffets
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -505,7 +518,9 @@
           <a href="/src/pages/choix_chaises_fauteuils.html">
             <img class="h-full object-cover object-center rounded-lg" src="/choix_chaises.f59c6991.webp" alt="Fauteuils et chaises">
             <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">chaises |
-              fauteuils | canapés<hr></div>
+              fauteuils | canapés
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -516,7 +531,9 @@
           <a href="/src/pages/choix_decorations_accessoires.html">
             <img class="h-full flex object-cover object-center rounded-lg" src="/choix_decorations.ac25f4db.webp" alt="Décorations, tapis et accessoires">
             <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">
-              décorations | accessoires<hr></div>
+              décorations | accessoires
+              <hr>
+            </div>
           </a>
         </div>
       </div>
@@ -658,7 +675,8 @@
         <div class="flex footer_logo">
           <img src="/meubles_gerard_pasquier_lowres_opacity.2e2b6a0c.webp" width="250" height="auto">
           <p class="max-w-xs mt-4 text-white-500 dark:text-white-400">
-            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits, restez pour notre passion.
+            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits,
+            restez pour notre passion.
           </p>
           <!-- SOCIAL -->
           <div class="flex footer_social">
@@ -695,3 +713,15 @@
 </body>
 
 </html>
+
+<script>// Récupérer toutes les images dans la section mySwiper
+const images = document.querySelectorAll(".mySwiper img");
+// Pour chaque image, calculer la hauteur proportionnelle en fonction de la largeur de l'image
+images.forEach((image)=>{
+    const width = image.width;
+    const aspectRatio = 0.3; // Remplacez cette valeur par le rapport hauteur/largeur de vos images
+    const height = width * aspectRatio;
+    image.style.height = height + "px";
+});
+
+</script>

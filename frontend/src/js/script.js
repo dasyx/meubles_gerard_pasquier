@@ -17,7 +17,7 @@ let myButton = document.getElementById("fb-btn");
 
 myButton.appendChild(createButton());
 
-// Affichage conditionnel du menu dropdown header (menu fb logo) et dy menu dropdown logo pasquier
+// Affichage conditionnel du menu dropdown header (menu fb logo) et du menu dropdown logo pasquier
 if ((window.innerWidth || document.body.clientWidth) <= 1024) {
   let isVisible = false;
   hdBtnLowres.addEventListener("click", function () {

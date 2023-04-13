@@ -572,7 +572,7 @@ let navLogoMenuHiRes = document.getElementById("nav_logo_menu-hires");
 let navLogoDropdownMenuLowRes = document.getElementById("nav_logo_dropdown-lowres");
 let myButton = document.getElementById("fb-btn");
 myButton.appendChild((0, _buttonDefault.default)());
-// Affichage conditionnel du menu dropdown header (menu fb logo) et dy menu dropdown logo pasquier
+// Affichage conditionnel du menu dropdown header (menu fb logo) et du menu dropdown logo pasquier
 if ((window.innerWidth || document.body.clientWidth) <= 1024) {
     let isVisible = false;
     hdBtnLowres.addEventListener("click", function() {
