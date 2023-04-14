@@ -52,3 +52,29 @@
 
 
 // GESTION DE L'AFFICHE PLEIN ECRAN DES IMAGES DU CAROUSEL
+
+.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-wrapper img {
+    @media screen and (max-width: 1023px) {
+        height: 14rem;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        height: 34rem;
+    }
+
+    @media screen and (min-width: 1441px) {
+        width: 75%;
+        height: 52rem;
+        margin: 0 auto;
+    }
+}

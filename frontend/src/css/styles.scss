@@ -84,10 +84,6 @@ main {
   align-items: right;
 }
 
-.bg-white {
-  margin-bottom: 50px;
-}
-
 .separate {
   width: 30%;
   margin: 0 auto;
@@ -95,12 +91,6 @@ main {
 }
 
 //    CAROUSSEL   //
-
-.highResHeight {
-  @media screen and (min-width: 1155px) { 
-    height: 30rem;
-  }
-}
 
 .carousel_legend {
   padding: 10px;
