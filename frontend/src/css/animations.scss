@@ -78,15 +78,21 @@
     }
 } 
 .swiper-wrapper img {
-    @media screen and (max-width: 1023px) {
-        height: 14rem;
+
+    @media screen and (max-width: 767px) {
+        height: 24rem;
     }
 
-    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
         height: 32rem;
     }
+    
+    @media screen and (min-width: 1024px) and (max-width: 1750px) {
+        height: 42rem;
+        width: 100%;
+    }
 
-    @media screen and (min-width: 1441px) {
+    @media screen and (min-width: 1751px) {
         width: 50%;
         height: 42rem;
         margin: 0 auto;
