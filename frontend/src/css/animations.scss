@@ -54,6 +54,7 @@
 // GESTION DE L'AFFICHE PLEIN ECRAN DES IMAGES DU CAROUSEL
 
 .swiper-wrapper {
+    display: flex;
     width: 100%;
 }
 
@@ -62,19 +63,32 @@
     height: 100%;
     object-fit: cover;
 }
+.swiper-slide .absolute {
+    width: 100%;
 
+    @media screen and (min-width: 1441px) {
+        width: 50%;
+    }
+} 
+.swiper-slide .relative {
+
+    @media screen and (min-width: 1441px) {
+        display: flex;
+        width: 50%;
+    }
+} 
 .swiper-wrapper img {
     @media screen and (max-width: 1023px) {
         height: 14rem;
     }
 
     @media screen and (min-width: 1024px) and (max-width: 1440px) {
-        height: 34rem;
+        height: 32rem;
     }
 
     @media screen and (min-width: 1441px) {
-        width: 75%;
-        height: 52rem;
+        width: 50%;
+        height: 42rem;
         margin: 0 auto;
     }
 }

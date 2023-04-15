@@ -46,6 +46,7 @@
 
 .swiper-wrapper {
   width: 100%;
+  display: flex;
 }
 
 .swiper-slide img {
@@ -53,6 +54,21 @@
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.swiper-slide .absolute {
+  width: 100%;
+}
+
+@media screen and (min-width: 1441px) {
+  .swiper-slide .absolute {
+    width: 50%;
+  }
+
+  .swiper-slide .relative {
+    width: 50%;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -63,14 +79,14 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .swiper-wrapper img {
-    height: 34rem;
+    height: 32rem;
   }
 }
 
 @media screen and (min-width: 1441px) {
   .swiper-wrapper img {
-    width: 75%;
-    height: 52rem;
+    width: 50%;
+    height: 42rem;
     margin: 0 auto;
   }
 }
