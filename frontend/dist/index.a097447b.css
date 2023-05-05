@@ -30265,6 +30265,23 @@ footer nav, footer p {
   margin-bottom: 50px;
 }
 
+.biographie-logo {
+  height: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.biographie-logo img {
+  width: 250px;
+  height: auto;
+}
+
+.biographie-home i {
+  padding-right: 10px;
+}
+
 @media (max-width: 1024px) {
   .furniture-item {
     flex: 0 0 calc(50% - 1rem);
@@ -30329,9 +30346,13 @@ footer nav, footer p {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .nav_logo__logo img {
+    margin: 20px 0;
+  }
+
   .bg-white section {
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .nav_logo__nav {
@@ -30360,9 +30381,13 @@ footer nav, footer p {
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
+  .nav_logo__logo img {
+    margin: 20px 0;
+  }
+
   .bg-white section {
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .nav_logo__nav {
@@ -30381,6 +30406,11 @@ footer nav, footer p {
 }
 
 @media (min-width: 1081px) and (max-width: 2260px) {
+  .bg-white section {
+    margin-bottom: 20px;
+    padding: 40px;
+  }
+
   .display_dropdown {
     display: none;
   }

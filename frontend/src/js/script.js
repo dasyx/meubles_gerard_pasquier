@@ -122,10 +122,10 @@ ourStory.addEventListener("click", function () {
       "block",
       "whitespace-nowrap"
     );
-    link1.setAttribute("href", "#");
-    link1.textContent = "A définir";
+    link1.setAttribute("href", "./src/pages/biographie.html");
+    link1.textContent = "A l'origine";
 
-    link2.classList.add(
+    /* link2.classList.add(
       "bg-gray-200",
       "hover:bg-gray-400",
       "py-2",
@@ -146,7 +146,7 @@ ourStory.addEventListener("click", function () {
       "whitespace-nowrap"
     );
     link3.setAttribute("href", "#");
-    link3.textContent = "A définir";
+    link3.textContent = "A définir"; */
 
     listItem1.appendChild(link1);
     listItem2.appendChild(link2);
@@ -170,11 +170,15 @@ products.addEventListener("click", function () {
     var listItem1 = document.createElement("li");
     var listItem2 = document.createElement("li");
     var listItem3 = document.createElement("li");
+    var listItem4 = document.createElement("li");
+    var listItem5 = document.createElement("li");
     var link1 = document.createElement("a");
     var link2 = document.createElement("a");
     var link3 = document.createElement("a");
+    var link4 = document.createElement("a");
+    var link5 = document.createElement("a");
 
-    /* link1.classList.add(
+    link1.classList.add(
       "rounded-t",
       "bg-gray-200",
       "hover:bg-gray-400",
@@ -183,8 +187,8 @@ products.addEventListener("click", function () {
       "block",
       "whitespace-nowrap"
     );
-    link1.setAttribute("href", "#");
-    link1.textContent = "A définir";
+    link1.setAttribute("href", "./src/pages/choix_salons.html");
+    link1.textContent = "Les salons";
 
     link2.classList.add(
       "bg-gray-200",
@@ -194,8 +198,8 @@ products.addEventListener("click", function () {
       "block",
       "whitespace-nowrap"
     );
-    link2.setAttribute("href", "#");
-    link2.textContent = "A définir"; */
+    link2.setAttribute("href", "./src/pages/choix_armoires_buffets.html");
+    link2.textContent = "Armoires & buffets";
 
     link3.classList.add(
       "rounded-b",
@@ -206,16 +210,44 @@ products.addEventListener("click", function () {
       "block",
       "whitespace-nowrap"
     );
-    link3.setAttribute("href", "#nosproduits");
-    link3.textContent = "Découvrez nos produits";
+    link3.setAttribute("href", "./src/pages/choix_bureaux.html");
+    link3.textContent = "Bureaux";
+
+    link4.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link4.setAttribute("href", "./src/pages/choix_chaises_fauteuils.html");
+    link4.textContent = "Chaises & fauteuils";
+
+    link5.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link5.setAttribute("href", "./src/pages/choix_decorations_accessoires.html");
+    link5.textContent = "Décoration & accessoires";
 
     listItem1.appendChild(link1);
     listItem2.appendChild(link2);
     listItem3.appendChild(link3);
+    listItem4.appendChild(link4);
+    listItem3.appendChild(link5);
 
     dropdownMenu2.appendChild(listItem1);
     dropdownMenu2.appendChild(listItem2);
     dropdownMenu2.appendChild(listItem3);
+    dropdownMenu2.appendChild(listItem4);
+    dropdownMenu2.appendChild(listItem5);
   } else {
     dropdownMenu2.classList.add("hidden");
     while (dropdownMenu2.firstChild) {
@@ -231,11 +263,15 @@ inspirations.addEventListener("click", function () {
     var listItem1 = document.createElement("li");
     var listItem2 = document.createElement("li");
     var listItem3 = document.createElement("li");
+    var listItem4 = document.createElement("li");
+    var listItem5 = document.createElement("li");
     var link1 = document.createElement("a");
     var link2 = document.createElement("a");
     var link3 = document.createElement("a");
+    var link4 = document.createElement("a");
+    var link5 = document.createElement("a");
 
-    /* link1.classList.add(
+    link1.classList.add(
       "rounded-t",
       "bg-gray-200",
       "hover:bg-gray-400",
@@ -244,7 +280,7 @@ inspirations.addEventListener("click", function () {
       "block",
       "whitespace-nowrap"
     );
-    link1.setAttribute("href", "#");
+    link1.setAttribute("href", "./src/pages/classique.html");
     link1.textContent = "A définir";
 
     link2.classList.add(
@@ -255,8 +291,8 @@ inspirations.addEventListener("click", function () {
       "block",
       "whitespace-nowrap"
     );
-    link2.setAttribute("href", "#");
-    link2.textContent = "A définir"; */
+    link2.setAttribute("href", "./src/pages/contemporain.html");
+    link2.textContent = "A définir";
 
     link3.classList.add(
       "rounded-b",
@@ -267,16 +303,44 @@ inspirations.addEventListener("click", function () {
       "block",
       "whitespace-nowrap"
     );
-    link3.setAttribute("href", "#nosinspirations");
+    link3.setAttribute("href", "./src/pages/industriel.html");
     link3.textContent = "Venez découvrir nos inspirations";
+
+    link4.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link4.setAttribute("href", "./src/pages/nordique.html");
+    link4.textContent = "Venez découvrir nos inspirations";
+
+    link5.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link5.setAttribute("href", "./src/pages/rustique.html");
+    link5.textContent = "Venez découvrir nos inspirations";
 
     listItem1.appendChild(link1);
     listItem2.appendChild(link2);
     listItem3.appendChild(link3);
+    listItem4.appendChild(link4);
+    listItem5.appendChild(link5);
 
     dropdownMenu3.appendChild(listItem1);
     dropdownMenu3.appendChild(listItem2);
     dropdownMenu3.appendChild(listItem3);
+    dropdownMenu4.appendChild(listItem4);
+    dropdownMenu5.appendChild(listItem5);
   } else {
     dropdownMenu3.classList.add("hidden");
     while (dropdownMenu3.firstChild) {
