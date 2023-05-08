@@ -30290,6 +30290,7 @@ footer nav, footer p {
 
 .main_biographie__title {
   order: -1;
+  margin-top: 20px;
   position: relative;
 }
 
@@ -30356,7 +30357,7 @@ footer nav, footer p {
 .label-logo {
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 767px) {
