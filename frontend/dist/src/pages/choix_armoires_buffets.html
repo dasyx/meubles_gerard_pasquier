@@ -16,42 +16,41 @@
   <body>
     <header>
       <!--DEBUT NAVIGATION TITRE + LIENS RESEAUX-->
-      <nav class="bg-custom1 flex justify-between flex-wrap p-3">
-        <section class="text-white mr-6">
-          <h1 class="text-xl font-medium" id="goToTop">
-            Meubles Gérard Pasquier
-          </h1>
-        </section>
+    <nav class="bg-custom1 flex justify-between flex-wrap p-3">
+      <section class="text-white mr-6">
+        <h1 class="text-xl font-medium" id="goToTop">Meubles Gérard Pasquier</h1>
+      </section>
 
-        <section class="ml-4 lg:block ml-auto display_contact">
-          <a href="/index.html" class="text-white hover:text-white-300 mr-3">Accueil</a>
-          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3">Contactez-nous</a>
-          <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-white-300"><span id="fb-btn"></span></a>
-        </section>
+      <section class="ml-4 lg:block ml-auto display_contact">
+        <a href="/index.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-house"></i>Accueil</a>
+        <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-envelope"></i>Contactez-nous</a>
+        <a href="/src/pages/contact.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-earth-europe"></i>Plus de renseignements</a>
+        <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-white-300"><span id="fb-btn"></span></a>
+      </section>
 
-        <section class="ml-4 display_dropdown">
-          <!--BOUTON ACCUEIL HEADER-->
-          <nav x-data="{ open: false }">
-            <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" @click="open = !open">
-              <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
-              </div>
-            </button>
-          </nav>
+      <section class="ml-4 display_dropdown">
+        <!--BOUTON ACCUEIL HEADER-->
+        <nav x-data="{ open: false }">
+          <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" @click="open = !open">
+            <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+            </div>
+          </button>
+        </nav>
 
-          <!--FIN BOUTON ACCUEIL-->
-          <!--MENU DEROULANT HEADER LOW RES-->
-          <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
-            <a href="/index.html" class="block px-3 py-2 ml-3 relative">Accueil</a>
-            <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><span id="contact"></span></a>
-            <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 relative whitespace-nowrap"><i class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
-          </div>
-          <!--FIN MENU DEROULANT HEADER LOW RES-->
-        </section>
-      </nav>
-      <!--FIN NAVIGATION TITRE + LIENS RESEAUX-->
+        <!--FIN BOUTON ACCUEIL-->
+        <!--MENU DEROULANT HEADER LOW RES-->
+        <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
+          <a href="/index.html" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-house"></i>Accueil</a>
+          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-envelope"></i><span id="contact"></span></a>
+          |<a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 ml-3 relative whitespace-nowrap"><i class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
+        </div>
+        <!--FIN MENU DEROULANT HEADER LOW RES-->
+      </section>
+    </nav>
+    <!--FIN NAVIGATION TITRE + LIENS RESEAUX-->
 
       <!--DEBUT NAVIGATION LOGO + HISTORIQUE-->
       <nav class="bg-white">
@@ -318,7 +317,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="text-white-700 transition hover:opacity-75">
+                    <a href="/src/pages/contact.html" class="text-white-700 transition hover:opacity-75">
                       Nous trouver
                     </a>
                   </li>
@@ -521,13 +520,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"eLewU":[function(require,module,exports) {
+})({"figNu":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "259deea42310eabb";
+module.bundle.HMR_BUNDLE_ID = "e0e7ecbe87aeca84";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -935,7 +934,7 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"aooh5":[function(require,module,exports) {
+},{}],"2k2Wv":[function(require,module,exports) {
 // Meubles armoires / buffets
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _bonnetiereMerisierPlaisance6P1372390Webp = require("../img/classique-style/bonnetiere-merisier-plaisance-6-p137-2390.webp");
@@ -1043,10 +1042,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/classique-style/bonnetiere-merisier-plaisance-6-p137-2390.webp":"e04j2","../img/classique-style/enfilade-saumur-p73-merisier-2.webp":"b9SNb","../img/classique-style/meuble-dentrer-p4210.webp":"fx4QE","../img/contemporain/contemporain-banner.webp":"lIacK","../img/contemporain/enfilade-animovel-wind.webp":"aPgXr","../img/industriel_artcopi/8.webp":"hdKBV","../img/industriel_artcopi/passerelle.webp":"5W1Hc","../img/nordique/nordique-banner3.webp":"kS98Q","../img/classique-style/meuble_classique.webp":"jMvcx","../img/classique-style/meuble_classique1.webp":"a7yWG","../img/rustique/meuble_rustique.webp":"RdnuF","../img/nordique/nd-buffet-vend195180me-ref-1262-noir.webp":"jk9ur","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e04j2":[function(require,module,exports) {
-module.exports = require("e3a08f89a244e561").getBundleURL("3eevt") + "../../bonnetiere-merisier-plaisance-6-p137-2390.db633c31.webp" + "?" + Date.now();
+},{"../img/classique-style/bonnetiere-merisier-plaisance-6-p137-2390.webp":"lfQrC","../img/classique-style/enfilade-saumur-p73-merisier-2.webp":"5VjHZ","../img/classique-style/meuble-dentrer-p4210.webp":"g8Ya8","../img/contemporain/contemporain-banner.webp":"el6FF","../img/contemporain/enfilade-animovel-wind.webp":"8WlEW","../img/industriel_artcopi/8.webp":"drgWe","../img/industriel_artcopi/passerelle.webp":"iQQc2","../img/nordique/nordique-banner3.webp":"czDZC","../img/classique-style/meuble_classique.webp":"6fUti","../img/classique-style/meuble_classique1.webp":"9mPq8","../img/rustique/meuble_rustique.webp":"kdKNL","../img/nordique/nd-buffet-vend195180me-ref-1262-noir.webp":"anQyb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lfQrC":[function(require,module,exports) {
+module.exports = require("ddaa1ad741b36db1").getBundleURL("jjau7") + "../../bonnetiere-merisier-plaisance-6-p137-2390.db633c31.webp" + "?" + Date.now();
 
-},{"e3a08f89a244e561":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"ddaa1ad741b36db1":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -1080,40 +1079,40 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"b9SNb":[function(require,module,exports) {
-module.exports = require("dcad0a4f6c0e842f").getBundleURL("3eevt") + "../../enfilade-saumur-p73-merisier-2.e875ecde.webp" + "?" + Date.now();
+},{}],"5VjHZ":[function(require,module,exports) {
+module.exports = require("eb0a7ff0f3338a62").getBundleURL("jjau7") + "../../enfilade-saumur-p73-merisier-2.e875ecde.webp" + "?" + Date.now();
 
-},{"dcad0a4f6c0e842f":"lgJ39"}],"fx4QE":[function(require,module,exports) {
-module.exports = require("feda319d7ffe3236").getBundleURL("3eevt") + "../../meuble-dentrer-p4210.ed442a39.webp" + "?" + Date.now();
+},{"eb0a7ff0f3338a62":"lgJ39"}],"g8Ya8":[function(require,module,exports) {
+module.exports = require("af39a60db813ee85").getBundleURL("jjau7") + "../../meuble-dentrer-p4210.ed442a39.webp" + "?" + Date.now();
 
-},{"feda319d7ffe3236":"lgJ39"}],"lIacK":[function(require,module,exports) {
-module.exports = require("383d9abed742b178").getBundleURL("3eevt") + "../../contemporain-banner.ed6526b6.webp" + "?" + Date.now();
+},{"af39a60db813ee85":"lgJ39"}],"el6FF":[function(require,module,exports) {
+module.exports = require("1f30f6a6f2e5f7c6").getBundleURL("jjau7") + "../../contemporain-banner.ed6526b6.webp" + "?" + Date.now();
 
-},{"383d9abed742b178":"lgJ39"}],"aPgXr":[function(require,module,exports) {
-module.exports = require("73130c7fcb4ca1de").getBundleURL("3eevt") + "../../enfilade-animovel-wind.8e095118.webp" + "?" + Date.now();
+},{"1f30f6a6f2e5f7c6":"lgJ39"}],"8WlEW":[function(require,module,exports) {
+module.exports = require("23ab46efd6449ac1").getBundleURL("jjau7") + "../../enfilade-animovel-wind.8e095118.webp" + "?" + Date.now();
 
-},{"73130c7fcb4ca1de":"lgJ39"}],"hdKBV":[function(require,module,exports) {
-module.exports = require("375f1f0634811bf3").getBundleURL("3eevt") + "../../8.28b4c66b.webp" + "?" + Date.now();
+},{"23ab46efd6449ac1":"lgJ39"}],"drgWe":[function(require,module,exports) {
+module.exports = require("713cfc5306c22fe5").getBundleURL("jjau7") + "../../8.28b4c66b.webp" + "?" + Date.now();
 
-},{"375f1f0634811bf3":"lgJ39"}],"5W1Hc":[function(require,module,exports) {
-module.exports = require("76af42589f21b409").getBundleURL("3eevt") + "../../passerelle.e72b193e.webp" + "?" + Date.now();
+},{"713cfc5306c22fe5":"lgJ39"}],"iQQc2":[function(require,module,exports) {
+module.exports = require("dab5d301e9398fdf").getBundleURL("jjau7") + "../../passerelle.e72b193e.webp" + "?" + Date.now();
 
-},{"76af42589f21b409":"lgJ39"}],"kS98Q":[function(require,module,exports) {
-module.exports = require("b6d7ce0106fca5bc").getBundleURL("3eevt") + "../../nordique-banner3.27bf9478.webp" + "?" + Date.now();
+},{"dab5d301e9398fdf":"lgJ39"}],"czDZC":[function(require,module,exports) {
+module.exports = require("ae00f72a25984440").getBundleURL("jjau7") + "../../nordique-banner3.27bf9478.webp" + "?" + Date.now();
 
-},{"b6d7ce0106fca5bc":"lgJ39"}],"jMvcx":[function(require,module,exports) {
-module.exports = require("5afadfeedb948bb2").getBundleURL("3eevt") + "../../meuble_classique.be16399e.webp" + "?" + Date.now();
+},{"ae00f72a25984440":"lgJ39"}],"6fUti":[function(require,module,exports) {
+module.exports = require("afa0afc9a89474d7").getBundleURL("jjau7") + "../../meuble_classique.be16399e.webp" + "?" + Date.now();
 
-},{"5afadfeedb948bb2":"lgJ39"}],"a7yWG":[function(require,module,exports) {
-module.exports = require("e4f69f3dc3b94746").getBundleURL("3eevt") + "../../meuble_classique1.88ce76fa.webp" + "?" + Date.now();
+},{"afa0afc9a89474d7":"lgJ39"}],"9mPq8":[function(require,module,exports) {
+module.exports = require("a87b830469f0013f").getBundleURL("jjau7") + "../../meuble_classique1.88ce76fa.webp" + "?" + Date.now();
 
-},{"e4f69f3dc3b94746":"lgJ39"}],"RdnuF":[function(require,module,exports) {
-module.exports = require("718b154cfc13114").getBundleURL("3eevt") + "../../meuble_rustique.6646870f.webp" + "?" + Date.now();
+},{"a87b830469f0013f":"lgJ39"}],"kdKNL":[function(require,module,exports) {
+module.exports = require("d0e4ba6aa1231cbb").getBundleURL("jjau7") + "../../meuble_rustique.6646870f.webp" + "?" + Date.now();
 
-},{"718b154cfc13114":"lgJ39"}],"jk9ur":[function(require,module,exports) {
-module.exports = require("4147cfe19ab99a11").getBundleURL("3eevt") + "../../nd-buffet-vend195180me-ref-1262-noir.bb2ff412.webp" + "?" + Date.now();
+},{"d0e4ba6aa1231cbb":"lgJ39"}],"anQyb":[function(require,module,exports) {
+module.exports = require("2bb09f61584af01f").getBundleURL("jjau7") + "../../nd-buffet-vend195180me-ref-1262-noir.bb2ff412.webp" + "?" + Date.now();
 
-},{"4147cfe19ab99a11":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"2bb09f61584af01f":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1143,6 +1142,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["eLewU","aooh5"], "aooh5", "parcelRequire66bd")
+},{}]},["figNu","2k2Wv"], "2k2Wv", "parcelRequire66bd")
 
 </script>

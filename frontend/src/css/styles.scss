@@ -808,6 +808,29 @@ footer p {
     text-align: center;
     margin: 10px auto;
   }
+
+  .main_biographie__title h2 {
+    font-size: 1.4em;
+  }
+
+  .main_biographie__title span {
+    font-size: 1.4em;
+  }
+
+  .main_biographie__title p {
+    font-size: 1.2em;
+    top: -10;
+    right: 0;
+    width: 50%;
+  }
+
+  .description-container hr {
+    position: absolute;
+    left: -32;
+    top: 30;
+    height: 4px;
+    width: 75%;
+  }
 }
 
 /* Styles pour les points de rupture (breakpoints) */

@@ -20,14 +20,13 @@
     <!--DEBUT NAVIGATION TITRE + LIENS RESEAUX-->
     <nav class="bg-custom1 flex justify-between flex-wrap p-3">
       <section class="text-white mr-6">
-        <h1 class="text-xl font-medium" id="goToTop">
-          Meubles Gérard Pasquier
-        </h1>
+        <h1 class="text-xl font-medium" id="goToTop">Meubles Gérard Pasquier</h1>
       </section>
 
       <section class="ml-4 lg:block ml-auto display_contact">
-        <a href="/index.html" class="text-white hover:text-white-300 mr-3">Accueil</a>
-        <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3">Contactez-nous</a>
+        <a href="/index.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-house"></i>Accueil</a>
+        <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-envelope"></i>Contactez-nous</a>
+        <a href="/src/pages/contact.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-earth-europe"></i>Plus de renseignements</a>
         <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-white-300"><span id="fb-btn"></span></a>
       </section>
 
@@ -37,8 +36,8 @@
           <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" @click="open = !open">
             <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-              <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-              <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
             </div>
           </button>
         </nav>
@@ -46,9 +45,9 @@
         <!--FIN BOUTON ACCUEIL-->
         <!--MENU DEROULANT HEADER LOW RES-->
         <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
-          <a href="/index.html" class="block px-3 py-2 ml-3 relative">Accueil</a>
-          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><span id="contact"></span></a>
-          <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 relative whitespace-nowrap"><i class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
+          <a href="/index.html" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-house"></i>Accueil</a>
+          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-envelope"></i><span id="contact"></span></a>
+          |<a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 ml-3 relative whitespace-nowrap"><i class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
         </div>
         <!--FIN MENU DEROULANT HEADER LOW RES-->
       </section>
@@ -286,18 +285,18 @@
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
+                  <a href="/index.html" class="text-white-700 transition hover:opacity-75">
                     Accueil
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
+                  <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white-700 transition hover:opacity-75">
                     Nous écrire
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
+                  <a href="/src/pages/contact.html" class="text-white-700 transition hover:opacity-75">
                     Nous trouver
                   </a>
                 </li>
@@ -500,13 +499,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"kZKqE":[function(require,module,exports) {
+})({"6TN2X":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "4aafd9ffea45fa2e";
+module.bundle.HMR_BUNDLE_ID = "2dbdf163af3b66d5";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -914,7 +913,7 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"8u2ga":[function(require,module,exports) {
+},{}],"kp2bL":[function(require,module,exports) {
 // Meubles séjour / salon
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _classiqueChicBannerWebp = require("../img/classique-style/classique_chic-banner.webp");
@@ -994,10 +993,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/classique-style/classique_chic-banner.webp":"62M9W","../img/contemporain/enfilade-animovel-p02.webp":"gs60J","../img/contemporain/meuble-tv-animovel-p29-iris.webp":"b9FOu","../img/nordique/Plaisance-La-salle-a-manger-Ref-p95-Argenteuil.webp":"9yWV4","../img/rustique/ADL planche salle Belem.webp":"2B4na","../img/industriel_artcopi/salle_a_manger_plaisance_4.webp":"8Mh7Z","../img/rustique/meuble tv hudson.webp":"3ERgR","../img/rustique/salle à manger seraphine.webp":"2VDg9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"62M9W":[function(require,module,exports) {
-module.exports = require("8f394e2d6fec6eae").getBundleURL("6pyw2") + "../../classique_chic-banner.0599795c.webp" + "?" + Date.now();
+},{"../img/classique-style/classique_chic-banner.webp":"jYesn","../img/contemporain/enfilade-animovel-p02.webp":"aY5Pk","../img/contemporain/meuble-tv-animovel-p29-iris.webp":"bzl6J","../img/nordique/Plaisance-La-salle-a-manger-Ref-p95-Argenteuil.webp":"9LYOr","../img/rustique/ADL planche salle Belem.webp":"fbO5F","../img/industriel_artcopi/salle_a_manger_plaisance_4.webp":"fl2Cn","../img/rustique/meuble tv hudson.webp":"eIf84","../img/rustique/salle à manger seraphine.webp":"TkmX8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jYesn":[function(require,module,exports) {
+module.exports = require("466d2c9058efd113").getBundleURL("3VtYc") + "../../classique_chic-banner.0599795c.webp" + "?" + Date.now();
 
-},{"8f394e2d6fec6eae":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"466d2c9058efd113":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -1031,28 +1030,28 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"gs60J":[function(require,module,exports) {
-module.exports = require("2d31c865210203bc").getBundleURL("6pyw2") + "../../enfilade-animovel-p02.a1f4a2f2.webp" + "?" + Date.now();
+},{}],"aY5Pk":[function(require,module,exports) {
+module.exports = require("ea1b2d598f56aa7b").getBundleURL("3VtYc") + "../../enfilade-animovel-p02.a1f4a2f2.webp" + "?" + Date.now();
 
-},{"2d31c865210203bc":"lgJ39"}],"b9FOu":[function(require,module,exports) {
-module.exports = require("bc26e22d28ea9993").getBundleURL("6pyw2") + "../../meuble-tv-animovel-p29-iris.f9cac4cb.webp" + "?" + Date.now();
+},{"ea1b2d598f56aa7b":"lgJ39"}],"bzl6J":[function(require,module,exports) {
+module.exports = require("de4a6283c10f2ffd").getBundleURL("3VtYc") + "../../meuble-tv-animovel-p29-iris.f9cac4cb.webp" + "?" + Date.now();
 
-},{"bc26e22d28ea9993":"lgJ39"}],"9yWV4":[function(require,module,exports) {
-module.exports = require("11209362a78611de").getBundleURL("6pyw2") + "../../Plaisance-La-salle-a-manger-Ref-p95-Argenteuil.9136dbf1.webp" + "?" + Date.now();
+},{"de4a6283c10f2ffd":"lgJ39"}],"9LYOr":[function(require,module,exports) {
+module.exports = require("507de3af06410b46").getBundleURL("3VtYc") + "../../Plaisance-La-salle-a-manger-Ref-p95-Argenteuil.9136dbf1.webp" + "?" + Date.now();
 
-},{"11209362a78611de":"lgJ39"}],"2B4na":[function(require,module,exports) {
-module.exports = require("9912896437579a8d").getBundleURL("6pyw2") + "../../ADL planche salle Belem.0fbef1aa.webp" + "?" + Date.now();
+},{"507de3af06410b46":"lgJ39"}],"fbO5F":[function(require,module,exports) {
+module.exports = require("6b1569f04860e204").getBundleURL("3VtYc") + "../../ADL planche salle Belem.0fbef1aa.webp" + "?" + Date.now();
 
-},{"9912896437579a8d":"lgJ39"}],"8Mh7Z":[function(require,module,exports) {
-module.exports = require("60cd9a154bb14422").getBundleURL("6pyw2") + "../../salle_a_manger_plaisance_4.da014d72.webp" + "?" + Date.now();
+},{"6b1569f04860e204":"lgJ39"}],"fl2Cn":[function(require,module,exports) {
+module.exports = require("d56bdb173d84d062").getBundleURL("3VtYc") + "../../salle_a_manger_plaisance_4.da014d72.webp" + "?" + Date.now();
 
-},{"60cd9a154bb14422":"lgJ39"}],"3ERgR":[function(require,module,exports) {
-module.exports = require("f056566f1adfa831").getBundleURL("6pyw2") + "../../meuble tv hudson.eff2442d.webp" + "?" + Date.now();
+},{"d56bdb173d84d062":"lgJ39"}],"eIf84":[function(require,module,exports) {
+module.exports = require("bd025aa70e5526f2").getBundleURL("3VtYc") + "../../meuble tv hudson.eff2442d.webp" + "?" + Date.now();
 
-},{"f056566f1adfa831":"lgJ39"}],"2VDg9":[function(require,module,exports) {
-module.exports = require("ab387704bed06ee5").getBundleURL("6pyw2") + "../../salle \xe0 manger seraphine.0601743c.webp" + "?" + Date.now();
+},{"bd025aa70e5526f2":"lgJ39"}],"TkmX8":[function(require,module,exports) {
+module.exports = require("a9122aa97d86d12b").getBundleURL("3VtYc") + "../../salle \xe0 manger seraphine.0601743c.webp" + "?" + Date.now();
 
-},{"ab387704bed06ee5":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"a9122aa97d86d12b":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1082,6 +1081,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["kZKqE","8u2ga"], "8u2ga", "parcelRequire66bd")
+},{}]},["6TN2X","kp2bL"], "kp2bL", "parcelRequire66bd")
 
 </script>

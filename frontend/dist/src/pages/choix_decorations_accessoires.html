@@ -16,42 +16,41 @@
   <body>
     <header>
       <!--DEBUT NAVIGATION TITRE + LIENS RESEAUX-->
-      <nav class="bg-custom1 flex justify-between flex-wrap p-3">
-        <section class="text-white mr-6">
-          <h1 class="text-xl font-medium" id="goToTop">
-            Meubles Gérard Pasquier
-          </h1>
-        </section>
+    <nav class="bg-custom1 flex justify-between flex-wrap p-3">
+      <section class="text-white mr-6">
+        <h1 class="text-xl font-medium" id="goToTop">Meubles Gérard Pasquier</h1>
+      </section>
 
-        <section class="ml-4 lg:block ml-auto display_contact">
-          <a href="/index.html" class="text-white hover:text-white-300 mr-3">Accueil</a>
-          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3">Contactez-nous</a>
-          <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-white-300"><span id="fb-btn"></span></a>
-        </section>
+      <section class="ml-4 lg:block ml-auto display_contact">
+        <a href="/index.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-house"></i>Accueil</a>
+        <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-envelope"></i>Contactez-nous</a>
+        <a href="/src/pages/contact.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-earth-europe"></i>Plus de renseignements</a>
+        <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-white-300"><span id="fb-btn"></span></a>
+      </section>
 
-        <section class="ml-4 display_dropdown">
-          <!--BOUTON ACCUEIL HEADER-->
-          <nav x-data="{ open: false }">
-            <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" @click="open = !open">
-              <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-                <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
-              </div>
-            </button>
-          </nav>
+      <section class="ml-4 display_dropdown">
+        <!--BOUTON ACCUEIL HEADER-->
+        <nav x-data="{ open: false }">
+          <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" @click="open = !open">
+            <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+            </div>
+          </button>
+        </nav>
 
-          <!--FIN BOUTON ACCUEIL-->
-          <!--MENU DEROULANT HEADER LOW RES-->
-          <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
-            <a href="/index.html" class="block px-3 py-2 ml-3 relative">Accueil</a>
-            <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><span id="contact"></span></a>
-            <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 relative whitespace-nowrap"><i class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
-          </div>
-          <!--FIN MENU DEROULANT HEADER LOW RES-->
-        </section>
-      </nav>
-      <!--FIN NAVIGATION TITRE + LIENS RESEAUX-->
+        <!--FIN BOUTON ACCUEIL-->
+        <!--MENU DEROULANT HEADER LOW RES-->
+        <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
+          <a href="/index.html" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-house"></i>Accueil</a>
+          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-envelope"></i><span id="contact"></span></a>
+          |<a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 ml-3 relative whitespace-nowrap"><i class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
+        </div>
+        <!--FIN MENU DEROULANT HEADER LOW RES-->
+      </section>
+    </nav>
+    <!--FIN NAVIGATION TITRE + LIENS RESEAUX-->
 
       <!--DEBUT NAVIGATION LOGO + HISTORIQUE-->
       <nav class="bg-white">
@@ -309,7 +308,7 @@
                   </li>
 
                   <li>
-                    <a href="#" class="text-white-700 transition hover:opacity-75">
+                    <a href="/src/pages/contact.html" class="text-white-700 transition hover:opacity-75">
                       Nous écrire
                     </a>
                   </li>
@@ -517,13 +516,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"jD4h3":[function(require,module,exports) {
+})({"84EwY":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "38e05b581bd320e3";
+module.bundle.HMR_BUNDLE_ID = "a83f5039b3b4d20a";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -931,7 +930,7 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"aaWBZ":[function(require,module,exports) {
+},{}],"dE2BO":[function(require,module,exports) {
 // Meubles decorations / buffets
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _decorations1Webp = require("../img/decorations/decorations1.webp");
@@ -1032,10 +1031,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/decorations/decorations1.webp":"3Mczv","../img/decorations/decorations2.webp":"ckBGA","../img/decorations/decorations3.webp":"1s41D","../img/decorations/decorations4.webp":"denTW","../img/decorations/decorations5.webp":"4s9pL","../img/decorations/luminaire1.webp":"hWnLY","../img/decorations/luminaire2.webp":"20tOg","../img/decorations/luminaire3.webp":"1S7Rz","../img/decorations/luminaire4.webp":"jn4Wm","../img/decorations/luminaire5.webp":"ffOYt","../img/decorations/choix_decorations.webp":"iWr9a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3Mczv":[function(require,module,exports) {
-module.exports = require("5c2ee9d2ac265546").getBundleURL("4SKBz") + "../../decorations1.43d9a274.webp" + "?" + Date.now();
+},{"../img/decorations/decorations1.webp":"lP4bi","../img/decorations/decorations2.webp":"dSuPH","../img/decorations/decorations3.webp":"7h4w4","../img/decorations/decorations4.webp":"jPOKo","../img/decorations/decorations5.webp":"eG9rC","../img/decorations/luminaire1.webp":"1WcCi","../img/decorations/luminaire2.webp":"icyAK","../img/decorations/luminaire3.webp":"lUJfE","../img/decorations/luminaire4.webp":"7FeNq","../img/decorations/luminaire5.webp":"6SvBH","../img/decorations/choix_decorations.webp":"5i76C","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lP4bi":[function(require,module,exports) {
+module.exports = require("a98205ad97c9f045").getBundleURL("erzKa") + "../../decorations1.43d9a274.webp" + "?" + Date.now();
 
-},{"5c2ee9d2ac265546":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"a98205ad97c9f045":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -1069,37 +1068,37 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"ckBGA":[function(require,module,exports) {
-module.exports = require("1a749f3b2e63b6e0").getBundleURL("4SKBz") + "../../decorations2.fc55505d.webp" + "?" + Date.now();
+},{}],"dSuPH":[function(require,module,exports) {
+module.exports = require("77cb5f0c475eeb4a").getBundleURL("erzKa") + "../../decorations2.fc55505d.webp" + "?" + Date.now();
 
-},{"1a749f3b2e63b6e0":"lgJ39"}],"1s41D":[function(require,module,exports) {
-module.exports = require("76a03ac3d3b17cb2").getBundleURL("4SKBz") + "../../decorations3.deadd23e.webp" + "?" + Date.now();
+},{"77cb5f0c475eeb4a":"lgJ39"}],"7h4w4":[function(require,module,exports) {
+module.exports = require("ed0098115c80edf9").getBundleURL("erzKa") + "../../decorations3.deadd23e.webp" + "?" + Date.now();
 
-},{"76a03ac3d3b17cb2":"lgJ39"}],"denTW":[function(require,module,exports) {
-module.exports = require("daca9f21394682cf").getBundleURL("4SKBz") + "../../decorations4.edd0f0ea.webp" + "?" + Date.now();
+},{"ed0098115c80edf9":"lgJ39"}],"jPOKo":[function(require,module,exports) {
+module.exports = require("10e7811a7feb5254").getBundleURL("erzKa") + "../../decorations4.edd0f0ea.webp" + "?" + Date.now();
 
-},{"daca9f21394682cf":"lgJ39"}],"4s9pL":[function(require,module,exports) {
-module.exports = require("8d008686ffc47f7d").getBundleURL("4SKBz") + "../../decorations5.0a4b8512.webp" + "?" + Date.now();
+},{"10e7811a7feb5254":"lgJ39"}],"eG9rC":[function(require,module,exports) {
+module.exports = require("182556e4c9f48cb4").getBundleURL("erzKa") + "../../decorations5.0a4b8512.webp" + "?" + Date.now();
 
-},{"8d008686ffc47f7d":"lgJ39"}],"hWnLY":[function(require,module,exports) {
-module.exports = require("cfc18727ec11c033").getBundleURL("4SKBz") + "../../luminaire1.4e476337.webp" + "?" + Date.now();
+},{"182556e4c9f48cb4":"lgJ39"}],"1WcCi":[function(require,module,exports) {
+module.exports = require("c8f804a0beb6d6d6").getBundleURL("erzKa") + "../../luminaire1.4e476337.webp" + "?" + Date.now();
 
-},{"cfc18727ec11c033":"lgJ39"}],"20tOg":[function(require,module,exports) {
-module.exports = require("86226a22a8d58703").getBundleURL("4SKBz") + "../../luminaire2.25b8536e.webp" + "?" + Date.now();
+},{"c8f804a0beb6d6d6":"lgJ39"}],"icyAK":[function(require,module,exports) {
+module.exports = require("8326d63a35442286").getBundleURL("erzKa") + "../../luminaire2.25b8536e.webp" + "?" + Date.now();
 
-},{"86226a22a8d58703":"lgJ39"}],"1S7Rz":[function(require,module,exports) {
-module.exports = require("1ec4f999825e971c").getBundleURL("4SKBz") + "../../luminaire3.941250e7.webp" + "?" + Date.now();
+},{"8326d63a35442286":"lgJ39"}],"lUJfE":[function(require,module,exports) {
+module.exports = require("e4a0a3fca451583d").getBundleURL("erzKa") + "../../luminaire3.941250e7.webp" + "?" + Date.now();
 
-},{"1ec4f999825e971c":"lgJ39"}],"jn4Wm":[function(require,module,exports) {
-module.exports = require("97f3cb371b6d307c").getBundleURL("4SKBz") + "../../luminaire4.48d702a0.webp" + "?" + Date.now();
+},{"e4a0a3fca451583d":"lgJ39"}],"7FeNq":[function(require,module,exports) {
+module.exports = require("9ea5073d54eaf25c").getBundleURL("erzKa") + "../../luminaire4.48d702a0.webp" + "?" + Date.now();
 
-},{"97f3cb371b6d307c":"lgJ39"}],"ffOYt":[function(require,module,exports) {
-module.exports = require("99614152baadacd8").getBundleURL("4SKBz") + "../../luminaire5.3243160e.webp" + "?" + Date.now();
+},{"9ea5073d54eaf25c":"lgJ39"}],"6SvBH":[function(require,module,exports) {
+module.exports = require("5bdc180bfc5909db").getBundleURL("erzKa") + "../../luminaire5.3243160e.webp" + "?" + Date.now();
 
-},{"99614152baadacd8":"lgJ39"}],"iWr9a":[function(require,module,exports) {
-module.exports = require("ad039dadca16db84").getBundleURL("4SKBz") + "../../choix_decorations.ac25f4db.webp" + "?" + Date.now();
+},{"5bdc180bfc5909db":"lgJ39"}],"5i76C":[function(require,module,exports) {
+module.exports = require("dbdd15fefb8d75ff").getBundleURL("erzKa") + "../../choix_decorations.ac25f4db.webp" + "?" + Date.now();
 
-},{"ad039dadca16db84":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"dbdd15fefb8d75ff":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1129,6 +1128,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["jD4h3","aaWBZ"], "aaWBZ", "parcelRequire66bd")
+},{}]},["84EwY","dE2BO"], "dE2BO", "parcelRequire66bd")
 
 </script>
