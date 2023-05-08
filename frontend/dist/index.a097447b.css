@@ -30328,7 +30328,6 @@ footer nav, footer p {
 
 .article-container {
   margin: 30px 0;
-  padding: 20px;
 }
 
 .description-container {
@@ -30351,7 +30350,7 @@ footer nav, footer p {
 }
 
 .description-container p {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .label-logo {
@@ -30410,6 +30409,11 @@ footer nav, footer p {
 }
 
 @media screen and (max-width: 767px) {
+  #main_biographie {
+    width: 90%;
+    padding: 20px 0;
+  }
+
   .article-container {
     flex-direction: column;
   }
@@ -30423,7 +30427,6 @@ footer nav, footer p {
   .article-container h3, .article-container p {
     max-width: 90%;
     text-align: center;
-    margin: 10px auto;
   }
 
   .main_biographie__title h2, .main_biographie__title span {
