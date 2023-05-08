@@ -21,210 +21,46 @@
         <h1 class="text-xl font-medium" id="goToTop">Meubles Gérard Pasquier</h1>
       </section>
 
-      <section class="ml-4 lg:block ml-auto display_contact">
-        <a href="/index.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-house"></i>Accueil</a>
-        <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-envelope"></i>Contactez-nous</a>
-        <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-white-300"><span id="fb-btn"></span></a>
-      </section>
-
-      <section class="ml-4 display_dropdown">
-        <!--BOUTON ACCUEIL HEADER-->
-        <nav x-data="{ open: false }">
-          <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" @click="open = !open">
-            <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
-            </div>
-          </button>
-        </nav>
-
-        <!--FIN BOUTON ACCUEIL-->
-        <!--MENU DEROULANT HEADER LOW RES-->
-        <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
-          <a href="/index.html" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-house"></i>Accueil</a>
-          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-envelope"></i><span id="contact"></span></a>
-          |<a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 ml-3 relative whitespace-nowrap"><i class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
-        </div>
-        <!--FIN MENU DEROULANT HEADER LOW RES-->
+      <section class="ml-4 lg:block ml-auto">
+        <a href="/index.html" class="text-white hover:text-white-300 mr-3 biographie-home"><i class="fa-solid fa-house"></i>Accueil</a>
       </section>
     </nav>
-    <!--FIN NAVIGATION TITRE + LIENS RESEAUX-->
 
-    <!--DEBUT NAVIGATION LOGO + HISTORIQUE-->
-    <nav class="bg-white">
-      <section class="flex flex-col lg:flex-row justify-around">
-        <div class="nav_logo__logo mx-auto items-center">
-          <a href="/index.html">
-            <img src="/logo_pasquier.ed30da07.webp" width="250" height="auto">
-          </a>
-        </div>
-        <!--BOUTON MENU LOGO-->
-        <button class="$custom-color1 focus:outline-none relative mx-auto" id="nav_logo_btn-lowres">
-          <svg class="h-6 w-6 fill-current" viewbox="0 0 24 24">
-            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"></path>
-          </svg>
-        </button>
-        <!--FIN BOUTON MENU LOGO-->
-        <!--MENU LOGO LOW RES-->
-        <div class="nav_logo__nav flex mx-auto items-center" id="nav_logo_menu-hires">
-          <div class="dropdown inline-block relative">
+    <section class="biographie-logo">
+      <img src="/logo_pasquier.ed30da07.webp">
+    </section>
 
-            <span>Notre histoire</span>
-            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-              <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/biographie.html">Les origines</a></li>
-              <!-- <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A
-              définir</a>
-              </li>
-              <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
-                  href="#">A définir</a></li> -->
-            </ul>
-
-          </div>
-          <div class="dropdown inline-block relative">
-
-            <span>Produits</span>
-            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-              <li>
-              <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/choix_salons.html">Salons</a>
-            </li>
-              <li>
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/choix_armoires_buffets.html">Armoires et buffets</a>
-              </li>
-              <li>
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/choix_bureaux.html">Bureaux & tables</a>
-              </li>
-              <li>
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/choix_chaises_fauteuils.html">Chaises & fauteuils</a>
-              </li>
-              <li>
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/choix_decorations_accessoires.html">Décorations & accessoires</a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="dropdown inline-block relative">
-
-            <span>Inspirations</span>
-            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/classique.html">Classique</a>
-              </li>
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/contemporain.html">Contemporain</a>
-              </li>
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/industriel.html">Industriel</a>
-              </li>
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/nordique.html">Nordique</a>
-              </li>
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/rustique.html">Rustique</a>
-              </li>
-            </ul>
-
-          </div>
-          <div class="dropdown inline-block relative">
-
-            <span>Sur-mesure</span>
-            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">à définir</a>
-              </li>
-              <!-- <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à
-                  définir</a>
-              </li>
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à définir</a>
-              </li> -->
-            </ul>
-
-          </div>
-          <div class="dropdown inline-block">
-            <span>Promotions</span>
-          </div>
-        </div>
-        <!--FIN MENU LOGO LOWRES-->
-        <!--AFFICHAGE MENU DROPDOWN < 768PX-->
-        <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
-          <div class="dropdown block relative">
-
-            <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
-            </ul>
-            <span class="block" id="produits">Les produits<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
-            </ul>
-            <span class="block" id="inspirations">Inspirations<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
-            </ul>
-            <span class="block" id="surmesure">Sur-mesure<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
-            </ul>
-            <a href="#"><span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
-              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
-              </ul>
-            </a>
-          </div>
-          <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
-        </div>
-      </section>
-    </nav>
   </header>
   <!--FIN NAVIGATION LOGO + HISTORIQUE-->
 
   <!--DEBUT CONTENU PRINCIPAL-->
-  <main class="biographie_container">
-    <div id="main_biographie">
-      <section class="main_biographie__title">
-        <p>1931 - 2023</p>
-        <h2>Depuis<span>3</span>générations...</h2>
-      </section>
-      <section class="main_biographie__content">
-        <article class="article-container">
-          <div class="img-container">
-            <img src="/robert_pasquier.594a5b48.webp">
-          </div>
-          <div class="description-container">
-            <h3>Robert</h3>
-            <hr>
-            <p>Apprenti tapissier à Elbeuf, il se met à son compte à 20 ans, rue Revel, avec son épouse Marcelle. Déménagement et agrandissement rue Emile Zola, jusqu'à 50 personnes + sous-traitant de la CGT (Compagnie Générale Transatlantique à Rouen)</p>
-            <p>A participé à l'élaboration du paquebot FRANCE. Ils ont deux fils : Gérard, ébéniste, et Philippe, tapissier.</p>
-          </div>
-        </article>
-        <article class="article-container">
-          <div class="img-container">
-            <img src="/gerard_pasquier.86094218.webp">
-          </div>
-          <div class="description-container">
-            <h3>Gérard</h3>
-            <hr>
-            <p>Il développe l'ébénisterie et la décoration.</p>
-            <p>Fabricant de lits et de chevets de style sur toute la France.</p>
-            <p>Il se développe en tant que décorateur sur la Normandie et Paris</p>
-          </div>
-        </article>
-        <article class="article-container">
-          <div class="img-container">
-            <img src="/erick_pasquier.bbfd4aa1.webp">
-          </div>
-         <div class="description-container">
-            <h3>Erick</h3>
-            <hr>            
-            <p>Il reprend l'entreprise en 1985.</p>
-            <p>Avec Alain, le tapissier-livreur, Marie-Noëlle, la couturière, Annick, la secrétaire-vendeuse et Sylvain, le livreur.</p>
-            <p>Reçoit le label qualité national pour les commerces et les services et dynamique commerciale de la chambre de commerce d'Elbeuf.</p>
-         </div>
-        </article>
-        <article class="article-container label-logo">
-          <img src="/label_pasquier.f8dfe17d.webp" width="100px" height="auto">
-        </article>
-      </section>
-    </div>
+  <main class="main_biographie">
+    <section class="main_biographie__title">
+      <p>1931 - 2021</p>
+      <h2>Depuis<span>3</span>générations</h2>
+    </section>
+    <section class="main_biographie__content">
+      <article>
+        <img src="/robert_pasquier.594a5b48.webp">
+        <h3>Robert</h3>
+        <p>Apprenti tapissier à Elbeuf, il se met à son compte à 20 ans, rue Revel, avec son épouse Marcelle. Déménagement et agrandissement rue Emile Zola, jusqu'à 50 personnes + sous-traitant de la CGT (Compagnie Générale Transatlantique à Rouen)</p>
+        <p>A participé à l'élaboration du paquebot FRANCE. Ils ont deux fils : Gérard, ébéniste, et Philippe, tapissier.</p>
+      </article>
+      <article>
+        <img src="/gerard_pasquier.86094218.webp">
+        <h3>Gérard</h3>
+        <p>Il développe l'ébénisterie et la décoration.</p>
+        <p>Fabricant de lits et de chevets de style sur toute la France.</p>
+        <p>Il se développe en tant que décorateur sur la Normandie et Paris</p>
+      </article>
+      <article>
+        <img src="/erick_pasquier.bbfd4aa1.webp">
+        <h3>Erick</h3>
+        <p>Il reprend l'entreprise en 1985.</p>
+        <p>Avec Alain, le tapissier-livreur, Marie-Noëlle, la couturière, Annick, la secrétaire-vendeuse et Sylvain, le livreur.</p>
+        <p>Reçoit le label qualité national pour les commerces et les services et dynamique commerciale de la chambre de commerce d'Elbeuf.</p>
+      </article>
+    </section>
   </main>
   <!--FIN CONTENU PRINCIPAL-->
 

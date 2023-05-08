@@ -23,14 +23,13 @@
     <!--DEBUT NAVIGATION TITRE + LIENS RESEAUX-->
     <nav class="bg-custom1 flex justify-between flex-wrap p-3">
       <section class="text-white mr-6">
-        <h1 class="text-xl font-medium" id="goToTop">
-          Meubles Gérard Pasquier
-        </h1>
+        <h1 class="text-xl font-medium" id="goToTop">Meubles Gérard Pasquier</h1>
       </section>
 
       <section class="ml-4 lg:block ml-auto display_contact">
-        <a href="../../index.html" class="text-white hover:text-white-300 mr-3">Accueil</a>
-        <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3">Contactez-nous</a>
+        <a href="../../index.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-house"></i>Accueil</a>
+        <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-envelope"></i>Contactez-nous</a>
+        <a href="./contact.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-earth-europe"></i>Plus de renseignements</a>
         <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-white-300"><span
             id="fb-btn"></span></a>
       </section>
@@ -45,10 +44,10 @@
                 class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
                 :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
               <span aria-hidden="true"
-                class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
                 :class="{'opacity-0': open } "></span>
               <span aria-hidden="true"
-                class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
                 :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
             </div>
           </button>
@@ -57,9 +56,9 @@
         <!--FIN BOUTON ACCUEIL-->
         <!--MENU DEROULANT HEADER LOW RES-->
         <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
-          <a href="../../index.html" class="block px-3 py-2 ml-3 relative">Accueil</a>
-          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><span id="contact"></span></a>
-          <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 relative whitespace-nowrap"><i
+          <a href="../../index.html" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-house"></i>Accueil</a>
+          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-envelope"></i><span id="contact"></span></a>
+          |<a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 ml-3 relative whitespace-nowrap"><i
               class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
         </div>
         <!--FIN MENU DEROULANT HEADER LOW RES-->
@@ -72,7 +71,7 @@
       <section class="flex flex-col lg:flex-row justify-around">
         <div class="nav_logo__logo mx-auto items-center">
           <a href="../../index.html">
-            <img src="../img/meubles_gerard_pasquier_lowres_nb_opacity.webp" width="250" height="auto" />
+            <img src="../img/logo_pasquier.webp" width="250" height="auto" />
           </a>
         </div>
         <!--BOUTON MENU LOGO-->
@@ -86,71 +85,81 @@
         <!--MENU LOGO LOW RES-->
         <div class="nav_logo__nav flex mx-auto items-center" id="nav_logo_menu-hires">
           <div class="dropdown inline-block relative">
+
             <span>Notre histoire</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-              <li class="">
-                <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A
-                  définir</a>
+              <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="./biographie.html">Les origines</a></li>
+              <!-- <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A
+              définir</a>
               </li>
-              <li class="">
-                <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A définir</a>
-              </li>
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">A
-                  définir</a>
-              </li>
+              <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="#">A définir</a></li> -->
             </ul>
+
           </div>
           <div class="dropdown inline-block relative">
+
             <span>Produits</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li>
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Aussi à
-                  définir</a>
+              <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./choix_salons.html">Salons</a>
+            </li>
+              <li>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./choix_armoires_buffets.html">Armoires et buffets</a>
               </li>
               <li>
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Aussi à
-                  définir</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./choix_bureaux.html">Bureaux & tables</a>
               </li>
               <li>
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Aussi à
-                  définir</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./choix_chaises_fauteuils.html">Chaises & fauteuils</a>
+              </li>
+              <li>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./choix_decorations_accessoires.html">Décorations & accessoires</a>
               </li>
             </ul>
+
           </div>
           <div class="dropdown inline-block relative">
+
             <span>Inspirations</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à définir</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./classique.html">Classique</a>
               </li>
               <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à définir</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./contemporain.html">Contemporain</a>
               </li>
               <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à définir</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./industriel.html">Industriel</a>
+              </li>
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./nordique.html">Nordique</a>
+              </li>
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="./rustique.html">Rustique</a>
               </li>
             </ul>
+
           </div>
           <div class="dropdown inline-block relative">
+
             <span>Sur-mesure</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">à définir</a>
+              </li>
+              <!-- <li class="">
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à définir</a>
+                  à
+                  définir</a>
               </li>
               <li class="">
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
                   à définir</a>
-              </li>
-              <li class="">
-                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#">Egalement
-                  à définir</a>
-              </li>
+              </li> -->
             </ul>
+
           </div>
           <div class="dropdown inline-block">
             <span>Promotions</span>
@@ -160,16 +169,22 @@
         <!--AFFICHAGE MENU DROPDOWN < 768PX-->
         <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
           <div class="dropdown block relative">
-            <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
+
+            <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></i></span>
+            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
+            </ul>
             <span class="block" id="produits">Les produits<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
+            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
+            </ul>
             <span class="block" id="inspirations">Inspirations<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
+            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
+            </ul>
             <span class="block" id="surmesure">Sur-mesure<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
+            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
+            </ul>
             <a href="#"><span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
-              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
+              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
+              </ul>
             </a>
           </div>
           <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
@@ -292,25 +307,20 @@
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
-                    Informations
+                  <a href="./classique.html" class="text-white-700 transition hover:opacity-75">
+                    Classique
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
-                    Informations
+                  <a href="./contemporain.html" class="text-white-700 transition hover:opacity-75">
+                    Contemporain
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
-                    Informations
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
-                    Informations
+                  <a href="./industriel.html" class="text-white-700 transition hover:opacity-75">
+                    Industriel
                   </a>
                 </li>
               </ul>
@@ -324,27 +334,22 @@
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
-                    Informations
+                  <a href="./nordique.html" class="text-white-700 transition hover:opacity-75">
+                    Nordique
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
-                    Informations
+                  <a href="./rustique.html" class="text-white-700 transition hover:opacity-75">
+                    Rustique
                   </a>
                 </li>
 
-                <li>
+                <!-- <li>
                   <a href="#" class="text-white-700 transition hover:opacity-75">
                     Informations
                   </a>
-                </li>
-                <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
-                    Informations
-                  </a>
-                </li>
+                </li> -->
               </ul>
             </nav>
           </div>
@@ -356,18 +361,18 @@
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
+                  <a href="../../index.html" class="text-white-700 transition hover:opacity-75">
                     Accueil
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
+                  <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white-700 transition hover:opacity-75">
                     Contactez-nous
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="text-white-700 transition hover:opacity-75">
+                  <a href="./contact.html" class="text-white-700 transition hover:opacity-75">
                     Nous trouver
                   </a>
                 </li>
