@@ -30295,11 +30295,11 @@ footer nav, footer p {
 
 .main_biographie__title p {
   color: #fff;
-  width: 35%;
+  width: 31%;
   background-color: #0084ff;
-  padding: 5px;
+  font-size: 1.2em;
   position: absolute;
-  top: 20px;
+  top: 28px;
   right: 0;
 }
 
@@ -30310,14 +30310,14 @@ footer nav, footer p {
 }
 
 .main_biographie__title h2 {
-  color: #00f;
+  color: #04047e;
   font-size: 2em;
   font-weight: bold;
 }
 
 .img-container img {
   max-width: 150px;
-  border: 2px solid #00f;
+  border: 2px solid #04047e;
   border-radius: 10px;
 }
 
@@ -30328,6 +30328,35 @@ footer nav, footer p {
 .article-container {
   margin: 30px 0;
   padding: 20px;
+}
+
+.description-container {
+  margin-left: 30px;
+  position: relative;
+}
+
+.description-container h3 {
+  color: #0084ff;
+  font-weight: 600;
+}
+
+.description-container hr {
+  height: 4px;
+  width: 75%;
+  background: linear-gradient(90deg, #04047e 0%, #b7b6c4 50%, #f5f6fa 100%);
+  position: absolute;
+  top: 18px;
+  left: -32px;
+}
+
+.description-container p {
+  margin: 10px 0;
+}
+
+.label-logo {
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 767px) {
