@@ -40,6 +40,11 @@ hr {
 
 //    HEADER    //
 
+#header_dropdown-lowres i,
+.display_contact i {
+  padding-right: 10px;
+}
+
 .bg-custom1 {
   background-color: $custom-color1;
 }
@@ -633,21 +638,83 @@ footer p {
 
 //    BIOGRAPHIE    //
 
-.biographie-logo {
+.biographie_container {
+  padding: 80px 0;
+}
+
+#main_biographie {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 250px;
+  align-items: center;
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.biographie-logo img {
-  width: 250px;
-  height: auto;
+.main_biographie__title {
+  position: relative;
+  order: -1;
 }
 
-.biographie-home i {
-  padding-right: 10px;
+.main_biographie__title p {
+  position: absolute;
+  top: 20;
+  right: 0;
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  padding: 5px;
+  width: 35%;
+}
+
+.main_biographie__title span {
+  color: rgb(212, 92, 52);
+  font-size: 2.4em;
+  padding-left: 3px;
+}
+
+.main_biographie__title h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: blue;
+}
+
+.img-container img {
+  max-width: 150px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+.main_biographie__content article {
+  display: flex;
+}
+.article-container {
+  margin: 30px 0;
+  padding: 20px;
+}
+
+/* Text below image on lower resolutions */
+@media screen and (max-width: 767px) {
+  .article-container {
+    flex-direction: column;
+  }
+  .article-container img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+  .article-container h3,
+  .article-container p {
+    max-width: 90%;
+    text-align: center;
+    margin: 10px auto;
+  }
 }
 
 /* Styles pour les points de rupture (breakpoints) */
@@ -777,7 +844,7 @@ footer p {
     margin-top: 20px;
   }
 
-/*   .nav_logo__nav {
+  /*   .nav_logo__nav {
     margin-bottom: 50px;
   } */
 
