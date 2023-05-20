@@ -44,8 +44,15 @@
     border-radius: 10px;
 }
 
+.image-viewer img {
+    max-width: 800px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 100%;
+    }
+}
+
 #current-image {
-    width: 100%;
     height: auto;
 }
 
