@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Basés en Normandie, Les meubles Gérard Pasquier se distinguent
+    par leur qualité et leur orginalité. Notre entreprise vous accueille et écoute vos besoins depuis 1931, fort d'un savoir-faire familial depuis 1931."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/styles.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?famille=RobotoSlab&famille=Lato&famille=Amaranth&famille=Merriweather&famille=Raleway&famille=Oswald&famille=Rokkitt&famille=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Accueil - Meubles Gérard Pasquier</title>
+  </head>
+
+  <body>
+    <header>
+      <!--DEBUT NAVIGATION TITRE + LIENS RESEAUX-->
+    <nav class="bg-custom1 flex justify-between flex-wrap p-3">
+      <section class="text-white mr-6">
+        <h1 class="text-xl font-medium" id="goToTop">Meubles Gérard Pasquier</h1>
+      </section>
+
+      <section class="ml-4 lg:block ml-auto display_contact">
+        <a href="../../index.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-house"></i>Accueil</a>
+        <a href="mailto:gerard-pasquier-meubles@orange.fr" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-envelope"></i>Contactez-nous</a>
+        <a href="./contact.html" class="text-white hover:text-white-300 mr-3"><i class="fa-solid fa-earth-europe"></i>Plus de renseignements</a>
+        <a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="text-white hover:text-white-300"><span
+            id="fb-btn"></span></a>
+      </section>
+
+      <section class="ml-4 display_dropdown">
+        <!--BOUTON ACCUEIL HEADER-->
+        <nav x-data="{ open: false }">
+          <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres"
+            @click="open = !open">
+            <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <span aria-hidden="true"
+                class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+              <span aria-hidden="true"
+                class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
+                :class="{'opacity-0': open } "></span>
+              <span aria-hidden="true"
+                class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+            </div>
+          </button>
+        </nav>
+
+        <!--FIN BOUTON ACCUEIL-->
+        <!--MENU DEROULANT HEADER LOW RES-->
+        <div class="navbar-fb absolute text-white bg-custom1 rounded-md py-2 mt-2" id="header_dropdown-lowres">
+          <a href="../../index.html" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-house"></i>Accueil</a>
+          <a href="mailto:gerard-pasquier-meubles@orange.fr" class="block px-3 py-2 ml-3 relative"><i class="fa-solid fa-envelope"></i><span id="contact"></span></a>
+          |<a href="https://fr-fr.facebook.com/MeublesPASQUIER/" class="block px-3 py-2 ml-3 relative whitespace-nowrap"><i
+              class="fa-brands fa-facebook pr-2"></i><span id="follow"></span></a>
+        </div>
+        <!--FIN MENU DEROULANT HEADER LOW RES-->
+      </section>
+    </nav>
+    <!--FIN NAVIGATION TITRE + LIENS RESEAUX-->
+
+      <!--DEBUT NAVIGATION LOGO + HISTORIQUE-->
+      <nav class="bg-white">
+        <section class="flex flex-col lg:flex-row justify-around">
+          <div class="nav_logo__logo mx-auto items-center">
+            <a href="../../index.html">
+              <img
+                src="../img/logo_pasquier.webp"
+                width="250"
+                height="auto"
+              />
+            </a>
+          </div>
+          <!--BOUTON MENU LOGO-->
+          <button
+            class="$custom-color1 focus:outline-none relative mx-auto"
+            id="nav_logo_btn-lowres"
+          >
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <!--FIN BOUTON MENU LOGO-->
+          <!--MENU LOGO LOW RES-->
+          <div
+            class="nav_logo__nav flex mx-auto items-center"
+            id="nav_logo_menu-hires"
+          >
+            <div class="dropdown inline-block relative">
+              <span>Notre histoire</span>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="">
+                  <a
+                    class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./biographie.html"
+                    >Les origines</a
+                  >
+                </li>
+                <!-- <li class="">
+                  <a
+                    class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="#"
+                    >A définir</a
+                  >
+                </li> -->
+              </ul>
+            </div>
+            <div class="dropdown inline-block relative">
+              <span>Produits</span>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./choix_salons.html"
+                    >Salons</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./choix_bureaux.html"
+                    >Bureaux</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./choix_tables.html"
+                    >Tables</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./choix_armoires.html"
+                    >Armoires</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./choix_buffets.html"
+                    >Buffets</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./choix_decorations_accessoires.html"
+                    >Décorations & accessoires</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown inline-block relative">
+              <span>Inspirations</span>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="">
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./classique.html"
+                    >Classique</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./contemporain.html"
+                    >Contemporain</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./industriel.html"
+                    >Industriel</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./nordique.html"
+                    >Nordique</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="./rustique.html"
+                    >Rustique</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown inline-block relative">
+              <span>Sur-mesure</span>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="">
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="#"
+                    >à définir</a
+                  >
+                </li>
+               <!--  <li class="">
+                  <a
+                    class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                    href="#"
+                    >Egalement à définir</a
+                  >
+                </li> -->
+              </ul>
+            </div>
+            <div class="dropdown inline-block">
+              <span>Promotions</span>
+            </div>
+          </div>
+          <!--FIN MENU LOGO LOWRES-->
+          <!--AFFICHAGE MENU DROPDOWN < 768PX-->
+          <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
+            <div class="dropdown block relative">
+              <span class="block" id="histoire"
+                >Notre histoire<i class="fa-solid fa-angle-down"></i
+              ></span>
+              <ul
+                id="dropdown-menu1"
+                class="dropdown-lowres hidden text-gray-700 pt-1"
+              ></ul>
+              <span class="block" id="produits"
+                >Les produits<i class="fa-solid fa-angle-down"></i
+              ></span>
+              <ul
+                id="dropdown-menu2"
+                class="dropdown-lowres hidden text-gray-700 pt-1"
+              ></ul>
+              <span class="block" id="inspirations"
+                >Inspirations<i class="fa-solid fa-angle-down"></i
+              ></span>
+              <ul
+                id="dropdown-menu3"
+                class="dropdown-lowres hidden text-gray-700 pt-1"
+              ></ul>
+              <span class="block" id="surmesure"
+                >Sur-mesure<i class="fa-solid fa-angle-down"></i
+              ></span>
+              <ul
+                id="dropdown-menu4"
+                class="dropdown-lowres hidden text-gray-700 pt-1"
+              ></ul>
+              <a href="#"
+                ><span class="block" id="promotions"
+                  >Promotions<i class="fa-solid fa-angle-down"></i
+                ></span>
+                <ul
+                  id="dropdown-menu5"
+                  class="dropdown-lowres hidden text-gray-700 pt-1"
+                ></ul>
+              </a>
+            </div>
+            <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
+          </div>
+        </section>
+      </nav>
+    </header>
+    <!--FIN NAVIGATION LOGO + HISTORIQUE-->
+
+    <!--DEBUT CONTENU PRINCIPAL-->
+    <main>
+      <div class="meubles_choix">
+        <h2>Nos chaises, nos fauteuils</h2>
+        <h3>Patience, d'autres seront ajoutés...</h3>
+      </div>
+      <div id="furniture-container"></div>
+    </main>
+    <!--FIN CONTENU PRINCIPAL-->
+
+    <!--DEBUT DU FOOTER-->
+    <footer
+      aria-label="Site Footer"
+      class="bg-custom1 flex justify-center align-items-center bg-white"
+    >
+      <div class="w-full mx-auto">
+        <div class="box flex justify-center align-items-center flex-wrap">
+          <!-- RUBRIQUES -->
+          <div class="flex justify-evenly footer-rubriques">
+            <div class="footer-rubriques__title" id="propos">
+              <p class="font-medium text-white-900">A PROPOS</p>
+              <hr />
+              <nav aria-label="Footer Navigation - Services" class="mt-6">
+                <ul class="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="./biographie.html"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Notre histoire
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Nos compétences
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Nos points forts
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Nos engagements
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Nos artisans partenaires
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer-rubriques__title">
+              <p class="font-medium text-white-900 dark:text-white">
+                NOS INSPIRATIONS
+              </p>
+              <hr />
+
+              <nav aria-label="Footer Navigation - Company" class="mt-6">
+                <ul class="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="./classique.html"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Classique
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./contemporain.html"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Contemporain
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./industriel.html"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Industriel
+                    </a>
+                  </li>
+                  <!-- <li>
+                    <a
+                      href="#"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Informations
+                    </a>
+                  </li> -->
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-rubriques__title">
+              <p
+                class="ambiances_suite font-medium text-white-900 dark:text-white"
+              >
+                NOS INSPIRATIONS
+              </p>
+              <hr />
+              <nav aria-label="Footer Navigation - Company" class="mt-6">
+                <ul class="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="./nordique.html"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Rustique
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="./nordique.html"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Nordique
+                    </a>
+                  </li>
+
+                  <!-- <li>
+                    <a
+                      href="#"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Informations
+                    </a>
+                  </li> -->
+                </ul>
+              </nav>
+            </div>
+
+            <div class="footer-rubriques__title">
+              <p class="font-medium text-white-900 dark:text-white">LIENS</p>
+              <hr />
+
+              <nav aria-label="Footer Navigation - Company" class="mt-6">
+                <ul class="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="../../index.html"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Accueil
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="mailto:gerard-pasquier-meubles@orange.fr"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Nous écrire
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./contact.html"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Nous trouver
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white-700 transition hover:opacity-75"
+                    >
+                      Mentions Légales
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- FIN RUBRIQUES -->
+
+          <!-- LOGO -->
+          <div class="flex footer_logo">
+            <img
+              src="../img/meubles_gerard_pasquier_lowres_opacity.webp"
+              width="250"
+              height="auto"
+            />
+            <p class="max-w-xs mt-4 text-white-500 dark:text-white-400">
+              Meubles Gérard Pasquier, du mobilier design au service d'une
+              qualité irréprochable. Venez pour nos produits, restez pour notre
+              passion.
+            </p>
+            <!-- SOCIAL -->
+            <div class="flex footer_social">
+              <a
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white-700 transition hover:opacity-75"
+              >
+                <span class="sr-only">Instagram</span>
+
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-white-700 transition hover:opacity-75"
+              >
+                <span class="sr-only">Twitter</span>
+
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- FIN SOCIAL-->
+          </div>
+          <!-- FIN LOGO -->
+        </div>
+      </div>
+    </footer>
+    <div class="copy-container bg-custom1">
+      <p class="copyright text-white ml-3">
+        &copy; <span id="getDate"></span>. Meubles Gérard Pasquier. Tous droits
+        réservés.
+      </p>
+    </div>
+    <script type="module" src="../js/script.js" async></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
+</html>
+
+<script type="module">
+  // Meubles chaises / buffets
+  import chaise1 from "../img/classique-style/choix_chaises.webp";
+  import chaise2 from "../img/classique-style/choix_chaises1.webp";
+  import chaise3 from "../img/classique-style/chaise-grand-cru-plaisance-7-p8921.webp";
+  import chaise4 from "../img/classique-style/chaise-sofia-plaisance-7-p8805.webp";
+  import fauteuil1 from "../img/contemporain/fauteuil_contemporain.webp";
+  import fauteuil2 from "../img/contemporain/fauteuil_contemporain2.webp";
+  import fauteuil3 from "../img/contemporain/fauteuil_contemporain3.webp";
+  import chaise5 from "../img/contemporain/choix_chaises3.webp";
+  import canape1 from "../img/contemporain/choix_canape.webp";
+  import canape2 from "../img/contemporain/choix_canape2.webp";
+  import canape3 from "../img/nordique/nordique-banner1.webp";
+  import canape4 from "../img/contemporain/IMG_0739.webp";
+  import canape5 from "../img/contemporain/IMG_0745.webp";
+  import canape6 from "../img/contemporain/IMG_0748.webp";
+
+  const meublesChaises = [
+    {
+      reference: "ref-001",
+      famille: "Chaise style classique chic",
+      imageUrl: chaise1,
+    },
+    {
+      reference: "ref-002",
+      famille: "Chaise 2 style rustique",
+      imageUrl: chaise2,
+    },
+    {
+      reference: "ref-005",
+      famille: "Chaise style contemporain",
+      imageUrl: chaise5,
+    },
+    {
+      reference: "ref-006",
+      famille: "Fauteuil style contemporain",
+      imageUrl: fauteuil1,
+    },
+    {
+      reference: "ref-007",
+      famille: "Fauteuil style contemporain 2",
+      imageUrl: fauteuil2,
+    },
+    {
+      reference: "ref-008",
+      famille: "Fauteuil style contemporain 3",
+      imageUrl: fauteuil3,
+    },
+    {
+      reference: "ref-009",
+      famille: "Canapé contemporain",
+      imageUrl: canape1,
+    },
+    {
+      reference: "ref-010",
+      famille: "Canapé contemporain 2",
+      imageUrl: canape2,
+    },
+    {
+      reference: "ref-011",
+      famille: "Canapé nordique",
+      imageUrl: canape3,
+    },
+    {
+      reference: "ref-003",
+      famille: "Chaise grand cru plaisance 7 p8921",
+      imageUrl: chaise3,
+    },
+    {
+      reference: "ref-012",
+      famille: "Canapé contemporain 3",
+      imageUrl: canape4,
+    },
+    {
+      reference: "ref-013",
+      famille: "Canapé contemporain 4",
+      imageUrl: canape5,
+    },
+    {
+      reference: "ref-013",
+      famille: "Canapé contemporain 4",
+      imageUrl: canape6,
+    },
+    {
+      reference: "ref-004",
+      famille: "Chaise Sofia Plaisance 7 p8805",
+      imageUrl: chaise4,
+    },
+    // Ajoutez d'autres objets de meubles ici...
+  ];
+
+  function displayFurnitureData() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    meublesChaises.forEach((furniture) => {
+      const furnitureElement = document.createElement("div");
+      furnitureElement.classList.add("furniture-item");
+
+      const furnitureImage = document.createElement("img");
+      furnitureImage.src = furniture.imageUrl;
+      furnitureImage.alt = furniture.famille;
+
+      const furnitureInfo = document.createElement("div");
+      furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+      furnitureElement.appendChild(furnitureImage);
+      furnitureElement.appendChild(furnitureInfo);
+      furnitureContainer.appendChild(furnitureElement);
+    });
+  }
+
+  // Exécute la fonction lorsque le DOM est entièrement chargé
+  document.addEventListener("DOMContentLoaded", displayFurnitureData);
+</script>
