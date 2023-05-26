@@ -172,7 +172,7 @@
     <!--DEBUT CONTENU PRINCIPAL-->
     <main>
       <div class="meubles_choix">
-        <h2>Nos chaises, nos fauteuils</h2>
+        <h2>Nos fauteuils</h2>
         <h3>Patience, d'autres seront ajoutés...</h3>
       </div>
       <div id="furniture-container"></div>
@@ -928,50 +928,13 @@ function hmrAccept(bundle, id) {
 },{}],"dQlVo":[function(require,module,exports) {
 // Meubles chaises / buffets
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _choixChaisesWebp = require("../img/classique-style/choix_chaises.webp");
-var _choixChaisesWebpDefault = parcelHelpers.interopDefault(_choixChaisesWebp);
-var _choixChaises1Webp = require("../img/classique-style/choix_chaises1.webp");
-var _choixChaises1WebpDefault = parcelHelpers.interopDefault(_choixChaises1Webp);
-var _chaiseGrandCruPlaisance7P8921Webp = require("../img/classique-style/chaise-grand-cru-plaisance-7-p8921.webp");
-var _chaiseGrandCruPlaisance7P8921WebpDefault = parcelHelpers.interopDefault(_chaiseGrandCruPlaisance7P8921Webp);
-var _chaiseSofiaPlaisance7P8805Webp = require("../img/classique-style/chaise-sofia-plaisance-7-p8805.webp");
-var _chaiseSofiaPlaisance7P8805WebpDefault = parcelHelpers.interopDefault(_chaiseSofiaPlaisance7P8805Webp);
 var _fauteuilContemporainWebp = require("../img/contemporain/fauteuil_contemporain.webp");
 var _fauteuilContemporainWebpDefault = parcelHelpers.interopDefault(_fauteuilContemporainWebp);
 var _fauteuilContemporain2Webp = require("../img/contemporain/fauteuil_contemporain2.webp");
 var _fauteuilContemporain2WebpDefault = parcelHelpers.interopDefault(_fauteuilContemporain2Webp);
 var _fauteuilContemporain3Webp = require("../img/contemporain/fauteuil_contemporain3.webp");
 var _fauteuilContemporain3WebpDefault = parcelHelpers.interopDefault(_fauteuilContemporain3Webp);
-var _choixChaises3Webp = require("../img/contemporain/choix_chaises3.webp");
-var _choixChaises3WebpDefault = parcelHelpers.interopDefault(_choixChaises3Webp);
-var _choixCanapeWebp = require("../img/contemporain/choix_canape.webp");
-var _choixCanapeWebpDefault = parcelHelpers.interopDefault(_choixCanapeWebp);
-var _choixCanape2Webp = require("../img/contemporain/choix_canape2.webp");
-var _choixCanape2WebpDefault = parcelHelpers.interopDefault(_choixCanape2Webp);
-var _nordiqueBanner1Webp = require("../img/nordique/nordique-banner1.webp");
-var _nordiqueBanner1WebpDefault = parcelHelpers.interopDefault(_nordiqueBanner1Webp);
-var _img0739Webp = require("../img/contemporain/IMG_0739.webp");
-var _img0739WebpDefault = parcelHelpers.interopDefault(_img0739Webp);
-var _img0745Webp = require("../img/contemporain/IMG_0745.webp");
-var _img0745WebpDefault = parcelHelpers.interopDefault(_img0745Webp);
-var _img0748Webp = require("../img/contemporain/IMG_0748.webp");
-var _img0748WebpDefault = parcelHelpers.interopDefault(_img0748Webp);
 const meublesChaises = [
-    {
-        reference: "ref-001",
-        famille: "Chaise style classique chic",
-        imageUrl: (0, _choixChaisesWebpDefault.default)
-    },
-    {
-        reference: "ref-002",
-        famille: "Chaise 2 style rustique",
-        imageUrl: (0, _choixChaises1WebpDefault.default)
-    },
-    {
-        reference: "ref-005",
-        famille: "Chaise style contemporain",
-        imageUrl: (0, _choixChaises3WebpDefault.default)
-    },
     {
         reference: "ref-006",
         famille: "Fauteuil style contemporain",
@@ -986,46 +949,6 @@ const meublesChaises = [
         reference: "ref-008",
         famille: "Fauteuil style contemporain 3",
         imageUrl: (0, _fauteuilContemporain3WebpDefault.default)
-    },
-    {
-        reference: "ref-009",
-        famille: "Canap\xe9 contemporain",
-        imageUrl: (0, _choixCanapeWebpDefault.default)
-    },
-    {
-        reference: "ref-010",
-        famille: "Canap\xe9 contemporain 2",
-        imageUrl: (0, _choixCanape2WebpDefault.default)
-    },
-    {
-        reference: "ref-011",
-        famille: "Canap\xe9 nordique",
-        imageUrl: (0, _nordiqueBanner1WebpDefault.default)
-    },
-    {
-        reference: "ref-003",
-        famille: "Chaise grand cru plaisance 7 p8921",
-        imageUrl: (0, _chaiseGrandCruPlaisance7P8921WebpDefault.default)
-    },
-    {
-        reference: "ref-012",
-        famille: "Canap\xe9 contemporain 3",
-        imageUrl: (0, _img0739WebpDefault.default)
-    },
-    {
-        reference: "ref-013",
-        famille: "Canap\xe9 contemporain 4",
-        imageUrl: (0, _img0745WebpDefault.default)
-    },
-    {
-        reference: "ref-013",
-        famille: "Canap\xe9 contemporain 4",
-        imageUrl: (0, _img0748WebpDefault.default)
-    },
-    {
-        reference: "ref-004",
-        famille: "Chaise Sofia Plaisance 7 p8805",
-        imageUrl: (0, _chaiseSofiaPlaisance7P8805WebpDefault.default)
     }
 ];
 function displayFurnitureData() {
@@ -1047,10 +970,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/classique-style/choix_chaises.webp":"bAeDV","../img/classique-style/choix_chaises1.webp":"gGfOH","../img/classique-style/chaise-grand-cru-plaisance-7-p8921.webp":"jLNqk","../img/classique-style/chaise-sofia-plaisance-7-p8805.webp":"c1ITp","../img/contemporain/fauteuil_contemporain.webp":"coRFq","../img/contemporain/fauteuil_contemporain2.webp":"dA0iE","../img/contemporain/fauteuil_contemporain3.webp":"49aQg","../img/contemporain/choix_chaises3.webp":"gYQRv","../img/contemporain/choix_canape.webp":"iX4ly","../img/contemporain/choix_canape2.webp":"jtew4","../img/nordique/nordique-banner1.webp":"llAmo","../img/contemporain/IMG_0739.webp":"3930P","../img/contemporain/IMG_0745.webp":"2cBzQ","../img/contemporain/IMG_0748.webp":"1kfiK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bAeDV":[function(require,module,exports) {
-module.exports = require("73e4d7748e6e1903").getBundleURL("ctNLR") + "../../choix_chaises.f59c6991.webp" + "?" + Date.now();
+},{"../img/contemporain/fauteuil_contemporain.webp":"coRFq","../img/contemporain/fauteuil_contemporain2.webp":"dA0iE","../img/contemporain/fauteuil_contemporain3.webp":"49aQg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"coRFq":[function(require,module,exports) {
+module.exports = require("98f648727d6cb54b").getBundleURL("ctNLR") + "../../fauteuil_contemporain.15578451.webp" + "?" + Date.now();
 
-},{"73e4d7748e6e1903":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"98f648727d6cb54b":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -1084,46 +1007,13 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"gGfOH":[function(require,module,exports) {
-module.exports = require("9432dd8fdfdb96e4").getBundleURL("ctNLR") + "../../choix_chaises1.e8a37903.webp" + "?" + Date.now();
-
-},{"9432dd8fdfdb96e4":"lgJ39"}],"jLNqk":[function(require,module,exports) {
-module.exports = require("fd9c5051c37fbd27").getBundleURL("ctNLR") + "../../chaise-grand-cru-plaisance-7-p8921.c8fd1f96.webp" + "?" + Date.now();
-
-},{"fd9c5051c37fbd27":"lgJ39"}],"c1ITp":[function(require,module,exports) {
-module.exports = require("3640c79c52d9f71b").getBundleURL("ctNLR") + "../../chaise-sofia-plaisance-7-p8805.67de4c5f.webp" + "?" + Date.now();
-
-},{"3640c79c52d9f71b":"lgJ39"}],"coRFq":[function(require,module,exports) {
-module.exports = require("98f648727d6cb54b").getBundleURL("ctNLR") + "../../fauteuil_contemporain.15578451.webp" + "?" + Date.now();
-
-},{"98f648727d6cb54b":"lgJ39"}],"dA0iE":[function(require,module,exports) {
+},{}],"dA0iE":[function(require,module,exports) {
 module.exports = require("37a33cf21dee57de").getBundleURL("ctNLR") + "../../fauteuil_contemporain2.cbafbab0.webp" + "?" + Date.now();
 
 },{"37a33cf21dee57de":"lgJ39"}],"49aQg":[function(require,module,exports) {
 module.exports = require("c69a584432cb4280").getBundleURL("ctNLR") + "../../fauteuil_contemporain3.fc1c29f6.webp" + "?" + Date.now();
 
-},{"c69a584432cb4280":"lgJ39"}],"gYQRv":[function(require,module,exports) {
-module.exports = require("61a6bd8bad56c6ce").getBundleURL("ctNLR") + "../../choix_chaises3.c8fe43ef.webp" + "?" + Date.now();
-
-},{"61a6bd8bad56c6ce":"lgJ39"}],"iX4ly":[function(require,module,exports) {
-module.exports = require("c1ce3a100c319e3c").getBundleURL("ctNLR") + "../../choix_canape.d595b77a.webp" + "?" + Date.now();
-
-},{"c1ce3a100c319e3c":"lgJ39"}],"jtew4":[function(require,module,exports) {
-module.exports = require("a261e069949645ba").getBundleURL("ctNLR") + "../../choix_canape2.0e0d1d32.webp" + "?" + Date.now();
-
-},{"a261e069949645ba":"lgJ39"}],"llAmo":[function(require,module,exports) {
-module.exports = require("383aee4a465f79f6").getBundleURL("ctNLR") + "../../nordique-banner1.7ae70094.webp" + "?" + Date.now();
-
-},{"383aee4a465f79f6":"lgJ39"}],"3930P":[function(require,module,exports) {
-module.exports = require("9e97b1ceda3780af").getBundleURL("ctNLR") + "../../IMG_0739.6c84fcc9.webp" + "?" + Date.now();
-
-},{"9e97b1ceda3780af":"lgJ39"}],"2cBzQ":[function(require,module,exports) {
-module.exports = require("a7e61940516d15c2").getBundleURL("ctNLR") + "../../IMG_0745.aa6a487a.webp" + "?" + Date.now();
-
-},{"a7e61940516d15c2":"lgJ39"}],"1kfiK":[function(require,module,exports) {
-module.exports = require("72871b244875b9f9").getBundleURL("ctNLR") + "../../IMG_0748.aa848c6a.webp" + "?" + Date.now();
-
-},{"72871b244875b9f9":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"c69a584432cb4280":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
