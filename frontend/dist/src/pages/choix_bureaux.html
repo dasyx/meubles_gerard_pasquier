@@ -987,6 +987,17 @@ function displayFurnitureData() {
         const furnitureImage = document.createElement("img");
         furnitureImage.src = furniture.imageUrl;
         furnitureImage.alt = furniture.famille;
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function() {
+            if (furnitureImage.requestFullscreen) furnitureImage.requestFullscreen();
+            else if (furnitureImage.msRequestFullscreen) furnitureImage.msRequestFullscreen();
+            else if (furnitureImage.mozRequestFullScreen) furnitureImage.mozRequestFullScreen();
+            else if (furnitureImage.webkitRequestFullscreen) furnitureImage.webkitRequestFullscreen();
+            furnitureImage.addEventListener("click", (event)=>{
+                if (document.fullscreenElement) document.exitFullscreen();
+            });
+        };
         const furnitureInfo = document.createElement("div");
         furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
                                 <strong>famille:</strong> ${furniture.famille}`;

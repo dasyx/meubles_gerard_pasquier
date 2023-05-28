@@ -559,6 +559,7 @@ function hmrAccept(bundle, id) {
 },{}],"dV6cC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _allCss = require("@fortawesome/fontawesome-free/css/all.css");
+var _produits = require("../js/produits");
 var _stylesScss = require("../css/styles.scss");
 var _tailwindGeneratedJs = require("../js/tailwind.generated.js");
 var _flowbite = require("flowbite");
@@ -840,7 +841,9 @@ lien.addEventListener("click", function(e) {
     descendreEnDoucheur(destination); // Appel de la fonction d'animation de descente en douceur
 });
 
-},{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
+},{"@fortawesome/fontawesome-free/css/all.css":"8OILE","../js/produits":"2yzU6","../css/styles.scss":"43exz","../js/tailwind.generated.js":"a6R8c","flowbite":"eakbs","../components/button":"le2UX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8OILE":[function() {},{}],"2yzU6":[function(require,module,exports) {
+
+},{}],"43exz":[function() {},{}],"a6R8c":[function(require,module,exports) {
 
 },{}],"eakbs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

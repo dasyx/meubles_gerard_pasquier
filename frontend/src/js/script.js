@@ -1,4 +1,5 @@
 import "@fortawesome/fontawesome-free/css/all.css";
+import "../js/produits";
 import "../css/styles.scss";
 import "../js/tailwind.generated.js";
 import "flowbite";
