@@ -210,32 +210,30 @@
           <hr class="separate">
         </div>
       </div>
-      <!-- séjours / salon -->
+      <!-- collection andré renault -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
         <div class="selection_renault relative">
-          <a href="#">
-            <img class="h-full object-cover object-center rounded-lg" src="/matelas-ressorts-hybrid-air-ar-hybrid.fc641137.webp" alt="séjours / salon">
-            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">André
-              Renault
-              <hr>
-            </div>
-          </a>
+          <img class="h-full object-cover object-center rounded-lg" src="/matelas-ressorts-hybrid-air-ar-hybrid.fc641137.webp" alt="séjours / salon">
+          <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold bg-black bg-opacity-50">André Renault
+            <hr>
+          </div>
         </div>
       </div>
-      <!-- fin séjours / salon -->
-      <!-- meubles bureaux -->
+      <!-- fin collection andré renault -->
+      <!-- collection technilat -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
         <div class="selection_technilat relative">
-          <a href="#">
-            <img class="h-full object-cover object-center rounded-lg" src="/l-aubrac-terres-d-aubrac-technilat-1.d0417b4b.webp" alt="sélection technilat">
-            <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold text-lg bg-black bg-opacity-50">Technilat
-              <hr>
-            </div>
-          </a>
+          <img class="h-full object-cover object-center rounded-lg" src="/l-aubrac-terres-d-aubrac-technilat-1.d0417b4b.webp" alt="sélection technilat">
+          <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold bg-black bg-opacity-50">Technilat
+            <hr>
+          </div>
         </div>
       </div>
-      <!-- fin meubles bureaux -->
+      <!-- fin collection andré renault -->
     </section>
+    <div class="w-full flex justify-center mb-4">
+      <button class="button_renault hidden">Click me!</button>
+    </div>
     <div id="furniture-container"></div>
   </main>
   <!--FIN CONTENU PRINCIPAL-->
@@ -430,6 +428,23 @@
 
 </html>
 
+<style>.button_renault {
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+}
+
+.button-active .button_renault {
+  margin-top: .5rem;
+  display: block !important;
+}
+
+</style>
+
 <script>// modules are defined as an array
 // [ module function, map of requires ]
 //
@@ -574,13 +589,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"8cprB":[function(require,module,exports) {
+})({"7RSVE":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "b2eac3cfa9153edc";
+module.bundle.HMR_BUNDLE_ID = "9153944b3c7346f2";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -988,8 +1003,17 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"huYUO":[function(require,module,exports) {
-/* const meublesBureaux = [
+},{}],"bgfB0":[function(require,module,exports) {
+// select the Renault selection div
+const div = document.querySelector(".selection_renault");
+const button = document.querySelector(".button_renault");
+// on selection div click, toggle class that will show/hide button
+div.addEventListener("click", function() {
+    button.classList.remove("hidden");
+    button.classList.toggle("button-active");
+    if (button.classList.contains("button-active")) button.classList.remove("hidden");
+    else button.classList.add("hidden");
+}); /* const meublesBureaux = [
     {
       reference: "ref-005",
       famille: "Table basse Concorde Plaisance 9",
@@ -1040,7 +1064,7 @@ function hmrAccept(bundle, id) {
       famille: "Table contemporaine 1",
       imageUrl: table10,
     },
-  ]; */ /* function displayFurnitureData() {
+  ]; */  /* function displayFurnitureData() {
     const furnitureContainer = document.getElementById("furniture-container");
 
     meublesBureaux.forEach((furniture) => {
@@ -1083,6 +1107,7 @@ function hmrAccept(bundle, id) {
 
   // Exécute la fonction lorsque le DOM est entièrement chargé
   document.addEventListener("DOMContentLoaded", displayFurnitureData); */ 
-},{}]},["8cprB","huYUO"], "huYUO", "parcelRequire66bd")
+
+},{}]},["7RSVE","bgfB0"], "bgfB0", "parcelRequire66bd")
 
 </script>
