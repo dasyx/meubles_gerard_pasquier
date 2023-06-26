@@ -1,17 +1,5 @@
-import banc1 from "../img/literie/andre_renault/banc_de_coffre/Banc-coffre.webp";
 
-import faut1 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
-import faut2 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.webp";
-import faut3 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.webp";
-import faut5 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.webp";
-import faut6 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
-import faut7 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur.webp";
-import faut8 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.webp";
-import faut9 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.webp";
-import faut10 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
-import faut11 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.webp";
-import faut12 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.webp";
-import faut13 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.webp";
+
 
 import matlatex1 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-angelina-club-line.webp";
 import matlatex2 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-exquis-dreams.webp";

@@ -212,8 +212,8 @@
       </div>
       <!-- collection andré renault -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="selection_renault relative">
-          <img class="h-full object-cover object-center rounded-lg" src="/matelas-ressorts-hybrid-air-ar-hybrid.fc641137.webp" alt="séjours / salon">
+        <div class="relative" id="selection_renault">
+          <img class="h-full object-cover object-center rounded-lg" src="/matelas-ressorts-hybrid-air-ar-hybrid.fc641137.webp" alt="sélection andré renault">
           <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold bg-black bg-opacity-50">André Renault
             <hr>
           </div>
@@ -232,7 +232,8 @@
       <!-- fin collection andré renault -->
     </section>
     <div class="w-full flex justify-center mb-4">
-      <button class="button_renault hidden">Click me!</button>
+      <button class="button_renault hidden" id="bancs"><span class="span_display">voir</span> nos bancs-coffre</button>
+      <button class="button_renault hidden" id="fauteuils"><span class="span_display">voir</span> nos fauteuils</button>
     </div>
     <div id="furniture-container"></div>
   </main>
@@ -421,7 +422,7 @@
     </p>
   </div>
   <script src="/index.c072103e.js" async="" defer=""></script>
-  <script src="/src/pages/choix_literie.67f02eed.js" async="" defer=""></script>
+  <script src="/src/pages/choix_literie.1d1b7253.js" defer=""></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer=""></script>
 </body>
@@ -589,13 +590,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"7RSVE":[function(require,module,exports) {
+})({"cqC3B":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "9153944b3c7346f2";
+module.bundle.HMR_BUNDLE_ID = "272598c0e3359f85";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -1003,111 +1004,257 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"bgfB0":[function(require,module,exports) {
-// select the Renault selection div
-const div = document.querySelector(".selection_renault");
-const button = document.querySelector(".button_renault");
-// on selection div click, toggle class that will show/hide button
-div.addEventListener("click", function() {
-    button.classList.remove("hidden");
-    button.classList.toggle("button-active");
-    if (button.classList.contains("button-active")) button.classList.remove("hidden");
-    else button.classList.add("hidden");
-}); /* const meublesBureaux = [
+},{}],"jQaNe":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _bancCoffreWebp = require("../img/literie/andre_renault/banc_de_coffre/Banc-coffre.webp");
+var _bancCoffreWebpDefault = parcelHelpers.interopDefault(_bancCoffreWebp);
+var _fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurEtBatterieIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.webp");
+var _fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurEtBatterieIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurEtBatterieIntegreeWebp);
+var _fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.webp");
+var _fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurWebp);
+var _fauteuilRelaxCuirNoirTetiereElectriqueBatterieIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.webp");
+var _fauteuilRelaxCuirNoirTetiereElectriqueBatterieIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxCuirNoirTetiereElectriqueBatterieIntegreeWebp);
+var _fauteuilRelaxCuirNoirTetiereElectriqueBatterieNonIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.webp");
+var _fauteuilRelaxCuirNoirTetiereElectriqueBatterieNonIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxCuirNoirTetiereElectriqueBatterieNonIntegreeWebp);
+var _fauteuilRelaxTissuTetiereElectriqueAvecReleveurEtBatterieIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.webp");
+var _fauteuilRelaxTissuTetiereElectriqueAvecReleveurEtBatterieIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxTissuTetiereElectriqueAvecReleveurEtBatterieIntegreeWebp);
+var _fauteuilRelaxTissuTetiereElectriqueAvecReleveurWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur.webp");
+var _fauteuilRelaxTissuTetiereElectriqueAvecReleveurWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxTissuTetiereElectriqueAvecReleveurWebp);
+var _fauteuilRelaxTissuTetiereElectriqueBatterieNonIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.webp");
+var _fauteuilRelaxTissuTetiereElectriqueBatterieNonIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxTissuTetiereElectriqueBatterieNonIntegreeWebp);
+var _fauteuilRelaxTissuTetiereElectriqueEtBatterieIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.webp");
+var _fauteuilRelaxTissuTetiereElectriqueEtBatterieIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxTissuTetiereElectriqueEtBatterieIntegreeWebp);
+var _fauteuilRelaxVeloursTetiereElectriqueAvecReleveurEtBatterieIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.webp");
+var _fauteuilRelaxVeloursTetiereElectriqueAvecReleveurEtBatterieIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxVeloursTetiereElectriqueAvecReleveurEtBatterieIntegreeWebp);
+var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueAvecReleveurWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.webp");
+var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueAvecReleveurWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxVeloursTurquoiseTetiereElectriqueAvecReleveurWebp);
+var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueBatterieNonIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.webp");
+var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueBatterieNonIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxVeloursTurquoiseTetiereElectriqueBatterieNonIntegreeWebp);
+var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueEtBatterieIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.webp");
+var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueEtBatterieIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxVeloursTurquoiseTetiereElectriqueEtBatterieIntegreeWebp);
+const bancRenault = [
     {
-      reference: "ref-005",
-      famille: "Table basse Concorde Plaisance 9",
-      imageUrl: table1,
-    },
+        reference: "ref-001",
+        famille: "Banc-coffre",
+        imageUrl: (0, _bancCoffreWebpDefault.default)
+    }
+];
+const fauteuilsRenault = [
     {
-      reference: "ref-006",
-      famille: "Table Bristol chêne Plaisance 7",
-      imageUrl: table2,
-    },
-    {
-      reference: "ref-007",
-      famille: "Table ovale Girardeau",
-      imageUrl: table3,
-    },
-    {
-      reference: "ref-008",
-      famille: "Table ronde Aninovel",
-      imageUrl: table4,
-    },
-    {
-      reference: "ref-009",
-      famille: "Table classique 1",
-      imageUrl: table5,
-    },
-    {
-      reference: "ref-010",
-      famille: "Table classique 2",
-      imageUrl: table6,
-    },
-    {
-      reference: "ref-011",
-      famille: "Table classique 3",
-      imageUrl: table7,
-    },
-    {
-      reference: "ref-012",
-      famille: "Table classique 4",
-      imageUrl: table8,
-    },
-    {
-      reference: "ref-013",
-      famille: "Table Ferrand de Salon Faubourg Ref 3535",
-      imageUrl: table9,
-    },
-    {
-      reference: "ref-014",
-      famille: "Table contemporaine 1",
-      imageUrl: table10,
-    },
-  ]; */  /* function displayFurnitureData() {
-    const furnitureContainer = document.getElementById("furniture-container");
-
-    meublesBureaux.forEach((furniture) => {
-      const furnitureElement = document.createElement("div");
-      furnitureElement.classList.add("furniture-item");
-
-      const furnitureImage = document.createElement("img");
-      furnitureImage.src = furniture.imageUrl;
-      furnitureImage.alt = furniture.famille;
-
-      // make furniture image clickable
-      furnitureImage.style.cursor = "pointer";
-      furnitureImage.onclick = function () {
-        if (furnitureImage.requestFullscreen) {
-          furnitureImage.requestFullscreen();
-        } else if (furnitureImage.msRequestFullscreen) {
-          furnitureImage.msRequestFullscreen();
-        } else if (furnitureImage.mozRequestFullScreen) {
-          furnitureImage.mozRequestFullScreen();
-        } else if (furnitureImage.webkitRequestFullscreen) {
-          furnitureImage.webkitRequestFullscreen();
-        }
-        furnitureImage.addEventListener("click", (event) => {
-          if (document.fullscreenElement) {
-            document.exitFullscreen();
-          }
+        reference: "ref-001",
+        famille: "fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree",
+        imageUrl: (0, _fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurEtBatterieIntegreeWebpDefault.default)
+    }
+];
+// select all Renault selection divs
+let renault = document.getElementById("selection_renault");
+let renaultBtn = document.querySelectorAll("button");
+let spans = document.querySelectorAll(".span_display");
+let displayed = false;
+// add click event listener to each div
+renault.addEventListener("click", function() {
+    // toggle class on each button
+    renaultBtn.forEach((button)=>{
+        button.classList.remove("hidden");
+        button.classList.toggle("button-active");
+        if (button.classList.contains("button-active")) button.classList.remove("hidden");
+        else button.classList.add("hidden");
+        button.addEventListener("click", function() {
+            if (displayed) {
+                displayed = false;
+                hideFurnitureData();
+                spans.forEach((span)=>{
+                    span.innerHTML = "voir";
+                });
+            } else {
+                displayed = true;
+                // Check which button is clicked
+                if (button.id === "bancs") {
+                    // Call a specific function for button 1
+                    spans.forEach((span)=>{
+                        span.innerHTML = "cacher";
+                    });
+                    displayCoffreRenault();
+                } else if (button.id === "fauteuils") {
+                    // Call a specific function for button 2
+                    spans.forEach((span)=>{
+                        span.innerHTML = "cacher";
+                    });
+                    displayFauteuilsRenault();
+                } else {
+                    // Call a default function
+                    spans.forEach((span)=>{
+                        span.innerHTML = "voir";
+                    });
+                    hideFurnitureData();
+                }
+            }
         });
-      };
-
-
-      const furnitureInfo = document.createElement("div");
-      furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
-                                <strong>famille:</strong> ${furniture.famille}`;
-
-      furnitureElement.appendChild(furnitureImage);
-      furnitureElement.appendChild(furnitureInfo);
-      furnitureContainer.appendChild(furnitureElement);
     });
-  }
+});
+function displayCoffreRenault() {
+    const furnitureContainer = document.getElementById("furniture-container");
+    bancRenault.forEach((furniture)=>{
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function() {
+            if (furnitureImage.requestFullscreen) furnitureImage.requestFullscreen();
+            else if (furnitureImage.msRequestFullscreen) furnitureImage.msRequestFullscreen();
+            else if (furnitureImage.mozRequestFullScreen) furnitureImage.mozRequestFullScreen();
+            else if (furnitureImage.webkitRequestFullscreen) furnitureImage.webkitRequestFullscreen();
+            furnitureImage.addEventListener("click", (event)=>{
+                if (document.fullscreenElement) document.exitFullscreen();
+            });
+        };
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+function displayFauteuilsRenault() {
+    const furnitureContainer = document.getElementById("furniture-container");
+    fauteuilsRenault.forEach((furniture)=>{
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function() {
+            if (furnitureImage.requestFullscreen) furnitureImage.requestFullscreen();
+            else if (furnitureImage.msRequestFullscreen) furnitureImage.msRequestFullscreen();
+            else if (furnitureImage.mozRequestFullScreen) furnitureImage.mozRequestFullScreen();
+            else if (furnitureImage.webkitRequestFullscreen) furnitureImage.webkitRequestFullscreen();
+            furnitureImage.addEventListener("click", (event)=>{
+                if (document.fullscreenElement) document.exitFullscreen();
+            });
+        };
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+function hideFurnitureData() {
+    const furnitureContainer = document.getElementById("furniture-container");
+    furnitureContainer.innerHTML = "";
+} // Exécute la fonction lorsque le DOM est entièrement chargé
+ //document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-  // Exécute la fonction lorsque le DOM est entièrement chargé
-  document.addEventListener("DOMContentLoaded", displayFurnitureData); */ 
+},{"../img/literie/andre_renault/banc_de_coffre/Banc-coffre.webp":"aIomX","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"7IsVB","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.webp":"3nlTt","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.webp":"kEtdP","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.webp":"6eTuB","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"7R2wv","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur.webp":"kS7Ds","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.webp":"4OFBH","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.webp":"5TIN8","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"3moLn","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.webp":"baNbI","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.webp":"cPXuA","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.webp":"h8UKh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aIomX":[function(require,module,exports) {
+module.exports = require("575fa2c466b9b0ff").getBundleURL("3mnqn") + "../../Banc-coffre.7e4c5df2.webp" + "?" + Date.now();
 
-},{}]},["7RSVE","bgfB0"], "bgfB0", "parcelRequire66bd")
+},{"575fa2c466b9b0ff":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"7IsVB":[function(require,module,exports) {
+module.exports = require("e3cb98aef0a521c3").getBundleURL("3mnqn") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.7dcd3a4a.webp" + "?" + Date.now();
+
+},{"e3cb98aef0a521c3":"lgJ39"}],"3nlTt":[function(require,module,exports) {
+module.exports = require("41e312e867db3590").getBundleURL("3mnqn") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.51c00ab3.webp" + "?" + Date.now();
+
+},{"41e312e867db3590":"lgJ39"}],"kEtdP":[function(require,module,exports) {
+module.exports = require("f2a40a91bd182767").getBundleURL("3mnqn") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.1be05603.webp" + "?" + Date.now();
+
+},{"f2a40a91bd182767":"lgJ39"}],"6eTuB":[function(require,module,exports) {
+module.exports = require("3c38251d2dd36f76").getBundleURL("3mnqn") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.b1646c42.webp" + "?" + Date.now();
+
+},{"3c38251d2dd36f76":"lgJ39"}],"7R2wv":[function(require,module,exports) {
+module.exports = require("5f6cbba189c8d46").getBundleURL("3mnqn") + "../../fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.19b40661.webp" + "?" + Date.now();
+
+},{"5f6cbba189c8d46":"lgJ39"}],"kS7Ds":[function(require,module,exports) {
+module.exports = require("87875b30690081e7").getBundleURL("3mnqn") + "../../fauteuil-relax-tissu-tetiere-electrique-avec-releveur.cf5fff37.webp" + "?" + Date.now();
+
+},{"87875b30690081e7":"lgJ39"}],"4OFBH":[function(require,module,exports) {
+module.exports = require("5ad6ec4168215001").getBundleURL("3mnqn") + "../../fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.abf2a1bc.webp" + "?" + Date.now();
+
+},{"5ad6ec4168215001":"lgJ39"}],"5TIN8":[function(require,module,exports) {
+module.exports = require("c793001e5a91f527").getBundleURL("3mnqn") + "../../fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.0ecf64ef.webp" + "?" + Date.now();
+
+},{"c793001e5a91f527":"lgJ39"}],"3moLn":[function(require,module,exports) {
+module.exports = require("31557d8916ddef5c").getBundleURL("3mnqn") + "../../fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.64f38dca.webp" + "?" + Date.now();
+
+},{"31557d8916ddef5c":"lgJ39"}],"baNbI":[function(require,module,exports) {
+module.exports = require("d02e7e4a6f7b5f03").getBundleURL("3mnqn") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.0087cb83.webp" + "?" + Date.now();
+
+},{"d02e7e4a6f7b5f03":"lgJ39"}],"cPXuA":[function(require,module,exports) {
+module.exports = require("cd6d6b8dd4dbf34f").getBundleURL("3mnqn") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.7de54cb0.webp" + "?" + Date.now();
+
+},{"cd6d6b8dd4dbf34f":"lgJ39"}],"h8UKh":[function(require,module,exports) {
+module.exports = require("887c1b16c95c5d72").getBundleURL("3mnqn") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.3a75e86c.webp" + "?" + Date.now();
+
+},{"887c1b16c95c5d72":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["cqC3B","jQaNe"], "jQaNe", "parcelRequire66bd")
 
 </script>

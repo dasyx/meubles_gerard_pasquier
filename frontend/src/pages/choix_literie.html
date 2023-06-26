@@ -247,10 +247,10 @@
       </div>
       <!-- collection andré renault -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="selection_renault relative">
+        <div class="relative" id="selection_renault">
           <img class="h-full object-cover object-center rounded-lg"
             src="../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-hybrid-air-ar-hybrid.webp"
-            alt="séjours / salon">
+            alt="sélection andré renault">
           <div class="absolute top-0 left-0 right-0 p-4 text-white font-bold bg-black bg-opacity-50">André Renault
             <hr>
           </div>
@@ -271,7 +271,8 @@
       <!-- fin collection andré renault -->
     </section>
     <div class="w-full flex justify-center mb-4">
-      <button class="button_renault hidden">Click me!</button>
+      <button class="button_renault hidden" id="bancs"><span class="span_display">voir</span> nos bancs-coffre</button>
+      <button class="button_renault hidden" id="fauteuils"><span class="span_display">voir</span> nos fauteuils</button>
     </div>
     <div id="furniture-container"></div>
   </main>
@@ -463,7 +464,7 @@
     </p>
   </div>
   <script type="module" src="../js/script.js" async></script>
-  <script type="module" src="../js/literie_renault.js" async></script>
+  <script type="module" src="../js/literie_renault.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
@@ -472,93 +473,112 @@
 
 <style>
   .button_renault {
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-        background-color: #000;
-        color: #fff;
-        border: none;
-        outline: none;
-        cursor: pointer;
-    }
-    .button-active .button_renault {
-        display: block!important;
-        margin-top: 0.5rem;
-    }
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .button-active .button_renault {
+    display: block !important;
+    margin-top: 0.5rem;
+  }
 </style>
 
 <script type="module">
 
-  // select the Renault selection div
-  const div = document.querySelector('.selection_renault');
-    const button = document.querySelector('.button_renault');
+  import banc1 from "../img/literie/andre_renault/banc_de_coffre/Banc-coffre.webp";
 
-    // on selection div click, toggle class that will show/hide button
-    div.addEventListener('click', function() {
+  import faut1 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
+  import faut2 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.webp";
+  import faut3 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.webp";
+  import faut5 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.webp";
+  import faut6 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
+  import faut7 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur.webp";
+  import faut8 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.webp";
+  import faut9 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.webp";
+  import faut10 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
+  import faut11 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.webp";
+  import faut12 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.webp";
+  import faut13 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.webp";
+
+  const bancRenault = [
+    {
+      reference: "ref-001",
+      famille: "Banc-coffre",
+      imageUrl: banc1,
+    },
+  ];
+
+  const fauteuilsRenault = [
+    {
+      reference: "ref-001",
+      famille: "fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree",
+      imageUrl: faut1,
+    },
+  ];
+
+  // select all Renault selection divs
+  let renault = document.getElementById('selection_renault');
+  let renaultBtn = document.querySelectorAll('button');
+  let spans = document.querySelectorAll('.span_display');
+  let displayed = false;
+
+  // add click event listener to each div
+
+  renault.addEventListener('click', function () {
+    // toggle class on each button
+    renaultBtn.forEach(button => {
+      button.classList.remove('hidden');
+      button.classList.toggle('button-active');
+      
+      if (button.classList.contains('button-active')) {
         button.classList.remove('hidden');
-        button.classList.toggle('button-active');
-        if(button.classList.contains('button-active')) {
-            button.classList.remove('hidden');
+      } else {
+        button.classList.add('hidden'); 
+      }
+      button.addEventListener('click', function () {
+        if (displayed) {
+          displayed = false;
+          hideFurnitureData();
+          spans.forEach(span => {
+          span.innerHTML = "voir";
+        });
         } else {
-            button.classList.add('hidden');
+          displayed = true;
+          // Check which button is clicked
+          if (button.id === 'bancs') {
+            // Call a specific function for button 1
+            spans.forEach(span => {
+            span.innerHTML = "cacher";
+          });
+            displayCoffreRenault();
+          } else if (button.id === 'fauteuils') {
+            // Call a specific function for button 2
+            spans.forEach(span => {
+            span.innerHTML = "cacher";
+          });
+            displayFauteuilsRenault();
+          } else {
+            // Call a default function
+            spans.forEach(span => {
+            span.innerHTML = "voir";
+          });
+            hideFurnitureData();
+          }
         }
+      });
     });
-  /* const meublesBureaux = [
-    {
-      reference: "ref-005",
-      famille: "Table basse Concorde Plaisance 9",
-      imageUrl: table1,
-    },
-    {
-      reference: "ref-006",
-      famille: "Table Bristol chêne Plaisance 7",
-      imageUrl: table2,
-    },
-    {
-      reference: "ref-007",
-      famille: "Table ovale Girardeau",
-      imageUrl: table3,
-    },
-    {
-      reference: "ref-008",
-      famille: "Table ronde Aninovel",
-      imageUrl: table4,
-    },
-    {
-      reference: "ref-009",
-      famille: "Table classique 1",
-      imageUrl: table5,
-    },
-    {
-      reference: "ref-010",
-      famille: "Table classique 2",
-      imageUrl: table6,
-    },
-    {
-      reference: "ref-011",
-      famille: "Table classique 3",
-      imageUrl: table7,
-    },
-    {
-      reference: "ref-012",
-      famille: "Table classique 4",
-      imageUrl: table8,
-    },
-    {
-      reference: "ref-013",
-      famille: "Table Ferrand de Salon Faubourg Ref 3535",
-      imageUrl: table9,
-    },
-    {
-      reference: "ref-014",
-      famille: "Table contemporaine 1",
-      imageUrl: table10,
-    },
-  ]; */
+  });
 
-  /* function displayFurnitureData() {
+
+  function displayCoffreRenault() {
     const furnitureContainer = document.getElementById("furniture-container");
 
-    meublesBureaux.forEach((furniture) => {
+    bancRenault.forEach((furniture) => {
       const furnitureElement = document.createElement("div");
       furnitureElement.classList.add("furniture-item");
 
@@ -585,6 +605,45 @@
         });
       };
 
+      const furnitureInfo = document.createElement("div");
+      furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+      furnitureElement.appendChild(furnitureImage);
+      furnitureElement.appendChild(furnitureInfo);
+      furnitureContainer.appendChild(furnitureElement);
+    });
+  }
+
+  function displayFauteuilsRenault() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    fauteuilsRenault.forEach((furniture) => {
+      const furnitureElement = document.createElement("div");
+      furnitureElement.classList.add("furniture-item");
+
+      const furnitureImage = document.createElement("img");
+      furnitureImage.src = furniture.imageUrl;
+      furnitureImage.alt = furniture.famille;
+
+      // make furniture image clickable
+      furnitureImage.style.cursor = "pointer";
+      furnitureImage.onclick = function () {
+        if (furnitureImage.requestFullscreen) {
+          furnitureImage.requestFullscreen();
+        } else if (furnitureImage.msRequestFullscreen) {
+          furnitureImage.msRequestFullscreen();
+        } else if (furnitureImage.mozRequestFullScreen) {
+          furnitureImage.mozRequestFullScreen();
+        } else if (furnitureImage.webkitRequestFullscreen) {
+          furnitureImage.webkitRequestFullscreen();
+        }
+        furnitureImage.addEventListener("click", (event) => {
+          if (document.fullscreenElement) {
+            document.exitFullscreen();
+          }
+        });
+      };
 
       const furnitureInfo = document.createElement("div");
       furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
@@ -596,6 +655,11 @@
     });
   }
 
+  function hideFurnitureData() {
+    const furnitureContainer = document.getElementById("furniture-container");
+    furnitureContainer.innerHTML = "";
+  }
+
   // Exécute la fonction lorsque le DOM est entièrement chargé
-  document.addEventListener("DOMContentLoaded", displayFurnitureData); */
+  //document.addEventListener("DOMContentLoaded", displayFurnitureData);
 </script>
