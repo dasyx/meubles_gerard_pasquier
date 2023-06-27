@@ -1,22 +1,6 @@
 
 
 
-import matlatex1 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-angelina-club-line.webp";
-import matlatex2 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-exquis-dreams.webp";
-import matlatex3 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-leticia-club-line.webp";
-import matlatex4 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-maryland-classic.webp";
-import matlatex5 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-nomade-classic.webp";
-import matlatex6 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-plume.webp";
-import matlatex7 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-seduction.webp";
-import matlatex8 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-tresor-dreams-andre-renault.webp";
-
-import matferm1 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-albatros-classic.webp";
-import matferm2 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-aquila-classic.webp";
-import matferm3 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-carolina-club-line.webp";
-import matferm4 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-magnolia-club-line.webp";
-import matferm5 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-nuage-dreams.webp";
-import matferm6 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-ressource.webp";
-import matferm7 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-sphere.webp";
 
 import mathybr1 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-diademe.webp";
 import mathybr2 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-hybrid-firm-curem.webp";

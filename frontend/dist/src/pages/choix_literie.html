@@ -232,8 +232,12 @@
       <!-- fin collection andré renault -->
     </section>
     <div class="w-full flex justify-center mb-4">
-      <button class="button_renault hidden" id="bancs"><span class="span_display">voir</span> nos bancs-coffre</button>
-      <button class="button_renault hidden" id="fauteuils"><span class="span_display">voir</span> nos fauteuils</button>
+      <button class="button_renault hidden" id="bancs"><span class="span_display"></span> nos bancs-coffre</button>
+      <button class="button_renault hidden" id="fauteuils"><span class="span_display"></span> nos fauteuils</button>
+      <button class="button_renault hidden" id="matelas_latex"><span class="span_display"></span> nos matelas
+        latex</button>
+      <button class="button_renault hidden" id="matelas_ferme"><span class="span_display"></span> nos matelas
+        fermes</button>
     </div>
     <div id="furniture-container"></div>
   </main>
@@ -434,14 +438,22 @@
   cursor: pointer;
   background-color: #000;
   border: none;
+  border-radius: 5px;
   outline: none;
-  margin-top: 1rem;
+  margin: 1.5rem 1rem;
   padding: .5rem 1rem;
+  font-style: italic;
+  box-shadow: 0 0 5px #000070;
 }
 
 .button-active .button_renault {
   margin-top: .5rem;
   display: block !important;
+}
+
+.button_renault:focus {
+  color: #000;
+  background-color: #fff;
 }
 
 </style>
@@ -590,13 +602,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"cqC3B":[function(require,module,exports) {
+})({"dZeSH":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "272598c0e3359f85";
+module.bundle.HMR_BUNDLE_ID = "667b37155a0e2add";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -1004,7 +1016,7 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"jQaNe":[function(require,module,exports) {
+},{}],"3cOxr":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _bancCoffreWebp = require("../img/literie/andre_renault/banc_de_coffre/Banc-coffre.webp");
 var _bancCoffreWebpDefault = parcelHelpers.interopDefault(_bancCoffreWebp);
@@ -1032,6 +1044,36 @@ var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueBatterieNonIntegreeWebp = req
 var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueBatterieNonIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxVeloursTurquoiseTetiereElectriqueBatterieNonIntegreeWebp);
 var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueEtBatterieIntegreeWebp = require("../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.webp");
 var _fauteuilRelaxVeloursTurquoiseTetiereElectriqueEtBatterieIntegreeWebpDefault = parcelHelpers.interopDefault(_fauteuilRelaxVeloursTurquoiseTetiereElectriqueEtBatterieIntegreeWebp);
+var _matelasLatexAngelinaClubLineWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-angelina-club-line.webp");
+var _matelasLatexAngelinaClubLineWebpDefault = parcelHelpers.interopDefault(_matelasLatexAngelinaClubLineWebp);
+var _matelasLatexExquisDreamsWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-exquis-dreams.webp");
+var _matelasLatexExquisDreamsWebpDefault = parcelHelpers.interopDefault(_matelasLatexExquisDreamsWebp);
+var _matelasLatexLeticiaClubLineWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-leticia-club-line.webp");
+var _matelasLatexLeticiaClubLineWebpDefault = parcelHelpers.interopDefault(_matelasLatexLeticiaClubLineWebp);
+var _matelasLatexMarylandClassicWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-maryland-classic.webp");
+var _matelasLatexMarylandClassicWebpDefault = parcelHelpers.interopDefault(_matelasLatexMarylandClassicWebp);
+var _matelasLatexNomadeClassicWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-nomade-classic.webp");
+var _matelasLatexNomadeClassicWebpDefault = parcelHelpers.interopDefault(_matelasLatexNomadeClassicWebp);
+var _matelasPlumeWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-plume.webp");
+var _matelasPlumeWebpDefault = parcelHelpers.interopDefault(_matelasPlumeWebp);
+var _matelasSeductionWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-seduction.webp");
+var _matelasSeductionWebpDefault = parcelHelpers.interopDefault(_matelasSeductionWebp);
+var _matelasTresorDreamsAndreRenaultWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-tresor-dreams-andre-renault.webp");
+var _matelasTresorDreamsAndreRenaultWebpDefault = parcelHelpers.interopDefault(_matelasTresorDreamsAndreRenaultWebp);
+var _matelasMousseAlbatrosClassicWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-albatros-classic.webp");
+var _matelasMousseAlbatrosClassicWebpDefault = parcelHelpers.interopDefault(_matelasMousseAlbatrosClassicWebp);
+var _matelasMousseAquilaClassicWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-aquila-classic.webp");
+var _matelasMousseAquilaClassicWebpDefault = parcelHelpers.interopDefault(_matelasMousseAquilaClassicWebp);
+var _matelasMousseCarolinaClubLineWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-carolina-club-line.webp");
+var _matelasMousseCarolinaClubLineWebpDefault = parcelHelpers.interopDefault(_matelasMousseCarolinaClubLineWebp);
+var _matelasMousseMagnoliaClubLineWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-magnolia-club-line.webp");
+var _matelasMousseMagnoliaClubLineWebpDefault = parcelHelpers.interopDefault(_matelasMousseMagnoliaClubLineWebp);
+var _matelasMousseNuageDreamsWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-nuage-dreams.webp");
+var _matelasMousseNuageDreamsWebpDefault = parcelHelpers.interopDefault(_matelasMousseNuageDreamsWebp);
+var _matelasRessourceWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-ressource.webp");
+var _matelasRessourceWebpDefault = parcelHelpers.interopDefault(_matelasRessourceWebp);
+var _matelasSphereWebp = require("../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-sphere.webp");
+var _matelasSphereWebpDefault = parcelHelpers.interopDefault(_matelasSphereWebp);
 const bancRenault = [
     {
         reference: "ref-001",
@@ -1044,16 +1086,150 @@ const fauteuilsRenault = [
         reference: "ref-001",
         famille: "fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree",
         imageUrl: (0, _fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurEtBatterieIntegreeWebpDefault.default)
+    },
+    {
+        reference: "ref-002",
+        famille: "fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur",
+        imageUrl: (0, _fauteuilRelaxCuirNoirTetiereElectriqueAvecReleveurWebpDefault.default)
+    },
+    {
+        reference: "ref-003",
+        famille: "fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree",
+        imageUrl: (0, _fauteuilRelaxCuirNoirTetiereElectriqueBatterieIntegreeWebpDefault.default)
+    },
+    {
+        reference: "ref-004",
+        famille: "fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree",
+        imageUrl: (0, _fauteuilRelaxCuirNoirTetiereElectriqueBatterieNonIntegreeWebpDefault.default)
+    },
+    {
+        reference: "ref-005",
+        famille: "fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree",
+        imageUrl: (0, _fauteuilRelaxTissuTetiereElectriqueAvecReleveurEtBatterieIntegreeWebpDefault.default)
+    },
+    {
+        reference: "ref-006",
+        famille: "fauteuil-relax-tissu-tetiere-electrique-avec-releveur",
+        imageUrl: (0, _fauteuilRelaxTissuTetiereElectriqueAvecReleveurWebpDefault.default)
+    },
+    {
+        reference: "ref-007",
+        famille: "fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree",
+        imageUrl: (0, _fauteuilRelaxTissuTetiereElectriqueBatterieNonIntegreeWebpDefault.default)
+    },
+    {
+        reference: "ref-008",
+        famille: "fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree",
+        imageUrl: (0, _fauteuilRelaxTissuTetiereElectriqueEtBatterieIntegreeWebpDefault.default)
+    },
+    {
+        reference: "ref-009",
+        famille: "fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree",
+        imageUrl: (0, _fauteuilRelaxVeloursTetiereElectriqueAvecReleveurEtBatterieIntegreeWebpDefault.default)
+    },
+    {
+        reference: "ref-010",
+        famille: "fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur",
+        imageUrl: (0, _fauteuilRelaxVeloursTurquoiseTetiereElectriqueAvecReleveurWebpDefault.default)
+    },
+    {
+        reference: "ref-011",
+        famille: "fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree",
+        imageUrl: (0, _fauteuilRelaxVeloursTurquoiseTetiereElectriqueBatterieNonIntegreeWebpDefault.default)
+    },
+    {
+        reference: "ref-012",
+        famille: "fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree",
+        imageUrl: (0, _fauteuilRelaxVeloursTurquoiseTetiereElectriqueEtBatterieIntegreeWebpDefault.default)
     }
 ];
-// select all Renault selection divs
+const matLatexRenault = [
+    {
+        reference: "ref-001",
+        famille: "matelas-latex-angelina-club-line",
+        imageUrl: (0, _matelasLatexAngelinaClubLineWebpDefault.default)
+    },
+    {
+        reference: "ref-002",
+        famille: "matelas-latex-exquis-dreams",
+        imageUrl: (0, _matelasLatexExquisDreamsWebpDefault.default)
+    },
+    {
+        reference: "ref-003",
+        famille: "matelas-latex-leticia-club-line",
+        imageUrl: (0, _matelasLatexLeticiaClubLineWebpDefault.default)
+    },
+    {
+        reference: "ref-004",
+        famille: "matelas-latex-maryland-classic",
+        imageUrl: (0, _matelasLatexMarylandClassicWebpDefault.default)
+    },
+    {
+        reference: "ref-005",
+        famille: "matelas-latex-nomade-classic",
+        imageUrl: (0, _matelasLatexNomadeClassicWebpDefault.default)
+    },
+    {
+        reference: "ref-006",
+        famille: "matelas-plume",
+        imageUrl: (0, _matelasPlumeWebpDefault.default)
+    },
+    {
+        reference: "ref-007",
+        famille: "matelas-seduction",
+        imageUrl: (0, _matelasSeductionWebpDefault.default)
+    },
+    {
+        reference: "ref-008",
+        famille: "matelas-tresor-dreams-andre-renault",
+        imageUrl: (0, _matelasTresorDreamsAndreRenaultWebpDefault.default)
+    }
+];
+const matFermeRenault = [
+    {
+        reference: "ref-001",
+        famille: "matelas-mousse-albatros-classic",
+        imageUrl: (0, _matelasMousseAlbatrosClassicWebpDefault.default)
+    },
+    {
+        reference: "ref-002",
+        famille: "matelas-mousse-aquila-classic",
+        imageUrl: (0, _matelasMousseAquilaClassicWebpDefault.default)
+    },
+    {
+        reference: "ref-003",
+        famille: "matelas-mousse-carolina-club-line",
+        imageUrl: (0, _matelasMousseCarolinaClubLineWebpDefault.default)
+    },
+    {
+        reference: "ref-004",
+        famille: "matelas-mousse-magnolia-club-line",
+        imageUrl: (0, _matelasMousseMagnoliaClubLineWebpDefault.default)
+    },
+    {
+        reference: "ref-005",
+        famille: "matelas-mousse-nuage-dreams",
+        imageUrl: (0, _matelasMousseNuageDreamsWebpDefault.default)
+    },
+    {
+        reference: "ref-006",
+        famille: "matelas-ressource",
+        imageUrl: (0, _matelasRessourceWebpDefault.default)
+    },
+    {
+        reference: "ref-007",
+        famille: "matelas-sphere",
+        imageUrl: (0, _matelasSphereWebpDefault.default)
+    }
+];
+// Sélectionner tous les divs de sélection Renault
 let renault = document.getElementById("selection_renault");
 let renaultBtn = document.querySelectorAll("button");
 let spans = document.querySelectorAll(".span_display");
 let displayed = false;
-// add click event listener to each div
+// Ajouter un écouteur d'événement de clic à chaque div
 renault.addEventListener("click", function() {
-    // toggle class on each button
+    // Basculer la classe sur chaque bouton
     renaultBtn.forEach((button)=>{
         button.classList.remove("hidden");
         button.classList.toggle("button-active");
@@ -1068,21 +1244,37 @@ renault.addEventListener("click", function() {
                 });
             } else {
                 displayed = true;
-                // Check which button is clicked
+                // Vérifier quel bouton est cliqué
                 if (button.id === "bancs") {
-                    // Call a specific function for button 1
+                    // Appeler une fonction spécifique pour le bouton 1
                     spans.forEach((span)=>{
-                        span.innerHTML = "cacher";
+                        if (span.parentNode.id !== "bancs") span.innerHTML = "voir";
+                        else span.innerHTML = "cacher";
                     });
                     displayCoffreRenault();
                 } else if (button.id === "fauteuils") {
-                    // Call a specific function for button 2
+                    // Appeler une fonction spécifique pour le bouton 2
                     spans.forEach((span)=>{
-                        span.innerHTML = "cacher";
+                        if (span.parentNode.id !== "fauteuils") span.innerHTML = "voir";
+                        else span.innerHTML = "cacher";
                     });
                     displayFauteuilsRenault();
+                } else if (button.id === "matelas_latex") {
+                    // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach((span)=>{
+                        if (span.parentNode.id !== "matelas_latex") span.innerHTML = "voir";
+                        else span.innerHTML = "cacher";
+                    });
+                    displayMatlatexRenault();
+                } else if (button.id === "matelas_ferme") {
+                    // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach((span)=>{
+                        if (span.parentNode.id !== "matelas_ferme") span.innerHTML = "voir";
+                        else span.innerHTML = "cacher";
+                    });
+                    displayMatFermeRenault();
                 } else {
-                    // Call a default function
+                    // Appeler une fonction par défaut
                     spans.forEach((span)=>{
                         span.innerHTML = "voir";
                     });
@@ -1091,6 +1283,7 @@ renault.addEventListener("click", function() {
             }
         });
     });
+    hideFurnitureData();
 });
 function displayCoffreRenault() {
     const furnitureContainer = document.getElementById("furniture-container");
@@ -1146,16 +1339,70 @@ function displayFauteuilsRenault() {
         furnitureContainer.appendChild(furnitureElement);
     });
 }
+function displayMatlatexRenault() {
+    const furnitureContainer = document.getElementById("furniture-container");
+    matLatexRenault.forEach((furniture)=>{
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function() {
+            if (furnitureImage.requestFullscreen) furnitureImage.requestFullscreen();
+            else if (furnitureImage.msRequestFullscreen) furnitureImage.msRequestFullscreen();
+            else if (furnitureImage.mozRequestFullScreen) furnitureImage.mozRequestFullScreen();
+            else if (furnitureImage.webkitRequestFullscreen) furnitureImage.webkitRequestFullscreen();
+            furnitureImage.addEventListener("click", (event)=>{
+                if (document.fullscreenElement) document.exitFullscreen();
+            });
+        };
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+function displayMatFermeRenault() {
+    const furnitureContainer = document.getElementById("furniture-container");
+    matFermeRenault.forEach((furniture)=>{
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function() {
+            if (furnitureImage.requestFullscreen) furnitureImage.requestFullscreen();
+            else if (furnitureImage.msRequestFullscreen) furnitureImage.msRequestFullscreen();
+            else if (furnitureImage.mozRequestFullScreen) furnitureImage.mozRequestFullScreen();
+            else if (furnitureImage.webkitRequestFullscreen) furnitureImage.webkitRequestFullscreen();
+            furnitureImage.addEventListener("click", (event)=>{
+                if (document.fullscreenElement) document.exitFullscreen();
+            });
+        };
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
 function hideFurnitureData() {
     const furnitureContainer = document.getElementById("furniture-container");
     furnitureContainer.innerHTML = "";
 } // Exécute la fonction lorsque le DOM est entièrement chargé
  //document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/literie/andre_renault/banc_de_coffre/Banc-coffre.webp":"aIomX","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"7IsVB","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.webp":"3nlTt","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.webp":"kEtdP","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.webp":"6eTuB","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"7R2wv","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur.webp":"kS7Ds","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.webp":"4OFBH","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.webp":"5TIN8","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"3moLn","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.webp":"baNbI","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.webp":"cPXuA","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.webp":"h8UKh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aIomX":[function(require,module,exports) {
-module.exports = require("575fa2c466b9b0ff").getBundleURL("3mnqn") + "../../Banc-coffre.7e4c5df2.webp" + "?" + Date.now();
+},{"../img/literie/andre_renault/banc_de_coffre/Banc-coffre.webp":"1ii18","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"hOmNJ","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.webp":"01KcF","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.webp":"a70Jm","../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.webp":"2fTim","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"f3Mcr","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur.webp":"6UpSz","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.webp":"8feEQ","../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.webp":"8KSvr","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.webp":"bWEBg","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.webp":"htlwQ","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.webp":"eyzje","../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.webp":"5f9pl","../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-angelina-club-line.webp":"d9V5d","../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-exquis-dreams.webp":"a485L","../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-leticia-club-line.webp":"4U26w","../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-maryland-classic.webp":"HkehA","../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-nomade-classic.webp":"6C2Zf","../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-plume.webp":"5QXhq","../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-seduction.webp":"8vUyy","../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-tresor-dreams-andre-renault.webp":"7bsHs","../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-albatros-classic.webp":"6eHA1","../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-aquila-classic.webp":"gdWrD","../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-carolina-club-line.webp":"4F9yp","../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-magnolia-club-line.webp":"5Uh12","../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-nuage-dreams.webp":"8qZZq","../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-ressource.webp":"74fRT","../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-sphere.webp":"9VLTC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1ii18":[function(require,module,exports) {
+module.exports = require("44b0d64495a66f07").getBundleURL("8Nvlx") + "../../Banc-coffre.7e4c5df2.webp" + "?" + Date.now();
 
-},{"575fa2c466b9b0ff":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"44b0d64495a66f07":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -1189,43 +1436,88 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"7IsVB":[function(require,module,exports) {
-module.exports = require("e3cb98aef0a521c3").getBundleURL("3mnqn") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.7dcd3a4a.webp" + "?" + Date.now();
+},{}],"hOmNJ":[function(require,module,exports) {
+module.exports = require("64f9d23403899324").getBundleURL("8Nvlx") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.7dcd3a4a.webp" + "?" + Date.now();
 
-},{"e3cb98aef0a521c3":"lgJ39"}],"3nlTt":[function(require,module,exports) {
-module.exports = require("41e312e867db3590").getBundleURL("3mnqn") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.51c00ab3.webp" + "?" + Date.now();
+},{"64f9d23403899324":"lgJ39"}],"01KcF":[function(require,module,exports) {
+module.exports = require("712224cf37e19dd4").getBundleURL("8Nvlx") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.51c00ab3.webp" + "?" + Date.now();
 
-},{"41e312e867db3590":"lgJ39"}],"kEtdP":[function(require,module,exports) {
-module.exports = require("f2a40a91bd182767").getBundleURL("3mnqn") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.1be05603.webp" + "?" + Date.now();
+},{"712224cf37e19dd4":"lgJ39"}],"a70Jm":[function(require,module,exports) {
+module.exports = require("23fe8af944ef3274").getBundleURL("8Nvlx") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.1be05603.webp" + "?" + Date.now();
 
-},{"f2a40a91bd182767":"lgJ39"}],"6eTuB":[function(require,module,exports) {
-module.exports = require("3c38251d2dd36f76").getBundleURL("3mnqn") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.b1646c42.webp" + "?" + Date.now();
+},{"23fe8af944ef3274":"lgJ39"}],"2fTim":[function(require,module,exports) {
+module.exports = require("f521858c88272399").getBundleURL("8Nvlx") + "../../fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.b1646c42.webp" + "?" + Date.now();
 
-},{"3c38251d2dd36f76":"lgJ39"}],"7R2wv":[function(require,module,exports) {
-module.exports = require("5f6cbba189c8d46").getBundleURL("3mnqn") + "../../fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.19b40661.webp" + "?" + Date.now();
+},{"f521858c88272399":"lgJ39"}],"f3Mcr":[function(require,module,exports) {
+module.exports = require("83ff357046d958a2").getBundleURL("8Nvlx") + "../../fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.19b40661.webp" + "?" + Date.now();
 
-},{"5f6cbba189c8d46":"lgJ39"}],"kS7Ds":[function(require,module,exports) {
-module.exports = require("87875b30690081e7").getBundleURL("3mnqn") + "../../fauteuil-relax-tissu-tetiere-electrique-avec-releveur.cf5fff37.webp" + "?" + Date.now();
+},{"83ff357046d958a2":"lgJ39"}],"6UpSz":[function(require,module,exports) {
+module.exports = require("43fe201ee08f68e0").getBundleURL("8Nvlx") + "../../fauteuil-relax-tissu-tetiere-electrique-avec-releveur.cf5fff37.webp" + "?" + Date.now();
 
-},{"87875b30690081e7":"lgJ39"}],"4OFBH":[function(require,module,exports) {
-module.exports = require("5ad6ec4168215001").getBundleURL("3mnqn") + "../../fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.abf2a1bc.webp" + "?" + Date.now();
+},{"43fe201ee08f68e0":"lgJ39"}],"8feEQ":[function(require,module,exports) {
+module.exports = require("8c37793262bc95a3").getBundleURL("8Nvlx") + "../../fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.abf2a1bc.webp" + "?" + Date.now();
 
-},{"5ad6ec4168215001":"lgJ39"}],"5TIN8":[function(require,module,exports) {
-module.exports = require("c793001e5a91f527").getBundleURL("3mnqn") + "../../fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.0ecf64ef.webp" + "?" + Date.now();
+},{"8c37793262bc95a3":"lgJ39"}],"8KSvr":[function(require,module,exports) {
+module.exports = require("3eb0786239ee6787").getBundleURL("8Nvlx") + "../../fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.0ecf64ef.webp" + "?" + Date.now();
 
-},{"c793001e5a91f527":"lgJ39"}],"3moLn":[function(require,module,exports) {
-module.exports = require("31557d8916ddef5c").getBundleURL("3mnqn") + "../../fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.64f38dca.webp" + "?" + Date.now();
+},{"3eb0786239ee6787":"lgJ39"}],"bWEBg":[function(require,module,exports) {
+module.exports = require("71bd3f6de3de0c26").getBundleURL("8Nvlx") + "../../fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.64f38dca.webp" + "?" + Date.now();
 
-},{"31557d8916ddef5c":"lgJ39"}],"baNbI":[function(require,module,exports) {
-module.exports = require("d02e7e4a6f7b5f03").getBundleURL("3mnqn") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.0087cb83.webp" + "?" + Date.now();
+},{"71bd3f6de3de0c26":"lgJ39"}],"htlwQ":[function(require,module,exports) {
+module.exports = require("b75b0eaf4c347629").getBundleURL("8Nvlx") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.0087cb83.webp" + "?" + Date.now();
 
-},{"d02e7e4a6f7b5f03":"lgJ39"}],"cPXuA":[function(require,module,exports) {
-module.exports = require("cd6d6b8dd4dbf34f").getBundleURL("3mnqn") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.7de54cb0.webp" + "?" + Date.now();
+},{"b75b0eaf4c347629":"lgJ39"}],"eyzje":[function(require,module,exports) {
+module.exports = require("27765a560ad82b2c").getBundleURL("8Nvlx") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.7de54cb0.webp" + "?" + Date.now();
 
-},{"cd6d6b8dd4dbf34f":"lgJ39"}],"h8UKh":[function(require,module,exports) {
-module.exports = require("887c1b16c95c5d72").getBundleURL("3mnqn") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.3a75e86c.webp" + "?" + Date.now();
+},{"27765a560ad82b2c":"lgJ39"}],"5f9pl":[function(require,module,exports) {
+module.exports = require("c018f1da508719e2").getBundleURL("8Nvlx") + "../../fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.3a75e86c.webp" + "?" + Date.now();
 
-},{"887c1b16c95c5d72":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"c018f1da508719e2":"lgJ39"}],"d9V5d":[function(require,module,exports) {
+module.exports = require("f8930399a4494764").getBundleURL("8Nvlx") + "../../matelas-latex-angelina-club-line.fd0acff9.webp" + "?" + Date.now();
+
+},{"f8930399a4494764":"lgJ39"}],"a485L":[function(require,module,exports) {
+module.exports = require("63f3ab9b29dc1991").getBundleURL("8Nvlx") + "../../matelas-latex-exquis-dreams.6aa22fb1.webp" + "?" + Date.now();
+
+},{"63f3ab9b29dc1991":"lgJ39"}],"4U26w":[function(require,module,exports) {
+module.exports = require("e0fa488c90eba381").getBundleURL("8Nvlx") + "../../matelas-latex-leticia-club-line.c76d608f.webp" + "?" + Date.now();
+
+},{"e0fa488c90eba381":"lgJ39"}],"HkehA":[function(require,module,exports) {
+module.exports = require("49ee8271a37d8af").getBundleURL("8Nvlx") + "../../matelas-latex-maryland-classic.d8e67515.webp" + "?" + Date.now();
+
+},{"49ee8271a37d8af":"lgJ39"}],"6C2Zf":[function(require,module,exports) {
+module.exports = require("9eb9af7fc32accaf").getBundleURL("8Nvlx") + "../../matelas-latex-nomade-classic.4a1a8dd9.webp" + "?" + Date.now();
+
+},{"9eb9af7fc32accaf":"lgJ39"}],"5QXhq":[function(require,module,exports) {
+module.exports = require("599c1262bacb9e70").getBundleURL("8Nvlx") + "../../matelas-plume.c72a8db3.webp" + "?" + Date.now();
+
+},{"599c1262bacb9e70":"lgJ39"}],"8vUyy":[function(require,module,exports) {
+module.exports = require("2faa710affe64644").getBundleURL("8Nvlx") + "../../matelas-seduction.a33b6e2b.webp" + "?" + Date.now();
+
+},{"2faa710affe64644":"lgJ39"}],"7bsHs":[function(require,module,exports) {
+module.exports = require("40dcd199129973de").getBundleURL("8Nvlx") + "../../matelas-tresor-dreams-andre-renault.6b0a9362.webp" + "?" + Date.now();
+
+},{"40dcd199129973de":"lgJ39"}],"6eHA1":[function(require,module,exports) {
+module.exports = require("f3b77e783c7b0b43").getBundleURL("8Nvlx") + "../../matelas-mousse-albatros-classic.d2a16d11.webp" + "?" + Date.now();
+
+},{"f3b77e783c7b0b43":"lgJ39"}],"gdWrD":[function(require,module,exports) {
+module.exports = require("ea7f9800aa900407").getBundleURL("8Nvlx") + "../../matelas-mousse-aquila-classic.be94fe69.webp" + "?" + Date.now();
+
+},{"ea7f9800aa900407":"lgJ39"}],"4F9yp":[function(require,module,exports) {
+module.exports = require("593f6d9b809fc468").getBundleURL("8Nvlx") + "../../matelas-mousse-carolina-club-line.3623cc4a.webp" + "?" + Date.now();
+
+},{"593f6d9b809fc468":"lgJ39"}],"5Uh12":[function(require,module,exports) {
+module.exports = require("a643de1ee59d72b0").getBundleURL("8Nvlx") + "../../matelas-mousse-magnolia-club-line.eb5a1145.webp" + "?" + Date.now();
+
+},{"a643de1ee59d72b0":"lgJ39"}],"8qZZq":[function(require,module,exports) {
+module.exports = require("90410c21c15069aa").getBundleURL("8Nvlx") + "../../matelas-mousse-nuage-dreams.bbd28afa.webp" + "?" + Date.now();
+
+},{"90410c21c15069aa":"lgJ39"}],"74fRT":[function(require,module,exports) {
+module.exports = require("e808330cbde002a6").getBundleURL("8Nvlx") + "../../matelas-ressource.49f99b9f.webp" + "?" + Date.now();
+
+},{"e808330cbde002a6":"lgJ39"}],"9VLTC":[function(require,module,exports) {
+module.exports = require("50d9fe0feab2fc25").getBundleURL("8Nvlx") + "../../matelas-sphere.918d2066.webp" + "?" + Date.now();
+
+},{"50d9fe0feab2fc25":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1255,6 +1547,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["cqC3B","jQaNe"], "jQaNe", "parcelRequire66bd")
+},{}]},["dZeSH","3cOxr"], "3cOxr", "parcelRequire66bd")
 
 </script>
