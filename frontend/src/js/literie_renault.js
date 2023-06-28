@@ -2,55 +2,12 @@
 
 
 
-import mathybr1 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-diademe.webp";
-import mathybr2 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-hybrid-firm-curem.webp";
-import mathybr3 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-hybrid-soft-curem.webp";
-import mathybr4 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-mousse-alchimie-dreams.webp";
-import mathybr5 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-mousse-delicatesse-dreams.webp";
-import mathybr6 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-paola-club-line-andre-renault.webp";
-import mathybr7 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-paradis-dreams-andre-renault.webp";
-import mathybr8 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-parure.webp";
-import mathybr9 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-reflet-dreams-andre-renault.webp";
-import mathybr10 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-heloisa-club-line.webp";
-import mathybr11 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-horia-club-line.webp";
-import mathybr12 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-hybrid-air-ar-hybrid.webp";
-import mathybr13 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-hybrid-in-ar-hybrid.webp";
-import mathybr14 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-hybrid-pulse-ar-hybrid.webp";
-import mathybr15 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-pelican-icone-andre-renault.webp";
-import mathybr16 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-rossignol-classic.webp";
-import mathybr17 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-rio-icone-andre-renault.webp";
-import mathybr18 from "../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-rosa-club-line-andre-renault.webp";
 
-import matmem1 from "../img/literie/andre_renault/matelas_sommier/matelas_memoire_forme/matelas-anoa.webp";
-import matmem2 from "../img/literie/andre_renault/matelas_sommier/matelas_memoire_forme/matelas-azur.webp";
-import matmem3 from "../img/literie/andre_renault/matelas_sommier/matelas_memoire_forme/matelas-creation.webp";
-import matmem4 from "../img/literie/andre_renault/matelas_sommier/matelas_memoire_forme/matelas-cure-firm.webp";
-import matmem5 from "../img/literie/andre_renault/matelas_sommier/matelas_memoire_forme/matelas-cure-soft.webp";
-import matmem6 from "../img/literie/andre_renault/matelas_sommier/matelas_memoire_forme/matelas-olivia.webp";
 
-import matmo1 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-escale-a-portofino.webp";
-import matmo2 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-latex-maryland-classic.webp";
-import matmo3 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-latex-nomade-classic.webp";
-import matmo4 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-ledbury.webp";
-import matmo5 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-mousse-absolu-dreams.webp";
-import matmo6 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-mousse-cardinal-classic.webp";
-import matmo7 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-mousse-delicatesse-dreams.webp";
-import matmo8 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-mousse-divin-dreams.webp";
-import matmo9 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-mousse-maya-club-line.webp";
-import matmo10 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-mousse-sara-club-line.webp";
-import matmo11 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-parenthese-a-florence.webp";
-import matmo12 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-parure.webp";
-import matmo13 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-ressorts-covent-garden-slumberland-royal.webp";
-import matmo14 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-ressorts-earl-grey-slumberland-initial.webp";
-import matmo15 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-ressorts-ellington-slumberland-heritage.webp";
-import matmo16 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-ressorts-horia-club-line.webp";
-import matmo17 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-ressorts-hybrid-in-ar-hybrid.webp";
-import matmo18 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-ressorts-quintessence-slumberland-elements.webp";
-import matmo19 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-saint-germain-collection-grandpalais-andrerenault.webp";
-import matmo20 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-seduction.webp";
-import matmo21 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-tally-club-line-andre-renault.webp";
-import matmo22 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-tresor-dreams-andre-renault.webp";
-import matmo23 from "../img/literie/andre_renault/matelas_sommier/matelas_moelleux/matelas-trinity-icone-andre-renault.webp";
+
+
+
+
 
 import matmou1 from "../img/literie/andre_renault/matelas_sommier/matelas_mousse/matelas-hotels-preference.webp";
 import matmou2 from "../img/literie/andre_renault/matelas_sommier/matelas_mousse/matelas-mousse-absolu-dreams.webp";

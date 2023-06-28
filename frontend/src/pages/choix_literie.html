@@ -238,16 +238,16 @@
     <div class="meubles_choix">
       <h2>Notre sélection de literie, en construction</h2>
     </div>
-    <section class="notre_choix flex flex-wrap justify-center p-4 mx-auto max-w-screen-2xl my-2" id="nosproduits">
+    <section class="flex flex-wrap justify-center p-8 mx-auto max-w-screen-2xl my-2 mt-6" id="nosproduits">
       <div class="w-full mb-4">
         <div class="titre mb-8">
-          <h2 class="sm: text-3xl">Nos collections</h2>
+          <h2 class="sm: text-3xl mb-6">Nos collections</h2>
           <hr class="separate">
         </div>
       </div>
       <!-- collection andré renault -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="relative" id="selection_renault">
+        <div class="selection_renault relative" id="selection_renault">
           <img class="h-full object-cover object-center rounded-lg"
             src="../img/literie/andre_renault/matelas_sommier/matelas_hybride/matelas-ressorts-hybrid-air-ar-hybrid.webp"
             alt="sélection andré renault">
@@ -259,7 +259,7 @@
       <!-- fin collection andré renault -->
       <!-- collection technilat -->
       <div class="w-full flex flex-col items-center md:w-1/2 lg:w-1/3 px-2 mb-4">
-        <div class="selection_technilat relative">
+        <div class="selection_technilat relative" id="selection_technilat">
           <img class="h-full object-cover object-center rounded-lg"
             src="../img/literie/technilat/matelas_terres_daubrac/l-aubrac-terres-d-aubrac-technilat-1.webp"
             alt="sélection technilat">
@@ -270,13 +270,18 @@
       </div>
       <!-- fin collection andré renault -->
     </section>
-    <div class="w-full flex justify-center mb-4">
+    <div class="w-full flex justify-center mb-4 col-btn-container">
       <button class="button_renault hidden" id="bancs"><span class="span_display"></span> nos bancs-coffre</button>
       <button class="button_renault hidden" id="fauteuils"><span class="span_display"></span> nos fauteuils</button>
       <button class="button_renault hidden" id="matelas_latex"><span class="span_display"></span> nos matelas
         latex</button>
       <button class="button_renault hidden" id="matelas_ferme"><span class="span_display"></span> nos matelas
         fermes</button>
+      <button class="button_renault hidden" id="matelas_hybride"><span class="span_display"></span> nos matelas
+        hybrides</button>
+      <button class="button_renault hidden" id="matelas_memoire"><span class="span_display"></span> nos matelas
+        à mémoire de forme</button>
+      <button class="button_renault hidden" id="matelas_moelleux"><span class="span_display"></span> nos matelas moelleux</button>
     </div>
     <div id="furniture-container"></div>
   </main>
@@ -468,7 +473,7 @@
     </p>
   </div>
   <script type="module" src="../js/script.js" async></script>
-  <script type="module" src="../js/literie_renault.js"></script>
+  <script type="module" src="../js/literie_display.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
@@ -476,6 +481,12 @@
 </html>
 
 <style>
+  .selection_renault,
+  .selection_technilat {
+    cursor: pointer;
+    height: 300px;
+  }
+
   .button_renault {
     margin: 1.5rem 1rem;
     padding: 0.5rem 1rem;
@@ -499,448 +510,12 @@
     background-color: #fff;
     color: #000;
   }
+
+  @media screen and (max-width: 1440px) {
+    .col-btn-container {
+      flex-direction: column;
+      margin: auto;
+      width: 75%;
+    }
+  }
 </style>
-
-<script type="module">
-
-  import banc1 from "../img/literie/andre_renault/banc_de_coffre/Banc-coffre.webp";
-
-  import faut1 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
-  import faut2 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur.webp";
-  import faut3 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree.webp";
-  import faut4 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree.webp";
-  import faut5 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
-  import faut6 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-avec-releveur.webp";
-  import faut7 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree.webp";
-  import faut8 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree.webp";
-  import faut9 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree.webp";
-  import faut10 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur.webp";
-  import faut11 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree.webp";
-  import faut12 from "../img/literie/andre_renault/fauteuil/fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree.webp";
-
-
-  import matlatex1 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-angelina-club-line.webp";
-  import matlatex2 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-exquis-dreams.webp";
-  import matlatex3 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-leticia-club-line.webp";
-  import matlatex4 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-maryland-classic.webp";
-  import matlatex5 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-latex-nomade-classic.webp";
-  import matlatex6 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-plume.webp";
-  import matlatex7 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-seduction.webp";
-  import matlatex8 from "../img/literie/andre_renault/matelas_sommier/matelas_en_latex/matelas-tresor-dreams-andre-renault.webp";
-
-
-  import matferm1 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-albatros-classic.webp";
-  import matferm2 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-aquila-classic.webp";
-  import matferm3 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-carolina-club-line.webp";
-  import matferm4 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-magnolia-club-line.webp";
-  import matferm5 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-mousse-nuage-dreams.webp";
-  import matferm6 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-ressource.webp";
-  import matferm7 from "../img/literie/andre_renault/matelas_sommier/matelas_fermes/matelas-sphere.webp";
-
-
-
-  const bancRenault = [
-    {
-      reference: "ref-001",
-      famille: "Banc-coffre",
-      imageUrl: banc1,
-    },
-  ];
-
-  const fauteuilsRenault = [
-    {
-      reference: "ref-001",
-      famille: "fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur-et-batterie-integree",
-      imageUrl: faut1,
-    },
-    {
-      reference: "ref-002",
-      famille: "fauteuil-relax-cuir-noir-tetiere-electrique-avec-releveur",
-      imageUrl: faut2,
-    },
-    {
-      reference: "ref-003",
-      famille: "fauteuil-relax-cuir-noir-tetiere-electrique-batterie-integree",
-      imageUrl: faut3,
-    },
-    {
-      reference: "ref-004",
-      famille: "fauteuil-relax-cuir-noir-tetiere-electrique-batterie-non-integree",
-      imageUrl: faut4,
-    },
-    {
-      reference: "ref-005",
-      famille: "fauteuil-relax-tissu-tetiere-electrique-avec-releveur-et-batterie-integree",
-      imageUrl: faut5,
-    },
-    {
-      reference: "ref-006",
-      famille: "fauteuil-relax-tissu-tetiere-electrique-avec-releveur",
-      imageUrl: faut6,
-    },
-    {
-      reference: "ref-007",
-      famille: "fauteuil-relax-tissu-tetiere-electrique-batterie-non-integree",
-      imageUrl: faut7,
-    },
-    {
-      reference: "ref-008",
-      famille: "fauteuil-relax-tissu-tetiere-electrique-et-batterie-integree",
-      imageUrl: faut8,
-    },
-    {
-      reference: "ref-009",
-      famille: "fauteuil-relax-velours-tetiere-electrique-avec-releveur-et-batterie-integree",
-      imageUrl: faut9,
-    },
-    {
-      reference: "ref-010",
-      famille: "fauteuil-relax-velours-turquoise-tetiere-electrique-avec-releveur",
-      imageUrl: faut10,
-    },
-    {
-      reference: "ref-011",
-      famille: "fauteuil-relax-velours-turquoise-tetiere-electrique-batterie-non-integree",
-      imageUrl: faut11,
-    },
-    {
-      reference: "ref-012",
-      famille: "fauteuil-relax-velours-turquoise-tetiere-electrique-et-batterie-integree",
-      imageUrl: faut12,
-    },
-  ];
-
-
-  const matLatexRenault = [
-    {
-      reference: "ref-001",
-      famille: "matelas-latex-angelina-club-line",
-      imageUrl: matlatex1,
-    },
-    {
-      reference: "ref-002",
-      famille: "matelas-latex-exquis-dreams",
-      imageUrl: matlatex2,
-    },
-    {
-      reference: "ref-003",
-      famille: "matelas-latex-leticia-club-line",
-      imageUrl: matlatex3,
-    },
-    {
-      reference: "ref-004",
-      famille: "matelas-latex-maryland-classic",
-      imageUrl: matlatex4,
-    },
-    {
-      reference: "ref-005",
-      famille: "matelas-latex-nomade-classic",
-      imageUrl: matlatex5,
-    },
-    {
-      reference: "ref-006",
-      famille: "matelas-plume",
-      imageUrl: matlatex6,
-    },
-    {
-      reference: "ref-007",
-      famille: "matelas-seduction",
-      imageUrl: matlatex7,
-    },
-    {
-      reference: "ref-008",
-      famille: "matelas-tresor-dreams-andre-renault",
-      imageUrl: matlatex8,
-    },
-  ];
-
-
-  const matFermeRenault = [
-    {
-      reference: "ref-001",
-      famille: "matelas-mousse-albatros-classic",
-      imageUrl: matferm1,
-    },
-    {
-      reference: "ref-002",
-      famille: "matelas-mousse-aquila-classic",
-      imageUrl: matferm2,
-    },
-    {
-      reference: "ref-003",
-      famille: "matelas-mousse-carolina-club-line",
-      imageUrl: matferm3,
-    },
-    {
-      reference: "ref-004",
-      famille: "matelas-mousse-magnolia-club-line",
-      imageUrl: matferm4,
-    },
-    {
-      reference: "ref-005",
-      famille: "matelas-mousse-nuage-dreams",
-      imageUrl: matferm5,
-    },
-    {
-      reference: "ref-006",
-      famille: "matelas-ressource",
-      imageUrl: matferm6,
-    },
-    {
-      reference: "ref-007",
-      famille: "matelas-sphere",
-      imageUrl: matferm7,
-    },
-  ];
-
-  // Sélectionner tous les divs de sélection Renault
-  let renault = document.getElementById('selection_renault');
-  let renaultBtn = document.querySelectorAll('button');
-  let spans = document.querySelectorAll('.span_display');
-  let displayed = false;
-
-  // Ajouter un écouteur d'événement de clic à chaque div
-  renault.addEventListener('click', function () {
-    // Basculer la classe sur chaque bouton
-    renaultBtn.forEach(button => {
-      button.classList.remove('hidden');
-      button.classList.toggle('button-active');
-
-      if (button.classList.contains('button-active')) {
-        button.classList.remove('hidden');
-      } else {
-        button.classList.add('hidden');
-      }
-
-      button.addEventListener('click', function () {
-        if (displayed) {
-          displayed = false;
-          hideFurnitureData();
-          spans.forEach(span => {
-            span.innerHTML = "voir";
-          });
-        } else {
-          displayed = true;
-          // Vérifier quel bouton est cliqué
-          if (button.id === 'bancs') {
-            // Appeler une fonction spécifique pour le bouton 1
-            spans.forEach(span => {
-              if (span.parentNode.id !== 'bancs') {
-                span.innerHTML = "voir";
-              } else {
-                span.innerHTML = "cacher";
-              }
-            });
-            displayCoffreRenault();
-          } else if (button.id === 'fauteuils') {
-            // Appeler une fonction spécifique pour le bouton 2
-            spans.forEach(span => {
-              if (span.parentNode.id !== 'fauteuils') {
-                span.innerHTML = "voir";
-              } else {
-                span.innerHTML = "cacher";
-              }
-            });
-            displayFauteuilsRenault();
-          } else if (button.id === 'matelas_latex') {
-            // Appeler une fonction spécifique pour le bouton 2
-            spans.forEach(span => {
-              if (span.parentNode.id !== 'matelas_latex') {
-                span.innerHTML = "voir";
-              } else {
-                span.innerHTML = "cacher";
-              }
-            });
-            displayMatlatexRenault();
-          } else if (button.id === 'matelas_ferme') {
-            // Appeler une fonction spécifique pour le bouton 2
-            spans.forEach(span => {
-              if (span.parentNode.id !== 'matelas_ferme') {
-                span.innerHTML = "voir";
-              } else {
-                span.innerHTML = "cacher";
-              }
-            });
-            displayMatFermeRenault();
-          } else {
-            // Appeler une fonction par défaut
-            spans.forEach(span => {
-              span.innerHTML = "voir";
-            });
-            hideFurnitureData();
-          }
-        }
-      });
-    });
-    hideFurnitureData();
-  });
-
-
-  function displayCoffreRenault() {
-    const furnitureContainer = document.getElementById("furniture-container");
-
-    bancRenault.forEach((furniture) => {
-      const furnitureElement = document.createElement("div");
-      furnitureElement.classList.add("furniture-item");
-
-      const furnitureImage = document.createElement("img");
-      furnitureImage.src = furniture.imageUrl;
-      furnitureImage.alt = furniture.famille;
-
-      // make furniture image clickable
-      furnitureImage.style.cursor = "pointer";
-      furnitureImage.onclick = function () {
-        if (furnitureImage.requestFullscreen) {
-          furnitureImage.requestFullscreen();
-        } else if (furnitureImage.msRequestFullscreen) {
-          furnitureImage.msRequestFullscreen();
-        } else if (furnitureImage.mozRequestFullScreen) {
-          furnitureImage.mozRequestFullScreen();
-        } else if (furnitureImage.webkitRequestFullscreen) {
-          furnitureImage.webkitRequestFullscreen();
-        }
-        furnitureImage.addEventListener("click", (event) => {
-          if (document.fullscreenElement) {
-            document.exitFullscreen();
-          }
-        });
-      };
-
-      const furnitureInfo = document.createElement("div");
-      furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
-                                <strong>famille:</strong> ${furniture.famille}`;
-
-      furnitureElement.appendChild(furnitureImage);
-      furnitureElement.appendChild(furnitureInfo);
-      furnitureContainer.appendChild(furnitureElement);
-    });
-  }
-
-  function displayFauteuilsRenault() {
-    const furnitureContainer = document.getElementById("furniture-container");
-
-    fauteuilsRenault.forEach((furniture) => {
-      const furnitureElement = document.createElement("div");
-      furnitureElement.classList.add("furniture-item");
-
-      const furnitureImage = document.createElement("img");
-      furnitureImage.src = furniture.imageUrl;
-      furnitureImage.alt = furniture.famille;
-
-      // make furniture image clickable
-      furnitureImage.style.cursor = "pointer";
-      furnitureImage.onclick = function () {
-        if (furnitureImage.requestFullscreen) {
-          furnitureImage.requestFullscreen();
-        } else if (furnitureImage.msRequestFullscreen) {
-          furnitureImage.msRequestFullscreen();
-        } else if (furnitureImage.mozRequestFullScreen) {
-          furnitureImage.mozRequestFullScreen();
-        } else if (furnitureImage.webkitRequestFullscreen) {
-          furnitureImage.webkitRequestFullscreen();
-        }
-        furnitureImage.addEventListener("click", (event) => {
-          if (document.fullscreenElement) {
-            document.exitFullscreen();
-          }
-        });
-      };
-
-      const furnitureInfo = document.createElement("div");
-      furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
-                                <strong>famille:</strong> ${furniture.famille}`;
-
-      furnitureElement.appendChild(furnitureImage);
-      furnitureElement.appendChild(furnitureInfo);
-      furnitureContainer.appendChild(furnitureElement);
-    });
-  }
-
-  function displayMatlatexRenault() {
-    const furnitureContainer = document.getElementById("furniture-container");
-
-    matLatexRenault.forEach((furniture) => {
-      const furnitureElement = document.createElement("div");
-      furnitureElement.classList.add("furniture-item");
-
-      const furnitureImage = document.createElement("img");
-      furnitureImage.src = furniture.imageUrl;
-      furnitureImage.alt = furniture.famille;
-
-      // make furniture image clickable
-      furnitureImage.style.cursor = "pointer";
-      furnitureImage.onclick = function () {
-        if (furnitureImage.requestFullscreen) {
-          furnitureImage.requestFullscreen();
-        } else if (furnitureImage.msRequestFullscreen) {
-          furnitureImage.msRequestFullscreen();
-        } else if (furnitureImage.mozRequestFullScreen) {
-          furnitureImage.mozRequestFullScreen();
-        } else if (furnitureImage.webkitRequestFullscreen) {
-          furnitureImage.webkitRequestFullscreen();
-        }
-        furnitureImage.addEventListener("click", (event) => {
-          if (document.fullscreenElement) {
-            document.exitFullscreen();
-          }
-        });
-      };
-
-      const furnitureInfo = document.createElement("div");
-      furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
-                                <strong>famille:</strong> ${furniture.famille}`;
-
-      furnitureElement.appendChild(furnitureImage);
-      furnitureElement.appendChild(furnitureInfo);
-      furnitureContainer.appendChild(furnitureElement);
-    });
-  }
-
-  function displayMatFermeRenault() {
-    const furnitureContainer = document.getElementById("furniture-container");
-
-    matFermeRenault.forEach((furniture) => {
-      const furnitureElement = document.createElement("div");
-      furnitureElement.classList.add("furniture-item");
-
-      const furnitureImage = document.createElement("img");
-      furnitureImage.src = furniture.imageUrl;
-      furnitureImage.alt = furniture.famille;
-
-      // make furniture image clickable
-      furnitureImage.style.cursor = "pointer";
-      furnitureImage.onclick = function () {
-        if (furnitureImage.requestFullscreen) {
-          furnitureImage.requestFullscreen();
-        } else if (furnitureImage.msRequestFullscreen) {
-          furnitureImage.msRequestFullscreen();
-        } else if (furnitureImage.mozRequestFullScreen) {
-          furnitureImage.mozRequestFullScreen();
-        } else if (furnitureImage.webkitRequestFullscreen) {
-          furnitureImage.webkitRequestFullscreen();
-        }
-        furnitureImage.addEventListener("click", (event) => {
-          if (document.fullscreenElement) {
-            document.exitFullscreen();
-          }
-        });
-      };
-
-      const furnitureInfo = document.createElement("div");
-      furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
-                                <strong>famille:</strong> ${furniture.famille}`;
-
-      furnitureElement.appendChild(furnitureImage);
-      furnitureElement.appendChild(furnitureInfo);
-      furnitureContainer.appendChild(furnitureElement);
-    });
-  }
-
-  function hideFurnitureData() {
-    const furnitureContainer = document.getElementById("furniture-container");
-    furnitureContainer.innerHTML = "";
-  }
-
-  // Exécute la fonction lorsque le DOM est entièrement chargé
-  //document.addEventListener("DOMContentLoaded", displayFurnitureData);
-</script>
