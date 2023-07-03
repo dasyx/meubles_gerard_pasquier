@@ -126,7 +126,7 @@ const litCofTechnilat = [
 
 // Sélectionner tous les divs de sélection Technilat
 let technilat = document.getElementById('selection_technilat');
-let technilatBtn = document.querySelectorAll('.button2');
+let technilatBtn = document.querySelectorAll('.button_technilat');
 let spans = document.querySelectorAll('.span_display');
 let displayed = false;
 

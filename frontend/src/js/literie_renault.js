@@ -2031,7 +2031,7 @@ const teteLitTissuRenault = [
 
 // Sélectionner tous les divs de sélection Renault
 let renault = document.getElementById('selection_renault');
-let renaultBtn = document.querySelectorAll('button');
+let renaultBtn = document.querySelectorAll('.button_renault');
 let spans = document.querySelectorAll('.span_display');
 let displayed = false;
 
