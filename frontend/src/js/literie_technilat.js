@@ -1,4 +1,4 @@
-import litcof1 from "../img/literie/technilat/lit_coffre/lit_coffre-1_1.webp";
+import litcof1 from "../img/literie/technilat/lit_coffre/lit-coffre-1_1.webp";
 
 import matatmo1 from "../img/literie/technilat/matelas_collection_atmosphere/berlin-atmosphere-ensemble-technilat.webp";
 import matatmo2 from "../img/literie/technilat/matelas_collection_atmosphere/deauville-atmosphere-1-technilat.webp";
@@ -12,7 +12,7 @@ import matgen3 from "../img/literie/technilat/matelas_collection_generale/blues-
 import matgen4 from "../img/literie/technilat/matelas_collection_generale/bora-technilat.webp";
 import matgen5 from "../img/literie/technilat/matelas_collection_generale/calypso.webp";
 import matgen6 from "../img/literie/technilat/matelas_collection_generale/coronis-technilat.webp";
-import matgen7 from "../img/literie/technilat/matelas_collection_generale/cosmos-technilat_1.webp";
+import matgen7 from "../img/literie/technilat/matelas_collection_generale/cronos-technilat_1.webp";
 import matgen8 from "../img/literie/technilat/matelas_collection_generale/cybele.webp";
 import matgen9 from "../img/literie/technilat/matelas_collection_generale/feuille-technilat.webp";
 import matgen10 from "../img/literie/technilat/matelas_collection_generale/hera.webp";
@@ -27,9 +27,9 @@ import matgen18 from "../img/literie/technilat/matelas_collection_generale/rhode
 import matgen19 from "../img/literie/technilat/matelas_collection_generale/simoun-technilat.webp";
 import matgen20 from "../img/literie/technilat/matelas_collection_generale/titan.webp";
 
-import mathot1 from "../img/literie/technilat/sommier_collection_hotel/charme-hotel-technilat.webp";
-import mathot2 from "../img/literie/technilat/sommier_collection_hotel/palace-hotel-technilat.webp";
-import mathot3 from "../img/literie/technilat/sommier_collection_hotel/suite-hotel-technilat.webp";
+import mathot1 from "../img/literie/technilat/matelas_collection_hotel/charme-hotel-technilat.webp";
+import mathot2 from "../img/literie/technilat/matelas_collection_hotel/palace-hotel-technilat.webp";
+import mathot3 from "../img/literie/technilat/matelas_collection_hotel/suite-hotel-technilat.webp";
 
 import matmem1 from "../img/literie/technilat/matelas_collection_memonat/alpha.webp";
 import matmem2 from "../img/literie/technilat/matelas_collection_memonat/astra.webp";
@@ -56,12 +56,12 @@ import matsync1 from "../img/literie/technilat/matelas_collection_synchroflex/em
 import matsync2 from "../img/literie/technilat/matelas_collection_synchroflex/perle-fixe-technilat.webp";
 import matsync3 from "../img/literie/technilat/matelas_collection_synchroflex/rubis-fixe-technilat.webp";
 
-import mataubr1 from "../img/literie/technilat/matelas_collection_terres_daubrac/alba-terres-d-aubrac-technilat.webp";
-import mataubr2 from "../img/literie/technilat/matelas_collection_terres_daubrac/alto-braco-terres-d-aubrac-technilat.webp";
-import mataubr3 from "../img/literie/technilat/matelas_collection_terres_daubrac/artiga-terres-d-aubrac-technilat.webp";
-import mataubr4 from "../img/literie/technilat/matelas_collection_terres_daubrac/aura-ensemble.webp";
-import mataubr5 from "../img/literie/technilat/matelas_collection_terres_daubrac/l-aubrac-terres-d-aubrac-technilat-1.webp";
-import mataubr6 from "../img/literie/technilat/matelas_collection_terres_daubrac/tpr-terres-d-aubrac-technilat.webp";
+import mataubr1 from "../img/literie/technilat/matelas_terres_daubrac/alba-terres-d-aubrac-technilat.webp";
+import mataubr2 from "../img/literie/technilat/matelas_terres_daubrac/alto-braco-terres-d-aubrac-technilat.webp";
+import mataubr3 from "../img/literie/technilat/matelas_terres_daubrac/artiga-terres-d-aubrac-technilat.webp";
+import mataubr4 from "../img/literie/technilat/matelas_terres_daubrac/aura-ensemble.webp";
+import mataubr5 from "../img/literie/technilat/matelas_terres_daubrac/l-aubrac-terres-d-aubrac-technilat-1.webp";
+import mataubr6 from "../img/literie/technilat/matelas_terres_daubrac/tpr-terres-d-aubrac-technilat.webp";
 
 import ore1 from "../img/literie/technilat/oreiller/oreiller-natura.webp";
 
@@ -116,5 +116,108 @@ import tetelit20 from "../img/literie/technilat/tete_lit/thevenon-1-tete-de-lit-
 
 
 
+const litCofTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "lit-coffre",
+        imageUrl: litcof1,
+    },
+];
+
+// Sélectionner tous les divs de sélection Technilat
+let technilat = document.getElementById('selection_technilat');
+let technilatBtn = document.querySelectorAll('.button2');
+let spans = document.querySelectorAll('.span_display');
+let displayed = false;
+
+// Ajouter un écouteur d'événement de clic à chaque div
+technilat.addEventListener('click', function () {
+    // Basculer la classe sur chaque bouton
+    technilatBtn.forEach(button => {
+        button.classList.remove('hidden');
+        button.classList.toggle('button-active');
+
+        if (button.classList.contains('button-active')) {
+            button.classList.remove('hidden');
+        } else {
+            button.classList.add('hidden');
+        }
+
+        button.addEventListener('click', function () {
+            if (displayed) {
+                displayed = false;
+                hideFurnitureData();
+                spans.forEach(span => {
+                    span.innerHTML = "voir";
+                });
+            } else {
+                displayed = true;
+                // Vérifier quel bouton est cliqué
+                if (button.id === 'lit_coffre') {
+                    // Appeler une fonction spécifique pour le bouton 1
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'lit_coffre') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayLitCoffreTechnilat();
+                } else {
+                    // Appeler une fonction par défaut
+                    spans.forEach(span => {
+                        span.innerHTML = "voir";
+                    });
+                    hideFurnitureData();
+                }
+            }
+        });
+    });
+    hideFurnitureData();
+});
 
 
+function displayLitCoffreTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    litCofTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function hideFurnitureData() {
+    const furnitureContainer = document.getElementById("furniture-container");
+    furnitureContainer.innerHTML = "";
+}

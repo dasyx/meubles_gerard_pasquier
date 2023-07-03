@@ -231,6 +231,7 @@
       </div>
       <!-- fin collection andré renault -->
     </section>
+    <!-- boutons andré renault-->
     <div class="w-full flex justify-center mb-4 col-btn-container">
       <button class="button_renault hidden" id="bancs"><span class="span_display"></span> nos bancs-coffre</button>
       <button class="button_renault hidden" id="fauteuils"><span class="span_display"></span> nos fauteuils</button>
@@ -265,6 +266,13 @@
       <button class="button_renault hidden" id="tete_lit_tissu"><span class="span_display"></span> nos tête de lit
         tissu</button>
     </div>
+    <!-- fin boutons andré renault -->
+
+    <!-- boutons technilat -->
+    <div class="w-full flex justify-center mb-4 col-btn-container">
+      <button class="button_technilat hidden button2" id="lit_coffre"><span class="span_display"></span> nos lits-coffre</button>
+    </div>
+    <!-- fin boutons technilat -->
     <div id="furniture-container"></div>
   </main>
   <!--FIN CONTENU PRINCIPAL-->
@@ -453,6 +461,7 @@
   </div>
   <script src="/index.c072103e.js" async="" defer=""></script>
   <script src="/src/pages/choix_literie.1d1b7253.js" defer=""></script>
+  <script src="/src/pages/choix_literie.3cd50628.js" defer=""></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer=""></script>
 </body>
@@ -464,7 +473,7 @@
   height: 300px;
 }
 
-.button_renault {
+.button_renault, .button_technilat {
   color: #fff;
   cursor: pointer;
   background-color: #000;
@@ -477,12 +486,12 @@
   box-shadow: 0 0 5px #000070;
 }
 
-.button-active .button_renault {
+.button-active .button_renault, .button-active .button_technilat {
   margin-top: .5rem;
   display: block !important;
 }
 
-.button_renault:focus {
+.button_renault:focus, .button_technilat:focus {
   color: #000;
   background-color: #fff;
 }
