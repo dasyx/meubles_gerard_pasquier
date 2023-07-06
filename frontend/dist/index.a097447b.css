@@ -29969,6 +29969,13 @@ main h2 {
   position: relative;
 }
 
+#classique_chic-banner img {
+  width: 800px;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 #classique_chic-banner p {
   background-color: #663c2890;
   padding: 30px;
@@ -30063,6 +30070,11 @@ main h2 {
   justify-content: center;
   display: flex;
   position: relative;
+}
+
+#nordique-banner img {
+  width: 450px;
+  height: 320px;
 }
 
 #nordique-banner p {

@@ -292,6 +292,12 @@ main h2 {
   //height: 350px;
 }
 
+#classique_chic-banner img {
+  width: 800px;
+  height: auto;
+  object-fit: cover;
+}
+
 #classique_chic-banner p {
   background-color: #663c2890;
   font-family: "Merriweather", sans-serif;
@@ -398,6 +404,11 @@ main h2 {
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+#nordique-banner img {
+  width: 450px;
+  height: 320px;
 }
 
 #nordique-banner p {
