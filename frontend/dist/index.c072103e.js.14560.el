@@ -643,7 +643,7 @@ date.innerHTML = actualDate;
 let ourStory = document.getElementById("histoire");
 let products = document.getElementById("produits");
 let inspirations = document.getElementById("inspirations");
-let surmesure = document.getElementById("surmesure");
+let pointsforts = document.getElementById("pointsforts");
 let dropdownMenu1 = document.getElementById("dropdown-menu1");
 let dropdownMenu2 = document.getElementById("dropdown-menu2");
 let dropdownMenu3 = document.getElementById("dropdown-menu3");
@@ -782,7 +782,7 @@ inspirations.addEventListener("click", function() {
     }
 });
 // Pour la rubrique sur-mesure
-surmesure.addEventListener("click", function() {
+pointsforts.addEventListener("click", function() {
     if (dropdownMenu4.classList.contains("hidden")) {
         dropdownMenu4.classList.remove("hidden");
         var listItem1 = document.createElement("li");

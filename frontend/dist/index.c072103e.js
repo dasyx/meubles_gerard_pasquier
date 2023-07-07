@@ -643,11 +643,12 @@ date.innerHTML = actualDate;
 let ourStory = document.getElementById("histoire");
 let products = document.getElementById("produits");
 let inspirations = document.getElementById("inspirations");
-let surmesure = document.getElementById("surmesure");
+let pointsforts = document.getElementById("pointsforts");
 let dropdownMenu1 = document.getElementById("dropdown-menu1");
 let dropdownMenu2 = document.getElementById("dropdown-menu2");
 let dropdownMenu3 = document.getElementById("dropdown-menu3");
 let dropdownMenu4 = document.getElementById("dropdown-menu4");
+let dropdownMenu5 = document.getElementById("dropdown-menu5");
 // Pour la rubrique notre histoire
 ourStory.addEventListener("click", function() {
     if (dropdownMenu1.classList.contains("hidden")) {
@@ -753,19 +754,19 @@ inspirations.addEventListener("click", function() {
         var link5 = document.createElement("a");
         link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
         link1.setAttribute("href", "./src/pages/classique.html");
-        link1.textContent = "A d\xe9finir";
+        link1.textContent = "classique";
         link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
         link2.setAttribute("href", "./src/pages/contemporain.html");
-        link2.textContent = "A d\xe9finir";
+        link2.textContent = "contemporain";
         link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
         link3.setAttribute("href", "./src/pages/industriel.html");
-        link3.textContent = "Venez d\xe9couvrir nos inspirations";
+        link3.textContent = "industriel";
         link4.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
         link4.setAttribute("href", "./src/pages/nordique.html");
-        link4.textContent = "Venez d\xe9couvrir nos inspirations";
+        link4.textContent = "nordique";
         link5.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
         link5.setAttribute("href", "./src/pages/rustique.html");
-        link5.textContent = "Venez d\xe9couvrir nos inspirations";
+        link5.textContent = "rustique";
         listItem1.appendChild(link1);
         listItem2.appendChild(link2);
         listItem3.appendChild(link3);
@@ -781,8 +782,8 @@ inspirations.addEventListener("click", function() {
         while(dropdownMenu3.firstChild)dropdownMenu3.removeChild(dropdownMenu3.firstChild);
     }
 });
-// Pour la rubrique sur-mesure
-surmesure.addEventListener("click", function() {
+// Pour la rubrique points forts
+pointsforts.addEventListener("click", function() {
     if (dropdownMenu4.classList.contains("hidden")) {
         dropdownMenu4.classList.remove("hidden");
         var listItem1 = document.createElement("li");
@@ -792,21 +793,34 @@ surmesure.addEventListener("click", function() {
         var link2 = document.createElement("a");
         var link3 = document.createElement("a");
         link1.classList.add("rounded-t", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link1.setAttribute("href", "#");
-        link1.textContent = "A d\xe9finir";
-        link2.classList.add("bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link2.setAttribute("href", "#");
-        link2.textContent = "A d\xe9finir";
-        link3.classList.add("rounded-b", "bg-gray-200", "hover:bg-gray-400", "py-2", "px-4", "block", "whitespace-nowrap");
-        link3.setAttribute("href", "#");
-        link3.textContent = "A d\xe9finir";
-        listItem1.appendChild(link1);
-        listItem2.appendChild(link2);
-        listItem3.appendChild(link3);
-        dropdownMenu4.appendChild(listItem1);
-        dropdownMenu4.appendChild(listItem2);
-        dropdownMenu4.appendChild(listItem3);
-    } else {
+        link1.setAttribute("href", "./src/pages/points_forts.html");
+        link1.textContent = "Notre engagement qualit\xe9";
+        /* link2.classList.add(
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link2.setAttribute("href", "#");
+    link2.textContent = "A définir";
+
+    link3.classList.add(
+      "rounded-b",
+      "bg-gray-200",
+      "hover:bg-gray-400",
+      "py-2",
+      "px-4",
+      "block",
+      "whitespace-nowrap"
+    );
+    link3.setAttribute("href", "#");
+    link3.textContent = "A définir"; */ listItem1.appendChild(link1);
+        /* listItem2.appendChild(link2);
+    listItem3.appendChild(link3); */ dropdownMenu4.appendChild(listItem1);
+    /* dropdownMenu4.appendChild(listItem2);
+    dropdownMenu4.appendChild(listItem3); */ } else {
         dropdownMenu4.classList.add("hidden");
         while(dropdownMenu4.firstChild)dropdownMenu4.removeChild(dropdownMenu4.firstChild);
     }

@@ -96,11 +96,12 @@ date.innerHTML = actualDate;
 let ourStory = document.getElementById("histoire");
 let products = document.getElementById("produits");
 let inspirations = document.getElementById("inspirations");
-let surmesure = document.getElementById("surmesure");
+let pointsforts = document.getElementById("pointsforts");
 let dropdownMenu1 = document.getElementById("dropdown-menu1");
 let dropdownMenu2 = document.getElementById("dropdown-menu2");
 let dropdownMenu3 = document.getElementById("dropdown-menu3");
 let dropdownMenu4 = document.getElementById("dropdown-menu4");
+let dropdownMenu5 = document.getElementById("dropdown-menu5");
 
 // Pour la rubrique notre histoire
 ourStory.addEventListener("click", function () {
@@ -281,7 +282,7 @@ inspirations.addEventListener("click", function () {
       "whitespace-nowrap"
     );
     link1.setAttribute("href", "./src/pages/classique.html");
-    link1.textContent = "A définir";
+    link1.textContent = "classique";
 
     link2.classList.add(
       "bg-gray-200",
@@ -292,7 +293,7 @@ inspirations.addEventListener("click", function () {
       "whitespace-nowrap"
     );
     link2.setAttribute("href", "./src/pages/contemporain.html");
-    link2.textContent = "A définir";
+    link2.textContent = "contemporain";
 
     link3.classList.add(
       "rounded-b",
@@ -304,7 +305,7 @@ inspirations.addEventListener("click", function () {
       "whitespace-nowrap"
     );
     link3.setAttribute("href", "./src/pages/industriel.html");
-    link3.textContent = "Venez découvrir nos inspirations";
+    link3.textContent = "industriel";
 
     link4.classList.add(
       "rounded-b",
@@ -316,7 +317,7 @@ inspirations.addEventListener("click", function () {
       "whitespace-nowrap"
     );
     link4.setAttribute("href", "./src/pages/nordique.html");
-    link4.textContent = "Venez découvrir nos inspirations";
+    link4.textContent = "nordique";
 
     link5.classList.add(
       "rounded-b",
@@ -328,7 +329,7 @@ inspirations.addEventListener("click", function () {
       "whitespace-nowrap"
     );
     link5.setAttribute("href", "./src/pages/rustique.html");
-    link5.textContent = "Venez découvrir nos inspirations";
+    link5.textContent = "rustique";
 
     listItem1.appendChild(link1);
     listItem2.appendChild(link2);
@@ -349,8 +350,8 @@ inspirations.addEventListener("click", function () {
   }
 });
 
-// Pour la rubrique sur-mesure
-surmesure.addEventListener("click", function () {
+// Pour la rubrique points forts
+pointsforts.addEventListener("click", function () {
   if (dropdownMenu4.classList.contains("hidden")) {
     dropdownMenu4.classList.remove("hidden");
     var listItem1 = document.createElement("li");
@@ -369,10 +370,10 @@ surmesure.addEventListener("click", function () {
       "block",
       "whitespace-nowrap"
     );
-    link1.setAttribute("href", "#");
-    link1.textContent = "A définir";
+    link1.setAttribute("href", "./src/pages/points_forts.html");
+    link1.textContent = "Notre engagement qualité";
 
-    link2.classList.add(
+    /* link2.classList.add(
       "bg-gray-200",
       "hover:bg-gray-400",
       "py-2",
@@ -393,15 +394,15 @@ surmesure.addEventListener("click", function () {
       "whitespace-nowrap"
     );
     link3.setAttribute("href", "#");
-    link3.textContent = "A définir";
+    link3.textContent = "A définir"; */
 
     listItem1.appendChild(link1);
-    listItem2.appendChild(link2);
-    listItem3.appendChild(link3);
+    /* listItem2.appendChild(link2);
+    listItem3.appendChild(link3); */
 
     dropdownMenu4.appendChild(listItem1);
-    dropdownMenu4.appendChild(listItem2);
-    dropdownMenu4.appendChild(listItem3);
+    /* dropdownMenu4.appendChild(listItem2);
+    dropdownMenu4.appendChild(listItem3); */
   } else {
     dropdownMenu4.classList.add("hidden");
     while (dropdownMenu4.firstChild) {
