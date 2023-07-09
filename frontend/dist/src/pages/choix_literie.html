@@ -511,10 +511,10 @@
 .button_renault, .button_technilat {
   color: #fff;
   cursor: pointer;
-  width: 280px;
   border: none;
   border-radius: 5px;
   outline: none;
+  width: 280px;
   margin: 1.5rem 1rem;
   padding: .5rem 1rem;
   font-style: italic;
@@ -545,13 +545,13 @@
   background: linear-gradient(#666, gray, #999, #b2b2b2, #ccc);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .main-btn-container {
     flex-direction: column;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (width >= 769px) and (width <= 1440px) {
   .item1, .item2 {
     width: 50%;
   }
@@ -561,10 +561,10 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (width <= 1440px) {
   .main-btn-container {
-    width: 75%;
     flex-wrap: wrap;
+    width: 75%;
   }
 
   .col-btn-container {
@@ -574,7 +574,7 @@
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (width >= 1441px) {
   .main-btn-container {
     width: 75%;
   }

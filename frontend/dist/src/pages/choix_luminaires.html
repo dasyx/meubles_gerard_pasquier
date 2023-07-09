@@ -542,421 +542,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"4iDjb":[function(require,module,exports) {
-var global = arguments[3];
-var HMR_HOST = null;
-var HMR_PORT = null;
-var HMR_SECURE = false;
-var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "be64a3ea51590f8c";
-"use strict";
-/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
-import type {
-  HMRAsset,
-  HMRMessage,
-} from '@parcel/reporter-dev-server/src/HMRServer.js';
-interface ParcelRequire {
-  (string): mixed;
-  cache: {|[string]: ParcelModule|};
-  hotData: {|[string]: mixed|};
-  Module: any;
-  parent: ?ParcelRequire;
-  isParcelRequire: true;
-  modules: {|[string]: [Function, {|[string]: string|}]|};
-  HMR_BUNDLE_ID: string;
-  root: ParcelRequire;
-}
-interface ParcelModule {
-  hot: {|
-    data: mixed,
-    accept(cb: (Function) => void): void,
-    dispose(cb: (mixed) => void): void,
-    // accept(deps: Array<string> | string, cb: (Function) => void): void,
-    // decline(): void,
-    _acceptCallbacks: Array<(Function) => void>,
-    _disposeCallbacks: Array<(mixed) => void>,
-  |};
-}
-interface ExtensionContext {
-  runtime: {|
-    reload(): void,
-    getURL(url: string): string;
-    getManifest(): {manifest_version: number, ...};
-  |};
-}
-declare var module: {bundle: ParcelRequire, ...};
-declare var HMR_HOST: string;
-declare var HMR_PORT: string;
-declare var HMR_ENV_HASH: string;
-declare var HMR_SECURE: boolean;
-declare var chrome: ExtensionContext;
-declare var browser: ExtensionContext;
-declare var __parcel__import__: (string) => Promise<void>;
-declare var __parcel__importScripts__: (string) => Promise<void>;
-declare var globalThis: typeof self;
-declare var ServiceWorkerGlobalScope: Object;
-*/ var OVERLAY_ID = "__parcel__error__overlay__";
-var OldModule = module.bundle.Module;
-function Module(moduleName) {
-    OldModule.call(this, moduleName);
-    this.hot = {
-        data: module.bundle.hotData[moduleName],
-        _acceptCallbacks: [],
-        _disposeCallbacks: [],
-        accept: function(fn) {
-            this._acceptCallbacks.push(fn || function() {});
-        },
-        dispose: function(fn) {
-            this._disposeCallbacks.push(fn);
-        }
-    };
-    module.bundle.hotData[moduleName] = undefined;
-}
-module.bundle.Module = Module;
-module.bundle.hotData = {};
-var checkedAssets, assetsToDispose, assetsToAccept /*: Array<[ParcelRequire, string]> */ ;
-function getHostname() {
-    return HMR_HOST || (location.protocol.indexOf("http") === 0 ? location.hostname : "localhost");
-}
-function getPort() {
-    return HMR_PORT || location.port;
-} // eslint-disable-next-line no-redeclare
-var parent = module.bundle.parent;
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
-    var hostname = getHostname();
-    var port = getPort();
-    var protocol = HMR_SECURE || location.protocol == "https:" && !/localhost|127.0.0.1|0.0.0.0/.test(hostname) ? "wss" : "ws";
-    var ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/"); // Web extension context
-    var extCtx = typeof chrome === "undefined" ? typeof browser === "undefined" ? null : browser : chrome; // Safari doesn't support sourceURL in error stacks.
-    // eval may also be disabled via CSP, so do a quick check.
-    var supportsSourceURL = false;
-    try {
-        (0, eval)('throw new Error("test"); //# sourceURL=test.js');
-    } catch (err) {
-        supportsSourceURL = err.stack.includes("test.js");
-    } // $FlowFixMe
-    ws.onmessage = async function(event) {
-        checkedAssets = {} /*: {|[string]: boolean|} */ ;
-        assetsToAccept = [];
-        assetsToDispose = [];
-        var data = JSON.parse(event.data);
-        if (data.type === "update") {
-            // Remove error overlay if there is one
-            if (typeof document !== "undefined") removeErrorOverlay();
-            let assets = data.assets.filter((asset)=>asset.envHash === HMR_ENV_HASH); // Handle HMR Update
-            let handled = assets.every((asset)=>{
-                return asset.type === "css" || asset.type === "js" && hmrAcceptCheck(module.bundle.root, asset.id, asset.depsByBundle);
-            });
-            if (handled) {
-                console.clear(); // Dispatch custom event so other runtimes (e.g React Refresh) are aware.
-                if (typeof window !== "undefined" && typeof CustomEvent !== "undefined") window.dispatchEvent(new CustomEvent("parcelhmraccept"));
-                await hmrApplyUpdates(assets); // Dispose all old assets.
-                let processedAssets = {} /*: {|[string]: boolean|} */ ;
-                for(let i = 0; i < assetsToDispose.length; i++){
-                    let id = assetsToDispose[i][1];
-                    if (!processedAssets[id]) {
-                        hmrDispose(assetsToDispose[i][0], id);
-                        processedAssets[id] = true;
-                    }
-                } // Run accept callbacks. This will also re-execute other disposed assets in topological order.
-                processedAssets = {};
-                for(let i = 0; i < assetsToAccept.length; i++){
-                    let id = assetsToAccept[i][1];
-                    if (!processedAssets[id]) {
-                        hmrAccept(assetsToAccept[i][0], id);
-                        processedAssets[id] = true;
-                    }
-                }
-            } else fullReload();
-        }
-        if (data.type === "error") {
-            // Log parcel errors to console
-            for (let ansiDiagnostic of data.diagnostics.ansi){
-                let stack = ansiDiagnostic.codeframe ? ansiDiagnostic.codeframe : ansiDiagnostic.stack;
-                console.error("\uD83D\uDEA8 [parcel]: " + ansiDiagnostic.message + "\n" + stack + "\n\n" + ansiDiagnostic.hints.join("\n"));
-            }
-            if (typeof document !== "undefined") {
-                // Render the fancy html overlay
-                removeErrorOverlay();
-                var overlay = createErrorOverlay(data.diagnostics.html); // $FlowFixMe
-                document.body.appendChild(overlay);
-            }
-        }
-    };
-    ws.onerror = function(e) {
-        console.error(e.message);
-    };
-    ws.onclose = function() {
-        console.warn("[parcel] \uD83D\uDEA8 Connection to the HMR server was lost");
-    };
-}
-function removeErrorOverlay() {
-    var overlay = document.getElementById(OVERLAY_ID);
-    if (overlay) {
-        overlay.remove();
-        console.log("[parcel] ✨ Error resolved");
-    }
-}
-function createErrorOverlay(diagnostics) {
-    var overlay = document.createElement("div");
-    overlay.id = OVERLAY_ID;
-    let errorHTML = '<div style="background: black; opacity: 0.85; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; font-family: Menlo, Consolas, monospace; z-index: 9999;">';
-    for (let diagnostic of diagnostics){
-        let stack = diagnostic.frames.length ? diagnostic.frames.reduce((p, frame)=>{
-            return `${p}
-<a href="/__parcel_launch_editor?file=${encodeURIComponent(frame.location)}" style="text-decoration: underline; color: #888" onclick="fetch(this.href); return false">${frame.location}</a>
-${frame.code}`;
-        }, "") : diagnostic.stack;
-        errorHTML += `
-      <div>
-        <div style="font-size: 18px; font-weight: bold; margin-top: 20px;">
-          🚨 ${diagnostic.message}
-        </div>
-        <pre>${stack}</pre>
-        <div>
-          ${diagnostic.hints.map((hint)=>"<div>\uD83D\uDCA1 " + hint + "</div>").join("")}
-        </div>
-        ${diagnostic.documentation ? `<div>📝 <a style="color: violet" href="${diagnostic.documentation}" target="_blank">Learn more</a></div>` : ""}
-      </div>
-    `;
-    }
-    errorHTML += "</div>";
-    overlay.innerHTML = errorHTML;
-    return overlay;
-}
-function fullReload() {
-    if ("reload" in location) location.reload();
-    else if (extCtx && extCtx.runtime && extCtx.runtime.reload) extCtx.runtime.reload();
-}
-function getParents(bundle, id) /*: Array<[ParcelRequire, string]> */ {
-    var modules = bundle.modules;
-    if (!modules) return [];
-    var parents = [];
-    var k, d, dep;
-    for(k in modules)for(d in modules[k][1]){
-        dep = modules[k][1][d];
-        if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) parents.push([
-            bundle,
-            k
-        ]);
-    }
-    if (bundle.parent) parents = parents.concat(getParents(bundle.parent, id));
-    return parents;
-}
-function updateLink(link) {
-    var newLink = link.cloneNode();
-    newLink.onload = function() {
-        if (link.parentNode !== null) // $FlowFixMe
-        link.parentNode.removeChild(link);
-    };
-    newLink.setAttribute("href", link.getAttribute("href").split("?")[0] + "?" + Date.now()); // $FlowFixMe
-    link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-var cssTimeout = null;
-function reloadCSS() {
-    if (cssTimeout) return;
-    cssTimeout = setTimeout(function() {
-        var links = document.querySelectorAll('link[rel="stylesheet"]');
-        for(var i = 0; i < links.length; i++){
-            // $FlowFixMe[incompatible-type]
-            var href = links[i].getAttribute("href");
-            var hostname = getHostname();
-            var servedFromHMRServer = hostname === "localhost" ? new RegExp("^(https?:\\/\\/(0.0.0.0|127.0.0.1)|localhost):" + getPort()).test(href) : href.indexOf(hostname + ":" + getPort());
-            var absolute = /^https?:\/\//i.test(href) && href.indexOf(location.origin) !== 0 && !servedFromHMRServer;
-            if (!absolute) updateLink(links[i]);
-        }
-        cssTimeout = null;
-    }, 50);
-}
-function hmrDownload(asset) {
-    if (asset.type === "js") {
-        if (typeof document !== "undefined") {
-            let script = document.createElement("script");
-            script.src = asset.url + "?t=" + Date.now();
-            if (asset.outputFormat === "esmodule") script.type = "module";
-            return new Promise((resolve, reject)=>{
-                var _document$head;
-                script.onload = ()=>resolve(script);
-                script.onerror = reject;
-                (_document$head = document.head) === null || _document$head === void 0 || _document$head.appendChild(script);
-            });
-        } else if (typeof importScripts === "function") {
-            // Worker scripts
-            if (asset.outputFormat === "esmodule") return import(asset.url + "?t=" + Date.now());
-            else return new Promise((resolve, reject)=>{
-                try {
-                    importScripts(asset.url + "?t=" + Date.now());
-                    resolve();
-                } catch (err) {
-                    reject(err);
-                }
-            });
-        }
-    }
-}
-async function hmrApplyUpdates(assets) {
-    global.parcelHotUpdate = Object.create(null);
-    let scriptsToRemove;
-    try {
-        // If sourceURL comments aren't supported in eval, we need to load
-        // the update from the dev server over HTTP so that stack traces
-        // are correct in errors/logs. This is much slower than eval, so
-        // we only do it if needed (currently just Safari).
-        // https://bugs.webkit.org/show_bug.cgi?id=137297
-        // This path is also taken if a CSP disallows eval.
-        if (!supportsSourceURL) {
-            let promises = assets.map((asset)=>{
-                var _hmrDownload;
-                return (_hmrDownload = hmrDownload(asset)) === null || _hmrDownload === void 0 ? void 0 : _hmrDownload.catch((err)=>{
-                    // Web extension bugfix for Chromium
-                    // https://bugs.chromium.org/p/chromium/issues/detail?id=1255412#c12
-                    if (extCtx && extCtx.runtime && extCtx.runtime.getManifest().manifest_version == 3) {
-                        if (typeof ServiceWorkerGlobalScope != "undefined" && global instanceof ServiceWorkerGlobalScope) {
-                            extCtx.runtime.reload();
-                            return;
-                        }
-                        asset.url = extCtx.runtime.getURL("/__parcel_hmr_proxy__?url=" + encodeURIComponent(asset.url + "?t=" + Date.now()));
-                        return hmrDownload(asset);
-                    }
-                    throw err;
-                });
-            });
-            scriptsToRemove = await Promise.all(promises);
-        }
-        assets.forEach(function(asset) {
-            hmrApply(module.bundle.root, asset);
-        });
-    } finally{
-        delete global.parcelHotUpdate;
-        if (scriptsToRemove) scriptsToRemove.forEach((script)=>{
-            if (script) {
-                var _document$head2;
-                (_document$head2 = document.head) === null || _document$head2 === void 0 || _document$head2.removeChild(script);
-            }
-        });
-    }
-}
-function hmrApply(bundle, asset) {
-    var modules = bundle.modules;
-    if (!modules) return;
-    if (asset.type === "css") reloadCSS();
-    else if (asset.type === "js") {
-        let deps = asset.depsByBundle[bundle.HMR_BUNDLE_ID];
-        if (deps) {
-            if (modules[asset.id]) {
-                // Remove dependencies that are removed and will become orphaned.
-                // This is necessary so that if the asset is added back again, the cache is gone, and we prevent a full page reload.
-                let oldDeps = modules[asset.id][1];
-                for(let dep in oldDeps)if (!deps[dep] || deps[dep] !== oldDeps[dep]) {
-                    let id = oldDeps[dep];
-                    let parents = getParents(module.bundle.root, id);
-                    if (parents.length === 1) hmrDelete(module.bundle.root, id);
-                }
-            }
-            if (supportsSourceURL) // Global eval. We would use `new Function` here but browser
-            // support for source maps is better with eval.
-            (0, eval)(asset.output);
-             // $FlowFixMe
-            let fn = global.parcelHotUpdate[asset.id];
-            modules[asset.id] = [
-                fn,
-                deps
-            ];
-        } else if (bundle.parent) hmrApply(bundle.parent, asset);
-    }
-}
-function hmrDelete(bundle, id) {
-    let modules = bundle.modules;
-    if (!modules) return;
-    if (modules[id]) {
-        // Collect dependencies that will become orphaned when this module is deleted.
-        let deps = modules[id][1];
-        let orphans = [];
-        for(let dep in deps){
-            let parents = getParents(module.bundle.root, deps[dep]);
-            if (parents.length === 1) orphans.push(deps[dep]);
-        } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
-        delete modules[id];
-        delete bundle.cache[id]; // Now delete the orphans.
-        orphans.forEach((id)=>{
-            hmrDelete(module.bundle.root, id);
-        });
-    } else if (bundle.parent) hmrDelete(bundle.parent, id);
-}
-function hmrAcceptCheck(bundle, id, depsByBundle) {
-    if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
-     // Traverse parents breadth first. All possible ancestries must accept the HMR update, or we'll reload.
-    let parents = getParents(module.bundle.root, id);
-    let accepted = false;
-    while(parents.length > 0){
-        let v = parents.shift();
-        let a = hmrAcceptCheckOne(v[0], v[1], null);
-        if (a) // If this parent accepts, stop traversing upward, but still consider siblings.
-        accepted = true;
-        else {
-            // Otherwise, queue the parents in the next level upward.
-            let p = getParents(module.bundle.root, v[1]);
-            if (p.length === 0) {
-                // If there are no parents, then we've reached an entry without accepting. Reload.
-                accepted = false;
-                break;
-            }
-            parents.push(...p);
-        }
-    }
-    return accepted;
-}
-function hmrAcceptCheckOne(bundle, id, depsByBundle) {
-    var modules = bundle.modules;
-    if (!modules) return;
-    if (depsByBundle && !depsByBundle[bundle.HMR_BUNDLE_ID]) {
-        // If we reached the root bundle without finding where the asset should go,
-        // there's nothing to do. Mark as "accepted" so we don't reload the page.
-        if (!bundle.parent) return true;
-        return hmrAcceptCheck(bundle.parent, id, depsByBundle);
-    }
-    if (checkedAssets[id]) return true;
-    checkedAssets[id] = true;
-    var cached = bundle.cache[id];
-    assetsToDispose.push([
-        bundle,
-        id
-    ]);
-    if (!cached || cached.hot && cached.hot._acceptCallbacks.length) {
-        assetsToAccept.push([
-            bundle,
-            id
-        ]);
-        return true;
-    }
-}
-function hmrDispose(bundle, id) {
-    var cached = bundle.cache[id];
-    bundle.hotData[id] = {};
-    if (cached && cached.hot) cached.hot.data = bundle.hotData[id];
-    if (cached && cached.hot && cached.hot._disposeCallbacks.length) cached.hot._disposeCallbacks.forEach(function(cb) {
-        cb(bundle.hotData[id]);
-    });
-    delete bundle.cache[id];
-}
-function hmrAccept(bundle, id) {
-    // Execute the module.
-    bundle(id); // Run the accept callbacks in the new version of the module.
-    var cached = bundle.cache[id];
-    if (cached && cached.hot && cached.hot._acceptCallbacks.length) cached.hot._acceptCallbacks.forEach(function(cb) {
-        var assetsToAlsoAccept = cb(function() {
-            return getParents(module.bundle.root, id);
-        });
-        if (assetsToAlsoAccept && assetsToAccept.length) {
-            assetsToAlsoAccept.forEach(function(a) {
-                hmrDispose(a[0], a[1]);
-            }); // $FlowFixMe[method-unbinding]
-            assetsToAccept.push.apply(assetsToAccept, assetsToAlsoAccept);
-        }
-    });
-}
-
-},{}],"hATNP":[function(require,module,exports) {
+})({"hATNP":[function(require,module,exports) {
 // Meubles decorations / buffets
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _luminaire1Webp = require("../img/decorations/luminaire1.webp");
@@ -1177,10 +763,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/decorations/luminaire1.webp":"i3LdI","../img/decorations/luminaire2.webp":"gOY83","../img/decorations/luminaire3.webp":"iLCym","../img/decorations/luminaire4.webp":"124WS","../img/decorations/luminaire5.webp":"2L9S5","../img/decorations/choix_decorations.webp":"4xwSX","../img/decorations/luminaire6.webp":"34EEk","../img/decorations/luminaire7.webp":"jYyNa","../img/decorations/luminaire8.webp":"3P7HE","../img/decorations/luminaire9.webp":"eFy4e","../img/decorations/luminaire10.webp":"elkcU","../img/decorations/luminaire11.webp":"8Zl52","../img/decorations/luminaire12.webp":"4PsJn","../img/decorations/luminaire13.webp":"5XGOM","../img/decorations/luminaire14.webp":"1tgUV","../img/decorations/luminaire15.webp":"gbmNe","../img/decorations/luminaire16.webp":"3f1dq","../img/decorations/luminaire17.webp":"90gDn","../img/decorations/luminaire18.webp":"ajEt6","../img/decorations/luminaire19.webp":"3EI8L","../img/decorations/luminaire20.webp":"gVj42","../img/decorations/luminaire21.webp":"aP44s","../img/decorations/luminaire22.webp":"fxBVH","../img/decorations/luminaire23.webp":"gbeW9","../img/decorations/luminaire24.webp":"4Xb2F","../img/luminaires/luminaire1.webp":"8jvqz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"i3LdI":[function(require,module,exports) {
-module.exports = require("d9b275d3eb666070").getBundleURL("glsp6") + "../../luminaire1.4e476337.webp" + "?" + Date.now();
+},{"../img/decorations/luminaire1.webp":"oSPW3","../img/decorations/luminaire2.webp":"g8lnJ","../img/decorations/luminaire3.webp":"1kMwG","../img/decorations/luminaire4.webp":"bHe6k","../img/decorations/luminaire5.webp":"8yDrn","../img/decorations/choix_decorations.webp":"7umPr","../img/decorations/luminaire6.webp":"6mK4q","../img/decorations/luminaire7.webp":"58y7W","../img/decorations/luminaire8.webp":"dK57C","../img/decorations/luminaire9.webp":"1WCtg","../img/decorations/luminaire10.webp":"erqoo","../img/decorations/luminaire11.webp":"byMo2","../img/decorations/luminaire12.webp":"d6w90","../img/decorations/luminaire13.webp":"eCbfh","../img/decorations/luminaire14.webp":"1OchT","../img/decorations/luminaire15.webp":"l5VOM","../img/decorations/luminaire16.webp":"buuyW","../img/decorations/luminaire17.webp":"6U4vi","../img/decorations/luminaire18.webp":"3p2xS","../img/decorations/luminaire19.webp":"a87dJ","../img/decorations/luminaire20.webp":"1IGMd","../img/decorations/luminaire21.webp":"cfITP","../img/decorations/luminaire22.webp":"8LTbf","../img/decorations/luminaire23.webp":"jCIub","../img/decorations/luminaire24.webp":"8rC1X","../img/luminaires/luminaire1.webp":"whQAo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"oSPW3":[function(require,module,exports) {
+module.exports = require("cafd99d3319f7bd4").getBundleURL("glsp6") + "../../luminaire1.4e476337.webp";
 
-},{"d9b275d3eb666070":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"cafd99d3319f7bd4":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -1204,7 +790,8 @@ function getBundleURL() {
 }
 function getBaseURL(url) {
     return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
 function getOrigin(url) {
     var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
     if (!matches) throw new Error("Origin not found");
@@ -1214,82 +801,82 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"gOY83":[function(require,module,exports) {
-module.exports = require("9f98e89e9e33760e").getBundleURL("glsp6") + "../../luminaire2.25b8536e.webp" + "?" + Date.now();
+},{}],"g8lnJ":[function(require,module,exports) {
+module.exports = require("dcc871f833de0260").getBundleURL("glsp6") + "../../luminaire2.25b8536e.webp";
 
-},{"9f98e89e9e33760e":"lgJ39"}],"iLCym":[function(require,module,exports) {
-module.exports = require("62bb3e2136f3b528").getBundleURL("glsp6") + "../../luminaire3.941250e7.webp" + "?" + Date.now();
+},{"dcc871f833de0260":"lgJ39"}],"1kMwG":[function(require,module,exports) {
+module.exports = require("e68b51cebdcf5366").getBundleURL("glsp6") + "../../luminaire3.941250e7.webp";
 
-},{"62bb3e2136f3b528":"lgJ39"}],"124WS":[function(require,module,exports) {
-module.exports = require("bb09325a604ddc41").getBundleURL("glsp6") + "../../luminaire4.48d702a0.webp" + "?" + Date.now();
+},{"e68b51cebdcf5366":"lgJ39"}],"bHe6k":[function(require,module,exports) {
+module.exports = require("621a137b0bc304da").getBundleURL("glsp6") + "../../luminaire4.48d702a0.webp";
 
-},{"bb09325a604ddc41":"lgJ39"}],"2L9S5":[function(require,module,exports) {
-module.exports = require("bb0b37988bc6ec20").getBundleURL("glsp6") + "../../luminaire5.3243160e.webp" + "?" + Date.now();
+},{"621a137b0bc304da":"lgJ39"}],"8yDrn":[function(require,module,exports) {
+module.exports = require("c1d1763dc2ed8281").getBundleURL("glsp6") + "../../luminaire5.3243160e.webp";
 
-},{"bb0b37988bc6ec20":"lgJ39"}],"4xwSX":[function(require,module,exports) {
-module.exports = require("46ebf20663960320").getBundleURL("glsp6") + "../../choix_decorations.ac25f4db.webp" + "?" + Date.now();
+},{"c1d1763dc2ed8281":"lgJ39"}],"7umPr":[function(require,module,exports) {
+module.exports = require("1b7325f3f63b39a8").getBundleURL("glsp6") + "../../choix_decorations.ac25f4db.webp";
 
-},{"46ebf20663960320":"lgJ39"}],"34EEk":[function(require,module,exports) {
-module.exports = require("763e9b7f31df4103").getBundleURL("glsp6") + "../../luminaire6.6035c0cc.webp" + "?" + Date.now();
+},{"1b7325f3f63b39a8":"lgJ39"}],"6mK4q":[function(require,module,exports) {
+module.exports = require("c2c5f6b13774128d").getBundleURL("glsp6") + "../../luminaire6.6035c0cc.webp";
 
-},{"763e9b7f31df4103":"lgJ39"}],"jYyNa":[function(require,module,exports) {
-module.exports = require("97020640ed66b6d3").getBundleURL("glsp6") + "../../luminaire7.5984f495.webp" + "?" + Date.now();
+},{"c2c5f6b13774128d":"lgJ39"}],"58y7W":[function(require,module,exports) {
+module.exports = require("f50de754edcba0b8").getBundleURL("glsp6") + "../../luminaire7.5984f495.webp";
 
-},{"97020640ed66b6d3":"lgJ39"}],"3P7HE":[function(require,module,exports) {
-module.exports = require("23e179ae5efbb0ab").getBundleURL("glsp6") + "../../luminaire8.9daabad4.webp" + "?" + Date.now();
+},{"f50de754edcba0b8":"lgJ39"}],"dK57C":[function(require,module,exports) {
+module.exports = require("d4491c717300a446").getBundleURL("glsp6") + "../../luminaire8.9daabad4.webp";
 
-},{"23e179ae5efbb0ab":"lgJ39"}],"eFy4e":[function(require,module,exports) {
-module.exports = require("22977f6df1a7b3ca").getBundleURL("glsp6") + "../../luminaire9.6e310d2a.webp" + "?" + Date.now();
+},{"d4491c717300a446":"lgJ39"}],"1WCtg":[function(require,module,exports) {
+module.exports = require("e293b4a6c0ff345a").getBundleURL("glsp6") + "../../luminaire9.6e310d2a.webp";
 
-},{"22977f6df1a7b3ca":"lgJ39"}],"elkcU":[function(require,module,exports) {
-module.exports = require("432e965b3b0d3f53").getBundleURL("glsp6") + "../../luminaire10.2b97adbd.webp" + "?" + Date.now();
+},{"e293b4a6c0ff345a":"lgJ39"}],"erqoo":[function(require,module,exports) {
+module.exports = require("ab8b90f3a8dbcf7f").getBundleURL("glsp6") + "../../luminaire10.2b97adbd.webp";
 
-},{"432e965b3b0d3f53":"lgJ39"}],"8Zl52":[function(require,module,exports) {
-module.exports = require("bc4615fee846a273").getBundleURL("glsp6") + "../../luminaire11.b166281b.webp" + "?" + Date.now();
+},{"ab8b90f3a8dbcf7f":"lgJ39"}],"byMo2":[function(require,module,exports) {
+module.exports = require("420902724dd57a1f").getBundleURL("glsp6") + "../../luminaire11.b166281b.webp";
 
-},{"bc4615fee846a273":"lgJ39"}],"4PsJn":[function(require,module,exports) {
-module.exports = require("b49f1c91c47f6c5b").getBundleURL("glsp6") + "../../luminaire12.53cbceb0.webp" + "?" + Date.now();
+},{"420902724dd57a1f":"lgJ39"}],"d6w90":[function(require,module,exports) {
+module.exports = require("8cecdf97c75a6e29").getBundleURL("glsp6") + "../../luminaire12.53cbceb0.webp";
 
-},{"b49f1c91c47f6c5b":"lgJ39"}],"5XGOM":[function(require,module,exports) {
-module.exports = require("3f43f6c252361197").getBundleURL("glsp6") + "../../luminaire13.60911f4d.webp" + "?" + Date.now();
+},{"8cecdf97c75a6e29":"lgJ39"}],"eCbfh":[function(require,module,exports) {
+module.exports = require("32e9c23e7b66d868").getBundleURL("glsp6") + "../../luminaire13.60911f4d.webp";
 
-},{"3f43f6c252361197":"lgJ39"}],"1tgUV":[function(require,module,exports) {
-module.exports = require("27f625537b2a5ce0").getBundleURL("glsp6") + "../../luminaire14.d687368d.webp" + "?" + Date.now();
+},{"32e9c23e7b66d868":"lgJ39"}],"1OchT":[function(require,module,exports) {
+module.exports = require("672e92070d0d7c11").getBundleURL("glsp6") + "../../luminaire14.d687368d.webp";
 
-},{"27f625537b2a5ce0":"lgJ39"}],"gbmNe":[function(require,module,exports) {
-module.exports = require("3b448ef21b1bb154").getBundleURL("glsp6") + "../../luminaire15.a0d51e70.webp" + "?" + Date.now();
+},{"672e92070d0d7c11":"lgJ39"}],"l5VOM":[function(require,module,exports) {
+module.exports = require("6da972f5ed06b17f").getBundleURL("glsp6") + "../../luminaire15.a0d51e70.webp";
 
-},{"3b448ef21b1bb154":"lgJ39"}],"3f1dq":[function(require,module,exports) {
-module.exports = require("e859d45b49c410eb").getBundleURL("glsp6") + "../../luminaire16.4ec4d5a6.webp" + "?" + Date.now();
+},{"6da972f5ed06b17f":"lgJ39"}],"buuyW":[function(require,module,exports) {
+module.exports = require("a29d99023286f510").getBundleURL("glsp6") + "../../luminaire16.4ec4d5a6.webp";
 
-},{"e859d45b49c410eb":"lgJ39"}],"90gDn":[function(require,module,exports) {
-module.exports = require("3617ad4d485b61f9").getBundleURL("glsp6") + "../../luminaire17.a69d7b9c.webp" + "?" + Date.now();
+},{"a29d99023286f510":"lgJ39"}],"6U4vi":[function(require,module,exports) {
+module.exports = require("f3bcbe504e73ec14").getBundleURL("glsp6") + "../../luminaire17.a69d7b9c.webp";
 
-},{"3617ad4d485b61f9":"lgJ39"}],"ajEt6":[function(require,module,exports) {
-module.exports = require("309c424828fa8c2c").getBundleURL("glsp6") + "../../luminaire18.844c8f5f.webp" + "?" + Date.now();
+},{"f3bcbe504e73ec14":"lgJ39"}],"3p2xS":[function(require,module,exports) {
+module.exports = require("6e7ab701c54e2334").getBundleURL("glsp6") + "../../luminaire18.844c8f5f.webp";
 
-},{"309c424828fa8c2c":"lgJ39"}],"3EI8L":[function(require,module,exports) {
-module.exports = require("93d218160974a742").getBundleURL("glsp6") + "../../luminaire19.07268e02.webp" + "?" + Date.now();
+},{"6e7ab701c54e2334":"lgJ39"}],"a87dJ":[function(require,module,exports) {
+module.exports = require("f9205df64d905d63").getBundleURL("glsp6") + "../../luminaire19.07268e02.webp";
 
-},{"93d218160974a742":"lgJ39"}],"gVj42":[function(require,module,exports) {
-module.exports = require("c688bf22acd96d9c").getBundleURL("glsp6") + "../../luminaire20.01976208.webp" + "?" + Date.now();
+},{"f9205df64d905d63":"lgJ39"}],"1IGMd":[function(require,module,exports) {
+module.exports = require("bf600c829953be61").getBundleURL("glsp6") + "../../luminaire20.01976208.webp";
 
-},{"c688bf22acd96d9c":"lgJ39"}],"aP44s":[function(require,module,exports) {
-module.exports = require("b5d0c529f48dedc3").getBundleURL("glsp6") + "../../luminaire21.a7e94ca6.webp" + "?" + Date.now();
+},{"bf600c829953be61":"lgJ39"}],"cfITP":[function(require,module,exports) {
+module.exports = require("f3b8f517f665c0e2").getBundleURL("glsp6") + "../../luminaire21.a7e94ca6.webp";
 
-},{"b5d0c529f48dedc3":"lgJ39"}],"fxBVH":[function(require,module,exports) {
-module.exports = require("b47b9b9a8bdaf858").getBundleURL("glsp6") + "../../luminaire22.20c161d1.webp" + "?" + Date.now();
+},{"f3b8f517f665c0e2":"lgJ39"}],"8LTbf":[function(require,module,exports) {
+module.exports = require("57f75e3b5459e2d7").getBundleURL("glsp6") + "../../luminaire22.20c161d1.webp";
 
-},{"b47b9b9a8bdaf858":"lgJ39"}],"gbeW9":[function(require,module,exports) {
-module.exports = require("f86f2c176a0c7081").getBundleURL("glsp6") + "../../luminaire23.3c069023.webp" + "?" + Date.now();
+},{"57f75e3b5459e2d7":"lgJ39"}],"jCIub":[function(require,module,exports) {
+module.exports = require("a707011d0574ba").getBundleURL("glsp6") + "../../luminaire23.3c069023.webp";
 
-},{"f86f2c176a0c7081":"lgJ39"}],"4Xb2F":[function(require,module,exports) {
-module.exports = require("66ef83b30216637f").getBundleURL("glsp6") + "../../luminaire24.bd3f1ec3.webp" + "?" + Date.now();
+},{"a707011d0574ba":"lgJ39"}],"8rC1X":[function(require,module,exports) {
+module.exports = require("c5e9dea8b8c0bd3b").getBundleURL("glsp6") + "../../luminaire24.bd3f1ec3.webp";
 
-},{"66ef83b30216637f":"lgJ39"}],"8jvqz":[function(require,module,exports) {
-module.exports = require("928e21e77ce2cffb").getBundleURL("glsp6") + "../../luminaire1.ae31a7ed.webp" + "?" + Date.now();
+},{"c5e9dea8b8c0bd3b":"lgJ39"}],"whQAo":[function(require,module,exports) {
+module.exports = require("7f38756c2cb2389a").getBundleURL("glsp6") + "../../luminaire1.ae31a7ed.webp";
 
-},{"928e21e77ce2cffb":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"7f38756c2cb2389a":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1319,6 +906,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["4iDjb","hATNP"], "hATNP", "parcelRequire66bd")
+},{}]},["hATNP"], "hATNP", "parcelRequire66bd")
 
 </script>
