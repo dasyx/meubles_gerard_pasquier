@@ -34,7 +34,7 @@
       <section class="ml-4 display_dropdown">
         <!--BOUTON ACCUEIL HEADER-->
         <nav x-data="{ open: false }">
-          <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" aria-label="" @click="open = !open">
+          <button class="text-white w-10 h-10 relative focus:outline-none bg-custom1" id="header_btn-lowres" aria-label="header-button" @click="open = !open">
             <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
               <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
@@ -62,7 +62,7 @@
           <img src="/logo_pasquier.ed30da07.webp" width="250" alt="logo pasquier">
         </div>
         <!--BOUTON MENU LOGO-->
-        <button class="$custom-color1 focus:outline-none relative mx-auto" id="nav_logo_btn-lowres">
+        <button class="$custom-color1 focus:outline-none relative mx-auto" id="nav_logo_btn-lowres" aria-label="button menu-logo">
           <svg class="h-6 w-6 fill-current" viewbox="0 0 24 24">
             <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"></path>
           </svg>
