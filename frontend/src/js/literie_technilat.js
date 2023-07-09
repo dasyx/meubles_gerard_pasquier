@@ -124,6 +124,550 @@ const litCofTechnilat = [
     },
 ];
 
+const matelasAtmosphereTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "berlin-atmosphere-ensemble-technilat",
+        imageUrl: matatmo1,
+    },
+    {
+        reference: "ref-002",
+        famille: "deauville-atmosphere-1-technilat",
+        imageUrl: matatmo2,
+    },
+    {
+        reference: "ref-003",
+        famille: "new-york-atmosphere-ensemble-technilat",
+        imageUrl: matatmo3,
+    },
+    {
+        reference: "ref-004",
+        famille: "toronto-atmosphere-ensemble-technilat",
+        imageUrl: matatmo4,
+    },
+    {
+        reference: "ref-005",
+        famille: "venise-atmosphere-ensemble-technilat",
+        imageUrl: matatmo5,
+    },
+];
+
+const matelasCollectionGeneraleTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "athena-technilat",
+        imageUrl: matgen1,
+    },
+    {
+        reference: "ref-002",
+        famille: "azur-technilat",
+        imageUrl: matgen2,
+    },
+    {
+        reference: "ref-003",
+        famille: "blues-technilat",
+        imageUrl: matgen3,
+    },
+    {
+        reference: "ref-004",
+        famille: "bora-technilat",
+        imageUrl: matgen4,
+    },
+    {
+        reference: "ref-005",
+        famille: "calypso",
+        imageUrl: matgen5,
+    },
+    {
+        reference: "ref-006",
+        famille: "coronis-technilat",
+        imageUrl: matgen6,
+    },
+    {
+        reference: "ref-007",
+        famille: "cronos-technilat_1",
+        imageUrl: matgen7,
+    },
+    {
+        reference: "ref-008",
+        famille: "cybele",
+        imageUrl: matgen8,
+    },
+    {
+        reference: "ref-009",
+        famille: "feuille-technilat",
+        imageUrl: matgen9,
+    },
+    {
+        reference: "ref-010",
+        famille: "hera",
+        imageUrl: matgen10,
+    },
+    {
+        reference: "ref-011",
+        famille: "hypnos-technilat_1",
+        imageUrl: matgen11,
+    },
+    {
+        reference: "ref-012",
+        famille: "lotus-technilat",
+        imageUrl: matgen12,
+    },
+    {
+        reference: "ref-013",
+        famille: "lys-technilat",
+        imageUrl: matgen13,
+    },
+    {
+        reference: "ref-014",
+        famille: "madisson-technilat",
+        imageUrl: matgen14,
+    },
+    {
+        reference: "ref-015",
+        famille: "nectar-technilat",
+        imageUrl: matgen15,
+    },
+    {
+        reference: "ref-016",
+        famille: "orphee",
+        imageUrl: matgen16,
+    },
+    {
+        reference: "ref-017",
+        famille: "ponant-technilat",
+        imageUrl: matgen17,
+    },
+    {
+        reference: "ref-018",
+        famille: "rhodes",
+        imageUrl: matgen18,
+    },
+    {
+        reference: "ref-019",
+        famille: "simoun-technilat",
+        imageUrl: matgen19,
+    },
+    {
+        reference: "ref-020",
+        famille: "titan",
+        imageUrl: matgen20,
+    },
+];
+
+
+const matelasCollectionHotelTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "charme-hotel-technilat",
+        imageUrl: mathot1,
+    },
+    {
+        reference: "ref-002",
+        famille: "palace-hotel-technilat",
+        imageUrl: mathot2,
+    },
+    {
+        reference: "ref-003",
+        famille: "suite-hotel-technilat",
+        imageUrl: mathot3,
+    },
+];
+
+
+const matelasCollectionMemonatTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "alpha",
+        imageUrl: matmem1,
+    },
+    {
+        reference: "ref-002",
+        famille: "astra",
+        imageUrl: matmem2,
+    },
+    {
+        reference: "ref-003",
+        famille: "cocoona_1",
+        imageUrl: matmem3,
+    },
+    {
+        reference: "ref-004",
+        famille: "reva-technilat",
+        imageUrl: matmem4,
+    },
+    {
+        reference: "ref-005",
+        famille: "topper-memonat_2",
+        imageUrl: matmem5,
+    },
+];
+
+
+const matelasCollectionSpyralTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "artic-technilat",
+        imageUrl: matspyr1,
+    },
+    {
+        reference: "ref-002",
+        famille: "declic-technilat",
+        imageUrl: matspyr2,
+    },
+    {
+        reference: "ref-003",
+        famille: "dynamic-technilat",
+        imageUrl: matspyr3,
+    },
+    {
+        reference: "ref-004",
+        famille: "energic-technilat",
+        imageUrl: matspyr4,
+    },
+    {
+        reference: "ref-005",
+        famille: "ergonomic-technilat",
+        imageUrl: matspyr5,
+    },
+    {
+        reference: "ref-006",
+        famille: "esthetic-technilat",
+        imageUrl: matspyr6,
+    },
+    {
+        reference: "ref-007",
+        famille: "fantastique-technilat",
+        imageUrl: matspyr7,
+    },
+    {
+        reference: "ref-008",
+        famille: "idyllic_1",
+        imageUrl: matspyr8,
+    },
+    {
+        reference: "ref-009",
+        famille: "magnific-technilat",
+        imageUrl: matspyr9,
+    },
+    {
+        reference: "ref-010",
+        famille: "mystic-technilat",
+        imageUrl: matspyr10,
+    },
+    {
+        reference: "ref-011",
+        famille: "oniric-technilat",
+        imageUrl: matspyr11,
+    },
+    {
+        reference: "ref-012",
+        famille: "poetic-technilat",
+        imageUrl: matspyr12,
+    },
+    {
+        reference: "ref-013",
+        famille: "tonic-technilat",
+        imageUrl: matspyr13,
+    },
+    {
+        reference: "ref-014",
+        famille: "unic-technilat",
+        imageUrl: matspyr14,
+    },
+];
+
+
+const matelasCollectionSynchroflexTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "emeraude",
+        imageUrl: matsync1,
+    },
+    {
+        reference: "ref-002",
+        famille: "perle-fixe-technilat",
+        imageUrl: matsync2,
+    },
+    {
+        reference: "ref-003",
+        famille: "rubis-fixe-technilat",
+        imageUrl: matsync3,
+    },
+];
+
+
+const matelasTerresDAubracTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "alba-terres-d-aubrac-technilat",
+        imageUrl: mataubr1,
+    },
+    {
+        reference: "ref-002",
+        famille: "alto-braco-terres-d-aubrac-technilat",
+        imageUrl: mataubr2,
+    },
+    {
+        reference: "ref-003",
+        famille: "artiga-terres-d-aubrac-technilat",
+        imageUrl: mataubr3,
+    },
+    {
+        reference: "ref-004",
+        famille: "aura-ensemble",
+        imageUrl: mataubr4,
+    },
+    {
+        reference: "ref-005",
+        famille: "l-aubrac-terres-d-aubrac-technilat",
+        imageUrl: mataubr5,
+    },
+    {
+        reference: "ref-006",
+        famille: "tpr-terres-d-aubrac-technilat",
+        imageUrl: mataubr6,
+    },
+];
+
+const oreillerTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "oreiller natura",
+        imageUrl: ore1,
+    },
+];
+
+const piedsLitTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "chene-thumb",
+        imageUrl: pieli1,
+    },
+    {
+        reference: "ref-002",
+        famille: "ori-pieds-de-lit-technilat",
+        imageUrl: pieli2,
+    },
+    {
+        reference: "ref-003",
+        famille: "pieds-4-socles",
+        imageUrl: pieli3,
+    },
+    {
+        reference: "ref-004",
+        famille: "pieds-classique",
+        imageUrl: pieli4,
+    },
+    {
+        reference: "ref-005",
+        famille: "pieds-synchro",
+        imageUrl: pieli5,
+    },
+    {
+        reference: "ref-006",
+        famille: "st3403",
+        imageUrl: pieli6,
+    },
+];
+
+const sommierFixeTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "concept-sommier-technilat",
+        imageUrl: somfi1,
+    },
+    {
+        reference: "ref-002",
+        famille: "sommier-fixe-decorec",
+        imageUrl: somfi2,
+    },
+    {
+        reference: "ref-003",
+        famille: "sommier-fixe-decorev_4",
+        imageUrl: somfi3,
+    },
+    {
+        reference: "ref-004",
+        famille: "sommier-fixe-extraplat",
+        imageUrl: somfi4,
+    },
+    {
+        reference: "ref-005",
+        famille: "sommier-fixe-somplots",
+        imageUrl: somfi5,
+    },
+    {
+        reference: "ref-006",
+        famille: "synchroflex-fixe-metal",
+        imageUrl: somfi6,
+    },
+    {
+        reference: "ref-007",
+        famille: "vintage-rond-technilat",
+        imageUrl: somfi7,
+    },
+];
+
+const sommierRelevableTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "boxdeco-technilat",
+        imageUrl: somrel1,
+    },
+    {
+        reference: "ref-002",
+        famille: "combilat-vline-technilat",
+        imageUrl: somrel2,
+    },
+    {
+        reference: "ref-003",
+        famille: "duoplot-vline-technilat",
+        imageUrl: somrel3,
+    },
+    {
+        reference: "ref-004",
+        famille: "fuerte-vline-technilat",
+        imageUrl: somrel4,
+    },
+    {
+        reference: "ref-005",
+        famille: "mono-box-technilat",
+        imageUrl: somrel5,
+    },
+    {
+        reference: "ref-006",
+        famille: "mono-boxdeco-1-technilat",
+        imageUrl: somrel6,
+    },
+    {
+        reference: "ref-007",
+        famille: "neolat-vline-technilat",
+        imageUrl: somrel7,
+    },
+    {
+        reference: "ref-008",
+        famille: "sommier-relevable-mono-lattes",
+        imageUrl: somrel8,
+    },
+    {
+        reference: "ref-009",
+        famille: "sommier-relevable-mono-plots",
+        imageUrl: somrel9,
+    },
+];
+
+const tableChevetTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "chevet-design-technilat",
+        imageUrl: tabchev1,
+    },
+];
+
+const tetesLitTechnilat = [
+    {
+        reference: "ref-001",
+        famille: "alaska-tete-de-lit-technilat",
+        imageUrl: tetelit1,
+    },
+    {
+        reference: "ref-002",
+        famille: "bali-1-tete-de-lit-technilat",
+        imageUrl: tetelit2,
+    },
+    {
+        reference: "ref-003",
+        famille: "banquise-2-tete-de-lit-technilat",
+        imageUrl: tetelit3,
+    },
+    {
+        reference: "ref-004",
+        famille: "bermudes-1-tete-de-lit-technilat",
+        imageUrl: tetelit4,
+    },
+    {
+        reference: "ref-005",
+        famille: "borneo-tete-de-lit-technilat",
+        imageUrl: tetelit5,
+    },
+    {
+        reference: "ref-006",
+        famille: "boudoir-tete-de-lit-technilat",
+        imageUrl: tetelit6,
+    },
+    {
+        reference: "ref-007",
+        famille: "couette-tete-de-lit-technilat",
+        imageUrl: tetelit7,
+    },
+    {
+        reference: "ref-008",
+        famille: "diagonale-tete-de-lit-technilat",
+        imageUrl: tetelit8,
+    },
+    {
+        reference: "ref-009",
+        famille: "fanon-tete-de-lit-technilat",
+        imageUrl: tetelit9,
+    },
+    {
+        reference: "ref-010",
+        famille: "java-tete-de-lit-technilat",
+        imageUrl: tetelit10,
+    },
+    {
+        reference: "ref-011",
+        famille: "maldives-tete-de-lit-technilat",
+        imageUrl: tetelit11,
+    },
+    {
+        reference: "ref-012",
+        famille: "noeuds-tete-de-lit-technilat",
+        imageUrl: tetelit12,
+    },
+    {
+        reference: "ref-013",
+        famille: "panoramique-1-tete-de-lit-technilat",
+        imageUrl: tetelit13,
+    },
+    {
+        reference: "ref-014",
+        famille: "piana-2-pans-pearl-grey-tete-de-lit-technilat",
+        imageUrl: tetelit14,
+    },
+    {
+        reference: "ref-015",
+        famille: "piana-tete-de-lit",
+        imageUrl: tetelit15,
+    },
+    {
+        reference: "ref-016",
+        famille: "sumatra-tete-de-lit-technilat",
+        imageUrl: tetelit16,
+    },
+    {
+        reference: "ref-017",
+        famille: "tendance-tete-de-lit-technilat",
+        imageUrl: tetelit17,
+    },
+    {
+        reference: "ref-018",
+        famille: "tete-de-lit-lisse-2-pans",
+        imageUrl: tetelit18,
+    },
+    {
+        reference: "ref-019",
+        famille: "tete-de-lit-lisse-3-pans",
+        imageUrl: tetelit19,
+    },
+    {
+        reference: "ref-020",
+        famille: "thevenon-1-tete-de-lit-technilat",
+        imageUrl: tetelit20,
+    },
+];
+
 // Sélectionner tous les divs de sélection Technilat
 let technilat = document.getElementById('selection_technilat');
 let technilatBtn = document.querySelectorAll('.button_technilat');
@@ -163,6 +707,123 @@ technilat.addEventListener('click', function () {
                         }
                     });
                     displayLitCoffreTechnilat();
+                } else if (button.id === 'matelas_atmosphere') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'matelas_atmosphere') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayMatelasAtmosphereTechnilat();
+                } else if (button.id === 'matelas_generale') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'matelas_generale') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayMatelasGeneraleTechnilat();
+                } else if (button.id === 'matelas_hotel') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'matelas_hotel') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayMatelasHotelTechnilat();
+                } else if (button.id === 'matelas_memonat') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'matelas_memonat') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayMatelasMemonatTechnilat();
+                } else if (button.id === 'matelas_spyral') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'matelas_spyral') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayMatelasSpyralTechnilat();
+                } else if (button.id === 'matelas_synchroflex') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'matelas_synchroflex') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayMatelasSynchroflexTechnilat();
+                } else if (button.id === 'matelas_aubrac') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'matelas_aubrac') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayMatelasAubracTechnilat();
+                } else if (button.id === 'oreiller') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'oreiller') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayOreillerTechnilat();
+                } else if (button.id === 'pied_lit') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'pied_lit') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayPiedLitTechnilat();
+                } else if (button.id === 'sommier_fixe') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'sommier_fixe') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displaySommierFixeTechnilat();
+                } else if (button.id === 'sommier_relevable') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'sommier_relevable') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displaySommierRelevableTechnilat();
+                } else if (button.id === 'table_chevet') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'table_chevet') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayTableChevetTechnilat();
+                } else if (button.id === 'tete_lit') { // Appeler une fonction spécifique pour le bouton 2
+                    spans.forEach(span => {
+                        if (span.parentNode.id !== 'tete_lit') {
+                            span.innerHTML = "voir";
+                        } else {
+                            span.innerHTML = "cacher";
+                        }
+                    });
+                    displayTeteLitTechnilat();
                 } else {
                     // Appeler une fonction par défaut
                     spans.forEach(span => {
@@ -181,6 +842,528 @@ function displayLitCoffreTechnilat() {
     const furnitureContainer = document.getElementById("furniture-container");
 
     litCofTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+
+function displayMatelasAtmosphereTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    matelasAtmosphereTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+
+function displayMatelasGeneraleTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    matelasCollectionGeneraleTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayMatelasHotelTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    matelasCollectionHotelTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayMatelasMemonatTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    matelasCollectionMemonatTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayMatelasSpyralTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    matelasCollectionSpyralTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayMatelasSynchroflexTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    matelasCollectionSynchroflexTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayMatelasAubracTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    matelasTerresDAubracTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayOreillerTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    oreillerTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayPiedLitTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    piedsLitTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displaySommierFixeTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    sommierFixeTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displaySommierRelevableTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    sommierRelevableTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayTableChevetTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    tableChevetTechnilat.forEach((furniture) => {
+        const furnitureElement = document.createElement("div");
+        furnitureElement.classList.add("furniture-item");
+
+        const furnitureImage = document.createElement("img");
+        furnitureImage.src = furniture.imageUrl;
+        furnitureImage.alt = furniture.famille;
+
+        // make furniture image clickable
+        furnitureImage.style.cursor = "pointer";
+        furnitureImage.onclick = function () {
+            if (furnitureImage.requestFullscreen) {
+                furnitureImage.requestFullscreen();
+            } else if (furnitureImage.msRequestFullscreen) {
+                furnitureImage.msRequestFullscreen();
+            } else if (furnitureImage.mozRequestFullScreen) {
+                furnitureImage.mozRequestFullScreen();
+            } else if (furnitureImage.webkitRequestFullscreen) {
+                furnitureImage.webkitRequestFullscreen();
+            }
+            furnitureImage.addEventListener("click", (event) => {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                }
+            });
+        };
+
+        const furnitureInfo = document.createElement("div");
+        furnitureInfo.innerHTML = `<strong>Reference:</strong> ${furniture.reference}<br>
+                                <strong>famille:</strong> ${furniture.famille}`;
+
+        furnitureElement.appendChild(furnitureImage);
+        furnitureElement.appendChild(furnitureInfo);
+        furnitureContainer.appendChild(furnitureElement);
+    });
+}
+
+function displayTeteLitTechnilat() {
+    const furnitureContainer = document.getElementById("furniture-container");
+
+    tetesLitTechnilat.forEach((furniture) => {
         const furnitureElement = document.createElement("div");
         furnitureElement.classList.add("furniture-item");
 
