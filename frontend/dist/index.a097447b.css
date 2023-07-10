@@ -29866,6 +29866,11 @@ main h2 {
   box-shadow: 5px 5px 15px 5px #0009;
 }
 
+.thumbnail-image {
+  max-width: 200px;
+  max-height: 200px;
+}
+
 .text-white {
   color: #fff;
 }

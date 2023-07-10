@@ -191,6 +191,11 @@ main h2 {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6);
 }
 
+.thumbnail-image {
+  max-width: 200px; /* Définissez la largeur maximale souhaitée pour les miniatures */
+  max-height: 200px; /* Définissez la hauteur maximale souhaitée pour les miniatures */
+}
+
 //    SECTION MEUBLES INSPIRATIONS   //
 
 .text-white {
