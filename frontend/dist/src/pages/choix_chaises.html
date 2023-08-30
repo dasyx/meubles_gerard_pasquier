@@ -168,17 +168,57 @@
         <!--AFFICHAGE MENU DROPDOWN < 768PX-->
         <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
           <div class="dropdown block relative">
-            <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="produits">Les produits<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="inspirations">Inspirations<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="pointsforts">Nos points forts<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <a href="#"><span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
-              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            </a>
+
+            <span class="block dropdown_lowres">Notre histoire<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/biographie.html">Les origines</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Les produits<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a href="/src/pages/choix_accessoires-deco.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Accessoires déco</a>
+                <a href="/src/pages/choix_armoires.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Armoires</a>
+                <a href="/src/pages/choix_buffets.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Buffets</a>
+                <a href="/src/pages/choix_bureaux.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Bureaux</a>
+                <a href="/src/pages/choix_canapes.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Canapés</a>
+                <a href="/src/pages/choix_chaises.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Chaises</a>
+                <a href="/src/pages/choix_decorations_murales.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Décorations murales</a>
+                <a href="/src/pages/choix_fauteuils.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Fauteuils</a>
+                <a href="/src/pages/choix_literie.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Literie</a>
+                <a href="/src/pages/choix_luminaires.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Luminaires</a>
+                <a href="/src/pages/choix_salons.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Salons</a>
+                <a href="/src/pages/choix_tables.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Tables</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Nos Inspirations<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/classique.html">Classique</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/contemporain.html">Contemporain</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/industriel.html">Industriel</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/rustique.html">Rustique</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/nordique.html">Nordique</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Nos points forts<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/points_forts.html">Notre engagement</a>
+              </li>
+            </ul>
+            <!-- <span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
+            <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="./src/pages/promotions.html">Nos bonnes affaires</a>
+              </li>
+            </ul> -->
           </div>
           <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
         </div>
@@ -530,7 +570,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"ik0WQ":[function(require,module,exports) {
+})({"hedwQ":[function(require,module,exports) {
 // Meubles chaises / buffets
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _choixChaisesWebp = require("../img/classique-style/choix_chaises.webp");
@@ -684,10 +724,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/classique-style/choix_chaises.webp":"kCOyl","../img/classique-style/choix_chaises1.webp":"azAVs","../img/classique-style/chaise-grand-cru-plaisance-7-p8921.webp":"fFkyA","../img/classique-style/chaise-sofia-plaisance-7-p8805.webp":"pJfMr","../img/contemporain/choix_chaises3.webp":"9CBlH","../img/classique-style/IMG-20230526-WA0066.webp":"7Xgqu","../img/chaises/chaise1.webp":"0zERy","../img/chaises/chaise2.webp":"fMF37","../img/chaises/chaise3.webp":"itIQ4","../img/chaises/chaise4.webp":"d9Dmq","../img/chaises/chaise5.webp":"ayU1O","../img/chaises/chaise6.webp":"e2ng1","../img/chaises/chaise7.webp":"kj6SY","../img/chaises/chaise8.webp":"9LDLX","../img/chaises/chaise9.webp":"4t9Ll","../img/chaises/chaise10.webp":"ceXvg","../img/chaises/chaise11.webp":"ky4c2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kCOyl":[function(require,module,exports) {
-module.exports = require("363804fe4246a74c").getBundleURL("7Zv9q") + "../../choix_chaises.f59c6991.webp";
+},{"../img/classique-style/choix_chaises.webp":"aRHgP","../img/classique-style/choix_chaises1.webp":"hc9uv","../img/classique-style/chaise-grand-cru-plaisance-7-p8921.webp":"h0Vyt","../img/classique-style/chaise-sofia-plaisance-7-p8805.webp":"b8xLH","../img/contemporain/choix_chaises3.webp":"fEqEt","../img/classique-style/IMG-20230526-WA0066.webp":"1kilr","../img/chaises/chaise1.webp":"8YlPy","../img/chaises/chaise2.webp":"4KSJO","../img/chaises/chaise3.webp":"dTiTh","../img/chaises/chaise4.webp":"7bM6v","../img/chaises/chaise5.webp":"clFGW","../img/chaises/chaise6.webp":"dDqan","../img/chaises/chaise7.webp":"gE5gx","../img/chaises/chaise8.webp":"f1jmt","../img/chaises/chaise9.webp":"l3Y3O","../img/chaises/chaise10.webp":"af5kx","../img/chaises/chaise11.webp":"7sdTw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aRHgP":[function(require,module,exports) {
+module.exports = require("51f99ab0b8bd5746").getBundleURL("lQaD3") + "../../choix_chaises.f59c6991.webp";
 
-},{"363804fe4246a74c":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"51f99ab0b8bd5746":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -722,55 +762,55 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"azAVs":[function(require,module,exports) {
-module.exports = require("37fda488ad8a99ff").getBundleURL("7Zv9q") + "../../choix_chaises1.e8a37903.webp";
+},{}],"hc9uv":[function(require,module,exports) {
+module.exports = require("65cc8e488fa5c4cc").getBundleURL("lQaD3") + "../../choix_chaises1.e8a37903.webp";
 
-},{"37fda488ad8a99ff":"lgJ39"}],"fFkyA":[function(require,module,exports) {
-module.exports = require("cefa72670b6de8bb").getBundleURL("7Zv9q") + "../../chaise-grand-cru-plaisance-7-p8921.c8fd1f96.webp";
+},{"65cc8e488fa5c4cc":"lgJ39"}],"h0Vyt":[function(require,module,exports) {
+module.exports = require("6d3249ac0a076b35").getBundleURL("lQaD3") + "../../chaise-grand-cru-plaisance-7-p8921.c8fd1f96.webp";
 
-},{"cefa72670b6de8bb":"lgJ39"}],"pJfMr":[function(require,module,exports) {
-module.exports = require("3f13a9da8ac4ec5d").getBundleURL("7Zv9q") + "../../chaise-sofia-plaisance-7-p8805.67de4c5f.webp";
+},{"6d3249ac0a076b35":"lgJ39"}],"b8xLH":[function(require,module,exports) {
+module.exports = require("da7deb06b9f16498").getBundleURL("lQaD3") + "../../chaise-sofia-plaisance-7-p8805.67de4c5f.webp";
 
-},{"3f13a9da8ac4ec5d":"lgJ39"}],"9CBlH":[function(require,module,exports) {
-module.exports = require("bbb61acf6c009d40").getBundleURL("7Zv9q") + "../../choix_chaises3.c8fe43ef.webp";
+},{"da7deb06b9f16498":"lgJ39"}],"fEqEt":[function(require,module,exports) {
+module.exports = require("a5ee613f1339809f").getBundleURL("lQaD3") + "../../choix_chaises3.c8fe43ef.webp";
 
-},{"bbb61acf6c009d40":"lgJ39"}],"7Xgqu":[function(require,module,exports) {
-module.exports = require("6f5b6e4a26c5b027").getBundleURL("7Zv9q") + "../../IMG-20230526-WA0066.d68917f7.webp";
+},{"a5ee613f1339809f":"lgJ39"}],"1kilr":[function(require,module,exports) {
+module.exports = require("fb7a0e5bda16ca4a").getBundleURL("lQaD3") + "../../IMG-20230526-WA0066.d68917f7.webp";
 
-},{"6f5b6e4a26c5b027":"lgJ39"}],"0zERy":[function(require,module,exports) {
-module.exports = require("da5e4d5e6a016a6e").getBundleURL("7Zv9q") + "../../chaise1.f126e5b7.webp";
+},{"fb7a0e5bda16ca4a":"lgJ39"}],"8YlPy":[function(require,module,exports) {
+module.exports = require("e980a18de69e5a04").getBundleURL("lQaD3") + "../../chaise1.f126e5b7.webp";
 
-},{"da5e4d5e6a016a6e":"lgJ39"}],"fMF37":[function(require,module,exports) {
-module.exports = require("2b10bd0d06e0244b").getBundleURL("7Zv9q") + "../../chaise2.7b6594e8.webp";
+},{"e980a18de69e5a04":"lgJ39"}],"4KSJO":[function(require,module,exports) {
+module.exports = require("4999e263c0bc0d2a").getBundleURL("lQaD3") + "../../chaise2.7b6594e8.webp";
 
-},{"2b10bd0d06e0244b":"lgJ39"}],"itIQ4":[function(require,module,exports) {
-module.exports = require("f99e2d9915a07f5f").getBundleURL("7Zv9q") + "../../chaise3.081b1eec.webp";
+},{"4999e263c0bc0d2a":"lgJ39"}],"dTiTh":[function(require,module,exports) {
+module.exports = require("6d7250ef58fea699").getBundleURL("lQaD3") + "../../chaise3.081b1eec.webp";
 
-},{"f99e2d9915a07f5f":"lgJ39"}],"d9Dmq":[function(require,module,exports) {
-module.exports = require("9e4e0d220ea1c301").getBundleURL("7Zv9q") + "../../chaise4.e0f87c8c.webp";
+},{"6d7250ef58fea699":"lgJ39"}],"7bM6v":[function(require,module,exports) {
+module.exports = require("ce59b77a22810958").getBundleURL("lQaD3") + "../../chaise4.e0f87c8c.webp";
 
-},{"9e4e0d220ea1c301":"lgJ39"}],"ayU1O":[function(require,module,exports) {
-module.exports = require("e108bcc0444e4308").getBundleURL("7Zv9q") + "../../chaise5.52026005.webp";
+},{"ce59b77a22810958":"lgJ39"}],"clFGW":[function(require,module,exports) {
+module.exports = require("7126a780bf6e90d5").getBundleURL("lQaD3") + "../../chaise5.52026005.webp";
 
-},{"e108bcc0444e4308":"lgJ39"}],"e2ng1":[function(require,module,exports) {
-module.exports = require("ba6733e7e4ed605b").getBundleURL("7Zv9q") + "../../chaise6.33fa505e.webp";
+},{"7126a780bf6e90d5":"lgJ39"}],"dDqan":[function(require,module,exports) {
+module.exports = require("a6c4ab825c4706d4").getBundleURL("lQaD3") + "../../chaise6.33fa505e.webp";
 
-},{"ba6733e7e4ed605b":"lgJ39"}],"kj6SY":[function(require,module,exports) {
-module.exports = require("53966105d014c822").getBundleURL("7Zv9q") + "../../chaise7.63916ebb.webp";
+},{"a6c4ab825c4706d4":"lgJ39"}],"gE5gx":[function(require,module,exports) {
+module.exports = require("7a6449f47c3e636f").getBundleURL("lQaD3") + "../../chaise7.63916ebb.webp";
 
-},{"53966105d014c822":"lgJ39"}],"9LDLX":[function(require,module,exports) {
-module.exports = require("358992e9aca47af3").getBundleURL("7Zv9q") + "../../chaise8.070245b5.webp";
+},{"7a6449f47c3e636f":"lgJ39"}],"f1jmt":[function(require,module,exports) {
+module.exports = require("3220d8459ae04587").getBundleURL("lQaD3") + "../../chaise8.070245b5.webp";
 
-},{"358992e9aca47af3":"lgJ39"}],"4t9Ll":[function(require,module,exports) {
-module.exports = require("2a67a70ae3ac3da5").getBundleURL("7Zv9q") + "../../chaise9.bf3cf9a4.webp";
+},{"3220d8459ae04587":"lgJ39"}],"l3Y3O":[function(require,module,exports) {
+module.exports = require("4e43a7fd4e4fc6a6").getBundleURL("lQaD3") + "../../chaise9.bf3cf9a4.webp";
 
-},{"2a67a70ae3ac3da5":"lgJ39"}],"ceXvg":[function(require,module,exports) {
-module.exports = require("7b24998490569325").getBundleURL("7Zv9q") + "../../chaise10.8473baf7.webp";
+},{"4e43a7fd4e4fc6a6":"lgJ39"}],"af5kx":[function(require,module,exports) {
+module.exports = require("1d82709b96e67f4e").getBundleURL("lQaD3") + "../../chaise10.8473baf7.webp";
 
-},{"7b24998490569325":"lgJ39"}],"ky4c2":[function(require,module,exports) {
-module.exports = require("5e5ceefbe6bfb7e1").getBundleURL("7Zv9q") + "../../chaise11.c32ae450.webp";
+},{"1d82709b96e67f4e":"lgJ39"}],"7sdTw":[function(require,module,exports) {
+module.exports = require("b4bfcf2efb8d8132").getBundleURL("lQaD3") + "../../chaise11.c32ae450.webp";
 
-},{"5e5ceefbe6bfb7e1":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"b4bfcf2efb8d8132":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -800,6 +840,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["ik0WQ"], "ik0WQ", "parcelRequire66bd")
+},{}]},["hedwQ"], "hedwQ", "parcelRequire66bd")
 
 </script>

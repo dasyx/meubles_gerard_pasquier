@@ -171,17 +171,57 @@
         <!--AFFICHAGE MENU DROPDOWN < 768PX-->
         <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
           <div class="dropdown block relative">
-            <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="produits">Les produits<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="inspirations">Inspirations<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="pointsforts">Nos points forts<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <a href="#"><span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
-              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            </a>
+
+            <span class="block dropdown_lowres">Notre histoire<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/biographie.html">Les origines</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Les produits<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a href="/src/pages/choix_accessoires-deco.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Accessoires déco</a>
+                <a href="/src/pages/choix_armoires.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Armoires</a>
+                <a href="/src/pages/choix_buffets.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Buffets</a>
+                <a href="/src/pages/choix_bureaux.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Bureaux</a>
+                <a href="/src/pages/choix_canapes.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Canapés</a>
+                <a href="/src/pages/choix_chaises.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Chaises</a>
+                <a href="/src/pages/choix_decorations_murales.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Décorations murales</a>
+                <a href="/src/pages/choix_fauteuils.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Fauteuils</a>
+                <a href="/src/pages/choix_literie.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Literie</a>
+                <a href="/src/pages/choix_luminaires.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Luminaires</a>
+                <a href="/src/pages/choix_salons.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Salons</a>
+                <a href="/src/pages/choix_tables.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Tables</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Nos Inspirations<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/classique.html">Classique</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/contemporain.html">Contemporain</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/industriel.html">Industriel</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/rustique.html">Rustique</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/nordique.html">Nordique</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Nos points forts<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/points_forts.html">Notre engagement</a>
+              </li>
+            </ul>
+            <!-- <span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
+            <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="./src/pages/promotions.html">Nos bonnes affaires</a>
+              </li>
+            </ul> -->
           </div>
           <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
         </div>
@@ -541,7 +581,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"2Ihgr":[function(require,module,exports) {
+})({"hAjFN":[function(require,module,exports) {
 // Meubles decorations / buffets
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _luminaire1Webp = require("../img/decorations/luminaire1.webp");
@@ -762,10 +802,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/decorations/luminaire1.webp":"cTEnA","../img/decorations/luminaire2.webp":"4gJ2a","../img/decorations/luminaire3.webp":"zHrO5","../img/decorations/luminaire4.webp":"3a01j","../img/decorations/luminaire5.webp":"blmSg","../img/decorations/choix_decorations.webp":"dS1GJ","../img/decorations/luminaire6.webp":"4w31D","../img/decorations/luminaire7.webp":"l51Eg","../img/decorations/luminaire8.webp":"dETF9","../img/decorations/luminaire9.webp":"iP6Ki","../img/decorations/luminaire10.webp":"bGID7","../img/decorations/luminaire11.webp":"hWULA","../img/decorations/luminaire12.webp":"boUiV","../img/decorations/luminaire13.webp":"bQdfE","../img/decorations/luminaire14.webp":"hNiUm","../img/decorations/luminaire15.webp":"lrRtF","../img/decorations/luminaire16.webp":"bBADi","../img/decorations/luminaire17.webp":"iW5ip","../img/decorations/luminaire18.webp":"46y5b","../img/decorations/luminaire19.webp":"dBl2x","../img/decorations/luminaire20.webp":"8FzFh","../img/decorations/luminaire21.webp":"jCP4I","../img/decorations/luminaire22.webp":"bjuGI","../img/decorations/luminaire23.webp":"cXtih","../img/decorations/luminaire24.webp":"gQ3Rw","../img/luminaires/luminaire1.webp":"2Rqcj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cTEnA":[function(require,module,exports) {
-module.exports = require("21876889c00b034").getBundleURL("hd1wD") + "../../luminaire1.4e476337.webp";
+},{"../img/decorations/luminaire1.webp":"2vOm3","../img/decorations/luminaire2.webp":"cqBjr","../img/decorations/luminaire3.webp":"2jr01","../img/decorations/luminaire4.webp":"kEtr3","../img/decorations/luminaire5.webp":"iBzfE","../img/decorations/choix_decorations.webp":"02WdR","../img/decorations/luminaire6.webp":"arjvJ","../img/decorations/luminaire7.webp":"800YJ","../img/decorations/luminaire8.webp":"kpUSc","../img/decorations/luminaire9.webp":"42EJ9","../img/decorations/luminaire10.webp":"6fL3A","../img/decorations/luminaire11.webp":"gTvaY","../img/decorations/luminaire12.webp":"3ethd","../img/decorations/luminaire13.webp":"9j6Mz","../img/decorations/luminaire14.webp":"5ZIx0","../img/decorations/luminaire15.webp":"2Dfpl","../img/decorations/luminaire16.webp":"eTZVf","../img/decorations/luminaire17.webp":"795LB","../img/decorations/luminaire18.webp":"7x2uj","../img/decorations/luminaire19.webp":"iWBRd","../img/decorations/luminaire20.webp":"eRTB1","../img/decorations/luminaire21.webp":"jWrTy","../img/decorations/luminaire22.webp":"eDJgC","../img/decorations/luminaire23.webp":"aMtlI","../img/decorations/luminaire24.webp":"a7IX2","../img/luminaires/luminaire1.webp":"70jG0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2vOm3":[function(require,module,exports) {
+module.exports = require("e08af30f812651fa").getBundleURL("hwjun") + "../../luminaire1.4e476337.webp";
 
-},{"21876889c00b034":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"e08af30f812651fa":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -800,82 +840,82 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"4gJ2a":[function(require,module,exports) {
-module.exports = require("9c088ae6ba836934").getBundleURL("hd1wD") + "../../luminaire2.25b8536e.webp";
+},{}],"cqBjr":[function(require,module,exports) {
+module.exports = require("281b0f3482aa0dc0").getBundleURL("hwjun") + "../../luminaire2.25b8536e.webp";
 
-},{"9c088ae6ba836934":"lgJ39"}],"zHrO5":[function(require,module,exports) {
-module.exports = require("abc494fcdf227213").getBundleURL("hd1wD") + "../../luminaire3.941250e7.webp";
+},{"281b0f3482aa0dc0":"lgJ39"}],"2jr01":[function(require,module,exports) {
+module.exports = require("be93d228dd43106e").getBundleURL("hwjun") + "../../luminaire3.941250e7.webp";
 
-},{"abc494fcdf227213":"lgJ39"}],"3a01j":[function(require,module,exports) {
-module.exports = require("85f3e27900e4ee34").getBundleURL("hd1wD") + "../../luminaire4.48d702a0.webp";
+},{"be93d228dd43106e":"lgJ39"}],"kEtr3":[function(require,module,exports) {
+module.exports = require("3cfacea56ce5c749").getBundleURL("hwjun") + "../../luminaire4.48d702a0.webp";
 
-},{"85f3e27900e4ee34":"lgJ39"}],"blmSg":[function(require,module,exports) {
-module.exports = require("64def22a6eb1b259").getBundleURL("hd1wD") + "../../luminaire5.3243160e.webp";
+},{"3cfacea56ce5c749":"lgJ39"}],"iBzfE":[function(require,module,exports) {
+module.exports = require("87aa67ca87ba1cd1").getBundleURL("hwjun") + "../../luminaire5.3243160e.webp";
 
-},{"64def22a6eb1b259":"lgJ39"}],"dS1GJ":[function(require,module,exports) {
-module.exports = require("7f75c4c488aecd2b").getBundleURL("hd1wD") + "../../choix_decorations.ac25f4db.webp";
+},{"87aa67ca87ba1cd1":"lgJ39"}],"02WdR":[function(require,module,exports) {
+module.exports = require("b894537fd1b95a39").getBundleURL("hwjun") + "../../choix_decorations.ac25f4db.webp";
 
-},{"7f75c4c488aecd2b":"lgJ39"}],"4w31D":[function(require,module,exports) {
-module.exports = require("d3e707ffecc48960").getBundleURL("hd1wD") + "../../luminaire6.6035c0cc.webp";
+},{"b894537fd1b95a39":"lgJ39"}],"arjvJ":[function(require,module,exports) {
+module.exports = require("7d4d410199d0758c").getBundleURL("hwjun") + "../../luminaire6.6035c0cc.webp";
 
-},{"d3e707ffecc48960":"lgJ39"}],"l51Eg":[function(require,module,exports) {
-module.exports = require("9a5ac8549b92525c").getBundleURL("hd1wD") + "../../luminaire7.5984f495.webp";
+},{"7d4d410199d0758c":"lgJ39"}],"800YJ":[function(require,module,exports) {
+module.exports = require("ad95191c1f15c70b").getBundleURL("hwjun") + "../../luminaire7.5984f495.webp";
 
-},{"9a5ac8549b92525c":"lgJ39"}],"dETF9":[function(require,module,exports) {
-module.exports = require("83d124b946f40d22").getBundleURL("hd1wD") + "../../luminaire8.9daabad4.webp";
+},{"ad95191c1f15c70b":"lgJ39"}],"kpUSc":[function(require,module,exports) {
+module.exports = require("7522bd872c646021").getBundleURL("hwjun") + "../../luminaire8.9daabad4.webp";
 
-},{"83d124b946f40d22":"lgJ39"}],"iP6Ki":[function(require,module,exports) {
-module.exports = require("bd03a18668a1ac98").getBundleURL("hd1wD") + "../../luminaire9.6e310d2a.webp";
+},{"7522bd872c646021":"lgJ39"}],"42EJ9":[function(require,module,exports) {
+module.exports = require("a332f7184ec0175a").getBundleURL("hwjun") + "../../luminaire9.6e310d2a.webp";
 
-},{"bd03a18668a1ac98":"lgJ39"}],"bGID7":[function(require,module,exports) {
-module.exports = require("dfd0f6e4aa8fa4cf").getBundleURL("hd1wD") + "../../luminaire10.2b97adbd.webp";
+},{"a332f7184ec0175a":"lgJ39"}],"6fL3A":[function(require,module,exports) {
+module.exports = require("6ce5cab332fa0951").getBundleURL("hwjun") + "../../luminaire10.2b97adbd.webp";
 
-},{"dfd0f6e4aa8fa4cf":"lgJ39"}],"hWULA":[function(require,module,exports) {
-module.exports = require("31d8b803080976b6").getBundleURL("hd1wD") + "../../luminaire11.b166281b.webp";
+},{"6ce5cab332fa0951":"lgJ39"}],"gTvaY":[function(require,module,exports) {
+module.exports = require("1b068365591fbd18").getBundleURL("hwjun") + "../../luminaire11.b166281b.webp";
 
-},{"31d8b803080976b6":"lgJ39"}],"boUiV":[function(require,module,exports) {
-module.exports = require("4f54673d7efb0b70").getBundleURL("hd1wD") + "../../luminaire12.53cbceb0.webp";
+},{"1b068365591fbd18":"lgJ39"}],"3ethd":[function(require,module,exports) {
+module.exports = require("9cde06cf6333323a").getBundleURL("hwjun") + "../../luminaire12.53cbceb0.webp";
 
-},{"4f54673d7efb0b70":"lgJ39"}],"bQdfE":[function(require,module,exports) {
-module.exports = require("b4965729a1fb0422").getBundleURL("hd1wD") + "../../luminaire13.60911f4d.webp";
+},{"9cde06cf6333323a":"lgJ39"}],"9j6Mz":[function(require,module,exports) {
+module.exports = require("22642329942693d9").getBundleURL("hwjun") + "../../luminaire13.60911f4d.webp";
 
-},{"b4965729a1fb0422":"lgJ39"}],"hNiUm":[function(require,module,exports) {
-module.exports = require("bb24dee1a289f9ef").getBundleURL("hd1wD") + "../../luminaire14.d687368d.webp";
+},{"22642329942693d9":"lgJ39"}],"5ZIx0":[function(require,module,exports) {
+module.exports = require("7a2d59b4b6c59c7b").getBundleURL("hwjun") + "../../luminaire14.d687368d.webp";
 
-},{"bb24dee1a289f9ef":"lgJ39"}],"lrRtF":[function(require,module,exports) {
-module.exports = require("1c9ee96aa226f2e8").getBundleURL("hd1wD") + "../../luminaire15.a0d51e70.webp";
+},{"7a2d59b4b6c59c7b":"lgJ39"}],"2Dfpl":[function(require,module,exports) {
+module.exports = require("ab435605458efc7b").getBundleURL("hwjun") + "../../luminaire15.a0d51e70.webp";
 
-},{"1c9ee96aa226f2e8":"lgJ39"}],"bBADi":[function(require,module,exports) {
-module.exports = require("3e6b556fea6e093").getBundleURL("hd1wD") + "../../luminaire16.4ec4d5a6.webp";
+},{"ab435605458efc7b":"lgJ39"}],"eTZVf":[function(require,module,exports) {
+module.exports = require("36ab121c5c2b95eb").getBundleURL("hwjun") + "../../luminaire16.4ec4d5a6.webp";
 
-},{"3e6b556fea6e093":"lgJ39"}],"iW5ip":[function(require,module,exports) {
-module.exports = require("761c4301aea985b6").getBundleURL("hd1wD") + "../../luminaire17.a69d7b9c.webp";
+},{"36ab121c5c2b95eb":"lgJ39"}],"795LB":[function(require,module,exports) {
+module.exports = require("a62aacc1da5289dc").getBundleURL("hwjun") + "../../luminaire17.a69d7b9c.webp";
 
-},{"761c4301aea985b6":"lgJ39"}],"46y5b":[function(require,module,exports) {
-module.exports = require("64da549ba9946623").getBundleURL("hd1wD") + "../../luminaire18.844c8f5f.webp";
+},{"a62aacc1da5289dc":"lgJ39"}],"7x2uj":[function(require,module,exports) {
+module.exports = require("d1c9a3a20b2c1bf5").getBundleURL("hwjun") + "../../luminaire18.844c8f5f.webp";
 
-},{"64da549ba9946623":"lgJ39"}],"dBl2x":[function(require,module,exports) {
-module.exports = require("d474fbf87a237542").getBundleURL("hd1wD") + "../../luminaire19.07268e02.webp";
+},{"d1c9a3a20b2c1bf5":"lgJ39"}],"iWBRd":[function(require,module,exports) {
+module.exports = require("6a6ade94a3f56f76").getBundleURL("hwjun") + "../../luminaire19.07268e02.webp";
 
-},{"d474fbf87a237542":"lgJ39"}],"8FzFh":[function(require,module,exports) {
-module.exports = require("caf995ae2be610d2").getBundleURL("hd1wD") + "../../luminaire20.01976208.webp";
+},{"6a6ade94a3f56f76":"lgJ39"}],"eRTB1":[function(require,module,exports) {
+module.exports = require("825910c0a596e9ac").getBundleURL("hwjun") + "../../luminaire20.01976208.webp";
 
-},{"caf995ae2be610d2":"lgJ39"}],"jCP4I":[function(require,module,exports) {
-module.exports = require("b6def99c1ed45235").getBundleURL("hd1wD") + "../../luminaire21.a7e94ca6.webp";
+},{"825910c0a596e9ac":"lgJ39"}],"jWrTy":[function(require,module,exports) {
+module.exports = require("333df63a769f6b8b").getBundleURL("hwjun") + "../../luminaire21.a7e94ca6.webp";
 
-},{"b6def99c1ed45235":"lgJ39"}],"bjuGI":[function(require,module,exports) {
-module.exports = require("8d515c411d14307a").getBundleURL("hd1wD") + "../../luminaire22.20c161d1.webp";
+},{"333df63a769f6b8b":"lgJ39"}],"eDJgC":[function(require,module,exports) {
+module.exports = require("8d8f755ce63a3296").getBundleURL("hwjun") + "../../luminaire22.20c161d1.webp";
 
-},{"8d515c411d14307a":"lgJ39"}],"cXtih":[function(require,module,exports) {
-module.exports = require("4ed8a0066af4ae50").getBundleURL("hd1wD") + "../../luminaire23.3c069023.webp";
+},{"8d8f755ce63a3296":"lgJ39"}],"aMtlI":[function(require,module,exports) {
+module.exports = require("aa2f15502094bb3f").getBundleURL("hwjun") + "../../luminaire23.3c069023.webp";
 
-},{"4ed8a0066af4ae50":"lgJ39"}],"gQ3Rw":[function(require,module,exports) {
-module.exports = require("cfddd4fbf78080c6").getBundleURL("hd1wD") + "../../luminaire24.bd3f1ec3.webp";
+},{"aa2f15502094bb3f":"lgJ39"}],"a7IX2":[function(require,module,exports) {
+module.exports = require("eaccbba0faf7d0eb").getBundleURL("hwjun") + "../../luminaire24.bd3f1ec3.webp";
 
-},{"cfddd4fbf78080c6":"lgJ39"}],"2Rqcj":[function(require,module,exports) {
-module.exports = require("68df5c65c68719fa").getBundleURL("hd1wD") + "../../luminaire1.ae31a7ed.webp";
+},{"eaccbba0faf7d0eb":"lgJ39"}],"70jG0":[function(require,module,exports) {
+module.exports = require("35d8f8d9bc426").getBundleURL("hwjun") + "../../luminaire1.ae31a7ed.webp";
 
-},{"68df5c65c68719fa":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"35d8f8d9bc426":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -905,6 +945,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["2Ihgr"], "2Ihgr", "parcelRequire66bd")
+},{}]},["hAjFN"], "hAjFN", "parcelRequire66bd")
 
 </script>

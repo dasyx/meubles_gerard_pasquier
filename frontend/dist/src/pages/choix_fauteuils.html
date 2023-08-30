@@ -159,17 +159,57 @@
         <!--AFFICHAGE MENU DROPDOWN < 768PX-->
         <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
           <div class="dropdown block relative">
-            <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="produits">Les produits<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="inspirations">Inspirations<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="pointsforts">Nos points forts<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <a href="#"><span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
-              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            </a>
+
+            <span class="block dropdown_lowres">Notre histoire<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/biographie.html">Les origines</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Les produits<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a href="/src/pages/choix_accessoires-deco.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Accessoires déco</a>
+                <a href="/src/pages/choix_armoires.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Armoires</a>
+                <a href="/src/pages/choix_buffets.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Buffets</a>
+                <a href="/src/pages/choix_bureaux.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Bureaux</a>
+                <a href="/src/pages/choix_canapes.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Canapés</a>
+                <a href="/src/pages/choix_chaises.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Chaises</a>
+                <a href="/src/pages/choix_decorations_murales.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Décorations murales</a>
+                <a href="/src/pages/choix_fauteuils.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Fauteuils</a>
+                <a href="/src/pages/choix_literie.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Literie</a>
+                <a href="/src/pages/choix_luminaires.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Luminaires</a>
+                <a href="/src/pages/choix_salons.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Salons</a>
+                <a href="/src/pages/choix_tables.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Tables</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Nos Inspirations<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/classique.html">Classique</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/contemporain.html">Contemporain</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/industriel.html">Industriel</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/rustique.html">Rustique</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/nordique.html">Nordique</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Nos points forts<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/points_forts.html">Notre engagement</a>
+              </li>
+            </ul>
+            <!-- <span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
+            <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="./src/pages/promotions.html">Nos bonnes affaires</a>
+              </li>
+            </ul> -->
           </div>
           <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
         </div>
@@ -521,7 +561,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"dQlVo":[function(require,module,exports) {
+})({"hWQDM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _fauteuilContemporainWebp = require("../img/contemporain/fauteuil_contemporain.webp");
 var _fauteuilContemporainWebpDefault = parcelHelpers.interopDefault(_fauteuilContemporainWebp);
@@ -723,10 +763,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/contemporain/fauteuil_contemporain.webp":"7ZVdD","../img/contemporain/fauteuil_contemporain2.webp":"2TteY","../img/contemporain/fauteuil_contemporain3.webp":"KJXvP","../img/classique-style/IMG-20230526-WA0033.webp":"5eEV1","../img/classique-style/IMG-20230526-WA0036.webp":"2hef9","../img/classique-style/IMG-20230526-WA0041.webp":"b9QMV","../img/fauteuils/fauteuil1.webp":"9HMIS","../img/fauteuils/fauteuil2.webp":"EmdYx","../img/fauteuils/fauteuil3.webp":"bFYrr","../img/fauteuils/fauteuil4.webp":"xwynW","../img/fauteuils/fauteuil5.webp":"1mSmK","../img/fauteuils/fauteuil6.webp":"k6dpf","../img/fauteuils/fauteuil7.webp":"dCGGs","../img/fauteuils/fauteuil8.webp":"iSoUd","../img/fauteuils/fauteuil9.webp":"fmJaN","../img/fauteuils/fauteuil10.webp":"jYpzs","../img/fauteuils/fauteuil11.webp":"c7544","../img/fauteuils/fauteuil12.webp":"eZ7Bt","../img/fauteuils/fauteuil13.webp":"24QAn","../img/fauteuils/fauteuil14.webp":"g4cjT","../img/fauteuils/fauteuil15.webp":"sF5Ay","../img/fauteuils/fauteuil16.webp":"2WlHI","../img/fauteuils/fauteuil17.webp":"dKRuQ","../img/fauteuils/fauteuil18.webp":"j62Lf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7ZVdD":[function(require,module,exports) {
-module.exports = require("36594b914eb54df1").getBundleURL("ctNLR") + "../../fauteuil_contemporain.15578451.webp";
+},{"../img/contemporain/fauteuil_contemporain.webp":"lcOlC","../img/contemporain/fauteuil_contemporain2.webp":"1MklF","../img/contemporain/fauteuil_contemporain3.webp":"65C1b","../img/classique-style/IMG-20230526-WA0033.webp":"fGmeA","../img/classique-style/IMG-20230526-WA0036.webp":"8TVH8","../img/classique-style/IMG-20230526-WA0041.webp":"l2z6d","../img/fauteuils/fauteuil1.webp":"8LrEl","../img/fauteuils/fauteuil2.webp":"kIaXL","../img/fauteuils/fauteuil3.webp":"gImVq","../img/fauteuils/fauteuil4.webp":"fPbN9","../img/fauteuils/fauteuil5.webp":"l2l5f","../img/fauteuils/fauteuil6.webp":"aj4lr","../img/fauteuils/fauteuil7.webp":"6alsV","../img/fauteuils/fauteuil8.webp":"rdxXF","../img/fauteuils/fauteuil9.webp":"cPjy4","../img/fauteuils/fauteuil10.webp":"cj8EY","../img/fauteuils/fauteuil11.webp":"ecxdJ","../img/fauteuils/fauteuil12.webp":"7fxLN","../img/fauteuils/fauteuil13.webp":"k9Rxf","../img/fauteuils/fauteuil14.webp":"9aZgY","../img/fauteuils/fauteuil15.webp":"loPWU","../img/fauteuils/fauteuil16.webp":"bh6rj","../img/fauteuils/fauteuil17.webp":"426ga","../img/fauteuils/fauteuil18.webp":"4L8au","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lcOlC":[function(require,module,exports) {
+module.exports = require("7b23b79920037404").getBundleURL("2lY8a") + "../../fauteuil_contemporain.15578451.webp";
 
-},{"36594b914eb54df1":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"7b23b79920037404":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -761,76 +801,76 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"2TteY":[function(require,module,exports) {
-module.exports = require("907e8c1ace6ebc05").getBundleURL("ctNLR") + "../../fauteuil_contemporain2.cbafbab0.webp";
+},{}],"1MklF":[function(require,module,exports) {
+module.exports = require("5bc103960f075780").getBundleURL("2lY8a") + "../../fauteuil_contemporain2.cbafbab0.webp";
 
-},{"907e8c1ace6ebc05":"lgJ39"}],"KJXvP":[function(require,module,exports) {
-module.exports = require("e165b92d72f1f161").getBundleURL("ctNLR") + "../../fauteuil_contemporain3.fc1c29f6.webp";
+},{"5bc103960f075780":"lgJ39"}],"65C1b":[function(require,module,exports) {
+module.exports = require("48dc8b7862333264").getBundleURL("2lY8a") + "../../fauteuil_contemporain3.fc1c29f6.webp";
 
-},{"e165b92d72f1f161":"lgJ39"}],"5eEV1":[function(require,module,exports) {
-module.exports = require("181552d856634276").getBundleURL("ctNLR") + "../../IMG-20230526-WA0033.b3a6f6b8.webp";
+},{"48dc8b7862333264":"lgJ39"}],"fGmeA":[function(require,module,exports) {
+module.exports = require("809b71de115f2fb1").getBundleURL("2lY8a") + "../../IMG-20230526-WA0033.b3a6f6b8.webp";
 
-},{"181552d856634276":"lgJ39"}],"2hef9":[function(require,module,exports) {
-module.exports = require("2e2a52aa4794b2d").getBundleURL("ctNLR") + "../../IMG-20230526-WA0036.62f39321.webp";
+},{"809b71de115f2fb1":"lgJ39"}],"8TVH8":[function(require,module,exports) {
+module.exports = require("346db7684f78e71e").getBundleURL("2lY8a") + "../../IMG-20230526-WA0036.62f39321.webp";
 
-},{"2e2a52aa4794b2d":"lgJ39"}],"b9QMV":[function(require,module,exports) {
-module.exports = require("a193b276377c28c2").getBundleURL("ctNLR") + "../../IMG-20230526-WA0041.c5888a49.webp";
+},{"346db7684f78e71e":"lgJ39"}],"l2z6d":[function(require,module,exports) {
+module.exports = require("280344c51fbd1fb0").getBundleURL("2lY8a") + "../../IMG-20230526-WA0041.c5888a49.webp";
 
-},{"a193b276377c28c2":"lgJ39"}],"9HMIS":[function(require,module,exports) {
-module.exports = require("90dd8430b343f3e0").getBundleURL("ctNLR") + "../../fauteuil1.2bbc8402.webp";
+},{"280344c51fbd1fb0":"lgJ39"}],"8LrEl":[function(require,module,exports) {
+module.exports = require("3afbdb5a187dba0c").getBundleURL("2lY8a") + "../../fauteuil1.2bbc8402.webp";
 
-},{"90dd8430b343f3e0":"lgJ39"}],"EmdYx":[function(require,module,exports) {
-module.exports = require("fefb52c209b3474c").getBundleURL("ctNLR") + "../../fauteuil2.447fa3f3.webp";
+},{"3afbdb5a187dba0c":"lgJ39"}],"kIaXL":[function(require,module,exports) {
+module.exports = require("b6e97450bb080fc1").getBundleURL("2lY8a") + "../../fauteuil2.447fa3f3.webp";
 
-},{"fefb52c209b3474c":"lgJ39"}],"bFYrr":[function(require,module,exports) {
-module.exports = require("26d64fe6c9c99c13").getBundleURL("ctNLR") + "../../fauteuil3.1606dbe4.webp";
+},{"b6e97450bb080fc1":"lgJ39"}],"gImVq":[function(require,module,exports) {
+module.exports = require("8af97baf599234f1").getBundleURL("2lY8a") + "../../fauteuil3.1606dbe4.webp";
 
-},{"26d64fe6c9c99c13":"lgJ39"}],"xwynW":[function(require,module,exports) {
-module.exports = require("39699a05a3bc68fa").getBundleURL("ctNLR") + "../../fauteuil4.fdabc72b.webp";
+},{"8af97baf599234f1":"lgJ39"}],"fPbN9":[function(require,module,exports) {
+module.exports = require("ddc61bf2f0f10701").getBundleURL("2lY8a") + "../../fauteuil4.fdabc72b.webp";
 
-},{"39699a05a3bc68fa":"lgJ39"}],"1mSmK":[function(require,module,exports) {
-module.exports = require("74e0732393b0d43a").getBundleURL("ctNLR") + "../../fauteuil5.c6b848b5.webp";
+},{"ddc61bf2f0f10701":"lgJ39"}],"l2l5f":[function(require,module,exports) {
+module.exports = require("fbe5e54ed0f415ad").getBundleURL("2lY8a") + "../../fauteuil5.c6b848b5.webp";
 
-},{"74e0732393b0d43a":"lgJ39"}],"k6dpf":[function(require,module,exports) {
-module.exports = require("1c206390f6d12b26").getBundleURL("ctNLR") + "../../fauteuil6.f32ea078.webp";
+},{"fbe5e54ed0f415ad":"lgJ39"}],"aj4lr":[function(require,module,exports) {
+module.exports = require("36347f702ac0a1ee").getBundleURL("2lY8a") + "../../fauteuil6.f32ea078.webp";
 
-},{"1c206390f6d12b26":"lgJ39"}],"dCGGs":[function(require,module,exports) {
-module.exports = require("f58b3f8a61599eef").getBundleURL("ctNLR") + "../../fauteuil7.6b831a3b.webp";
+},{"36347f702ac0a1ee":"lgJ39"}],"6alsV":[function(require,module,exports) {
+module.exports = require("d7372f56985c70eb").getBundleURL("2lY8a") + "../../fauteuil7.6b831a3b.webp";
 
-},{"f58b3f8a61599eef":"lgJ39"}],"iSoUd":[function(require,module,exports) {
-module.exports = require("9bcb80921edac380").getBundleURL("ctNLR") + "../../fauteuil8.61c0e85f.webp";
+},{"d7372f56985c70eb":"lgJ39"}],"rdxXF":[function(require,module,exports) {
+module.exports = require("f1c4ac47e228f903").getBundleURL("2lY8a") + "../../fauteuil8.61c0e85f.webp";
 
-},{"9bcb80921edac380":"lgJ39"}],"fmJaN":[function(require,module,exports) {
-module.exports = require("cbefb4ac3cb79277").getBundleURL("ctNLR") + "../../fauteuil9.2d144082.webp";
+},{"f1c4ac47e228f903":"lgJ39"}],"cPjy4":[function(require,module,exports) {
+module.exports = require("fa27f7241ba95535").getBundleURL("2lY8a") + "../../fauteuil9.2d144082.webp";
 
-},{"cbefb4ac3cb79277":"lgJ39"}],"jYpzs":[function(require,module,exports) {
-module.exports = require("8921de3607116a8e").getBundleURL("ctNLR") + "../../fauteuil10.941b1537.webp";
+},{"fa27f7241ba95535":"lgJ39"}],"cj8EY":[function(require,module,exports) {
+module.exports = require("ab3fd5ed5bb056ed").getBundleURL("2lY8a") + "../../fauteuil10.941b1537.webp";
 
-},{"8921de3607116a8e":"lgJ39"}],"c7544":[function(require,module,exports) {
-module.exports = require("13b065f1d5d41f28").getBundleURL("ctNLR") + "../../fauteuil11.480629e4.webp";
+},{"ab3fd5ed5bb056ed":"lgJ39"}],"ecxdJ":[function(require,module,exports) {
+module.exports = require("734d38513c98e7").getBundleURL("2lY8a") + "../../fauteuil11.480629e4.webp";
 
-},{"13b065f1d5d41f28":"lgJ39"}],"eZ7Bt":[function(require,module,exports) {
-module.exports = require("aa6be7384f7f0110").getBundleURL("ctNLR") + "../../fauteuil12.e6c7df12.webp";
+},{"734d38513c98e7":"lgJ39"}],"7fxLN":[function(require,module,exports) {
+module.exports = require("fff348d36add603a").getBundleURL("2lY8a") + "../../fauteuil12.e6c7df12.webp";
 
-},{"aa6be7384f7f0110":"lgJ39"}],"24QAn":[function(require,module,exports) {
-module.exports = require("c46ec15e570dbe3c").getBundleURL("ctNLR") + "../../fauteuil13.23670edd.webp";
+},{"fff348d36add603a":"lgJ39"}],"k9Rxf":[function(require,module,exports) {
+module.exports = require("cc1d21e6e40eaa5").getBundleURL("2lY8a") + "../../fauteuil13.23670edd.webp";
 
-},{"c46ec15e570dbe3c":"lgJ39"}],"g4cjT":[function(require,module,exports) {
-module.exports = require("59057b88aabb7aaf").getBundleURL("ctNLR") + "../../fauteuil14.00a70d35.webp";
+},{"cc1d21e6e40eaa5":"lgJ39"}],"9aZgY":[function(require,module,exports) {
+module.exports = require("faa630633cb75d62").getBundleURL("2lY8a") + "../../fauteuil14.00a70d35.webp";
 
-},{"59057b88aabb7aaf":"lgJ39"}],"sF5Ay":[function(require,module,exports) {
-module.exports = require("339ff281740e5d5a").getBundleURL("ctNLR") + "../../fauteuil15.ae0b2981.webp";
+},{"faa630633cb75d62":"lgJ39"}],"loPWU":[function(require,module,exports) {
+module.exports = require("97a39c4bfb3e83ed").getBundleURL("2lY8a") + "../../fauteuil15.ae0b2981.webp";
 
-},{"339ff281740e5d5a":"lgJ39"}],"2WlHI":[function(require,module,exports) {
-module.exports = require("5e310af3bde5c7ad").getBundleURL("ctNLR") + "../../fauteuil16.f9d294f9.webp";
+},{"97a39c4bfb3e83ed":"lgJ39"}],"bh6rj":[function(require,module,exports) {
+module.exports = require("b1df9b5c039c30ab").getBundleURL("2lY8a") + "../../fauteuil16.f9d294f9.webp";
 
-},{"5e310af3bde5c7ad":"lgJ39"}],"dKRuQ":[function(require,module,exports) {
-module.exports = require("f2ab1085b1627d4b").getBundleURL("ctNLR") + "../../fauteuil17.4d399c5d.webp";
+},{"b1df9b5c039c30ab":"lgJ39"}],"426ga":[function(require,module,exports) {
+module.exports = require("eeb10483fa230281").getBundleURL("2lY8a") + "../../fauteuil17.4d399c5d.webp";
 
-},{"f2ab1085b1627d4b":"lgJ39"}],"j62Lf":[function(require,module,exports) {
-module.exports = require("797b03fb834bb3fb").getBundleURL("ctNLR") + "../../fauteuil18.8862b9a4.webp";
+},{"eeb10483fa230281":"lgJ39"}],"4L8au":[function(require,module,exports) {
+module.exports = require("21c6efa89ab2e273").getBundleURL("2lY8a") + "../../fauteuil18.8862b9a4.webp";
 
-},{"797b03fb834bb3fb":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"21c6efa89ab2e273":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -860,6 +900,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["dQlVo"], "dQlVo", "parcelRequire66bd")
+},{}]},["hWQDM"], "hWQDM", "parcelRequire66bd")
 
 </script>

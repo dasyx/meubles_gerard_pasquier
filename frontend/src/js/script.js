@@ -85,6 +85,16 @@ window.addEventListener("load", function () {
     document.getElementById("contact").innerHTML = "Contactez-nous";
     document.getElementById("follow").innerHTML = "Suivez-nous";
   }
+  // Restaurez l'état du menu déroulant à partir du sessionStorage
+  var dropdownMenus = document.querySelectorAll(".dropdown-lowres");
+  dropdownMenus.forEach(function (menu) {
+    var state = sessionStorage.getItem(menu.id);
+    if (state === "visible") {
+      menu.classList.remove("hidden");
+    } else {
+      menu.classList.add("hidden");
+    }
+  });
 });
 
 // Script affichant la date actuelle
@@ -95,31 +105,18 @@ date.innerHTML = actualDate;
 
 
 // Script pour le menu déroulant du header
-document.addEventListener("DOMContentLoaded", function() {
-  var dropdownToggles = document.querySelectorAll(".dropdown_lowres");
+var dropdownToggles = document.querySelectorAll(".dropdown_lowres");
 
-  dropdownToggles.forEach(function(toggle) {
-      toggle.addEventListener("click", function() {
-          var menu = this.nextElementSibling;
-          menu.classList.toggle("hidden");
+dropdownToggles.forEach(function (toggle) {
+  toggle.addEventListener("click", function () {
+    var menu = this.nextElementSibling;
+    menu.classList.toggle("hidden");
 
-          // Enregistrez l'état du menu déroulant dans le sessionStorage
-          if (menu.classList.contains("hidden")) {
-              sessionStorage.setItem(menu.id, "hidden");
-          } else {
-              sessionStorage.setItem(menu.id, "visible");
-          }
-      });
-  });
-
-  // Restaurez l'état du menu déroulant à partir du sessionStorage
-  var dropdownMenus = document.querySelectorAll(".dropdown-lowres");
-  dropdownMenus.forEach(function(menu) {
-      var state = sessionStorage.getItem(menu.id);
-      if (state === "visible") {
-          menu.classList.remove("hidden");
-      } else {
-          menu.classList.add("hidden");
-      }
+    // Enregistrez l'état du menu déroulant dans le sessionStorage
+    if (menu.classList.contains("hidden")) {
+      sessionStorage.setItem(menu.id, "hidden");
+    } else {
+      sessionStorage.setItem(menu.id, "visible");
+    }
   });
 });

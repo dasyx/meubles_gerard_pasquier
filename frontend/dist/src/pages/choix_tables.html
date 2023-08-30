@@ -178,17 +178,57 @@
         <!--AFFICHAGE MENU DROPDOWN < 768PX-->
         <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
           <div class="dropdown block relative">
-            <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="produits">Les produits<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="inspirations">Inspirations<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <span class="block" id="pointsforts">Nos points forts<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            <a href="#"><span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
-              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1"></ul>
-            </a>
+
+            <span class="block dropdown_lowres">Notre histoire<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/biographie.html">Les origines</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Les produits<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a href="/src/pages/choix_accessoires-deco.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Accessoires déco</a>
+                <a href="/src/pages/choix_armoires.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Armoires</a>
+                <a href="/src/pages/choix_buffets.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Buffets</a>
+                <a href="/src/pages/choix_bureaux.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Bureaux</a>
+                <a href="/src/pages/choix_canapes.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Canapés</a>
+                <a href="/src/pages/choix_chaises.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Chaises</a>
+                <a href="/src/pages/choix_decorations_murales.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Décorations murales</a>
+                <a href="/src/pages/choix_fauteuils.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Fauteuils</a>
+                <a href="/src/pages/choix_literie.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Literie</a>
+                <a href="/src/pages/choix_luminaires.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Luminaires</a>
+                <a href="/src/pages/choix_salons.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Salons</a>
+                <a href="/src/pages/choix_tables.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Tables</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Nos Inspirations<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/classique.html">Classique</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/contemporain.html">Contemporain</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/industriel.html">Industriel</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/rustique.html">Rustique</a>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/nordique.html">Nordique</a>
+              </li>
+            </ul>
+            <span class="block dropdown_lowres">Nos points forts<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/points_forts.html">Notre engagement</a>
+              </li>
+            </ul>
+            <!-- <span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
+            <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="./src/pages/promotions.html">Nos bonnes affaires</a>
+              </li>
+            </ul> -->
           </div>
           <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
         </div>
@@ -540,7 +580,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"1LPej":[function(require,module,exports) {
+})({"3kyRf":[function(require,module,exports) {
 // Meubles bureaux / tables
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _tableBasseConcordePlaisance9P7454Webp = require("../img/classique-style/table_basse_concorde_Plaisance_9_p7454.webp");
@@ -645,10 +685,10 @@ function displayFurnitureData() {
 // Exécute la fonction lorsque le DOM est entièrement chargé
 document.addEventListener("DOMContentLoaded", displayFurnitureData);
 
-},{"../img/classique-style/table_basse_concorde_Plaisance_9_p7454.webp":"2ub9b","../img/classique-style/table-bristol-chene-plaisance-7-p181.webp":"julEF","../img/contemporain/table-ovale-girardeau-avec-chaise.webp":"3bXff","../img/contemporain/table-ronde-aninovel.webp":"7xlTG","../img/classique-style/table1.webp":"ghBRg","../img/classique-style/table2.webp":"IpN1I","../img/classique-style/table3.webp":"c49ab","../img/classique-style/table4.webp":"fnmlX","../img/nordique/Ferrand-Table-de-salon-Faubourg-Ref-3535.webp":"dvA4I","../img/contemporain/IMG-20230407-WA0007.webp":"9SNQA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2ub9b":[function(require,module,exports) {
-module.exports = require("d5521a74418ca914").getBundleURL("71mQm") + "../../table_basse_concorde_Plaisance_9_p7454.d2f33652.webp";
+},{"../img/classique-style/table_basse_concorde_Plaisance_9_p7454.webp":"bAZVq","../img/classique-style/table-bristol-chene-plaisance-7-p181.webp":"igG4U","../img/contemporain/table-ovale-girardeau-avec-chaise.webp":"2dWPP","../img/contemporain/table-ronde-aninovel.webp":"3ZnKD","../img/classique-style/table1.webp":"74CBE","../img/classique-style/table2.webp":"2pQqS","../img/classique-style/table3.webp":"gdJ16","../img/classique-style/table4.webp":"6QlUb","../img/nordique/Ferrand-Table-de-salon-Faubourg-Ref-3535.webp":"crJlb","../img/contemporain/IMG-20230407-WA0007.webp":"1t4Gn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bAZVq":[function(require,module,exports) {
+module.exports = require("9e74f1e1752c70a1").getBundleURL("m2zsZ") + "../../table_basse_concorde_Plaisance_9_p7454.d2f33652.webp";
 
-},{"d5521a74418ca914":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{"9e74f1e1752c70a1":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -683,34 +723,34 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"julEF":[function(require,module,exports) {
-module.exports = require("1ceac3a001e4bc2a").getBundleURL("71mQm") + "../../table-bristol-chene-plaisance-7-p181.5ce45929.webp";
+},{}],"igG4U":[function(require,module,exports) {
+module.exports = require("627e4d98ec946341").getBundleURL("m2zsZ") + "../../table-bristol-chene-plaisance-7-p181.5ce45929.webp";
 
-},{"1ceac3a001e4bc2a":"lgJ39"}],"3bXff":[function(require,module,exports) {
-module.exports = require("90a4b2329951fa44").getBundleURL("71mQm") + "../../table-ovale-girardeau-avec-chaise.a357a7be.webp";
+},{"627e4d98ec946341":"lgJ39"}],"2dWPP":[function(require,module,exports) {
+module.exports = require("22686b02ed038561").getBundleURL("m2zsZ") + "../../table-ovale-girardeau-avec-chaise.a357a7be.webp";
 
-},{"90a4b2329951fa44":"lgJ39"}],"7xlTG":[function(require,module,exports) {
-module.exports = require("1bae7f7b3b0eb8ce").getBundleURL("71mQm") + "../../table-ronde-aninovel.314de762.webp";
+},{"22686b02ed038561":"lgJ39"}],"3ZnKD":[function(require,module,exports) {
+module.exports = require("1486057d3e95e1db").getBundleURL("m2zsZ") + "../../table-ronde-aninovel.314de762.webp";
 
-},{"1bae7f7b3b0eb8ce":"lgJ39"}],"ghBRg":[function(require,module,exports) {
-module.exports = require("22d869dc04de64f3").getBundleURL("71mQm") + "../../table1.c5fca2b0.webp";
+},{"1486057d3e95e1db":"lgJ39"}],"74CBE":[function(require,module,exports) {
+module.exports = require("3dbebed2f5c0577b").getBundleURL("m2zsZ") + "../../table1.c5fca2b0.webp";
 
-},{"22d869dc04de64f3":"lgJ39"}],"IpN1I":[function(require,module,exports) {
-module.exports = require("a91d2e837d075ed0").getBundleURL("71mQm") + "../../table2.c4bcbf0c.webp";
+},{"3dbebed2f5c0577b":"lgJ39"}],"2pQqS":[function(require,module,exports) {
+module.exports = require("d102acc4aa109f1d").getBundleURL("m2zsZ") + "../../table2.c4bcbf0c.webp";
 
-},{"a91d2e837d075ed0":"lgJ39"}],"c49ab":[function(require,module,exports) {
-module.exports = require("92bd012a246b471f").getBundleURL("71mQm") + "../../table3.4953f4b3.webp";
+},{"d102acc4aa109f1d":"lgJ39"}],"gdJ16":[function(require,module,exports) {
+module.exports = require("9b6b5023ee662b94").getBundleURL("m2zsZ") + "../../table3.4953f4b3.webp";
 
-},{"92bd012a246b471f":"lgJ39"}],"fnmlX":[function(require,module,exports) {
-module.exports = require("451c4c61780dc990").getBundleURL("71mQm") + "../../table4.cd557a8f.webp";
+},{"9b6b5023ee662b94":"lgJ39"}],"6QlUb":[function(require,module,exports) {
+module.exports = require("c70b787fcee3a439").getBundleURL("m2zsZ") + "../../table4.cd557a8f.webp";
 
-},{"451c4c61780dc990":"lgJ39"}],"dvA4I":[function(require,module,exports) {
-module.exports = require("c7b3bcfb6b3f10b9").getBundleURL("71mQm") + "../../Ferrand-Table-de-salon-Faubourg-Ref-3535.2d209129.webp";
+},{"c70b787fcee3a439":"lgJ39"}],"crJlb":[function(require,module,exports) {
+module.exports = require("a5cd4c808f3a2ed").getBundleURL("m2zsZ") + "../../Ferrand-Table-de-salon-Faubourg-Ref-3535.2d209129.webp";
 
-},{"c7b3bcfb6b3f10b9":"lgJ39"}],"9SNQA":[function(require,module,exports) {
-module.exports = require("a955d34877cb55c3").getBundleURL("71mQm") + "../../IMG-20230407-WA0007.cfcc14b0.webp";
+},{"a5cd4c808f3a2ed":"lgJ39"}],"1t4Gn":[function(require,module,exports) {
+module.exports = require("63c7d61997e22e8e").getBundleURL("m2zsZ") + "../../IMG-20230407-WA0007.cfcc14b0.webp";
 
-},{"a955d34877cb55c3":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"63c7d61997e22e8e":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -740,6 +780,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["1LPej"], "1LPej", "parcelRequire66bd")
+},{}]},["3kyRf"], "3kyRf", "parcelRequire66bd")
 
 </script>
