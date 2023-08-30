@@ -87,8 +87,8 @@
             <span>Produits</span>
             <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
               <li>
-              <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/choix_salons.html">Salons</a>
-            </li>
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/choix_salons.html">Salons</a>
+              </li>
               <li>
                 <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/choix_armoires.html">Armoires</a>
               </li>
@@ -172,22 +172,42 @@
         <div class="nav_logo__nav-lowres" id="nav_logo_dropdown-lowres">
           <div class="dropdown block relative">
 
-            <span class="block" id="histoire">Notre histoire<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
+            <span class="block dropdown_lowres">Notre histoire<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu1" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="#histoire">Les origines</a>
+              </li>
             </ul>
-            <span class="block" id="produits">Les produits<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
+            <span class="block dropdown_lowres">Les produits<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu2" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li>
+                <a href="/src/pages/choix_salons.html" class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" data-offset="-50">Salons</a>
+
+              </li>
             </ul>
-            <span class="block" id="inspirations">Inspirations<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
+            <span class="block dropdown_lowres">Nos Inspirations<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu3" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/classique.html">Classique</a>
+              </li>
             </ul>
-            <span class="block" id="pointsforts">Nos points forts<i class="fa-solid fa-angle-down"></i></span>
-            <ul id="dropdown-menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
+            <span class="block dropdown_lowres">Nos points forts<i class="fa-solid fa-angle-down"></i>
+            </span>
+            <ul id="menu4" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap" href="/src/pages/points_forts.html">Notre engagement</a>
+              </li>
             </ul>
-            <a href="#"><span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
-              <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
-              </ul>
-            </a>
+            <!-- <span class="block" id="promotions">Promotions<i class="fa-solid fa-angle-down"></i></span>
+            <ul id="dropdown-menu5" class="dropdown-lowres hidden text-gray-700 pt-1">
+              <li class="">
+                <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-nowrap"
+                  href="./src/pages/promotions.html">Nos bonnes affaires</a>
+              </li>
+            </ul> -->
           </div>
           <!--FIN AFFICHAGE MENU DROPDOWN < 768PX-->
         </div>
@@ -211,8 +231,11 @@
           <div class="description-container">
             <h3>Robert</h3>
             <hr>
-            <p>Apprenti tapissier à Elbeuf, il se met à son compte à 20 ans, rue Revel, avec son épouse Marcelle. Déménagement et agrandissement rue Emile Zola, jusqu'à 50 personnes + sous-traitant de la CGT (Compagnie Générale Transatlantique à Rouen)</p>
-            <p>A participé à l'élaboration du paquebot FRANCE. Ils ont deux fils : Gérard, ébéniste, et Philippe, tapissier.</p>
+            <p>Apprenti tapissier à Elbeuf, il se met à son compte à 20 ans, rue Revel, avec son épouse Marcelle.
+              Déménagement et agrandissement rue Emile Zola, jusqu'à 50 personnes + sous-traitant de la CGT (Compagnie
+              Générale Transatlantique à Rouen)</p>
+            <p>A participé à l'élaboration du paquebot FRANCE. Ils ont deux fils : Gérard, ébéniste, et Philippe,
+              tapissier.</p>
           </div>
         </article>
         <article class="article-container">
@@ -231,13 +254,15 @@
           <div class="img-container">
             <img src="/erick_pasquier.bbfd4aa1.webp">
           </div>
-         <div class="description-container">
+          <div class="description-container">
             <h3>Erick</h3>
-            <hr>            
+            <hr>
             <p>Il reprend l'entreprise en 1985.</p>
-            <p>Avec Alain, le tapissier-livreur, Marie-Noëlle, la couturière, Annick, la secrétaire-vendeuse et Sylvain, le livreur.</p>
-            <p>Reçoit le label qualité national pour les commerces et les services et dynamique commerciale de la chambre de commerce d'Elbeuf.</p>
-         </div>
+            <p>Avec Alain, le tapissier-livreur, Marie-Noëlle, la couturière, Annick, la secrétaire-vendeuse et Sylvain,
+              le livreur.</p>
+            <p>Reçoit le label qualité national pour les commerces et les services et dynamique commerciale de la
+              chambre de commerce d'Elbeuf.</p>
+          </div>
         </article>
         <article class="article-container label-logo">
           <img src="/label_pasquier.f8dfe17d.webp" width="100px" height="auto">
@@ -272,7 +297,7 @@
                   </a>
                 </li>
 
-            <!--     <li>
+                <!--     <li>
                   <a href="#" class="text-white-700 transition hover:opacity-75">
                     Nos points forts
                   </a>
@@ -388,7 +413,8 @@
         <div class="flex footer_logo">
           <img src="/meubles_gerard_pasquier_lowres_opacity.2e2b6a0c.webp" width="250" height="auto">
           <p class="max-w-xs mt-4 text-white-500 dark:text-white-400">
-            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits, restez pour notre passion.
+            Meubles Gérard Pasquier, du mobilier design au service d'une qualité irréprochable. Venez pour nos produits,
+            restez pour notre passion.
           </p>
           <!-- SOCIAL -->
           <div class="flex footer_social">
